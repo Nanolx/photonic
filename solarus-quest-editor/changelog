@@ -1,0 +1,55 @@
+solarus-quest-editor (1.4.5-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Add keyboard shortcut (F4) to switch between map view and map script (#75).
+  * Map editor: fix entity being moved after closing its dialog (#76).
+  * Map editor: start selection when clicking a tile with control/shift (#47).
+  * Map editor: synchronize tile patterns selection from map selection (#35).
+  * Sprite editor: improve auto-selection after removing a direction (#70).
+  * Dialogs/strings editor: add a duplicate button (#72).
+  * Dialogs/strings editor: Shows also missing marks on parent nodes (#68).
+  * Fix crash on FreeBSD when running the quest (#112).
+  * Fix crash on Mac OS X 64 bit.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:35:20 +0100
+
+solarus-quest-editor (1.4.4-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Map editor: add a button to open the script (#39).
+  * Dialogs/strings editor: the name is now selected when renaming (#73).
+  * Sprite editor: select the sibling item when removing a direction (#70).
+  * Sprite editor: add a context menu in tree view and missing shortcuts (#69).
+  * Sprite editor: fix change selection no update frame delay of previewer (#67).
+  * Protect resource description fields from wrong characters (#74).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 20 Aug 2015 19:50:07 +0200
+
+solarus-quest-editor (1.4.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Quest properties editor: fix setting the write directory field empty (#36).
+  * Sprite editor: add a button to refresh the source image (#50).
+  * Map editor: fix crash when resizing with no entities selected (#51).
+  * Map editor: fix entities still visible when adding them on a hidden layer.
+  * Map editor: fix entity dialog allowing to set illegal sizes (#23).
+  * Map editor: fix changing the direction of a jumper from the dialog (#60).
+  * Map editor: fix sprites not always updated when changing direction (#32).
+  * Map editor: show a context menu when right-clicking an empty space (#26).
+  * Tileset editor: fix usability issues to create and select patterns (#31).
+  * Tileset editor: fix moving a pattern to a partially overlapping place (#29).
+  * Tileset editor: fix color when moving a pattern to an occuped place (#34).
+  * Tileset editor: fix existing selection lost if selecting with ctrl or shift.
+  * Text editor: the find button is now the default one in the find dialog (#30).
+  * Dialogs editor: fix crash when comparing empty dialogs (#48).
+  * Dialogs editor: ensure that the text ends with a newline (#45).
+  * Make the numpad enter key work like the return key (#49).
+  * Check the Solarus library version at compilation time (#41).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Aug 2015 20:04:58 +0200
+
+solarus-quest-editor (1.4.2-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 25 Jul 2015 19:58:53 +0200

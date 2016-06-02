@@ -1,0 +1,20 @@
+Source: xul-ext-dovesec
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/thunderbird/addon/thundersec
+
+Package: xul-ext-dovesec
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Icedove security extension
+ DoveSec is a security extension that provides several pieces of additional
+ security functionality, including DNS-based Blackhole List (DNSBL), Realtime
+ Blackhole Lists (RBL), DomainKeys Identified Mail (DKIM) and Sender Policy
+ Framework (SPF).

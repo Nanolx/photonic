@@ -1,0 +1,22 @@
+[abi]
+abiname: 1nano
+
+[base]
+arches:
+ amd64
+ i386
+compiler: gcc-4.8
+featuresets:
+ none
+
+[image]
+initramfs-generators: initramfs-tools initramfs-fallback
+type: plain
+
+[commands-image-initramfs-generators]
+initramfs-tools: update-initramfs
+
+[relations]
+gcc-4.8: gcc-4.8
+initramfs-fallback: linux-initramfs-tool
+initramfs-tools: initramfs-tools

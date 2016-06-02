@@ -1,0 +1,53 @@
+wit (2.31a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 11 Apr 2015 19:56:17 +0200
+
+wit (2.30a-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 20 Jan 2015 19:47:53 +0100
+
+wit (2.29a-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 20 Aug 2014 22:15:35 +0200
+
+wit (2.27a-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 31 Jan 2014 21:16:50 +0100
+
+wit (2.23a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 06 Aug 2013 17:24:09 +0200
+
+wit (2.07a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 25 Aug 2012 12:37:02 +0200
+
+wit (1.28a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sun, 27 Mar 2011 11:35:40 +0200
+
+wit (1.27a+rev2317-1nano) unstable; urgency=low
+
+  * new upstream SVN
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sun, 20 Feb 2011 10:50:25 +0100
+
+wit (1.26a-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sat, 29 Jan 2011 17:45:06 +0100

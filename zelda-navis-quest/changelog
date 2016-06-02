@@ -1,0 +1,17 @@
+zelda-navis-quest (1.8-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 18:39:22 +0200
+
+zeldansq (1:1.8-1nano) unstable; urgency=low
+
+  * rebuild with proper version number
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Mar 2015 21:50:17 +0100
+
+zeldansq (20141227-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Mar 2015 21:00:30 +0100

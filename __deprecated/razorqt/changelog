@@ -1,0 +1,78 @@
+razorqt (0.5.2+git20131215.94b803-1nano) unstable; urgency=low
+
+  * New upstream git 94b803
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 22 Dec 2013 20:23:17 +0100
+
+razorqt (0.5.2+20130326-1nano) unstable; urgency=low
+
+  * New upstream git 0.5.2+20130326
+  * debian/control:
+    + remove VCS-entries
+    + minor indention changes
+    + make razorqt depend on udisks, so that automounting
+      devices properly works (does not work with udisks2)
+  * upstream:
+    + fixed appearance icons display + huge filesystem
+      access optimization in this area
+    + Proper scaling of razor-lightdm-greeter background
+    + Fix Issue #564 (new panel: cfg "Line size" can be
+      set to 10px but the value is not accepted)
+    + Fix Issue #563 ( #563 "new panel: vertical mode
+      makes panel too large (width)")
+    + New functions
+      RazorGridLayout::setCellMinimumHeight
+      RazorGridLayout::setCellMinimumWidth
+      RazorGridLayout::setCellMaximumWidth
+      RazorGridLayout::setCellMaximumHeight
+      RazorGridLayout::setCellFixedSize
+      RazorGridLayout::setCellFixedHeight
+      RazorGridLayout::setCellFixedWidth
+    + razor-lightdm-greeter: configurable background and
+      loginform positioning
+    + razor-lightdm-greeter: Standardize loading of stylesheets
+    + optimized panel calculations for icons only mode
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Thu, 28 Mar 2013 16:08:43 +0100
+
+razorqt (0.5.2+20130316-1nano) unstable; urgency=low
+
+  * New upstream git 0.5.2+20130316
+  * debian/rules:
+    + list non-packaged files
+    + override makeshlibs
+  * upstream:
+    + fix for tasbar's icon only view - autoreduce size expanding
+    + fixed #560 Iconview widget: Cannot open folders/files with
+      localized characters in name when clicked
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 17 Mar 2013 09:25:07 +0100
+
+razorqt (0.5.2+20130314-1nano) unstable; urgency=low
+
+  * New upstream git 0.5.2+20130314
+  * debian/control:
+    + build lightdm-razorqt-greeter
+  * upstream:
+    + fix building with c++11
+    + greeter: fix session list
+    + kb indicator plugin simplified
+    + Fix for "Set correct event_mask in the RazorTaskButton"
+      breaks the button titles
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 15 Mar 2013 06:50:35 +0100
+
+razorqt (0.5.2+20130310-1nano) unstable; urgency=low
+
+  * New program release 0.5.2
+    + Closes: #683840 debian bug request.
+  * debian/compat:
+    + upgrade to debhelper 8 for multiarch support
+  * debian/control:
+    + multiarch support added now.
+  * debian/lib*.install
+    + multiarch support added now.
+  * debian/copyright
+    + updates to new format to make happy debian NMU and DD.
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 10 Mar 2013 20:26:00 +0100

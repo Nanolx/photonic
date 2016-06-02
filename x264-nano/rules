@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+DEBIAN_ARCH = $(shell dpkg-architecture -qDEB_BUILD_ARCH)
+
+CC := ccache $(CC)
+
+ifeq "$(DEBIAN_ARCH)" "powerpc"
+	CFLAGS+=-flax-vector-conversions
+endif
+
+%:
+	dh $@ --parallel --with quilt
+
+override_dh_auto_configure:
+	CC="$(CC)" dh_auto_configure -- \
+	--enable-debug --enable-static --disable-lavf --enable-shared \
+	--enable-pic --extra-ldflags="-Wl,-z,defs -Wl,--as-needed" --system-libx264
+
+#	exit 1
+
+override_dh_auto_build:
+	dh_auto_build
+
+ifneq "$(DEBIAN_ARCH)" "armel"
+	LD_LIBRARY_PATH=$(CURDIR):$(LD_LIBRARY_PATH) help2man -N --help-option=--fullhelp --name="video encoder for the H.264/MPEG-4 AVC standard" ./x264  > debian/x264.1
+endif
+
+override_dh_auto_clean:
+	touch config.mak
+	dh_auto_clean
+
+override_dh_builddeb:
+	dh_builddeb -- -Zxz

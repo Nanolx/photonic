@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/palemoon-installer/usr/bin
+	install -m755 $(CURDIR)/pminstaller.sh \
+		$(CURDIR)/debian/palemoon-installer/usr/bin/palemoon-installer

@@ -1,0 +1,18 @@
+Source: connectagram
+Section: games
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), g++, qt5-qmake, qtbase5-dev
+Standards-Version: 3.9.5
+Homepage: http://qt-apps.org/content/show.php/Connectagram?content=111199
+
+Package: connectagram
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Word unscrambling game
+ Connectagram is a word unscrambling game. The board consists of several
+ scrambled words that are joined together. You can choose the length of
+ the words, the amount of words, and the pattern that the words are
+ arranged in. The game provides a hint option for times when you are
+ stuck, and features an online word lookup that fetches the definitions
+ of each word from Wiktionary. Your current progress is automatically saved.

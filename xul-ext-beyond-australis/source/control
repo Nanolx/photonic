@@ -1,0 +1,19 @@
+Source: xul-ext-the-fox-only-better
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/the-fox-only-better/
+
+Package: xul-ext-the-fox-only-better
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Merged tab and navigation bar for Iceweasel
+ This addon "australifies" and merges the tab and navigation into one
+ tiny bar. The navigation parts will become visible when hovering the
+ tab bar.

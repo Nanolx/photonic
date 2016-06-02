@@ -1,0 +1,251 @@
+solarus (1.4.5-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix file name not shown when there is an error in dialogs file (#718).
+  * Fix saving special characters in data files (#719).
+  * Fix sol.main.load_file() returning a string instead of nil on error (#730).
+  * Fix performance issue when sprites have huge frame delays (#723).
+  * Fix collisions triggered for removed entities (#710).
+  * Fix hero disappearing if lifting animation has less than 5 frames (#682).
+  * Fix collisions with diagonal dynamic tiles larger than 8x8 (#486).
+  * Fix path finding movement not working with NPCs (#708).
+  * Fix stuck on non-traversable dynamic tiles covered by traversables (#769).
+  * Fix collision detection of custom entities that do not move.
+  * Fix pickables with special movement falling in holes too early.
+  * Fix blocking streams not working when the hero's speed is greater (#488).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:29:51 +0100
+
+solarus (1.4.4-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix pickables falling in holes even when hooked (#740)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 20 Aug 2015 19:49:00 +0200
+
+solarus (1.4.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix a compilation error with Mac OS X.
+  * Fix crash at exit when a surface has a movement with callback (#699).
+  * Fix crash when removing a custom entity (#690).
+  * Fix crash when a sprite file is missing or has no animation (#700).
+  * Fix crash when trying to remove a sprite already removed (#705).
+  * Fix crash when a custom entity collision or traversable test errors.
+  * Fix crash when changing hero sprites sometimes.
+  * Fix crash when sound buffers are full.
+  * Fix crash in map:get_ground() with out of bounds coordinates.
+  * Fix Lua error message saying "number expected" instead of "string expected".
+  * Fix game:set_command_keyboard/joypad_binding refusing parameters.
+  * Fix map scrolling not working if quest size is not a multiple of 5 (#701).
+  * Fix camera:move() ignoring separators.
+  * Fix entities already destroyed when map:on_finished() is called (#691).
+  * Fix entity:bring_to_front()/back() ignoring the order of obstacles.
+  * Fix hero stuck on blocks.
+  * Fix hero going backwards on ice sometimes.
+  * Fix custom_entity:set_can_traverse_ground() giving opposite result (#668).
+  * Fix enemy:immobilize() having no effect when already immobilized.
+  * Fix dying animation of flying and swimming enemies.
+  * Fix the position of the shadow of pickables when they move.
+  * Fix pickables not reacting to their ground (#655).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Aug 2015 19:34:57 +0200
+
+solarus (1.4.2-3nano) unstable; urgency=low
+
+  * New upstream release
+  * install usr/bin/solarus_run as usr/bin/solarus
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 12 Aug 2015 19:26:09 +0200
+
+solarus (1.4.2-2nano) unstable; urgency=low
+
+  * New upstream release
+  * rebuild with proper source tarball
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 12 Aug 2015 19:10:58 +0200
+
+solarus (1.4.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Fix crash with doors whose opening condition is an item (#686).
+    - Fix the size of custom entities supposed to be optional (#680).
+    - Fix the hero’s sprite reset to default ones when changing equipment (#681).
+    - Fix animated tiles freezed when running a quest a second time (#679).
+    - Fix saving empty files.
+    - Print an error message when there is no font in the quest.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 May 2015 18:06:57 +0200
+
+solarus (1.4.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    Engine changes
+    --------------
+    * Solarus now compiles with C++11.
+    * Solarus Quest Editor was rewritten and is now in a separate repository.
+    * Solarus can now be used as a library in other projects.
+    * Add a command-line flag -win-console=yes to see output on Windows (#550).
+    * Add unit tests.
+    * Fix a crash if an entity has a sprite without animation.
+    * Fix crash when using the -no-video command-line option.
+    * Fix assertion when a crystal block has less than 4 frames.
+    * Fix hero freeze when a treasure's dialog is missing (#595).
+    * Fix hero stuck in dynamic tiles just enabled on him (#89).
+    * Fix hero sometimes moving in wrong directions (#677).
+    * Fix tunic and sword collision when their sprite is changed (#617).
+    * Fix slightly incorrect position of carried item sometimes (#660).
+    * Fix crash when a tileset image is missing (#590).
+    * Don't die if the animation of a pickable treasure is missing.
+
+    Lua API changes
+    ---------------
+    Changes that introduce incompatibilities:
+    -----------------------------------------
+    * Text surfaces: the size must now be set at runtime instead of in fonts.dat.
+    * Text surfaces: the default font is now the first one in alphabetical order.
+
+    Changes that do not introduce incompatibilities:
+    ------------------------------------------------
+    * sol.text_surface.create() now accepts a size parameter (default is 11).
+    * Add a function sol.main.get_os().
+    * Fix sprite:on_frame_changed() called twice on animation/direction change.
+
+    Data files format changes
+    -------------------------
+    * fonts.dat no longer exists. Fonts are a resource like others now (#611).
+    * Fonts are now in a "fonts" directory instead of "text".
+    * Maps: shop treasures have a new property "font".
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 05 May 2015 19:21:50 +0200
+
+solarus (1.3.1-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  1.3.1: no changes in the engine
+  1.3.0: Engine changes
+    * Fix a crash when creating a timer from game:on_started() (#575).
+    * Fix hero:save_solid_ground having no effect on water/lava/prickles (#567).
+         Lua API changes
+    * Add mouse functions and events.
+    * Add a method sprite:get_animation_set_id() (#552).
+    * Add a method sprite:has_animation() (#525).
+    * Add a method sprite:get_num_directions().
+    * Add a method hero:get_solid_ground_position() (#572).
+    * Add a method switch:get_sprite().
+    * Allow to customize the sprite and sound of switches (#553).
+    * Add a method enemy:get_treasure() (#501).
+    * Fix the write directory not having priority over the data dir since 1.1.
+    * Fix pickable/destructible:get_treasure() returning wrong types.
+    * Fix custom entity collision detection when the other is not moving (#551).
+    * Allow to call map methods even when the map is not running.
+         Data files format changes
+    * Maps: New properties sprite, sound for switches (#553).
+    * Maps: The subtype of switches is now a string.
+    * Tilesets: The id of a tile pattern is now a string (#559).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 08 Sep 2014 09:14:35 +0200
+
+solarus (1.2.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    Fix entity:is_in_same_region() giving wrong results (#500).
+    Fix custom_entity:set_can_traverse() giving opposite results.
+    Fix custom_entity:on_interaction() not always called.
+    Fix custom_entity sprite collision issues with some entities (#536).
+    Fix a crash in enemy:restart() when the enemy is dying (#558).
+    Fix hero:set_tunic_sprite_id() resetting the direction to right (#511).
+    Fix timer:get_remaining_time() always returning 0 (#503).
+    Fix declaring global variables from a map script (#507).
+    Fix the hero sometimes moving while no keys are pressed (#513). By xethm55.
+    Fix on_joypad events not always working (#519). By xethm55.
+    Add an error when a hero sprite animation is missing (#485). By Nate-Devv.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 06 Aug 2014 18:44:36 +0200
+
+solarus (1.2.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * New Features
+    - Upgrade to SDL 2 (#262). Thanks Vlag.
+    - Accelerate video operations in GPU if available. Expect huge speedups.
+    - Add the hq2x, hq3 and hq4x pixel filter algorithms as new video modes.
+    - Make the window resizable (#338).
+    - Use LuaJIT if available instead of vanilla Lua for better performance.
+    - New map entity type: custom entities, fully scripted (#323).
+    - Conveyor belts are now called streams and can be non-blocking (#288).
+    - Collision rules of streams (conveyor belts) are now like holes.
+    - Rewrite the main loop with a constant timestep (#351).
+    - Show a dialog box in case of fatal error.
+    - The “wide” video modes do not exist anymore. SDL2 does the job now.
+    - Make stairs sounds optional (#364).
+    - Make more checks in sprite files to avoid crashes (#357).
+    - Set the default speed of StraightMovement to 32 instead of 0 (#343).
+    - The size of all map entities must be a multiple of 8 (#358).
+    - Thrown entities (pots, bombs…) can now fall to a lower layer (#349).
+    - Running into a crystal or a solid switch now activates it (#193).
+    - The hero can now jump over distant crystal blocks (#42).
+    - The shield no longer protects while using the sword or carrying (#192).
+    - Languages: New syntax of strings.dat easier to read and parse (#170).
+    - Maps: The world property is now optional (#128).
+    - Maps: Teletransporters transition property is now a string (#402).
+    - Maps: Walls have a new property “stops_projectiles”.
+    - Sounds: Running into a wall now plays a sound other than “explosion” (#297).
+  * Bug Fixes
+    - Fix enemy:on_hurt() that was wrongly called when immobilized.
+    - Fix life and money exceeding the max when the max changes (#355).
+    - Fix RandomMovement speed that was not taken into account (#361).
+    - Fix collisions detected on disabled entities (#455).
+    - Fix pixel collisions coordinates when sprites move (#372).
+    - Fix a slowness when loading maps (#374).
+    - Fix crash when accessing a map not active anymore (#371).
+    - Fix crash when changing the movement of the hero (#392).
+    - Fix crash when calling hero:start_treasure() with wrong parameters (#391).
+    - Fix crash when calling game:has/get/set_ability() with wrong name (#408).
+    - Fix a crash when creating two entities with the same name (#370).
+    - Fix issues with unobtainable treasures.
+    - Fix the starting location wrongly saved with special destinations (#375).
+    - Fix map:set_tileset() sometimes moving the hero near the map border (#400).
+    - Fix enemies stuck on blocks (#360).
+    - Fix enemies stuck on crystal blocks (#41).
+    - Fix human NPCs not automatically showing “walking” when moving (#336).
+    - Fix the hero leaving the grabbing state even while the game is suspended.
+    - Fix low walls in dynamic tiles behaving like normal walls.
+    - Fix wrong collisions of right-up and left-down diagonal jumpers.
+    - Fix jumpers that could be traversed sideways (#481).
+    - Fix blocks no longer stopping when aligned on the grid since Solarus 0.9.3.
+    - Fix entities not always shown when they have no optimization distance.
+    - Fix movement:start() raising an error if the optional callback is nil.
+    - Fix random_movement:get_max_radius() that was not working.
+    - Fix timer:is_suspended_with_map() that was not working.
+    - Fix crash when calling timer:set_suspended_with_map() without game started.
+    - Call hero:on_removed() and stop hero timers when stopping the game (#421).
+    - Don't die if the map or destination saved no longer exists (#301).
+    - Don't die if a map has no destination. Show an error and go to 0,0 instead.
+    - Don't die if hero:teleport() attempts to go to a non-existing place.
+    - Don't die if attempting to start a game without map.
+    - Don't die if attempting to start a non-existing dialog.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Jun 2014 16:57:36 +0200
+
+solarus (1.1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix a libmodplug compilation problem due to wrong sndfile.h (#324).
+  * Fix teletransporters activated while coming back from falling (#346).
+  * Fix a crash when changing the hero state in block:on_moved (#340).
+  * Fix enemy death detection when falling into hole, lava or water (#350).
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 21:06:12 +0100
+
+solarus (1.0.4-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 23 Jul 2013 21:22:55 +0200
+
+solarus (0.9.2-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 03 Oct 2012 20:50:35 +0200

@@ -1,0 +1,26 @@
+--- a/configure
++++ b/configure
+@@ -847,10 +847,10 @@ if [ "$swscale" = "auto" ] ; then
+     [ -z "$SWSCALE_LIBS" ] && SWSCALE_LIBS="-lswscale -lavutil"
+ 
+     if cc_check "libswscale/swscale.h" "$SWSCALE_CFLAGS $SWSCALE_LIBS" "sws_init_context(0,0,0);" ; then
+-        if cpp_check "libavutil/pixdesc.h" "$SWSCALE_CFLAGS $SWSCALE_LIBS" "defined(AV_PIX_FMT_FLAG_RGB)" ; then
++        if cpp_check "libavutil/pixdesc.h" "$SWSCALE_CFLAGS $SWSCALE_LIBS" "defined(PIX_FMT_RGB)" ; then
+             swscale="yes"
+         else
+-            echo "Warning: AV_PIX_FMT_FLAG_RGB is missing from libavutil, update for swscale support"
++            echo "Warning: PIX_FMT_RGB is missing from libavutil, update for swscale support"
+         fi
+     fi
+ fi
+--- a/filters/video/resize.c
++++ b/filters/video/resize.c
+@@ -180,7 +180,7 @@ static int pick_closest_supported_csp( i
+         return ret;
+ 
+     const char *pix_fmt_name = pix_desc->name;
+-    int is_rgb = pix_desc->flags & (AV_PIX_FMT_FLAG_RGB | AV_PIX_FMT_FLAG_PAL);
++    int is_rgb = pix_desc->flags & (PIX_FMT_RGB | PIX_FMT_PAL);
+     int is_bgr = !!strstr( pix_fmt_name, "bgr" );
+     if( is_bgr || is_rgb )
+     {

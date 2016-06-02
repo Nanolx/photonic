@@ -1,0 +1,164 @@
+Description: Upstream changes introduced in version r71-1nano
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ ohne-schwarzenegger (r71-1nano) unstable; urgency=low
+ .
+   * Initial release
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Christopher Roy Bratusek <zanghar@freenet.de>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- ohne-schwarzenegger-r71.orig/main.cpp
++++ ohne-schwarzenegger-r71/main.cpp
+@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
+ {
+ 	Q_INIT_RESOURCE( rc );
+ 	QApplication a( argc, argv );
+-	QApplication::setWindowIcon( QIcon( ":/icon.png" ) );
++	QApplication::setWindowIcon( QIcon( "/usr/share/pixmaps/ohne-schwarzenegger.png" ) );
+     MainWindow w;
+     w.show();
+ 
+--- ohne-schwarzenegger-r71.orig/mainwindow.cpp
++++ ohne-schwarzenegger-r71/mainwindow.cpp
+@@ -2,10 +2,10 @@
+ #include "newnandbin.h"
+ #include "ui_mainwindow.h"
+ 
+-#include "../WiiQt/settingtxtdialog.h"
+-#include "../WiiQt/tiktmd.h"
+-#include "../WiiQt/tools.h"
+-#include "../WiiQt/wad.h"
++#include "WiiQt/settingtxtdialog.h"
++#include "WiiQt/tiktmd.h"
++#include "WiiQt/tools.h"
++#include "WiiQt/wad.h"
+ 
+ //on 1 of my wiis, disc 123J owns the test directory & testlog.  this wii came from the factory as 3.2u
+ //#define NAND_TEST_OWNER 0x100003132334aull
+--- ohne-schwarzenegger-r71.orig/mainwindow.h
++++ ohne-schwarzenegger-r71/mainwindow.h
+@@ -1,11 +1,11 @@
+ #ifndef MAINWINDOW_H
+ #define MAINWINDOW_H
+ 
+-#include "../WiiQt/includes.h"
+-#include "../WiiQt/nusdownloader.h"
+-#include "../WiiQt/nandbin.h"
+-#include "../WiiQt/uidmap.h"
+-#include "../WiiQt/sharedcontentmap.h"
++#include "WiiQt/includes.h"
++#include "WiiQt/nusdownloader.h"
++#include "WiiQt/nandbin.h"
++#include "WiiQt/uidmap.h"
++#include "WiiQt/sharedcontentmap.h"
+ 
+ namespace Ui {
+     class MainWindow;
+--- ohne-schwarzenegger-r71.orig/newnandbin.cpp
++++ ohne-schwarzenegger-r71/newnandbin.cpp
+@@ -1,7 +1,7 @@
+ #include "newnandbin.h"
+ #include "ui_newnandbin.h"
+-#include "../WiiQt/uidmap.h"
+-#include "../WiiQt/tools.h"
++#include "WiiQt/uidmap.h"
++#include "WiiQt/tools.h"
+ 
+ NewNandBin::NewNandBin( QWidget *parent, QList<quint16> badBlocks ) : QDialog(parent), ui(new Ui::NewNandBin), nand( this )
+ {
+--- ohne-schwarzenegger-r71.orig/newnandbin.h
++++ ohne-schwarzenegger-r71/newnandbin.h
+@@ -1,8 +1,8 @@
+ #ifndef NEWNANDBIN_H
+ #define NEWNANDBIN_H
+ 
+-#include "../WiiQt/includes.h"
+-#include "../WiiQt/nandbin.h"
++#include "WiiQt/includes.h"
++#include "WiiQt/nandbin.h"
+ 
+ namespace Ui {
+     class NewNandBin;
+--- ohne-schwarzenegger-r71.orig/refleurii.pro
++++ ohne-schwarzenegger-r71/refleurii.pro
+@@ -14,38 +14,38 @@ DEFINES += NAND_BIN_CAN_WRITE
+ 
+ SOURCES += main.cpp\
+         mainwindow.cpp \
+-    ../WiiQt/tools.cpp \
+-    ../WiiQt/sharedcontentmap.cpp \
+-    ../WiiQt/tiktmd.cpp \
+-    ../WiiQt/nusdownloader.cpp \
+-    ../WiiQt/uidmap.cpp \
+-    ../WiiQt/nanddump.cpp \
+-    ../WiiQt/settingtxtdialog.cpp \
+-    ../WiiQt/wad.cpp \
+-    ../WiiQt/aes.c \
+-    ../WiiQt/sha1.c \
++    WiiQt/tools.cpp \
++    WiiQt/sharedcontentmap.cpp \
++    WiiQt/tiktmd.cpp \
++    WiiQt/nusdownloader.cpp \
++    WiiQt/uidmap.cpp \
++    WiiQt/nanddump.cpp \
++    WiiQt/settingtxtdialog.cpp \
++    WiiQt/wad.cpp \
++    WiiQt/aes.c \
++    WiiQt/sha1.c \
+     newnandbin.cpp \
+-    ../WiiQt/nandbin.cpp \
+-    ../WiiQt/nandspare.cpp\
+-    ../WiiQt/blocks0to7.cpp
++    WiiQt/nandbin.cpp \
++    WiiQt/nandspare.cpp\
++    WiiQt/blocks0to7.cpp
+ 
+ HEADERS  += mainwindow.h \
+-    ../WiiQt/tools.h \
+-    ../WiiQt/uidmap.h \
+-    ../WiiQt/sharedcontentmap.h \
+-    ../WiiQt/tiktmd.h \
+-    ../WiiQt/nusdownloader.h \
+-    ../WiiQt/uidmap.h \
+-    ../WiiQt/nanddump.h \
+-    ../WiiQt/settingtxtdialog.h \
+-    ../WiiQt/wad.h \
++    WiiQt/tools.h \
++    WiiQt/uidmap.h \
++    WiiQt/sharedcontentmap.h \
++    WiiQt/tiktmd.h \
++    WiiQt/nusdownloader.h \
++    WiiQt/uidmap.h \
++    WiiQt/nanddump.h \
++    WiiQt/settingtxtdialog.h \
++    WiiQt/wad.h \
+     newnandbin.h \
+-    ../WiiQt/nandbin.h \
+-    ../WiiQt/nandspare.h\
+-    ../WiiQt/blocks0to7.h
++    WiiQt/nandbin.h \
++    WiiQt/nandspare.h\
++    WiiQt/blocks0to7.h
+ 
+ FORMS    += mainwindow.ui \
+-    ../WiiQt/settingtxtdialog.ui \
++    WiiQt/settingtxtdialog.ui \
+     newnandbin.ui
+ 
+ RESOURCES += \

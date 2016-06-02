@@ -1,0 +1,15 @@
+opt/devkitpro/libogc/lib/wii/libsmpeg.a
+opt/devkitpro/libogc/include/mpeg
+opt/devkitpro/libogc/include/mpeg/MPEG.h
+opt/devkitpro/libogc/include/mpeg/MPEGaction.h
+opt/devkitpro/libogc/include/mpeg/MPEGaudio.h
+opt/devkitpro/libogc/include/mpeg/MPEGerror.h
+opt/devkitpro/libogc/include/mpeg/MPEGfilter.h
+opt/devkitpro/libogc/include/mpeg/MPEGlist.h
+opt/devkitpro/libogc/include/mpeg/MPEGring.h
+opt/devkitpro/libogc/include/mpeg/MPEGstream.h
+opt/devkitpro/libogc/include/mpeg/MPEGsystem.h
+opt/devkitpro/libogc/include/mpeg/MPEGvideo.h
+opt/devkitpro/libogc/include/mpeg/glmovie.h
+opt/devkitpro/libogc/include/mpeg/gtv.h
+opt/devkitpro/libogc/include/mpeg/smpeg.h

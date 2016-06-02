@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+export DH_VERBOSE=1
+
+%:
+	dh $@ 
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/ohne-schwarzenegger/usr/bin/
+	install -m755 ohneschwanzenegger $(CURDIR)/debian/ohne-schwarzenegger/usr/bin/ohne-schwarzenegger
+	mkdir -p $(CURDIR)/debian/ohne-schwarzenegger/usr/share/pixmaps/
+	install -m644 icon.png $(CURDIR)/debian/ohne-schwarzenegger/usr/share/pixmaps/ohne-schwarzenegger.png

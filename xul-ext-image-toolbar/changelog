@@ -1,0 +1,39 @@
+xul-ext-image-toolbar (0.6.18-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Updated for proper compatibility with Firefox 45+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 15 May 2016 17:19:40 +0200
+
+xul-ext-image-toolbar (0.6.17-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-image-toolbar (0.6.17-1nano) unstable; urgency=low
+
+  * New upstream release
+  *  Compatibility with Firefox 43.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Dec 2015 21:20:58 +0100
+
+xul-ext-image-toolbar (0.6.16-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  * Fixed to work with Firefox 34 beta and above.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 21 Oct 2014 18:07:16 +0100
+
+xul-ext-image-toolbar (0.6.15-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+  * Fixed to work with Firefox 27 and above
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 02 Mar 2014 19:41:38 +0100
+
+xul-ext-image-toolbar (0.6.14-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 15 Dec 2013 19:41:17 +0100

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ -e /usr/bin/Limoo ]; then
+    rm /usr/bin/Limoo
+fi
+
+#DEBHELPER#
+
+exit 0

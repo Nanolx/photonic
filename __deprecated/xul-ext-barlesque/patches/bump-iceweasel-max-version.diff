@@ -1,0 +1,20 @@
+Description:  bump max iceweasel version
+ Bump the maximum supported iceweasel version to 24.0 as i actually
+ does support them
+ .
+ xul-ext-barlesque (1.15-1nano) unstable; urgency=low
+ .
+   * initial release
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+
+--- xul-ext-barlesque-1.15.orig/install.rdf
++++ xul-ext-barlesque-1.15/install.rdf
+@@ -28,7 +28,7 @@
+ 			<Description>
+ 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
+ 				<em:minVersion>4.0b7</em:minVersion>
+-				<em:maxVersion>4.0b9pre</em:maxVersion>
++				<em:maxVersion>24.0</em:maxVersion>
+ 			</Description>
+ 		</em:targetApplication>
+ 

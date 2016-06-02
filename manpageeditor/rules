@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+export CFLAGS += -Wno-error
+export CXXFLAGS += -Wno-error
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-aspell
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/256x256/mimetypes
+	install -m644 $(CURDIR)/ManPageEditor/resources/documenticons/256/maneditdoc.png \
+		$(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/256x256/mimetypes
+	mkdir -p $(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/128x128/mimetypes
+	install -m644 $(CURDIR)/ManPageEditor/resources/documenticons/128/maneditdoc.png \
+		$(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/128x128/mimetypes
+	mkdir -p $(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/48x48/mimetypes
+	install -m644 $(CURDIR)/ManPageEditor/resources/documenticons/48/maneditdoc.png \
+		$(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/48x48/mimetypes
+	mkdir -p $(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/256x256/apps
+	install -m644 $(CURDIR)/ManPageEditor/resources/pixmaps/ManPageEditor.png \
+		$(CURDIR)/debian/manpageeditor/usr/share/icons/hicolor/256x256/apps
+	dh_auto_install

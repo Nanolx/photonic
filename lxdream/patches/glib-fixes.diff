@@ -1,0 +1,375 @@
+Description: glib.h includes fix
+ include <glib-2.0/glib.h> rather than <glib.h>
+ .
+ lxdream (0.9.1+hg1302.765e514f99a6-1nano) unstable; urgency=low
+ .
+   * New upstream snapshot
+   * build against latest libpng
+   * refresh glib-fixes.diff
+Author: Christopher Roy Bratusek <nano@jpberlin.de>
+
+---
+
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/aica/audio.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/aica/audio.c
+@@ -19,7 +19,7 @@
+ 
+ #include "aica/aica.h"
+ #include "aica/audio.h"
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "dream.h"
+ #include <assert.h>
+ #include <string.h>
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/config.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/config.c
+@@ -21,7 +21,7 @@
+ #include <errno.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include "dreamcast.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/dreamcast.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/dreamcast.c
+@@ -18,7 +18,7 @@
+  */
+ 
+ #include <errno.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <unistd.h>
+ #include "lxdream.h"
+ #include "lxpaths.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/cdrom/cd_gdi.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/cdrom/cd_gdi.c
+@@ -23,7 +23,7 @@
+ #include <fcntl.h>
+ #include <errno.h>
+ #include <sys/stat.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "drivers/cdrom/cdimpl.h"
+ 
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/cdrom/cd_mmc.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/cdrom/cd_mmc.c
+@@ -18,7 +18,7 @@
+ 
+ #include <assert.h>
+ #include <string.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "lxdream.h"
+ #include "gettext.h"
+ #include "drivers/cdrom/cdimpl.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/cdrom/cdrom.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/cdrom/cdrom.c
+@@ -19,7 +19,7 @@
+ #include <fcntl.h>
+ #include <stdio.h>
+ #include <string.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "lxdream.h"
+ #include "drivers/cdrom/cdrom.h"
+ #include "drivers/cdrom/cdimpl.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/cdrom/drive.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/cdrom/drive.c
+@@ -18,7 +18,7 @@
+ 
+ #include <stdlib.h>
+ #include <string.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "drivers/cdrom/drive.h"
+ #include "drivers/cdrom/cdimpl.h"
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/cdrom/isofs.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/cdrom/isofs.c
+@@ -19,7 +19,7 @@
+ #include <assert.h>
+ #include <stdio.h>
+ #include <unistd.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ 
+ #define LIBISOFS_WITHOUT_LIBBURN 1
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/cdrom/sector.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/cdrom/sector.c
+@@ -17,7 +17,7 @@
+  */
+ 
+ #include <sys/stat.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <assert.h>
+ #include <stdlib.h>
+ #include <stdio.h>
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/input_lirc.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/input_lirc.c
+@@ -28,7 +28,7 @@
+ #include <dirent.h>
+ #include <ctype.h>
+ 
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ 
+ #include <lirc/lirc_client.h>
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/io_glib.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/io_glib.c
+@@ -17,7 +17,7 @@
+  */
+ 
+ #include <assert.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <stdlib.h>
+ #include "ioutil.h"
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/drivers/joy_linux.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/drivers/joy_linux.c
+@@ -32,7 +32,7 @@
+ #include <ctype.h>
+ 
+ #include <linux/joystick.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ 
+ #include "lxdream.h"
+ #include "display.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/gdbserver.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/gdbserver.c
+@@ -23,7 +23,7 @@
+ #include <stdarg.h>
+ #include <string.h>
+ #include <unistd.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <arpa/inet.h>
+ #include "lxdream.h"
+ #include "dream.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/gdlist.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/gdlist.c
+@@ -19,7 +19,7 @@
+ 
+ #include <string.h>
+ #include <stdlib.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <libgen.h>
+ #include "gettext.h"
+ #include "gdrom/gdrom.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/gdrom/gdrom.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/gdrom/gdrom.c
+@@ -22,7 +22,7 @@
+ #include <fcntl.h>
+ #include <errno.h>
+ #include <ctype.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <netinet/in.h>
+ #include "gdrom/ide.h"
+ #include "gdrom/gdrom.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/hotkeys.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/hotkeys.c
+@@ -16,7 +16,7 @@
+  * GNU General Public License for more details.
+  */
+ #include <assert.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <sys/stat.h>
+ #include <stdint.h>
+ #include <stdlib.h>
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/loader.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/loader.c
+@@ -24,7 +24,7 @@
+ #include <sys/stat.h>
+ #include <errno.h>
+ #include <stdint.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <elf.h>
+ #include "mem.h"
+ #include "bootstrap.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/lxpaths.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/lxpaths.c
+@@ -19,7 +19,7 @@
+ #include <ctype.h>
+ #include <unistd.h>
+ #include <stdlib.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ 
+ #include "gui.h"
+ #include "config.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/maple/maple.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/maple/maple.c
+@@ -18,7 +18,7 @@
+ #define MODULE maple_module
+ 
+ #include <assert.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "eventq.h"
+ #include "dream.h"
+ #include "mem.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/mem.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/mem.c
+@@ -20,7 +20,7 @@
+ #include <sys/types.h>
+ #include <sys/mman.h>
+ #include <sys/stat.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <assert.h>
+ #include <stdint.h>
+ #include <stdlib.h>
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/paths_unix.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/paths_unix.c
+@@ -18,7 +18,7 @@
+ 
+ #include <string.h>
+ #include <stdlib.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ 
+ #include "lxdream.h"
+ #include "config.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/plugin.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/plugin.c
+@@ -20,7 +20,7 @@
+ #include <dirent.h>
+ #include <dlfcn.h>
+ #include <string.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "plugin.h"
+ #include "lxpaths.h"
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/pvr2/glutil.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/pvr2/glutil.c
+@@ -19,7 +19,7 @@
+ #include <assert.h>
+ #include <string.h>
+ #include <stdlib.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "pvr2/glutil.h"
+ 
+ gboolean isOpenGLES2()
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/sh4/scif.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/sh4/scif.c
+@@ -17,7 +17,7 @@
+  * GNU General Public License for more details.
+  */
+ 
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "dream.h"
+ #include "mem.h"
+ #include "sh4/sh4core.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/test/testlxpaths.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/test/testlxpaths.c
+@@ -19,7 +19,7 @@
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <string.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "lxpaths.h"
+ 
+ char *lxdream_get_global_config_path_value() { return NULL; }
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/tools/actparse.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/tools/actparse.c
+@@ -22,7 +22,7 @@
+ #include <string.h>
+ #include <ctype.h>
+ #include <sys/stat.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "tools/gendec.h"
+ 
+ static int add_action( struct action *actions, struct ruleset *rules, char *operation, const char *file, int line, char *action )
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/tools/gendec.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/tools/gendec.c
+@@ -23,7 +23,7 @@
+ #include <getopt.h>
+ #include <errno.h>
+ #include <ctype.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <assert.h>
+ #include "tools/gendec.h"
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/tools/genglsl.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/tools/genglsl.c
+@@ -27,7 +27,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <getopt.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "../../config.h"
+ 
+ #define MAX_LINE 4096
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/tools/genmach.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/tools/genmach.c
+@@ -23,7 +23,7 @@
+ #include <getopt.h>
+ #include <ctype.h>
+ #include <errno.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "gettext.h"
+ #include "genmach.h"
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/tools/mdparse.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/tools/mdparse.c
+@@ -25,7 +25,7 @@
+ #include <ctype.h>
+ #include <errno.h>
+ #include <sys/stat.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ 
+ #include "genmach.h"
+ /*
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/util.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/util.c
+@@ -27,7 +27,7 @@
+ #include <signal.h>
+ #include <time.h>
+ #include <zlib.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <png.h>
+ #include "dream.h"
+ #include "display.h"
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/vmu/vmulist.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/vmu/vmulist.c
+@@ -18,7 +18,7 @@
+ 
+ #include <string.h>
+ #include <stdlib.h>
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include "vmulist.h"
+ #include "config.h"
+ 
+--- lxdream-0.9.1+hg1302.765e514f99a6.orig/src/vmu/vmuvol.c
++++ lxdream-0.9.1+hg1302.765e514f99a6/src/vmu/vmuvol.c
+@@ -16,7 +16,7 @@
+  * GNU General Public License for more details.
+  */
+ 
+-#include <glib.h>
++#include <glib-2.0/glib.h>
+ #include <string.h>
+ #include <unistd.h>
+ #include <stdio.h>

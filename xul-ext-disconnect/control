@@ -1,0 +1,25 @@
+Source: xul-ext-disconnect
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://www.disconnect.me/
+
+Package: xul-ext-disconnect
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks},
+        xul-ext-facebook-disconnect,
+        xul-ext-google-disconnect,
+        xul-ext-twitter-disconnect
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Plugin for Iceweasel that prevents web tracking
+ This addon lets you visualize and block the otherwise invisible websites
+ that track your search and browsing history.
+ .
+ * Load the pages you go to 27% faster
+ * Stop tracking by 2,000+ third-party sites
+ * Encrypt the data you share with popular sites

@@ -1,0 +1,18 @@
+libogc (1.8.13~git02f5d9-1nano) unstable; urgency=low
+
+  * new GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 08 Aug 2015 19:57:35 +0200
+
+libogc (1.8.12~git6b8e82-2nano) unstable; urgency=low
+
+  * add make, devkitppc to build-deps
+  * change arch from any to all
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 06 Aug 2013 16:23:57 +0200
+
+libogc (1.8.12~git6b8e82-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 25 Aug 2012 00:26:05 +0200

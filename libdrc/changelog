@@ -1,0 +1,33 @@
+libdrc (1.0~git20140112.fcd2d2-1nano) unstable; urgency=low
+
+  * new upstream snapshot
+  * add build-dependency on libsdl1.2-dev
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 13 Jan 2014 20:59:32 +0100
+
+libdrc (1.0~git20140110.816056-1nano) unstable; urgency=low
+
+  * new upstream snapshot
+  * depend on linux-image-photonic-amd64 [amd64]
+  * depend on linux-image-photonic-i386 [i386]
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 10 Jan 2014 21:46:42 +0100
+
+libdrc (1.0~git20140107.a3b79b-1nano) unstable; urgency=low
+
+  * new upstream snapshot
+  * add libdrc-examples package
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 08 Jan 2014 22:50:37 +0100
+
+libdrc (1.0~git20140105.8e1bd6-1nano) unstable; urgency=low
+
+  * new upstream snapshot
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 06 Jan 2014 21:30:07 +0100
+
+libdrc (1.0~git20140101.cd49b77-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 01 Jan 2014 21:19:11 +0100

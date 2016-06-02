@@ -1,0 +1,39 @@
+xul-ext-toggle-referer (1.2-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-toggle-referer (1.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  -  Fix about:addons icon issue due to jpm bug 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jul 2015 17:53:42 +0200
+
+xul-ext-toggle-referer (1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Updated package.json for jpm compatibility 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 24 May 2015 14:13:06 +0200
+
+xul-ext-toggle-referer (1.0-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    -  Fixed a bug with the context menu items image not showing the
+       correct image after a browser restart 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 10 Feb 2015 18:29:14 +0100
+
+xul-ext-toggle-referer (0.8-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 15 Mar 2014 17:58:32 +0100
+
+xul-ext-toggle-referer (0.7-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 15 Dec 2013 19:49:37 +0100

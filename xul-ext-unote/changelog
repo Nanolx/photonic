@@ -1,0 +1,102 @@
+xul-ext-unote (0.7.5-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-unote (0.7.5-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Bug fixes
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 02 Feb 2016 17:49:06 +0100
+
+xul-ext-unote (0.7.4-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Added turkish translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Nov 2015 20:40:23 +0100
+
+xul-ext-unote (0.7.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Added French translation 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 12 Oct 2015 20:04:32 +0200
+
+xul-ext-unote (0.7.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Bug fixes
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Sep 2015 10:31:27 +0200
+
+xul-ext-unote (0.7.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Added German translation
+    - Improved spelling 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Sep 2015 19:08:00 +0200
+
+xul-ext-unote (0.7.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New icons
+    - Added per-url notes option
+    - Added RTL text direction mode
+    - Improvements and bug fixes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jul 2015 17:54:38 +0200
+
+xul-ext-unote (0.6-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Added quick-access buttons
+    - New settings page
+    - New notes manager
+    - Backup/restore notes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 24 Apr 2015 19:48:41 +0200
+
+xul-ext-unote (0.5-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - Global notes
+    - Bug fixes
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 10 Apr 2015 18:36:43 +0200
+
+xul-ext-unote (0.4-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    - Notes Manager
+    - Code optimization
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 24 Feb 2015 21:06:23 +0100
+
+xul-ext-unote (0.3-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    - Pinned notes (opens on page load)
+    - Customize text (size, color & style)
+    - Option to change note position
+    - Bug fixes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Feb 2015 17:24:19 +0100
+
+xul-ext-unote (0.2-1nano) unstable; urgency=low
+
+  * new upstream release
+    - Hotkeys
+    - Firefox Sync support
+    - Localization, new languages: Russian and Latvian
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 28 Jan 2015 16:44:59 +0100
+
+xul-ext-unote (0.1-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Jan 2015 19:05:51 +0100

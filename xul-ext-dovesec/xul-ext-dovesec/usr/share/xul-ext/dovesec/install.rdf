@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:type>2</em:type> <!-- 2 : Extension -->
+        <em:id>thundersec@community</em:id>
+        <em:version>1.0.2</em:version>
+        <em:name>ThunderSec</em:name>
+        <em:description>Provides security features for Mozilla Thunderbird. These include DNSBL and RBL support, DKIM and SPF failure verifications. DNSBL support can be used to leverage Spamhaus, Abuse.ch and other DNSBL/RBL databases, including custom ones.</em:description>
+        <em:iconURL>chrome://thundersec/content/images/thundersec.png</em:iconURL>
+        <em:homepageURL>https://github.com/itemir/thundersec</em:homepageURL>
+        <em:creator>Ilker Temir and Tim Sammut</em:creator>
+        <em:targetApplication>
+            <Description>
+                <!-- Thunderbird -->
+                <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+                <em:minVersion>31.0</em:minVersion>
+                <em:maxVersion>39.0</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:optionsURL>chrome://thundersec/content/options.xul</em:optionsURL>
+        <em:aboutURL>chrome://thundersec/content/about.xul</em:aboutURL>
+    </Description>
+</RDF>

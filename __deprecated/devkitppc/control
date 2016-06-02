@@ -1,0 +1,29 @@
+Source: devkitppc
+Section: devel
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), make
+Standards-Version: 3.9.4
+Homepage: http://www.devkitpro.org
+
+Package: devkitppc-i686
+Architecture: i386
+Provides: devkitppc
+Conflicts: devkitppc-amd64
+Depends: ${misc:Depends}
+Description: GameCube/Wii Devkit (I386)
+ Development Kit for PPC - Nintendo Wii & GameCube.
+ .
+ Basic toolkit for homebrew development on Wii and GC.
+ Contains binutils, newlib, GCC & Co.
+
+Package: devkitppc-amd64
+Architecture: amd64
+Conflicts: devkitppc-i386
+Provides: devkitppc
+Depends: ${misc:Depends}
+Description: GameCube/Wii Devkit (AMD64)
+ Development Kit for PPC - Nintendo Wii & GameCube.
+ .
+ Basic toolkit for homebrew development on Wii and GC.
+ Contains binutils, newlib, GCC & Co.

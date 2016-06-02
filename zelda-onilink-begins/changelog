@@ -1,0 +1,17 @@
+zelda-onilink-begins (3.6-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 18:41:21 +0200
+
+zeldaolb (1:3.6-1nano) unstable; urgency=low
+
+  * new upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Mar 2015 21:44:43 +0100
+
+zeldaolb (20071212-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 20:57:28 +0200

@@ -1,0 +1,32 @@
+audex (0.79-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Nov 2014 20:39:50 +0100
+
+audex (0.78-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Fixed google cover search
+    - Fixed embed cover in FLAC files
+    - more minor bugfixes
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 24 Feb 2014 18:32:00 +0100
+
+audex (0.77b1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 05 Feb 2013 18:42:37 +0200
+
+audex (0.76b1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 21 Jan 2013 18:45:35 +0200
+
+audex (0.74b1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sat, 12 Mar 2011 16:37:24 +0100

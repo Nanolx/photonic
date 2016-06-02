@@ -1,0 +1,29 @@
+Source: xul-ext-download-status-bar
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/download-status-bar/
+
+Package: xul-ext-download-status-bar
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Downloads as status bar or toolbar button
+ Download Status Bar manages every aspect of your downloads
+ (Launch, Show, Scan, Rename, Checksum, Pause, Resume, Cancel,
+ Clean, Delete), generates Statistics from your Download actions,
+ keeps the History of your previous session downloads and much more.
+ .
+ It is not only a download management add-on but a helper tool for
+ boosting your Productivity, too.
+ .
+ Download Status Bar is specially designed by your needs and requests
+ and all your expectations are placed in the core center of the add-on
+ while utilizing the newest Firefox 26 features to improve performance
+ of your browser and downloads. Download Status Bar is a project driven
+ and managed by its own users which keeps it fresh and powerful.

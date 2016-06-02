@@ -1,0 +1,265 @@
+xul-ext-ublock-origin (1.5.5-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Closed as fixed:
+  * Core:
+    - constructor.com and constructor.io websites appear blank.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 12 Jan 2016 18:38:59 +0100
+
+xul-ext-ublock-origin (1.5.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Changes:
+    - uBO will now automatically select the filter list which matches the current
+      browser locale at first install time. This change does nothing if you have
+      uBO already installed
+  * Closed as fixed:
+  * Core:
+    - Show number of popups blocked
+    - The script tag filters ignore the whitelist
+    - Titlebar should have a settings icon
+    - Why not add by default the ad list of the locale of the browser?
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 08 Jan 2016 17:17:51 +0100
+
+xul-ext-ublock-origin (1.5.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Closed as fixed:
+  * Core:
+    + Domain option is ignored (regression bug).
+      + Survey shows 137 filters were affected in EasyList+EasyPrivacy combined:
+        Filters with a `domain=` option with one single negated hostname were
+        affected.
+    + Entity-based script injection cosmetic filters not working.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 06 Jan 2016 10:29:56 +0100
+
+xul-ext-ublock-origin (1.5.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New:
+    + Ability to inject script resource from the resource library directly into a
+      page -- i.e. not through redirection. Can be used to defeat some otherwise
+      hard to defeat ad injection mechanisms on some sites. More specifically,
+      this allows to defeat AdDefend- or Yavli-based ads on many sites (as of
+      writing), which so far were defeated only through inline script tag filtering
+      -- so this means that now Chromium-based browsers can also bypass AdDefend/Yavli
+      (for example, see #1100). Some documentation available here (will eventually
+      create a dedicated page).
+    + Enabling advanced user mode won't cause the tooltips to be disabled anymore.
+      There is now a separate setting for tooltips in the Settings pane: "Disable
+      tooltips". Tooltips are enabled by default.
+  * Issues Closed as fixed:
+  * Core:
+    + [Logger] Cannot reverse find a specific filter
+    + On a site with 0 connections displayed
+    + [Efficiency] Make use of String.prototype.startsWith
+    + no-popups: * true rule blocks opening of a clicked url
+    + [static filter syntax] separator characters (^) support
+    + Use case: does an advanced user still need tooltips?
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 27 Dec 2015 19:36:53 +0100
+
+xul-ext-ublock-origin (1.4.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New:
+    + Ability to use Adguard filter lists
+      You can now directly use Adguard filter lists. Filters which use Adguard-
+      specific filter syntax extension will simply be discarded by uBO.
+    + Popunders
+      A new filter type is introduced: popunder. This gives uBlock Origin the
+      ability to block popunders. Popunders are when a web page opens a new
+      legitimate content in another tab or window, while at the same time loading
+      nuisance content in the current tab. They are essentially the reverse of what
+      is happening with nuisance popups, where the nuisance content is opened in
+      a new tab or window.
+      .
+      Since the popunder option is specific to uBO, any instance of sites using
+      popunders will have to be reported on the issue tracker so that filters
+      can be crafted to address the issue for those sites.
+    + Redirection infrastructure
+      Consider this still experimental. This adds the option to map blocked network
+      requests to uBO-provided resources. Specifically, this solves issue raised
+      in #949 and #1043 -- and more generally consider this yet another tool in
+      uBO's arsenal to enforce users' choices.
+      .
+      The library of resources which are used for redirection is -- and will
+      always be completely under control of uBO, this is not something under the
+      control of any 3rd parties. This ensures only safe resources are used for
+      redirection.
+      .
+      It could be said this feature is vaguely similar to NoScript's surrogates,
+      except that in the case of uBO it's network redirection to plainly map one
+      resource into another one, and it can be used for any kind of resource, not
+      just scripts (anything which can be represented with a data: URI).
+      .
+      Only blocked network requests are candidates for redirection.
+      .
+      To create a redirection filter, just add the redirect=[...] filter option
+      to it, like so:
+      .
+        ||example.com/badimage.*$image,redirect=2x2-transparent.png
+      .
+      The [...] is a token identifying the resource to which to redirect: it must
+      be a resource which appears in the redirection library.
+      .
+      For the redirect= filter option to be taken into account, some conditions
+      must be met by the static filter, for efficiency purpose. The static filter ...
+      .
+      must be hostname-anchored, i.e. starts with ||.
+      must have one type specified -- negated types are not valid.
+      must have a redirect token which identifies an existing resource in the
+        redirection library.
+      .
+      If at least one of the above conditions is not met, no redirection will
+      take place, though the filter will still block matching network requests.
+  * Issues closed as fixed:
+    + Firefox
+      NoScript Force HTTPS feature interferes with uBlock Origin
+      Default browser font does not work well for dynamic filtering panel
+    + Pale Moon / SeaMonkey
+      uBlock Origin breaks custom toolbars in Palemoon
+      Possibly related: [SeaMonkey] Filter list is empty after browser restart
+    + Core
+      Site disables uBlock Origin's own style tags
+      [Pull request] Add YousList as a Korean third party filter
+      Element picker: a selected element with width or height of zero should fall
+        back on dimensions of child elements
+      End "My filters" list with empty line
+      Cosmetic filter fails to hide element
+      The white list is invalid
+      uBO is causing CPU hog with imdb.com (popup video)
+      Support subscribe links
+      Block ad videos playing automatically
+      Fixed issue arising from Add the I don't care about cookies filter to
+        Regions, languages? (see comment).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 15 Dec 2015 19:10:34 +0100
+
+xul-ext-ublock-origin (1.3.6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.4
+      [Firefox] Inline script tag filtering incompatible with Firefox ESR 38.
+      [Firefox] Mouse context menu broken.
+      [Firefox] WebRTC and FF 42.0. With Firefox 42+, it is now possible to prevent
+                local IP address leakage without entirely disabling WebRTC.
+      [Firefox] Cosmetic filters not always reported by logger on Firefox 42 if
+                you refresh the page.
+      [Firefox for Android] uBlock Origin 1.1.1 broken in FF-nightly until I
+                            disable/enable. Thanks to @AlexVallat for having
+                            investigated the root cause of the issue.
+      [Core] Cosmetic filtering have no effect.
+      [Core] [Performance] Use getElementsByTagName for high-medium generic
+                           cosmetic filters.
+      [Core] /\.js$/ does not work.
+    1.3.5
+      [Pale Moon] 1.3.4 removed all settings & built in 3rd party filters. This
+                  probably also affected older versions of Firefox.
+    1.3.6
+      [Firefox for Android] uBlock Origin 1.3.4 (and next) broken in Firefox for
+                            Android Release (42.0.1) until I disable/enable.
+                            Timing issue, so not necessarily everybody was affected
+                            by the bug.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:19:39 +0100
+
+xul-ext-ublock-origin (1.3.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    [Pale Moon/SeaMonkey] [uBlock Origin] icon only available in one browser
+    window when auto-restoring multi-window session Thanks to @DjogaRo for having
+    patiently investigated the root cause of the issue.
+    [Pale Moon/SeaMonkey] uBlock duplicate icon on Context menu
+    [Core] Clicking URLs in Chrome Full History bypasses uBlock Origin
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 04 Nov 2015 20:10:31 +0100
+
+xul-ext-ublock-origin (1.3.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.0
+      [New] Basic support for Thunderbird, contributed by @M-Reimer
+      [Firefox] uBlock disabled on first unloaded tab on the left
+      [Firefox] Missing icon on toolbar not in Customize
+      [Core] Logger shows wrong filter lists when clicked on a filter
+      [Core] uBlock filters not updating automatically after purge all caches
+      [Core] Pop unders
+    1.3.1
+      AMO reviewer feedback: fix "Security Error: Content at moz-nullprincipal:"
+      warnings in dev console
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Oct 2015 19:53:01 +0100
+
+xul-ext-ublock-origin (1.2.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.2.0
+      - New cosmetic filter to foil specific inline script tags -- one more tool
+        in uBlock Origin's arsenal against bloat. Documentation for this new
+        cosmetic filter: Inline script tag filtering.
+      - [Chromium] Impossible to block ad
+      - [Firefox] Global uBlock installation on Ubuntu
+      - [Core] Create landing pages in the wiki for features with caveats
+      - [Core] Can we have link to docs under My Filters tab?
+      - [Core] Site loading constantly with uBlock: eg. AdFox, AdRiver, Magna problem
+    1.2.1
+      - [Firefox Nightly] TypeError: LocationChangeListener is not a constructor
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 12 Oct 2015 20:06:09 +0200
+
+xul-ext-ublock-origin (1.1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Basque translation by Osoitz.
+    - Strict blocking page will now allow you to "parse" the blocked URL to make
+      deciphering its content, if any, more user friendly, something which may be
+      useful when making a decision whether or not to load the target URL. When a
+      blocked URL contains parameters, a magnifier will be available on the bottom-
+      right corner. Click on it to see the deciphered content.
+    - [Chromium] Block Popups blocks "Open in New Tab" on some sites
+    - [Firefox] Don't show "restore_on_demand" tabs in logger UI
+    - [Core] [Performance] Revisit cosmetic filtering's FilterPlain implementation
+    - [Core] Text color
+    - [Core] Uncaught SyntaxError: Failed to execute 'querySelector' on 'Document'
+    - [Core] Make target URL in strict blocked referrer clickable
+    - [Core] Filter list: hpHosts’ Ad and tracking servers
+    - [Core] [Performance] manually extract class tokens
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Sep 2015 21:40:31 +0200
+
+xul-ext-ublock-origin (1.1.0.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Support for cloud storage. Please read before use:
+    https://github.com/gorhill/uBlock/wiki/Cloud-storage --
+    keep in mind the Firefox-specific caveats.
+  - Dashboard: Revert buttons added for "My filters" and "Whitelist" panes.
+  - All non-default 3rd-party filter lists are no longer part of the package.
+    Also, "Filtros Nauscopicos" and "RO-LIST" have been removed from the stock
+    filter lists, as they are apparently no longer maintained, and contain
+    questionable exception filters.
+  - "Speculative pre-connections" will now also be disabled when the option
+    "Disable pre-fetching" is checked. Background info: Block Firefox from
+     connecting to sites when you hover over links
+  - [Firefox] Entire tab is blocked and history is overriden because of iframe form submit
+  - [Firefox] tabBrowser.tabs is undefined (vapi-background.js:1056)
+  - [Core] uBlock doesn't work on XHTML pages (application/xhtml+xml)
+  - [Core] Problem on Yahoo Search Pages
+  - [Core] Remove from project all filter lists which are not selected by default
+  - [Core] Incomplete warning of "badware risks"
+  - [Core] Unable to whitelist a popup request using dynamic filtering - popup closes without control
+  - [Core] Rename 'outdated' to 'out of date'
+  - [Core] Modernize CSP injection code
+  - [Core] Suggestion - Allow syncing through firefox sync
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 30 Aug 2015 19:30:26 +0200
+
+xul-ext-ublock-origin (1.0.0.1-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 08 Aug 2015 19:11:17 +0200

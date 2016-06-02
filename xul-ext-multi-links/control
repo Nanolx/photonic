@@ -1,0 +1,19 @@
+Source: xul-ext-multi-links
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/multi-links/
+
+Package: xul-ext-multi-links
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Work with multiple links at once.
+ This addon-on lets you open, copy or  bookmark multiple
+ links at the same time rather than having to do them
+ all individually.

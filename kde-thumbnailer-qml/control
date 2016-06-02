@@ -1,0 +1,14 @@
+Source: kde-thumbnailer-qml
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev, kdebase-workspace-dev
+Standards-Version: 3.9.3
+Homepage: http://kde-apps.org/content/show.php/KDE+QML+Thumbnailer?content=148662
+
+Package: kde-thumbnailer-qml
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: QML Thumbnailer for KDE Applications
+ Thumbnailer for KDE Applications (eg: Konqueror, Dolphin),
+ to provide extended preview of QML files.

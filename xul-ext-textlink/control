@@ -1,0 +1,21 @@
+Source: xul-ext-textlink
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: http://piro.sakura.ne.jp/xul/textlink/index.html.en
+
+Package: xul-ext-textlink
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Plaintext linking for Iceweasel
+ This allows URI texts written as plaintext in
+ webpages to be loaded by double clicks.
+ .
+ Unlike other extensions this does not alter
+ the webpage you are visiting

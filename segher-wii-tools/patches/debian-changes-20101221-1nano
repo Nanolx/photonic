@@ -1,0 +1,35 @@
+Description: Upstream changes introduced in version 20101221-1nano
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ segher-wii-tools (20101221-1nano) unstable; urgency=low
+ .
+   * Initial release
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Christopher Roy Bratusek <zanghar@freenet.de>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- segher-wii-tools-20101221.orig/Makefile
++++ segher-wii-tools-20101221/Makefile
+@@ -21,3 +21,7 @@ $(OBJS): %.o: %.c tools.h Makefile
+ 
+ clean:
+ 	-rm -f $(OBJS) $(PROGS)
++
++install:
++	mkdir -p $(DESTDIR)/usr/bin/
++	install -m755 $(PROGS) $(DESTDIR)/usr/bin/

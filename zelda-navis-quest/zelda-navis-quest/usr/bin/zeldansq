@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /usr/share/zelda-navis-quest/
+./ZeldaNSQ

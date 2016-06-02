@@ -1,0 +1,510 @@
+xul-ext-print-edit (16.8-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Fix: Saving PDF crashed in FF48(e10s) because printing from child process was not allowed by security sandbox. Fixed
+    • Fix: Disabling Find toolbar in print edit window caused error messages in browser console. Fixed
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 26 May 2016 10:41:21 +0200
+
+xul-ext-print-edit (16.7-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Added option to initialize state of PDF checkbox on first entry.
+    • Chg: Updated language translations and added Spanish translation (will need further updating).
+    • Chg: Updated to be compatible with Firefox 49.0.
+    • Fix: Clicking on OK button in Page Setup dialog in PDF preview had no effect (FF46+).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 15 May 2016 17:20:38 +0200
+
+xul-ext-print-edit (16.6-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 16.5
+    • New: Fully converges the Firefox and Google Chrome versions of Print Edit.
+    • New: New Save as HTML Complete menu command. Access key is 'H'.
+    • New: New Save as HTML Complete with Purge menu command. Access key is 'P'.
+    • Chg: Save HTML menu command renamed Save as File. Access key changed to 'F'.
+    • Chg: Save HTML with Purge menu command renamed Save as File with Purge. Access key changed to 'u'.
+    • Chg: Save as dialog error messages now distinguish between cannot create and cannot replace.
+    • Chg: Icons for Save as ... menu commands changed to distinguish between save operations.
+    • Chg: Save (Ctrl+S) keyboard shortcut changed to invoke Save as HTML Complete command.
+    • Chg: Updated in line with latest recommendations for working with multiprocess Firefox.
+    • Chg: Updated language translations (will need further updating).
+    • Fix: Total number of pages was not always displayed correctly on print preview toolbar. Fixed.
+  * 16.6
+    • Chg: Save as HTML Complete commands no longer save CSS images that are not referenced in computed styles.
+    • Fix: Save as HTML Complete commands did not correctly escape double quotes inside style attributes. Fixed
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:28:25 +0100
+
+xul-ext-print-edit (16.4-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Apply button added to Format panel.
+    • New: Links element added to Restrict to: list of elements in Format panel.
+    • New: Increased range of values for horizontal and vertical Padding format properties.
+    • New: Keyboard shortcuts for Select All (Ctrl+A), Preview (Ctrl+P) and Save (Ctrl+S).
+    • New: Access keys (underlined letters) for Select, Delete Except, Save and Tools menu items.
+    • Chg: Select Again menu command renamed to become Select Previous menu command.
+    • Chg: OK and Apply buttons moved to bottom of Format panel.
+    • Chg: Font for text area in Text panel changed from Calibri to Arial/Helvetica.
+    • Chg: Help panel updated and split into two panes for Mouse Actions and <i<Keyboard Shortcuts<="" i="">.
+    • Chg: Updated language translations (will need further updating).
+    • Chg: Updated to be compatible with Firefox 45.0.
+    • Fix: Line break markers were not displayed inside embedded <frame> and <iframe> elements. Fixed.
+    • Fix: CSS animations and transitions were not disabled inside embedded <frame> and <iframe> elements. Fixed.
+    • Fix: Clicking format property value selection arrows caused value to cycle to minimum or maximum. Fixed.
+    • Fix: Expand, Shrink and Select shortcuts caused error message if no element highlighted. Fixed
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 20 Jan 2016 17:48:34 +0100
+
+xul-ext-print-edit (16.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Option to configure style of line break markers.
+    • Chg: Line break marker height is now automatically adjusted according to
+           text font-size.
+    • Chg: Updated language translations (will need further updating).
+    • Chg: Updated to be compatible with Firefox 44.0.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 02 Oct 2015 19:21:54 +0200
+
+xul-ext-print-edit (16.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Option to configure color of line break markers.
+    • Chg: Line break marker changed from solid back arrowhead to carriage
+    return symbol (down left arrow).
+    • Chg: Moved handling of changes to highlight box, select boxes and line
+    breaks options into edit frame script.
+    • Chg: Updated to be compatible with Firefox 44.0.
+    • Fix: GreaseMonkey with Fade In and Out script causes edit browser contents
+    to be hidden (regression). Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 29 Sep 2015 18:50:13 +0200
+
+xul-ext-print-edit (16.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Line breaks can be made visible (as red back arrows) and are then selectable.
+    • New: Line breaks can be be hidden, deleted and formatted in the same way as other elements.
+    • New: Option to show line breaks when the Text Pieces feature is enabled.
+    • Chg: Internal changes resulting in separate text-wrapper and text (edit undo info) attributes.
+    • Chg: Use nsIDOMWindowUtils instead of nsIStyleSheetService to load style sheets (FF18+).
+    • Chg: Updated language translations (will need further updating).
+    • Fix: Save did not work unless Mozilla Archive Format and UnMHT add-ons were both installed. Fixed.
+    • Fix: Entering Print Edit prevented animations and transitions in other Firefox browser windows. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Sep 2015 21:39:11 +0200
+
+xul-ext-print-edit (16.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Save HTML commands can now save as Web Page, complete or Text Files in e10s windows.
+    • New: Left, Top, Width, Height, Border and Outline format properties are now configurable.
+    • New: Vertical Align, Text Decoration and Text Transform format properties are now configurable.
+    • New: Negative values are now supported for Left, Top and Margin format properties.
+    • New: Holding down mouse on left or right arrow button cycles through format property values.
+    • New: Clicking on a format property value resets the value to the default value.
+    • Chg: Renamed the five large Quick Styles buttons with more generic and less restrictive names.
+    • Chg: Renamed Reset Properties button to become Reset Values button.
+    • Chg: Format property values are now greyed-out when format property is disabled.
+    • Chg: Changed alignment of format and inspect properties to be right justified.
+    • Chg: Updated language translations (will need further updating).
+    • Chg: Updated to be compatible with Firefox 43.0.
+    • Fix: Page Break format property did not work correctly when value was not inside. Fixed.
+    • Fix: Error message occasionally appeared in console because select box was unexpectedly null. Fixed.
+    • Fix: Error message occasionally appeared in console because highlight element was unexpectedly null. Fixed.
+    • Note: Mozilla Archive Format and UnMHT add-ons currently do not work in e10s windows. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 30 Aug 2015 19:23:40 +0200
+
+xul-ext-print-edit (15.10-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Chg: Text panel control buttons no longer stack vertically when textbox is
+      resized to be very narrow.
+    • Chg: Ctrl+Z and Escape keyboard shortcuts added to Help panel.
+    • Chg: Updated language translations (will need further updating).
+    • Chg: Updated to be compatible with Firefox 42.0.
+
+    • Fix: Inspect panel opened offset to right and below cursor position (e10s).
+    • Fix: With Inspect panel open, the red highlight box disappeared if mouse
+      moved outside browser window. Fixed.
+    • Fix: If Text panel textbox was resized very narrow, the Apply and OK
+      buttons were blacked out(FF42). Fixed.
+    • Fix: Close buttons in Format, Text, Help and Inspect panels were not
+      correctly aligned (FF42). Fixed.
+    • Fix: Clicking Close button to exit print edit mode caused source tab to
+      crash (FF42). Fixed.
+    • Fix: gMultiProcessBrowser not defined error message in browser console
+      (FF4-FF22). Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 08 Aug 2015 19:02:42 +0200
+
+xul-ext-print-edit (15.9-1nano) unstable; urgency=low
+
+  * New upstream release
+    15.7
+      • Chg: Updated to be compatible with Firefox 41.0.
+      • Fix: Attempts to print preview XUL pages were not prevented.
+      • Fix: Retain edits from previous session? displayed for previously
+        unedited pages (FF35 or earlier).
+    15.8
+      • Chg: Fix Page Breaks command enhanced to handle another case of
+             Firefox page break problems.
+      • Fix: Trying to enter Print Edit when in Firefox's Reader View
+             failed with error message.
+    15.9
+      • New: Text command can now insert text before or after a text
+             piece using Inline, Block or Sticky.
+      • Chg: New lines can no longer be entered into the text box when
+             editing a text piece.
+      • Chg: New lines are now retained when inserting text before or
+             after an element using Inline.
+      • Chg: Most about:... pages can now be print previewed and printed,
+             except for the eight XUL pages.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jul 2015 17:50:46 +0200
+
+xul-ext-print-edit (15.6-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Option in Options dialog to set Area Opacity for highlight box.
+    • New: Option in Options dialog to set Area Opacity for select boxes.
+    • New: Option in Options dialog to set Border Width for capture box.
+    • New: Set Area Opacity to "----" to make capture box fully transparent.
+    • New: Options dialog made non-modal and Apply button added.
+    • Chg: Area Opacity for select boxes set to 10% on update to version
+           15.6 or new installation.
+    • Chg: All known occurences of CPOW's have been eliminated [e10s].
+    • Chg: Updated language translations (will need further update).
+    • Chg: Updated to be compatible with Firefox 40.0.
+    • Fix: Two edges (furthest from origin) of capture box were shown
+           misaligned by one pixel.
+    • Fix: Text Pieces and Web Style button states not correctly set when
+           re-editing web page.
+    • Fix: GreaseMonkey with Fade In and Out script causes edit browser
+           contents to be hidden (FF37+).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 May 2015 18:02:14 +0200
+
+xul-ext-print-edit (15.5-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Chg: Updated language translations (will need further update).
+    • Chg: Removed Version 14.2 update message.
+    • Fix: Browser console showed "unsafe CPOW usage" warnings when
+      checking if previewing XUL document. Fixed.
+    • Fix: Browser console showed "unsafe CPOW usage" warnings on
+      first entry into print edit mode. Fixed.
+    • Fix: Browser console showed "unsafe CPOW usage" warnings when
+      showing PDF Save As dialog. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 24 Apr 2015 19:49:30 +0200
+
+xul-ext-print-edit (15.4-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    15.3
+      • Fix: Print... button on print preview toolbar did not work
+    15.4
+      • Chg: Updated Swedish translation.
+      • Fix: JSHint detected missing semicolons after function redefinitions
+        and elsewhere. Fixed.
+      • Fix: Print Edit did not work at all on Mac OS X (comma instead
+        of semicolon). Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Mar 2015 19:35:14 +0100
+
+xul-ext-print-edit (15.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    15.1
+      • Fix: Text panel flipped upwards when moved to bottom edge of
+             screen. Fixed.
+      • Fix: Undo All command did not undo any text insertions. Fixed.
+      • Fix: Save HTML with purge did not purge text insertion undo
+             information. Fixed.
+      • Fix: On entry, Retain edits: No did not undo previous session
+             text insertions. Fixed.
+      • Fix: On entry, Retain edits: Yes/No did not remove text insertion
+             undo information. Fixed.
+      • Fix: When editing text piece in Text panel, newlines were not
+             replaced by spaces. Fixed.
+      • Fix: When editing sticky note in Text panel, font style/weight
+             were not set to normal. Fixed.
+      • Fix: Text edit undo information was corrupted when page saved
+             and re-edited (\u0000). Fixed.
+      • Fix: Possibility that undo information for hide/delete/format
+             edits could be corrupted (|). Fixed.
+    15.2
+      • Chg: Updated to work with final version of e10s printing/previewing
+             functionality (Bugs 1088070 & 1136855).
+      • Chg: Updated language translations (will need further update when
+             available).
+      • Chg: Updated to be compatible with Firefox 39.0.
+      • Fix: Attempting to print preview an XUL document crashed Firefox
+             36. Fixed.
+      • Fix: Save PDF... dialog did not always add .pdf to file name.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Mar 2015 18:51:41 +0100
+
+xul-ext-print-edit (15.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    • New: Text button opens Text popup panel when a single element is
+           selected
+    • New: Text panel can edit text pieces and insert inline text, text
+           blocks and sticky notes
+    • New: "T" icon displayed for Text button when using compact toolbar
+    • New: All standard editing keyboard shortcuts can be used in text
+           box in Text panel
+    • Chg: Highlighting of elements in web page is no longer active while
+           popup panels are open
+    • Chg: Inspect panel now stays open and element remains highlighted
+           until panel dismissed
+    • Chg: Escape keyboard shortcut can now be used to dismiss Help panel
+    • Chg: Other keyboard shortcuts are no longer enabled when Help panel
+           is open
+    • Chg: Reinstated icons for Portrait and Landscape buttons on print
+           preview toolbar
+    • Chg: Emphasized titles (bold) and element tag names (border) in
+           popup panel header bars
+    • Chg: Improved spacing of buttons and element tag name in Inspect
+           panel header bar
+    • Chg: Format panel now initially displayed in default position
+           beneath Format button.
+    • Chg: Removed default button behaviour from OK button in Format panel
+    • Chg: Updated language translations (will need further update)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 Mar 2015 19:12:27 +0100
+
+xul-ext-print-edit (14.3-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    14.2
+      - Fix: Final build of Version 14.1 included outdated update message
+        file and corrupted skin folder name. Fixed.
+    14.3
+      - New: Help button opens popup panel showing all Mouse Actions and
+        Keyboard Shortcuts.
+      - Chg: Positions of Format and Help panels are remembered throughout
+        browser session.
+      - Chg: Updated language translations (will need further update).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 07 Mar 2015 07:24:52 +0100
+
+xul-ext-print-edit (13.8-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    13.7
+      • Fix: Print button in print preview did not work at all [e10s].
+      • Fix: Make PDF applied printer print settings instead of PDF print
+        settings [e10s].
+      • Fix: Closing Print Edit crashed Firefox or displayed browser
+        window with no toolbars [e10s].
+    13.8
+      • Fix: Save HTML did not work in non-e10s windows if Mozilla
+        Archive Format addon was installed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 11 Jan 2015 18:07:39 +0100
+
+xul-ext-print-edit (13.6-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    13.0
+      • New: Print Edit redesigned and rewritten to be compatible
+      with Multi-Process Firefox [e10s].
+      • New: Press Enter when no elements are selected to reselect
+      same elements as before last edit command.
+      • Chg: User interface, edit functions and preview functions
+      separated internally to work asynchronously [e10s].
+      • Chg: Edit functions and preview functions moved into content
+      frame scripts in remote browsers [e10s].
+      • Chg: Delete Except (Without Float or Unrestricted) now
+      removes float from the selected elements.
+      • Chg: Added Slovenian translation.
+      • Chg: Updated to be compatible with Firefox 37.0. No longer
+      compatible with Firefox 3.6.
+      • Fix: Unnecessary browser scrollbars appeared when editing
+      page containing Frameset. Fixed.
+      • Note: Print Edit includes a workaround for Firefox bug that
+      stops print settings being applied in e10s windows.
+      • Note: Save only saves as Firefox HTML Document (*.htm) in
+      e10s windows (Web Page Complete not available in e10s).
+      • Note: Save not integrated with MAF and UnMHT add-ons in e10s
+      windows (these add-ons are not compatible with e10s).
+    13.1
+      • Fix: Crashed when trying to enter edit mode with Firefox 16
+      or earlier (no message.data). Fixed.
+      • Fix: Crashed when trying to enter preview mode from edit mode
+      with Firefox 24 or earlier (no CPOW). Fixed.
+      • Fix: Crashed when trying to enter preview mode from edit mode
+      with Pale Moon 25 (no CPOW). Fixed.
+    13.2
+      • Fix: Error EXPE-2 when trying to enter preview mode from edit
+      mode [Mac OS X]. Fixed.
+    13.3
+      • Fix: Text Pieces and Web Style toolbar buttons not highlighted
+      when checked [Mac OS X]. Fixed.
+    13.4
+    -- no changelog provided --
+    13.5
+      • Chg: Updated Slovenian translation.
+      • Fix: Error EXPE-1 when trying to enter print preview mode
+      while editing Yahoo Mail emails. Fixed.
+      • Fix: Error EXPE-1 caused by conflict with Default Zoom Level
+      add-on (if 1.0 not in zoom levels list). Fixed.
+      • Fix: Some inconsistencies between editing states and
+      enabling/disabling the edit toolbar buttons. Fixed.
+      • Fix: Page Setup print settings were not applied when entering
+      print preview mode. Fixed.
+    13.6
+      • Fix: Incompatible with Walnut2 for Firefox theme. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 27 Dec 2014 09:50:37 +0200
+
+xul-ext-print-edit (12.10-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    - Chg: Updated Greek translation.
+    - Fix: Scale and Orientation buttons did not work in print preview
+    if Make PDF button active. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 05 Oct 2014 19:26:33 +0200
+
+xul-ext-print-edit (12.9-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    - Chg: Updated language translations and added Hungarian translation.
+    - Chg: Updated to be compatible with Firefox 32.*.
+    - Fix: Occasionally PDF paper size settings interfered with printer
+           paper size settings. Fixed.
+    - Fix: Purge style sheets (CSS) option did not purge style sheets
+           referenced in <link> elements. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 13 Sep 2014 20:01:27 +0200
+
+xul-ext-print-edit (12.8-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+  12.8
+    - Chg: Updated language translations (will need further update).
+    - Fix: Save HTML with Purge sometimes hung if both Purge scripts and Purge style sheets options were enabled.
+  12.6
+    - New: Added new Text Transform property in Format and Inspect panels.
+    - New: Added new Page Break property in Format and Inspect panels to force or avoid page breaks.
+    - Chg: HTML tag of element being formatted now shown in Format panel title bar.
+    - Chg: HTML tag of element being inspected now shown in Inspect panel title bar.
+    - Chg: Overflow property in Inspect panel now shows more accurate property value.
+    - Chg: Table Border property in Format panel can now collapse border or change border spacing.
+    - Chg: Restrict to: menulist in Format panel now includes HTML tag names as well as descriptions.
+    - Chg: Horizontal/Vertical Margin and Padding properties now denoted by symbols instead of letters.
+    - Chg: Updated language translations (will need further update).
+    - Chg: Updated to be compatible with Firefox 30.*.
+    - Fix: Format properties with adjustable values no longer worked in Version 12.5. Fixed.
+    - Fix: Sometimes value for Font Family property was not displayed in Inspect panel. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Jun 2014 16:47:41 +0200
+
+xul-ext-print-edit (12.5-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    - New: Added Ctrl+Z as alternative shortcut for Undo command.
+    - Chg: Previous position is now reinstated when Format panel is re-opened in same edit session.
+    - Chg: Updated language translations (will need further update).
+    - Fix: Format and Inspect panels could not be dragged to new positions (FF3.6)(Linux).
+    - Fix: Property names and property values not correctly aligned in Format panel (Linux Mint).
+    - Fix: Close button missing from header bar of Format panel (Linux).
+    - Fix: Sometimes noticeable glitch (re-positioning) when Format panel opened.
+    - Fix: Using Undo shortcut (backspace) with no elements selected sometimes caused crash.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 05 Jun 2014 19:32:01 +0200
+
+xul-ext-print-edit (12.3-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    Fix: Save PDF to an existing file that was open in another
+         application caused Print Edit to abort. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 May 2014 21:46:22 +0200
+
+xul-ext-print-edit (12.2-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    - Chg: Removed message about setting Portrait/Landscape using Page Setup (Mac OS X).
+    - Chg: Updated language translations (will need further update).
+    - Fix: Failed to enter Print Edit mode after clicking Edit button (Error ENPE-1). Fixed.
+    - Fix: Make PDF button not initially disabled for Firefox 4-27 on Windows Vista/7/8. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Apr 2014 08:49:47 +0200
+
+xul-ext-print-edit (12.1-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+  - New: Save PDF feature moved from Print Edit mode to Print Preview mode.
+  - New: Save PDF feature integrated with Print Preview and Page Setup functionality.
+  - New: Make PDF button on Print Preview toolbar to select PDF file as destination.
+  - New: Print button changes to Save PDF button when Make PDF button is checked.
+  - New: Save button now has menu with Save HTML and Save HTML with Purge commands.
+  - New: Option to enable PDF feature for Firefox 4-27 on Windows Vista/7/8 (with warning message).
+  - Chg: Moved Paper Size options from Print Edit Options dialog to Page Setup dialog.
+  - Chg: Added A3, A5, B5, Tabloid, Statement and Legal formats to Paper Size options.
+  - Chg: Removed orientation, margins, headers and background options from Print Edit Options dialog.
+  - Chg: Removed icons from Portrait and Landscape buttons on Print Preview toolbar.
+  - Chg: Made the styling of the Print Preview toolbar consistent for all Firefox versions.
+  - Chg: Made the styling of the Print Edit toolbar consistent for all Firefox versions.
+  - Chg: Save PDF feature removed for Mac OS X since it cannot be made to work.
+  - Chg: Updated language translations (will need further update).
+  - Fix: Navigation arrows missing from Print Preview toolbar on Mac OS X. Fixed.
+  - Fix: Close buttons missing from Format and Inspect panel headers. Fixed.
+  - Fix: Possible to exit Print Edit mode before Save HTML comand completed. Fixed.
+  - Fix: Errors not handled during Save PDF operation. Fixed.
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 20 Apr 2014 07:32:23 +0200
+
+xul-ext-print-edit (12.0-1nano) unstable; urgency=low
+
+  * new upstream stable release
+  - New: Save button now has menu with Save As HTML/MAFF/MHT and
+         Save As PDF commands.
+  - New: Save As PDF command saves edited web page directly as a
+         PDF file (FF3.6-17.*, FF28.0+).
+  - New: Save As HTML/MAFF/MHT command can now purge deleted elements
+         when saving (reducing file size).
+  - New: Tools button with menu for Fix Page Breaks and Options.
+  - New: Saving tab in Options dialog to configure Save As HTML/MAFF/MHT
+         and Save As PDF.
+  - New: Options to select which elements to purge: deleted elements,
+         hidden images, scripts, style sheets.
+  - New: Options for page setup when saving as PDF: paper size,
+         orientation, margins, headers/footers, background.
+  - Chg: Save As button renamed as Save button.
+  - Chg: Text Pieces button access key changed from T to x.
+  - Chg: Options button replaced by new Tools button.
+  - Chg: Fix Pagination renamed Fix Page Breaks and moved from Select
+         menu to Tools menu.
+  - Chg: Boxes tab in Options dialog renamed as Appearance tab.
+  - Chg: Updated toolbar button styling in Toolbar and Menu Panel to
+         be compatible with Firefox 29.0b1.
+  - Chg: Updated toolbar button styling in Customize Palette to be
+         compatible with Firefox 29.0b1.
+  - Chg: Updated language translations (will need further update).
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Thu, 03 Apr 2014 19:43:47 +0200
+
+xul-ext-print-edit (11.4-1nano) unstable; urgency=low
+
+  * new upstream stable release
+  - Updated toolbar button styling in Menu Panel and
+    Overlay Panel to be fully compatible with Aurora
+  - Updated language translations
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 12 Mar 2014 19:25:01 +0100
+
+xul-ext-print-edit (11.3-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 02 Mar 2014 19:47:21 +0100

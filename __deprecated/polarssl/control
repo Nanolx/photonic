@@ -1,0 +1,56 @@
+Source: polarssl
+Section: libs
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Standards-Version: 3.9.4
+Build-Depends: debhelper (>= 9)
+Homepage: http://polarssl.org
+
+Package: libpolarssl-dev
+Architecture: any
+Section: libdevel
+Depends: libc6-dev, ${misc:Depends}, libpolarssl0 (= ${binary:Version})
+Description: lightweight crypto and SSL/TLS library
+ PolarSSL is a fork of the abandonned project XySSL. It is a lean crypto
+ library providing SSL and TLS support in your programs. It features:
+  - AES, Triple-DES, DES, ARC4, Camellia, XTEA
+  - MD2, MD4, MD5, SHA-1, SHA-256, SHA-384, SHA-512
+  - HAVEGE random number generator
+  - RSA with PKCS#1 v1.5 padding
+  - SSLv3 and TLSv1 client support
+  - X.509 certificate and CRL reading
+ .
+ This package contains the static library and the header files.
+
+Package: libpolarssl-runtime
+Architecture: any
+Section: libdevel
+Depends: libc6-dev, ${misc:Depends}
+Description: lightweight crypto and SSL/TLS library
+ PolarSSL is a fork of the abandonned project XySSL. It is a lean crypto
+ library providing SSL and TLS support in your programs. It features:
+  - AES, Triple-DES, DES, ARC4, Camellia, XTEA
+  - MD2, MD4, MD5, SHA-1, SHA-256, SHA-384, SHA-512
+  - HAVEGE random number generator
+  - RSA with PKCS#1 v1.5 padding
+  - SSLv3 and TLSv1 client support
+  - X.509 certificate and CRL reading
+ .
+ This package contains the runtime executables.
+
+Package: libpolarssl0
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: lightweight crypto and SSL/TLS library
+ PolarSSL is a fork of the abandonned project XySSL. It is a lean crypto
+ library providing SSL and TLS support in your programs. It features:
+  - AES, Triple-DES, DES, ARC4, Camellia, XTEA
+  - MD2, MD4, MD5, SHA-1, SHA-256, SHA-384, SHA-512
+  - HAVEGE random number generator
+  - RSA with PKCS#1 v1.5 padding
+  - SSLv3 and TLSv1 client support
+  - X.509 certificate and CRL reading
+ .
+ This package contains the shared library.
+

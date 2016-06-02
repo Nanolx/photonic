@@ -1,0 +1,34 @@
+xserver-xorg-input-wizardpen (0.8.2-1nano) unstable; urgency=low
+
+  * improved debian/rules
+  * improved debian/control
+  * revised debian/copyright
+  * removed debian/*.fdi (we rely on udev now)
+  * bumped compat version to 8 (debian/compat)
+  * bumpat standards-version to 3.9.4 (debian/control)
+  * recommend easystroke
+  * set debian/source/format to "3.0 (quilt)"
+  * add patches/001-udev-more-waltop-devices.diff
+    adds support for  Waltop manufactured graphic tablets
+    device ids: 0031 + 0034
+  * drop non-required build-dependencies
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 31 Jul 2013 15:17:23 +0200
+
+xserver-xorg-input-wizardpen (0.8.2-0ubuntu2) precise; urgency=low
+
+  * Attempt a release for 12.04
+
+ -- Martin Owens (DoctorMO) <doctormo@gmail.com>  Mon, 28 Jan 2013 18:19:00 -0500
+
+xserver-xorg-input-wizardpen (0.8.1-0ubuntu1) natty; urgency=low
+
+  * debian/changelog
+
+ -- Martin Owens (DoctorMO) <doctormo@gmail.com>  Mon, 02 May 2011 21:44:15 -0400
+
+xserver-xorg-input-wizardpen (0.7.4-3maverick0) maverick; urgency=low
+
+  * Repackaged with x86 and x64 support conditional + calibration.
+
+ -- Martin Owens (DoctorMO) <doctormo@gmail.com>  Wed, 06 Oct 2010 23:22:29 -0400

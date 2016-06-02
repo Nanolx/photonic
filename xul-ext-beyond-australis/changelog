@@ -1,0 +1,514 @@
+xul-ext-beyond-australis (1.4.6-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Bugfix: mistake in the previous update prevented most of the "Awesome Bar" features from working properly
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 16:34:00 +0200
+
+xul-ext-beyond-australis (1.4.5-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New: right-clicking a suggestion in the location bar's suggestions panel pastes its value immediately into the location bar
+    - New: de locale
+    - Removed: compatibility with Firefox 44 and below, compatibility with Firefox 45 will be maintained for the duration of the ESR 45 life cycle
+    - Bugfix: (Firefox 48) preferences tab wouldn't work
+    - Bugfix: (non-e10s) some missing functionality right after updating the add-on until the browser was restarted
+    - Bugfix: after navigating away from the preferences tab, navigating back (through the back button) wouldn't work
+    - Bugfix: Slim Chrome could still be enabled by mistake while in fullscreen in some specific cases
+    - Bugfix: when entering full screen, the toolbars could still be partially shown until moving the mouse over and out of them again
+    - Bugfix: compatibility with Tab Tree add-on, show the toolbars when moving the mouse to the window titlebar
+    - Bugfix: selecting a search suggestion with the keyboard and then clicking a search engine button would lead to a malformed url
+    - Bugfix: bookmark page sky light wouldn't change colors according to if the page was bookmarked or not when the star button wasn't placed anywhere in the window
+    - Bugfix: compatibility with Add Bookmark Here 2, the Bookmark Page sky light should obey the same behavior options defined for the star button
+    - Bugfix: (Firefox 47) show the page bookmarked panel immediately when bookmarking a page through the sky light, just like it would if clicking the star button
+    - Bugfix: it would fail to run a web search by clicking a search engine in the location bar, when the search word came directly from the adaptable search bar
+    - Bugfix: (Firefox 47) could fail to detect customize mode during startup
+    - Bugfix: small memory leak when disabling the add-on (thanks to the8472)
+    - Bugfix: compatibility with Status-4-Evar add-on, Slim Chrome wouldn't respect the position of the loading indicator in the location bar
+    - Bugfix: compatibility with Test Pilot's Tab Center, toolbars should be easier to access by moving the cursor to the top and they shouldn't extend over the tabs area
+    - Other minor updates 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 29 May 2016 12:23:49 +0200
+
+xul-ext-beyond-australis (1.4.4-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New: support Baido search results pages in the adaptable search bar
+    - Updated: fr, nl, zh-CN and zh-TW locales
+    - Removed: compatibility with Omnibar as it is no longer being developed and
+      has become largely unnecessary (it should still mostly work if you want it
+      though); if there is something in Omnibar that you like that this add-on
+      doesn't have yet just let me know
+    - Bugfix: Ctrl+K should focus the location bar when only showing the adaptable
+      search bar when it's not empty
+    - Bugfix: while typing in the search bar, its value shouldn't adapt to the
+      query used in a results page (adaptable search bar)
+    - Bugfix: compatibility with Search Site add-on, show its icon in the
+      location bar so it can be used there when the search bar is set to only
+      appear when not empty
+    - Bugfix: on some themes and system the search settings button in the
+      location bar's panel wouldn't have an icon
+    - Bugfix: compatibility with FT DeepDark, made some visual tweaks to the
+      search engines in the location bar
+    - Bugfix: (OSX and Linux) the add-on's preferences would be exported into a
+      file without the ".json" extension that the add-on couldn't immediately
+      recognize afterwards
+    - General: added a small section to the add-on's about page to promote my
+      new web series "A dude and his Firefox"; it will be completely out of your
+      way unless you point at the icon at the bottom corner, and you can dismiss
+      it completely by clicking its close button. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:32:44 +0100
+
+xul-ext-beyond-australis (1.4.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.0
+      - New: can use the control key in Mac OSX in the keyboard shortcuts
+      - New: added support for the following keys in the keyboard shortcuts:
+        ` ´ ~ ^
+      - New: a whole bunch of new options for the awesome bar (location bar),
+        check it out in the preferences!
+      - New: refine autocomplete results when typing in the awesome bar
+      - New: option to show search suggestions in the awesome bar results in
+        private windows
+      - New: show search engines in the awesome bar
+      - New: ability to only show the search bar in results pages, letting you
+        focus on the location bar for the actual searches
+      - New: ported some styles and color themes from Omnibar and Omnibar Plus,
+        since those add-ons aren't necessary anymore with the rest of the new
+        features
+      - New: support Facebook, IMDb and YouTube search results pages in the
+        adaptable search bar
+      - Updated: simplified share icons in about page
+      - Updated: ensure UTF-8 character encoding throughout the code
+      - Updated: small code cleanup - trim trailing whitespaces
+      - Updated: significant improvement to memory usage, as well as to browser
+        startup time and when opening new tabs
+      - Removed: compatibility with Firefox 43 and below
+      - Bugfix: sometimes toggling the ctrl/alt/shift boxes in a keyboard shortcut
+        wouldn't correctly reflect if the selected key was actually available
+      - Bugfix: default file name when exporting preferences would have the wrong
+        month
+      - Bugfix: Sky Lights shouldn't be visible in HTML5 fullscreen
+      - Bugfix: (Firefox 46) the add-on would not fully disable correctly
+      - Bugfix: the adaptable search bar's words would persist when surfing away
+        from a results page
+      - Other minor fixes and improvements 
+    1.4.1
+      - Bugfix: Slim Chrome's sensitivity sliders would reset to the maximum
+        sensitivity when re-opening the preferences tab
+    1.4.2
+      - Changed: the Adaptable Search Bar should still be usable when not enhancing
+        the awesome bar
+      - Bugfix: search icons in location bar would appear distorted in HiDPI
+        screens / higher zoom factor resolution settings
+      - Bugfix: "Visible items showing history" setting didn't work
+    1.4.3
+      - Bugfix: suggestion items styles and color themes wouldn't work when
+        "Show search engines in the location bar" was disabled
+      - Bugfix: suggestion items color themes selector shouldn't be accessible
+        if not enhancing the awesome bar
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 08 Feb 2016 20:47:01 +0100
+
+xul-ext-beyond-australis (1.3.4.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 'let is the new var' fixed release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Dec 2015 21:27:33 +0100
+
+xul-ext-beyond-australis (1.3.4-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Updated: ru locale
+    - Changed: the Bookmark button will appear in the mini bar only if the Bookmark
+               Item Sky Light is enabled; they should complement each other
+    - Bugfix: when only hiding the bookmarks toolbar, if using a lightweight theme
+             (persona), the toolbars background would have an extra white gradient
+             making it hard to read
+    - Bugfix: panels or popups opened from buttons in the hidden toolbars could
+              show some weirdness, like showing only the borders, flashing on
+              screen or even jumping all over the window 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:22:43 +0100
+
+xul-ext-beyond-australis (1.3.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Updated: (Firefox 44) show insecure state in the Site Identity sky light when on a page with insecure login forms
+    - Removed: compatibility with Firefox 41
+    - Bugfix: (Firefox 43+) appearance fixes for Slim Chrome
+    - Bugfix: compatibility with All About Location Bar add-on: breadcrumbs wouldn't appear
+    - Bugfix: toggling "Also hide the navigation bar" would make it forget the current location until navigating away to another page
+    - Bugfix: the tab drop indicator would be invisible with Windows Aero enabled
+    - Bugfix: hinge animation would make toolbars invisible
+    - Bugfix: the keyboard shortcut dropdown selector wasn't properly populated only with the available keys 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 10 Nov 2015 17:41:47 +0100
+
+xul-ext-beyond-australis (1.3.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Changed: improved locking of certain disallowed combinations of preferences in the add-on's options
+    - Updated: minor improvements to multiline string concatenation code, as suggested by AMO reviewer
+    - Updated: share icons in the add-on's About pane
+    - Bugfix: some dynamic menupopups, such as the one opened by NoScript's button, could cause the toolbars to get stuck open
+    - Bugfix: bookmarks star icon would have a "true" tooltip when it was disabled
+    - Bugfix: Bookmark Page sky light should be disabled on pages where the star icon is disabled as well
+    - Bugfix: (Firefox 44) the add-on would fail to start in the latest Nightly builds
+    - Bugfix: improved integration with the Developer Edition theme
+    - Bugfix: (Firefox 43) the Site Identity sky light would not show the correct state on any site
+    - Other minor fixes and improvements 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 04 Nov 2015 20:08:58 +0100
+
+xul-ext-beyond-australis (1.3.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Changed: tweaked add-on icon and Sky Lights icon
+    - Removed: compatibility with Firefox 40
+    - Updated: improvements when enabling/disabling the add-on
+    - Updated: es locale
+    - Bugfix: the Adaptable Search Bar sometimes wouldn't pick up on changes
+      Google makes to the contents of its search box
+    - Bugfix: the Sky Lights icons in the preferences could be distorted with
+      large localized labels 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 29 Sep 2015 18:48:52 +0200
+
+xul-ext-beyond-australis (1.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New: name and icon "Beyond Australis", previously "The Fox, Only Better"
+    - New: Sky Lights pane in the add-on preferences
+    - New: ability to reorder and disable individual Sky Lights
+    - New: "Bookmark Page" Sky Light
+    - New: Adaptable Search Bar experimental feature; keeps your Search Bar
+      in sync with your web searches!
+    - Changed: the bookarked star icon remains visible in the mini bar if the
+      button is placed in the navigation bar
+    - Changed: the "Show this tab on the next update" checkbox will be highlighted
+      the first time the About pane is shown on an update, to better mark where
+      future notifications can be easily disabled
+    - Changed: the toolbars will now extend to all the available window space,
+      as opposed to before where they would only cover the webpage space; for
+      instance this means they will now appear over the sidebar as well. You can
+      still revert to the old behavior by enabling the hidden preference
+      "extensions.thefoxonlybetter.slimOnlyOverContent"
+    - Removed: compatibility with Firefox 39 and below
+    - Bugfix: sensitivity sliders in the preferences weren't working at all
+    - Bugfix: Sky Lights would not be immediately visible after exiting customize
+      mode, you'd have to show and hide the toolbars at least once to see them again
+    - Bugfix: a few appearance fixes for the latest versions of Firefox,
+      particularly for Windows 10
+    - Bugfix: compatibility with latest Nightly build (Firefox 43)
+    - Bugfix: several behavioral improvements when opening panels anchored to the mini bar
+    - Bugfix: the helptext panel in the add-on's preferences would sometimes cover
+      the options on small screens or if the sidebar was open
+    - Bugfix: the mini bar shouldn't hide when moving the cursor over it
+    - Other minor fixes and improvements 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Sep 2015 18:18:59 +0200
+ 
+xul-ext-the-fox-only-better (1.2.3-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  - Bugfix: refix the appearance glitches with the Compact style which the
+    last release intended to fix 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 24 Aug 2015 16:39:44 +0200
+
+xul-ext-the-fox-only-better (1.2.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Changed: "Show mini bar when focusing any type of input box" shows only a
+      temporary mini bar, which will hide after a couple of seconds, hopefully
+      making it less obtrusive. Note that password fields still keep the mini
+      bar shown for as long as they're focused!
+    - Bugfix: compatibility with OmniSidebar and Puzzle Toolbars: the Bookmark
+      This Page button would stop working if one of the add-ons was disabled/
+      updated; this fix requires a browser restart
+    - Bugfix: (Firefox 41+) Slim Chrome would be disabled after exiting fullscreen mode
+    - Bugfix: (Firefox 42+) new modes and changes to the identity box prevented
+      its Sky Light from appearing at the right place or showing the correct state
+    - Bugfix: compatibility with OmniSidebar: entering customize mode with Slim
+      Chrome enabled could remove the OmniSidebar button from the browser
+    - Bugfix: (Firefox 40+) appearance glitches with the Back/Forward buttons
+      when using the Compact style
+    - Bugfix: compatibility with Classic Theme Restorer's "Navigation toolbar:
+      remove background image" option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Aug 2015 19:32:25 +0200
+
+xul-ext-the-fox-only-better (1.2.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New: Undo/Redo/Import/Export/Restore-defaults/Jump-to functions in
+      the preferences
+    - Updated: fr and zh-TW locales
+    - Changed: re-styled and optimized the help tooltips in the preferences
+    - Changed: only request the Development Status information when the
+      About pane in the preferences is accessed
+    - Bugfix: force LTR layout for the preferences tab options, at least
+      until any RTL locales are included
+    - Bugfix: minor startup improvements
+    - Bugfix: the preferences, in particular the sensitivity sliders,
+      were very sluggish to use, all should be much smoother now
+    - Bugfix: compatibility with Simplify Awesome Bar add-on: location
+      bar would sometimes hide while the cursor was still in it
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 01 Aug 2015 19:00:30 +0200
+
+xul-ext-the-fox-only-better (1.1.13-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.1.12
+      - Bugfix: compatibility with FireGestures add-on, if the menu panel
+                was opened through a gesture, it would flash and jump to
+                the top corner of the window
+      - Bugfix: compatibility with Link Location Bar add-on, its color
+                preferences would often not be applied
+      - Bugfix: selecting a password field and switching away to another
+                tab would leave the mini bar constantly visible in the new
+                tab
+      - Bugfix: no border below the tabs toolbar on OS X 10 (Yosemite)
+      - Updated: reorganized code and did some cleanup
+      - Updated: zh-CN and zh-TW locales 
+    1.1.13
+     - Bugfix: hotfix for last release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 24 May 2015 14:14:26 +0200
+
+xul-ext-the-fox-only-better (1.1.11-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - Changed: with Sky Lights disabled, the top slimmer (placeholder for
+      the toolbars) will be thinner than with Sky Lights enabled 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Mar 2015 19:06:56 +0100
+
+xul-ext-the-fox-only-better (1.1.10-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - Changed: Release Notes tab URI defaults to about:thefoxonlybetter
+      instead of chrome://..., which is now fully functional in
+      multiprocess firefox (e10s)
+    - Bugfix: the Release Notes link in the preferences dialog would
+      sometimes fail to work
+    - Bugfix: compatibility with Tree Style Tab's autohide tabs toolbar
+      feature, toolbars would not be properly sized 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Feb 2015 21:47:48 +0100
+
+xul-ext-the-fox-only-better (1.1.9-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - New: option to show the mini bar on every tab select. This may have
+           caused the other preferences relative to the mini bar to reset,
+           so you may have to reconfigure them
+    - Updated: pt-PT and zh-TW locales
+    - Bugfix: compatibility with Australis Small Icons add-on, wouldn't
+              take effect with Slim Chrome enabled
+    - Bugfix: compatibility with Classic Theme Restorer's movable back/
+              forward button, appearance issues in the mini bar
+    - Bugfix: sometimes opening or closing the sidebar would leave the
+              top toolbars positioned incorrectly in the window
+    - Bugfix: compatibility with Tree Style Tab add-on, made it easier
+          to show the toolbars when moving the mouse to the window title 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Feb 2015 17:49:32 +0100
+
+xul-ext-the-fox-only-better (1.1.8-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    1.1.7
+      - New: ru and zh-TW locales
+      - Changed: the mini bar will only appear when switching to a
+      background tab that has changed location (webhost) since it was
+      last visible; this was the intended behavior from the start
+      - Removed: compatibility with Firefox 33 and below
+      - Bugfix: prevent some visual glitches during startup
+      - Bugfix: improved compatibility with my other add-ons, if you
+      use any of them make sure they are also updated and restart your
+      browser afterwards
+      - Bugfix: compatibility with Link Location Bar add-on, when
+      previewing links in the mini  bar and the mouse moves over it,
+      the mini bar will jump to the other side of the window so that
+      any links under  it can still be accessed
+      - Bugfix: a few issues with the bookmarks toolbar introduced in
+      the last version
+      - Bugfix: integrate better with Firefox Developer Edition's theme
+      - Bugfix: add-on would forget the keyboard shortcut when opening
+      the preferences dialog
+      - Other minor improvements
+    1.1.8
+      - Changed: show the toolbars for a few seconds when previewing
+      themes
+      - Bugfix: sometimes the location bar wouldn't have focus on
+      startup when it should
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 27 Dec 2014 09:55:27 +0100
+
+xul-ext-the-fox-only-better (1.1.7~b1-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    - no changelog provided
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 01 Dec 2014 17:03:07 +0100
+
+xul-ext-the-fox-only-better (1.1.6-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Bugfix: release notes page would not render correctly with certain
+              locales that have long strings
+    - Updated: enhanced compatibility with my other add-ons
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 02 Nov 2014 19:22:13 +0100
+
+xul-ext-the-fox-only-better (1.1.4-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    1.1.4
+    - New: support < (less than) and > (greater than) characters in the
+      keyboard shortcut
+    - New: added version information to the top of the window DOM tree,
+      for better compatibility with themes
+    - New: show the release notes tab when the add-on updates
+    - Changed: when using the FT DeepDark theme, the default style is
+      "Compact" and the default animation is "Slide Down"
+    - Removed: compatibility with Firefox 31
+    - Bugfix: enhanced compatibility for the FT DeepDark theme
+    - Bugfix: toolbars wouldn't be properly styled when previewing
+      themes (personas)
+    - Bugfix: add-on was not deinitializing properly (because of this you
+      may need to restart your browser if you're updating from a previous
+      version, for the update to fully take effect)
+    - Bugfix: the mini bar could get stuck open on certain websites
+      (e.g. 4chan.org) that physically remove the input fields from the DOM
+    - Bugfix: right-clicking the toolbar placeholder strip when Slim Chrome
+      is enabled should open the toolbar context menu
+    - Bugfix: toolbars would be hidden behind media elements (flash videos,
+      java applets, adobe reader, tabs opened through the FireIE add-on,
+      maybe others...)
+    - Bugfix: possible fix for add-on requiring a browser restart to fully
+      update sometimes
+    - Bugfix: compatibility with AniWeather add-on, weather animation popups
+      would be hidden behind the toolbars
+    - Bugfix: compatibility with Puzzle Toolbars (formerly The Puzzle Piece)
+      add-on
+    - Bugfix: style and animation preview wouldn't work if options were
+      opened from the add-on manager
+    - Bugfix: the add-on would fail to completely deinitialize on some
+      tabs when entering customize mode
+    - Bugfix: correctly handle overflowable toolbars
+    - Updated: code clean-up
+    - Small code change to address an AMO reviewer comment
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 21 Oct 2014 18:11:27 +0200
+
+xul-ext-the-fox-only-better (1.1.4~b4-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.1.3
+    - Updated: nl and zh-CN locales
+    - Bugfix: mini bar wouldn't appear sometimes when text fields from
+              certain tabs were focused
+    - Bugfix: compatibility with HackBar add-on, keep its toolbar visible
+              (move it to the bottom of the window so it doesn't interfere)
+    - Bugfix: compatibility with Tree Style Tab add-on, mousing over the
+              tabs on the sides or at the bottom shouldn't show the toolbars
+    - Bugfix: compatibility with RequestPolicy add-on, clicking its button
+              in the hiding toolbars wouldn't open its popup menu
+    - Bugfix: toolbars style and animation previews weren't correct
+    1.1.4~b1 - 1.1.4~b4
+    - no changelog provided
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 25 Sep 2014 17:58:13 +0200
+
+xul-ext-the-fox-only-better (1.1-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - New: preferences dialog accessible through the right click menu in
+      any toolbar at the top of the browser!
+    - New: option to show the mini bar on all input fields
+    - New: option to toggle whether the chrome reacts to mouse movements
+    - New: can toggle Slim Chrome through the toolbars context menu and
+      through a customizable keyboard shortcut (default is F9)
+    - New: tapping Esc in the location bar or search bar will hide the
+      toolbars, only if it won't do anything else, such as closing the
+      suggestions popups or reverting the location bar's value
+    - New: can set sensitivity (delay) to mouse events for showing and
+      hiding the chrome
+    - New: option to keep the navigation bar visible, hiding only the other
+      toolbars like the Bookmarks Toolbar
+    - New: different styles for the hovering toolbars: australis, spacious,
+      compact and full width
+    - New: different animations for showing and hiding the toolbars: no
+      animation, fade in, slide down, roll out and GiT's hinge effect
+      (special thanks to Geek in Training for this one!)
+    - New: Sky Lights give you security information about the current
+      webpage while the chrome is hidden
+    - New: other add-ons have the ability to keep their toolbars or buttons
+      visible in the mini bar if they choose to
+    - Changed: can disable the mini bar on content location changes
+    - Removed: compatibility with Firefox 30 and below
+    - Bugfix: e10s compatibility
+    - Bugfix: compatibility with RSS Ticker add-on, its toolbar placement
+      becomes a bit unpredictable and also inaccessible sometimes
+    - Bugfix: compatibility with Roboform and other add-ons that add toolbars
+      after TheFOB is enabled, their toolbars would be covered and couldn't
+      be accessed
+    - Bugfix: compatibility with Tab Groups Manager add-on, tabs (and
+      groups toolbar as well) could be inaccessible
+    - Bugfix: compatibility with Status-4-evar, when progress bar is shown
+      in the location bar, at least the mini bar should be visible until
+      the page finishes loading
+    - Bugfix: compatibility with Status-4-evar, dropdown arrow shouldn't
+      be visible in the mini bar
+    - Bugfix: compatibility with LastPass add-on, clicking its toolbar
+      button would make the toolbars jump up a few pixels
+    - Bugfix: compatibility with Link Location Bar add-on, the hover link
+      is displayed in the mini bar if the toolbars are hidden
+    - Bugfix: panels opened from the mini bar wouldn't keep it open if
+      the website changed while the panels were open
+    - Bugfix: opening the submenu popup of the "Remember password" panel
+      would cause the toolbars to expand and the panel to appear corrupted
+      (and possibly other similar cases)
+    - Bugfix: misaligned chrome top border in the latest nightly builds
+    - Bugfix: roll the toolbars from the right side when in RTL locales
+    - Bugfix: fix personas support in RTL locales
+    - Bugfix: Ghostery toolbar button (and maybe others) would not reappear
+      sometimes after closing and re-opening the browser window
+    - Bugfix: enhanced compatibility with my other add-ons
+    - Other minor fixes and improvements
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 21 Aug 2014 19:20:05 +0200
+
+xul-ext-the-fox-only-better (1.1~beta12-1nano) unstable; urgency=low
+
+  * new upstream beta release
+    no changelog provided
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 01 Aug 2014 19:15:00 +0200
+
+xul-ext-the-fox-only-better (1.1~beta11-1nano) unstable; urgency=low
+
+  * new upstream beta release
+    no changelog provided
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Jul 2014 21:55:27 +0200
+
+xul-ext-the-fox-only-better (1.1~b5-1nano) unstable; urgency=low
+
+  * new upstream beta release
+    no changelog provided
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 12 Jul 2014 20:51:26 +0200
+
+xul-ext-the-fox-only-better (1.0.10-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 05 Jun 2014 20:04:30 +0200

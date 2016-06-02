@@ -1,0 +1,17 @@
+zelda-time-to-triumph (1.9-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 18:44:36 +0200
+
+zelda3t (1:1.9-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Mar 2015 21:35:45 +0100
+
+zelda3t (20091212-1nano) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 20:57:28 +0200

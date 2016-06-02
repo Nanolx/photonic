@@ -1,0 +1,16 @@
+opt/devkitpro/libogc/include/grrlib
+opt/devkitpro/libogc/include/grrlib/GRRLIB__inline.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB__lib.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_cExtn.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_clipping.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_collision.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_fbComplex.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_fbGX.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_fbSimple.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_handle.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_pixel.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_private.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_settings.h
+opt/devkitpro/libogc/include/grrlib/GRRLIB_texSetup.h
+opt/devkitpro/libogc/include/grrlib.h
+opt/devkitpro/libogc/lib/wii/libgrrlib.a

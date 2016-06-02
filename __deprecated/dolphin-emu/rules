@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+DH_VERBOSE = 1
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+GITREV = $(shell dpkg-parsechangelog | grep '^   \* New GIT Release' | sed 's/^   \* New GIT Release //')
+VERSION = $(shell dpkg-parsechangelog | grep Version | sed 's/Version: \([0-9.]*\)+git.*/\1/')
+GITDESC = $(VERSION)-$(shell dpkg-parsechangelog | grep Version | sed 's/.*git\([0-9]*\)-.*/\1/')
+GITSEQ=$(shell echo $(GITDESC) | cut -d'-' -f2)
+GITBRANCH = master
+
+CMAKE_OPTIONS =							\
+	-DDOLPHIN_WC_REVISION=$(GITREV)		\
+	-DDOLPHIN_WC_DESCRIBE=$(GITDESC)	\
+	-DDOLPHIN_WC_BRANCH=$(GITBRANCH)	\
+	-Dbindir=/usr/games					\
+	-Ddatadir=/usr/share/games/dolphin-emu
+
+CPPFLAGS+=-DNDEBUG
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CMAKE_OPTIONS)
+
+override_dh_auto_test:
+	#

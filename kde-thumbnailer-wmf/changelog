@@ -1,0 +1,11 @@
+kde-thumbnailer-wmf (2.1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 24 Aug 2012 20:20:25 +0200
+
+kde-thumbnailer-wmf (1.0-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 03 Sep 2011 20:05:39 +0200

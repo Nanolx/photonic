@@ -1,0 +1,15 @@
+Source: kde-thumbnailer-gimp
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev
+Standards-Version: 3.9.2
+Homepage: http://kde-apps.org/content/show.php/GimpResourcesThumbnailer?content=107128
+
+Package: kde-thumbnailer-gimp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KDE thumbnailer for GIMP Resources
+ It creates preview images for  all of your Gimp resources
+ like brushes and patterns, to easily manage them into folders,
+ without the need to open Gimp.

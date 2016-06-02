@@ -1,0 +1,25 @@
+Description: fix makefile for $DESTDIR
+ modify makefile to honour $DESTDIR variable
+ .
+ freecolor (0.9.2-1nano) unstable; urgency=low
+ .
+   * Initial release
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+
+--- freecolor-0.9.2.orig/Makefile.in
++++ freecolor-0.9.2/Makefile.in
+@@ -21,10 +21,10 @@ install-over-free:
+ 
+ install:
+ 	strip free
+-	-$(INSTALL) -d $(bindir)
+-	-$(INSTALL) -d $(mandir)/man1
+-	$(INSTALL) -m 755 free $(bindir)/freecolor
+-	$(INSTALL) -m 644 freecolor.1 $(mandir)/man1/freecolor.1
++	mkdir -p $(DESTDIR)/$(bindir)
++	mkdir -p $(DESTDIR)/$(mandir)/man1
++	$(INSTALL) -m 755 free $(DESTDIR)/$(bindir)/freecolor
++	$(INSTALL) -m 644 freecolor.1 $(DESTDIR)/$(mandir)/man1/freecolor.1
+ 
+ clean:
+ 	rm -f core free *~

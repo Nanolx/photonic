@@ -1,0 +1,13 @@
+Source: plasma-wallpaper-starfield
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev, kdebase-workspace-dev
+Standards-Version: 3.9.2
+Homepage: http://kde-apps.org/content/show.php/Star+Field+Plasma+Wallpaper?content=105973
+
+Package: plasma-wallpaper-starfield
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Starfield Wallpaper for plasma
+ This plasma wallpaper draws an animated starfield in the background of your desktop.

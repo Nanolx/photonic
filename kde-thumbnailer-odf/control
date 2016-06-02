@@ -1,0 +1,13 @@
+Source: kde-thumbnailer-odf
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev, libbz2-dev
+Standards-Version: 3.9.2
+Homepage: http://kde-apps.org/content/show.php/OpenDocument+Thumbnail+plugin?content=110864
+
+Package: kde-thumbnailer-odf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KDE ODF Thumbnailer
+ KDE preview image generator for the OpenDocument Format.

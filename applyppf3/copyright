@@ -1,0 +1,27 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: psptools
+Upstream-Contact: SukkoPera <sukkopera@gmail.com>
+Source: http://svn.gna.org/svn/upspear/trunk/psptools
+
+Files: *
+Copyright: 2010 SukkoPera <sukkopera@gmail.com>
+License: Public Domain
+
+Files: debian/*
+Copyright: 2013 Christopher Roy Bratusek <nano@jpberlin.de>
+License: Public Domain
+
+License: Public Domain
+ The public domain is generally defined as consisting of works
+ that are either ineligible for copyright protection or with
+ expired copyrights.
+ .
+ No permission whatsoever is needed to copy or use public domain
+ works. Public domain works and information represent some of the
+ most critical information that faculty members and students rely
+ upon.
+ .
+ Public domain works can serve as the foundation for new creative
+ works and can be quoted extensively. They can also be copied and
+ distributed to classes or digitized and placed on course Web pages
+ without permission or paying royalties.

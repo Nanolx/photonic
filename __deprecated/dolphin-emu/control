@@ -1,0 +1,57 @@
+Source: dolphin-emu
+Section: games
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:  debhelper (>= 7.0.50),
+                cmake,
+                libao-dev,
+                libasound2-dev,
+                libavcodec-dev,
+                libavformat-dev,
+                libbluetooth-dev,
+                libglew-dev,
+                libgtk2.0-dev,
+                liblzo2-dev,
+                libopenal-dev,
+                libpulse-dev,
+                libreadline-dev,
+                libsdl1.2-dev,
+                libsfml-dev (>= 1.6),
+                libsoil-dev,
+                libswscale-dev,
+                libxext-dev,
+                libxrandr-dev,
+                lsb-release,
+                nvidia-cg-toolkit,
+                pkg-config,
+                zlib1g-dev,
+                gcc-4.8,
+                g++-4.8,
+                ccache,
+                libsoundtouch-dev,
+                libwayland-dev,
+                libminiupnpc-dev (>= 1.7),
+                libwxgtk3.0-dev,
+                libwxbase3.0-dev,
+                libusb-1.0-0-dev,
+                libpolarssl-dev,
+                libevdev-dev
+Standards-Version: 3.9.4
+Homepage: http://www.dolphin-emu.org
+
+Package: dolphin-emu
+Architecture: amd64
+Depends: nvidia-cg-toolkit (>= 2.2), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: dolphin-emu, dolphin-emu-trunk
+Replaces: dolphin-emu, dolphin-emu-trunk
+Description: Gamecube, Wii and Triforce emulator
+ Dolphin is a Gamecube, Wii and Triforce (the arcade machine based on the
+ Gamecube) emulator.
+ .
+ Gamecube compatibility is okay - lots of games work, many games don't work.
+ .
+ Wii compatibility is also good - a lot of games do work. Wii emulation
+ generally requires a bit more computing power than Gamecube emulation, though.
+ .
+ Triforce compatibility is not really known yet, but at least one game runs,
+ with minor glitches.

@@ -1,0 +1,15 @@
+Source: nand-bin-check
+Section: utils
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~), libqt4-dev, g++
+Standards-Version: 3.9.1
+Homepage: http://code.google.com/p/wiiqt/
+
+Package: nand-bin-check
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Nand.bin checking utility
+ This is a command-line utility to check a Wii nand.bin
+ for various things like boot1/boot2 info, filesystem
+ integrity, signatures, hashes, ecc failures, and more.

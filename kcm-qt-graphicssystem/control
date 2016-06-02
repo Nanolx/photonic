@@ -1,0 +1,14 @@
+Source: kcm-qt-graphicssystem
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~), cmake, libqt4-dev (>= 4.7.0), kdelibs5-dev
+Standards-Version: 3.9.1
+Homepage:
+
+Package: kcm-qt-graphicssystem
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt Graphicssystem KCM
+ This is a KCM (KDE Control-Center Module), which
+ allows to change the graphicssystem used by Qt.

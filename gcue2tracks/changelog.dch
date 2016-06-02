@@ -1,0 +1,190 @@
+gcue2tracks (0.4.10) unstable; urgency=low
+
+  * 
+
+ -- Fomin Denis <fominde@gmail.com>  Sat, 14 Aug 2010 12:26:17 +0400
+
+gcue2tracks (0.4.9) unstable; urgency=low
+
+  * added french translation. Thanks to Le Gluon du Net 
+
+ -- Fomin Denis <fominde@gmail.com>  Sun, 01 Aug 2010 23:15:34 +0400
+
+gcue2tracks (0.4.8) unstable; urgency=low
+
+  * parse error fix. thanks to andreyz!
+  * error dialog if codec not exits
+
+ -- Fomin Denis <fominde@gmail.com>  Sun, 27 Jun 2010 14:27:56 +0400
+
+gcue2tracks (0.4.7) unstable; urgency=low
+
+  * fix breakpoints problem.Thanks to Simplexe!
+
+ -- Fomin Denis <fominde@gmail.com>  Sun, 20 Jun 2010 22:28:34 +0400
+
+gcue2tracks (0.4.6) unstable; urgency=low
+
+  * translation problem fix
+
+ -- Fomin Denis <fominde@gmail.com>  Wed, 12 May 2010 20:54:15 +0400
+
+gcue2tracks (0.4.5) unstable; urgency=low
+
+  * various artist support fix
+
+ -- Fomin Denis <fominde@gmail.com>  Thu, 07 Jan 2010 18:52:26 +0300
+
+gcue2tracks (0.4.4) unstable; urgency=low
+
+  * homepage fix. various artist support
+
+ -- Fomin Denis <fominde@gmail.com>  Wed, 06 Jan 2010 23:47:47 +0300
+
+gcue2tracks (0.4.3) unstable; urgency=low
+
+  * ffmpeg parsing fix
+
+ -- Fomin Denis <fominde@gmail.com>  Wed, 30 Dec 2009 12:42:29 +0300
+
+gcue2tracks (0.4.2.10) unstable; urgency=low
+
+  * bugfix
+  * ffmpeg for decoding
+
+ -- Fomin Denis <fominde@gmail.com>  Tue, 08 Dec 2009 22:33:17 +0300
+
+gcue2tracks (0.4.2.9) unstable; urgency=low
+
+  * bugfix
+
+ -- Fomin Denis <fominde@gmail.com>  Sun, 13 Sep 2009 12:55:50 +0400
+
+gcue2tracks (0.4.2.8) unstable; urgency=low
+
+  [ Fomin Denis ]
+  * add trayicon
+
+  [ test ]
+  * fominde@gmail.com
+
+ -- Fomin Denis <fominde@gmail.com>  Fri, 11 Sep 2009 19:21:57 +0400
+
+gcue2tracks (0.4.2.7) unstable; urgency=low
+
+  * bug in tracks image fixed
+
+ -- Fomin Denis <fominde@gmail.com>  Wed, 15 Jul 2009 16:54:35 +0400
+
+gcue2tracks (0.4.2.6) unstable; urgency=low
+
+  * bugfixes
+
+ -- Fomin Denis <fominde@mail.ru>  Thu, 02 Jul 2009 18:37:27 +0400
+
+gcue2tracks (0.4.2.5) unstable; urgency=low
+
+  * bugfixes
+
+ -- Fomin Denis <fominde@mail.ru>  Wed, 18 Feb 2009 17:00:58 +0300
+
+gcue2tracks (0.4.2.4) unstable; urgency=low
+
+  * bugfixes
+
+ -- Fomin Denis <fominde@mail.ru>  Sun, 01 Feb 2009 17:54:24 +0300
+
+gcue2tracks (0.4.2.3) unstable; urgency=low
+
+  * bugfixes
+
+ -- Fomin Denis <fominde@mail.ru>  Sun, 01 Feb 2009 00:06:13 +0300
+
+gcue2tracks (0.4.2.2) unstable; urgency=low
+
+  * DnD support
+
+ -- Fomin Denis <fominde@mail.ru>  Wed, 07 Jan 2009 18:05:51 +0300
+
+gcue2tracks (0.4.2.1) unstable; urgency=low
+
+  * bugfixes
+
+  * copy image files
+
+ -- Fomin Denis <fominde@mail.ru>  Sun, 04 Jan 2009 18:12:44 +0300
+
+gcue2tracks (0.4.2) unstable; urgency=low
+
+  * cue+tracks support
+
+ -- Fomin Denis <fominde@mail.ru>  Fri, 02 Jan 2009 18:46:00 +0300
+
+gcue2tracks (0.4.1) unstable; urgency=low
+
+  * recursive search of cue
+
+ -- Fomin Denis <fominde@mail.ru>  Tue, 30 Dec 2008 23:10:45 +0300
+
+gcue2tracks (0.4) unstable; urgency=low
+
+  * Job queue.
+
+ -- Fomin Denis <fominde@mail.ru>  Sat, 20 Dec 2008 21:27:44 +0300
+
+gcue2tracks (0.3-2) unstable; urgency=low
+
+  * mp3 rename and taging fix (Thanks google moogle!)
+
+ -- Fomin Denis  <fominde@mail.ru>  Thu, 04 Dec 2008 18:15:50 +0300
+
+gcue2tracks (0.3-1) unstable; urgency=low
+
+  * mp3 filename problem fixed
+
+  * changed preferences dialog
+
+ -- Fomin Denis  <fominde@mail.ru>  Wed, 03 Dec 2008 21:30:03 +0300
+
+gcue2tracks (0.3) unstable; urgency=low
+
+  * Add track rename
+
+ -- Fomin Denis  <fominde@mail.ru>  Sun, 21 Sep 2008 19:44:47 +0400
+
+gcue2tracks (0.2) unstable; urgency=low
+
+  * Added support of composer info
+
+ -- Fomin Denis  <fominde@mail.ru>  Mon, 23 Jun 2008 21:11:12 +0400
+
+gcue2tracks (0.1-5) unstable; urgency=low
+
+  * Added mid-level compression
+
+ -- Fomin Denis  <fominde@mail.ru>  Thu, 12 Jun 2008 16:43:04 +0400
+
+gcue2tracks (0.1-4) unstable; urgency=low
+
+  * + convert mp3 tag to UTF-8
+
+ -- Fomin Denis  <fominde@mail.ru>  Fri, 09 May 2008 13:25:27 +0400
+
+gcue2tracks (0.1-3) unstable; urgency=low
+
+  * Add find bin file
+
+ -- Fomin Denis <fominde@mail.ru>  Thu, 01 May 2008 00:44:09 +0400
+
+gcue2tracks (0.1-2) unstable; urgency=low
+
+  * Add -i option
+
+ -- Fomin Denis <fominde@mail.ru>  Tue, 29 Apr 2008 19:58:11 +0400
+
+gcue2tracks (0.1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Fomin Denis <fominde@gmail.com>  Sat, 19 Apr 2008 18:47:08 +0400
+

@@ -1,0 +1,21 @@
+Source: plymouth-theme-aurora-penguinis-2
+Section: admin
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://bitbucket.org/gemlion/aurora-penguinis
+
+Package: plymouth-theme-aurora-penguinis-2
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Aurora Penguinis Theme for Plymouth
+ Plymouth Theme based on the official KDE 5.3 wallpaper.
+ .
+ To enable the theme issue (as root) the following command:
+ .
+   plymouth-set-default-theme aurora-penguinis-2
+ .
+ Then issue (as root) the following command:
+ .
+   update-initramfs -u -k all

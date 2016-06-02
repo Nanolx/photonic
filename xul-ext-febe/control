@@ -1,0 +1,20 @@
+Source: xul-ext-febe
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/febe
+
+Package: xul-ext-febe
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Firefox Environment Backup Extension
+  This addon allows you to quickly and easily backup your
+  Firefox extensions. In fact, it goes beyond just backing
+  up -- It will actually rebuild your extensions individually
+  into installable .xpi files.

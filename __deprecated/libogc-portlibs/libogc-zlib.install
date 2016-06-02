@@ -1,0 +1,3 @@
+opt/devkitpro/portlibs/ppc/lib/libz.a
+opt/devkitpro/portlibs/ppc/include/zconf.h
+opt/devkitpro/portlibs/ppc/include/zlib.h

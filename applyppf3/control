@@ -1,0 +1,31 @@
+Source: applyppf3
+Section: devel
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), gcc, libc6-dev
+Standards-Version: 3.9.4
+Homepage: http://svn.gna.org/svn/upspear/trunk/psptools
+
+Package: applyppf3
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: PPF patch tool
+ PPF (Playstation Patch Format) is a common format format
+ distributing patches for Playstation or Nintendo games
+ patches. Those patches usually reflect modified games
+ (different tilesets, modified levels...).
+ .
+ applyppf3 applies a PPF patch to an unmodified, legal
+ dump of such game.
+
+Package: makeppf3
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: PPF patch tool
+ PPF (Playstation Patch Format) is a common format format
+ distributing patches for Playstation or Nintendo games
+ patches. Those patches usually reflect modified games
+ (different tilesets, modified levels...).
+ .
+ makeppf3 creates a PPF patch from a modified, legal
+ dump of such game.

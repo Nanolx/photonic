@@ -1,0 +1,9 @@
+opt/devkitpro/libogc/lib/wii/libmupdf.a
+opt/devkitpro/libogc/include/mupdf
+opt/devkitpro/libogc/include/mupdf/fitz.h
+opt/devkitpro/libogc/include/mupdf/fitz_base.h
+opt/devkitpro/libogc/include/mupdf/fitz_draw.h
+opt/devkitpro/libogc/include/mupdf/fitz_res.h
+opt/devkitpro/libogc/include/mupdf/fitz_stream.h
+opt/devkitpro/libogc/include/mupdf/mupdf.h
+opt/devkitpro/libogc/include/mupdf/pdftool.h

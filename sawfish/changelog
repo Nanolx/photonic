@@ -1,0 +1,35 @@
+sawfish (3:1.11.90-1nano) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 04 Jan 2016 00:24:21 +0100
+
+sawfish (3:1.11-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 02 Nov 2014 19:10:11 +0100
+
+sawfish (3:1.10.99-1nano) unstable; urgency=low
+
+  * New upstream release candidate
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 24 Aug 2014 19:59:59 +0200
+
+sawfish (3:1.10-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 25 Sep 2013 20:37:10 +0200
+
+sawfish (3:1.9.91-1nano) unstable; urgency=low
+
+  * New upstream beta release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 10 May 2013 09:00:00 +0200
+
+sawfish (3:1.9.90-1nano) unstable; urgency=low
+
+  * New upstream beta release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 12 Jan 2013 18:27:15 +0200

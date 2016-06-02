@@ -1,0 +1,24 @@
+Source: zelda-solarus-xd
+Section: games
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, zip
+Standards-Version: 3.9.4
+Homepage: http://solarus-games.org
+
+Package: zsxd
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, zelda-solarus-xd
+Description: Transistional package for zelda-solarus-xd
+ Transistional package for zelda-solarus-xd
+
+Package: zelda-solarus-xd
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.4.5)
+Provides: zsxd
+Replaces: zsxd
+Description: Zelda Fangame using Solarus engine
+ A "The Legend Of Zelda - A Link To The Past"-like Fangame
+ using the Solarus OpenSource game engine.
+ .
+ Originally a 1st-April-Joke this game features 2 full dungeons.

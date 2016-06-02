@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
+CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE) -C library SHARED=1 shared
+	mv library/libpolarssl.so.0 library/SOBACKUP
+	$(MAKE) clean
+	mv library/SOBACKUP library/libpolarssl.so.0
+	$(MAKE) all
+
+override_dh_auto_test:
+	touch $@
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f tests/data_files/mpi_write
+

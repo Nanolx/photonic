@@ -1,0 +1,309 @@
+yarock (1.1.5-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New    : Default audio engine is VLC (phonon/MPV still available)
+    - New    : Default Qt library is Qt5 (Qt4 still available)
+    - New    : new advanced now playing widget
+    - New    : new favorites web radio management
+    - New    : new redesign webradio view layout
+    - Change : many GUI changes and improvments
+          - Option to reach collections from the left side pane [#1489281]
+    - BugFix : missing icons and wrong context menu under gnome desktop
+    - BugFix : fix album cover during complete database reconstruction [#1493948]
+    - BugFix : segfaults on Fedora 23 when rating a track [#1529087]
+    - BugFix : fix closing equalizer windows [#1492119]
+    - BugFix : fix crash at startup when first playing track [#1527876]
+    - BugFix : fix minor seek slider popup display issue
+    - BugFix : fix global shortcut management with Qt5
+    - BugFix : building issue [#1491736]
+    - BugFix : building support taglib-1.10 (and newer) [#1522829]
+    - BugFix : building support LIB_SUFFIX [#1522832]
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 06 Jan 2016 10:43:03 +0100
+
+yarock (1.1.4-2nano) unstable; urgency=low
+
+  * rebuild against new libstdc++6, gcc-5, libhtmlcxx-dev
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 02 Sep 2015 19:56:30 +0200
+
+yarock (1.1.4-1nano) unstable; urgency=low
+
+  * New upstream release
+  - New : improve genre tags browsing with new genre tag cloud
+  - New : allow playing tracks from playlist editor
+  - New : UI change with new now playing information widget
+  - New : add track numbers in the playqueue [#1489222]
+  - New : add user's volume restoration at startup [#1489224]
+  - New : add symobolic link support for user collection [#1486708]
+  - Change : simplified playlist editor
+  - Change : activate mpris control by default
+  - BugFix : fix ordering tracks when dragging album to playqueue [#1489222]
+  - BugFix : yarock crashes when trying to load a radio station [#1486524]
+  - BugFix : dysfunctional playlist system [#1489228]
+  - BugFix : fix mpris command to raise application [#1487730]
+  - BugFix : fix metadata update for phonon engine
+  - BugFix : add scalable icon for better desktop integration (ubuntu unity)
+  - BugFix : improve stream loader
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 01 Sep 2015 19:34:57 +0200
+
+yarock (1.1.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  - New : new radionomy radio service (replace shoutcast)
+  - New : add radio cover for all radio views
+  - New : add symbolic link support for file system view
+  - New : add MP4 audio files tag reading
+  - New : add ape files import into playqueue
+  - New : add browsing history support for stream link in radio views
+  - BugFix : fix network redirection management
+  - BugFix : fix volume slider for phonon engine
+  - BugFix : fix "lyrics.com" radio provider
+  - Bugfix : fix image catching for stream image
+  - BugFix : improve management of no sqlite driver error
+  - BugFix : improve management of audio engine initialization failure
+  - BugFix : fix playqueue ordering tracks (from filsystem without track number)
+  - BugFix : fix playqueue stop after playing track
+  - BugFix : fix now playing widget update
+  - BugFix : fix qt5 build on some system ( bad include of qt5X11Extras library)
+  - BugFix : fix qt5 folder icon for filesystem view
+  - Change : remove confusing parameter for multi-collection option
+  - Change : improve status widgets
+  - Change : improve translation lookup path with cmake user definition
+  - Change : many widgets/ui minors update
+  - Change : update translations
+  - Build info : new depandencie to htmlcxx library
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 15 Aug 2015 20:38:15 +0200
+
+yarock (1.1.2-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  [Upstream]
+  - New : add alternate mpv audio engine (mplayer based)
+  - New : add plugin system for audio back-ends, in order to load at run
+          time desire audio engine (vlc, mpv, phonon)
+  - New : add "search and play" option for quick playing tracks according
+          to your search result
+  - New : add add equalizer support for vlc audio engine (vlclib > 2.2)
+  - New : add popup on player seek bar
+  - BugFix : vlc audio engine -> fix volume management
+  - BugFix : vlc audio engine -> fix backwards seeking
+  - BugFix : fix minor issue when dragging tracks to the bottom of playqueue
+  - BugFix : fix crash when playing stream added to user playlist
+  - Change : dirble radio use api v2
+  - Change : improve media key support
+  - Change : improve Qt5 building support
+  - Change : improve Qt5 third party source building
+  - Change : various user interface fix and changes
+  - Change : filesystem view, add sorting of files when dragging directory
+             to playqueue
+  - Change : no collection update if directory is not available (remote
+             collection)
+  [Nanolx]
+  - add libmpv-dev dependency
+  - drop build-using-qt5.diff
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 May 2015 17:48:09 +0200
+
+yarock (1.0.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    [upstream]
+    - BugFix : database issue
+    - BugFix : fix song lenght update (#1393027)
+    - BugFix : Jumbled Text in Settings Area (#1394508)
+    - BugFix : minor ui presentation for filesystem view
+    - BugFix : image for stream management
+    - Change : add ascending order for filesystem view
+    - Change : file dialog open user music folder by default if exists
+    - Change : file dialog in settings -> open saved directory
+    - Change : easiest first time user startup
+    - Change : add saving position in browser view
+    - Change : update and add translation
+    [Nanolx]
+    - switch from qt4 to qt5
+    - enable libvlc support
+    - add build-using-qt5.diff (bug fixes for qt5 build)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 16 Mar 2015 18:26:55 +0100
+
+yarock (1.0.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - New : new clean and elegant design, new icon set, new app icon
+    - New : add support for artists images (new view, download artists images)
+    - New : save rating to file
+    - New : add advanced library search
+    - New : add album cover for playqueue widget
+    - New : add stars rating for playqueue widget
+    - New : add multiple tracks edition
+    - Change : rewrite now playing widget
+    - Change : improve browser view multiple selection with SHIFT key
+    - Change : improve artist/album/track tags edition
+    - Change : support more scalable ui items
+    - Change : file dialog various improvements
+    - BugFix : improve file system view performance
+    - BugFix : fix "open with" yarock from KDE menu
+    - BugFix : fix playqueue restoration at startup
+    - BugFix : fix translation installation path
+    - BugFix : rating mp3 tag reading
+    - BugFix : minor fix for genre sorting view
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 09 Nov 2014 17:31:47 +0100
+
+yarock (0.9.67-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    - Change : improve database incremental update
+    - Change : improve playqueue content save/restore performance
+    - Change : improve playlist editor
+    - Change : new dirble radio service api implementation
+    - Change : many minor ui fix
+    - BugFix : phonon vlc crash on stream network error (with vlc-phonon)
+    - BugFix : fix crash on app closing
+    - BugFix : fix playing update status
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 06 May 2014 18:45:40 +0200
+
+yarock (0.9.66-1nano) unstable; urgency=low
+
+  * new upstream beta release:
+    - New : add contextual playing information for stream
+    - New : improve contextual playing information
+        - add musicbrainz support
+        - rewrite echonest provider (remove echonest library dependancy)
+        - change discogs provider (new policy for cover downloading)
+        - add similars artist images fetching
+    - New : internet radio services:
+        - remove Icecast directory (no coveniant api to sort.search...)
+        - replace Dirble radio service
+        - add stream search capability for radio services (tunin,shoutcast,dirble)
+    - New : improve contextual menu for artist/album/track
+    - New : add settings option to restore or not playqueue at startup
+    - New : add settings option to chose/sort lyrics provider for contextual lyrics
+    - New : improve navigation between artist/album/track
+    - BugFix : minor fix for filesystem view
+    - BugFix : fix text antialiasing issue
+    - BugFix : crash with vlc network access error on stream loading
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 12 Apr 2014 14:07:43 +0200
+
+yarock (0.9.65-1nano) unstable; urgency=low
+
+  * new upsream beta release:
+      - New : add file system browser view
+      - New : add tunein stream image download support
+      - New : add option to remove or not duplicate tracks in playqueue
+      - New : improve discography part in context view
+      - New : add loading status when building database
+      - BugFix : fix last fm now playing method
+      - BugFix : fix crash on browser favorite view
+      - BugFix : fix crash on menu bar clicking
+      - BugFix : fix mpris2 support
+      - BugFix : fix smart playlist edition (losing configuration)
+      - BugFix : fix little freeze when entering view by genre
+      - BugFix : fix browser item right click in case of single item selection
+      - BugFix : fix file dialog issue
+      - BugFix : fix regression on tracks move inside playqueue
+      - Change : improve settings view
+      - Change : lot of code rewrite/refactoring
+      - Building : change to facilitate fedora packaging (thanks to fedora community help)
+      => CMakeLists : add option to use system lib for src3party
+      > CMakeLists : change default installation path
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 Dec 2013 18:50:37 +0100
+
+yarock (0.9.64-1nano) unstable; urgency=low
+
+  * new upstream beta release:
+    - New : add support for multiset album (grouping or not)
+    - New : add support to drag from playqueue to file browser
+    - New : add standalone vlc audio engine (without phonon layer)
+    - New : add option to choose color scheme
+    - BugFix : fix multithreading issue when populating playqueue
+    - BugFix : fix cover searcher threadmanager
+    - BugFix : fix crash on media item context menu access
+    - BugFix : fix lyricsmania extraction rule
+    - BugFix : fix echonest artist image download
+    - BugFix : fix context view item layout update
+    - BugFix : fix seek bar and time label widget spacing
+    - Change : reorganise code structure
+    - Change : rewrite file dialogs
+    - Change : replace navigator bar by a menu icon bar
+    - Change : lot of minor ui improvement
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 09 Nov 2013 21:04:23 +0100
+
+yarock (0.9.63-2nano) unstable; urgency=low
+
+  * rebuild for unstable
+  * rebuild using libechonest 2.1
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 16 Jul 2013 22:16:27 +0200
+
+yarock (0.9.63-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    - New : add Tunein radio service
+    - New : add cover art reading from ogg/flac file
+    - Change : code refactoring for radio stream services
+    - BugFix : playlist editor crash
+    - BugFix : sorting on track duration
+    - BugFix : playqueue move item
+    - BugFix : fix playqueue keyboard enter action
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 24 Jun 2013 18:17:10 +0200
+
+yarock (0.9.62-1nano) unstable; urgency=low
+
+  * New Upstream beta release
+    - New : add playqueue filter and sort toolbar
+    - New : add support for multiple item selection
+    - New : add support for mpris2 interface
+    - New : add completer for music explorer search field
+    - New : add keyboard shortcut to jump to current playing track
+    - New : add option to disable volume notification
+    - Change : change build system to cmake
+    - Change : change application name from YaRock to "yarock" without upper case
+        - Note: you can recover your old install configuration dir by copying
+            $   mv <home folder>/.config/YaRock to <home folder>/.config/yarock)
+    - Change : minor rewrite code for dbus notification
+    - Change : single click on shortcut widget in settings page to trigger shortcut dialogs
+    - BugFix : restore drag and drop track from history view
+    - BugFix : crash on playqueue restoration
+    - BugFix : random playing from playqueue
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 16 Jun 2013 21:17:55 +0200
+
+yarock (0.9.61-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    - New : improve system color sheme support (bug ##928789)
+    - New : add rating edition in browser (bug #1102794)
+    - New : add different rating color in case of auto rating vs user rating
+    - BugFix : CPU too high when playing (bug #1119970)
+    - BugFix : item context menu (bug #1102793)
+    - BugFix : crash on file path broken with vlc backend (ok with gstreamer)
+    - BugFix : automatic rating for artist wrong computation
+    - BugFix : fix playing button action when no track is selected (play first track in playqueue)
+    - BugFix : fix file include for building on mandriva
+    - Change : add Ctr+F shortcut to focus on search line edit widget
+    - Change : improve statusWidget design
+    - Change : improve playqueue view update
+    - Change : minor settings pages UI update
+    - Change : change playcount representation
+    - Change : rewrite core data management
+    - Change : rewrite pixmap caching management
+    - Change : delete provided custom font (use system font)
+    - Change : improve history with pretty category name
+    - Change : remove boost library dependency
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 12 Mar 2013 19:05:55 +0100
+
+yarock (0.0.58-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 19:49:26 +0200

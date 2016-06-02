@@ -1,0 +1,287 @@
+Только в screenlets: build
+diff -crB screenlets-orig/src/lib/options.py screenlets/src/lib/options.py
+*** screenlets-orig/src/lib/options.py	2008-06-04 16:31:25.000000000 +0400
+--- screenlets/src/lib/options.py	2010-09-01 21:08:16.000000000 +0400
+***************
+*** 213,218 ****
+--- 213,231 ----
+  		return str(value)
+  
+  
++ class ButtonListOption (Option):
++ 	"""An Option-type for list of strings."""
++ 
++ 	def on_import (self, strvalue):
++ 		"""Import python-style list from a string (like [1, 2, 'test'])"""
++ 		lst = eval(strvalue)
++ 		return lst
++ 	
++ 	def on_export (self, value):
++ 		"""Export list as string."""
++ 		return str(value)
++ 
++ 
+  import gnomekeyring
+  class AccountOption (Option):
+  	"""An Option-type for username/password combos. Stores the password in
+***************
+*** 506,511 ****
+--- 519,727 ----
+  # OptionsDialog and UI-classes
+  # -----------------------------------------------------------------------
+  
++ class ButtonListOptionDialog (gtk.Dialog):
++ 	"""An editing dialog used for editing options of the ListOption-type."""
++ 	
++ 	model = None
++ 	tree = None
++ 	buttonbox = None
++ 	
++ 	# call gtk.Dialog.__init__
++ 	def __init__ (self):
++ 		super(ButtonListOptionDialog, self).__init__("Edit ButtonList", 
++ 			flags=gtk.DIALOG_DESTROY_WITH_PARENT | gtk.DIALOG_NO_SEPARATOR,
++ 			buttons = (gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL, 
++ 				gtk.STOCK_OK, gtk.RESPONSE_OK))
++ 		# set size
++ 		self.resize(300, 370)
++ 		self.set_keep_above(True)	# to avoid confusion
++ 		# init vars
++ 		self.model = gtk.ListStore(str)
++ 		# create UI
++ 		self.create_ui()
++ 	
++ 	def create_ui (self):
++ 		"""Create the user-interface for this dialog."""
++ 		# create outer hbox (tree|buttons)
++ 		hbox = gtk.HBox()
++ 		hbox.set_border_width(10)
++ 		hbox.set_spacing(10)
++ 		# create tree
++ 		self.tree = gtk.TreeView(model=self.model)
++ 		self.tree.set_headers_visible(False)
++ 		self.tree.set_reorderable(True)
++ 		#self.tree.set_grid_lines(gtk.TREE_VIEW_GRID_LINES_HORIZONTAL)
++ 		col = gtk.TreeViewColumn('')
++ 		cell = gtk.CellRendererText()
++ 		#cell.set_property('cell-background', 'cyan')
++ 		cell.set_property('foreground', 'black')
++ 		col.pack_start(cell, False)
++ 		col.set_attributes(cell, text=0)
++ 		self.tree.append_column(col)
++ 		self.tree.show()
++ 		hbox.pack_start(self.tree, True, True)
++ 		#sep = gtk.VSeparator()
++ 		#sep.show()
++ 		#hbox.add(sep)
++ 		# create  buttons
++ 		self.buttonbox = bb = gtk.VButtonBox()
++ 		self.buttonbox.set_layout(gtk.BUTTONBOX_START)
++ 		b1 = gtk.Button(stock=gtk.STOCK_ADD)
++ 		b2 = gtk.Button(stock=gtk.STOCK_EDIT)
++ 		b3 = gtk.Button(stock=gtk.STOCK_REMOVE)
++ 		b1.connect('clicked', self.button_callback, 'add')
++ 		b2.connect('clicked', self.button_callback, 'edit')
++ 		b3.connect('clicked', self.button_callback, 'remove')
++ 		bb.add(b1)
++ 		bb.add(b2)
++ 		bb.add(b3)
++ 		self.buttonbox.show_all()
++ 		#hbox.add(self.buttonbox)
++ 		hbox.pack_end(self.buttonbox, False)
++ 		# add everything to outer hbox and show it
++ 		hbox.show()
++ 		self.vbox.add(hbox)
++ 		
++ 	def set_list (self, lst):
++ 		"""Set the list to be edited in this editor."""
++ 		for el in lst:
++ 			self.model.append([el])
++ 	
++ 	def get_list (self):
++ 		"""Return the list that is currently being edited in this editor."""
++ 		lst = []
++ 		for i in self.model:
++ 			lst.append(eval(i[0]))
++ 		return lst
++ 	
++ 	def remove_selected_item (self):
++ 		"""Remove the currently selected item."""
++ 		sel = self.tree.get_selection()
++ 		if sel:
++ 			it = sel.get_selected()[1]
++ 			if it:
++ 				print self.model.get_value(it, 0)
++ 				self.model.remove(it)
++ 	
++ 	def entry_dialog (self, default = ('','')):
++ 		"""Show entry-dialog and return string."""
++ 		#command
++ 		entry = gtk.Entry()
++ 		entry.set_text(default[0])
++ 		entry.show()
++ 		dlg = gtk.Dialog("Add/Edit Item", flags=gtk.DIALOG_DESTROY_WITH_PARENT,
++ 			buttons = (gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL, gtk.STOCK_OK, 
++ 			gtk.RESPONSE_OK))
++ 		dlg.set_keep_above(True)
++ 		dlg.vbox.add(entry)
++ 		#image
++ 		# create entry and button (entry is hidden)
++ 		imgentry = gtk.Entry()
++ 		imgentry.set_text(default[1])
++ 		imgentry.set_editable(False)
++ 		#create button
++ 		#preview method
++ 		def create_preview (filename):
++ 			if filename and os.path.isfile(filename):
++ 				pb = gtk.gdk.pixbuf_new_from_file_at_size(filename, 64, -1)
++ 				if pb:
++ 					img = gtk.Image()
++ 					img.set_from_pixbuf(pb)
++ 					return img
++ 			img = gtk.image_new_from_stock(gtk.STOCK_MISSING_IMAGE, 
++ 				gtk.ICON_SIZE_LARGE_TOOLBAR)
++ 			img.set_size_request(64, 64)
++ 			return img
++ 		#button callback
++ 		def but_callback (widget):
++ 			fdlg = gtk.FileChooserDialog(buttons=(gtk.STOCK_CANCEL, 
++ 				gtk.RESPONSE_CANCEL, gtk.STOCK_OPEN, gtk.RESPONSE_OK))
++ 			fdlg.set_title(_("Choose Image"))
++ 			fdlg.set_keep_above(True)
++ 			fdlg.set_filename(imgentry.get_text())
++ 			flt = gtk.FileFilter()
++ 			flt.add_pixbuf_formats()
++ 			fdlg.set_filter(flt) 
++ 			prev = gtk.Image()
++ 			box = gtk.VBox()
++ 			box.set_size_request(150, -1)
++ 			box.add(prev)
++ 			prev.show()
++ 			# add preview widget to filechooser
++ 			def preview_callback(widget):
++ 				fname = fdlg.get_preview_filename()
++ 				if fname and os.path.isfile(fname):
++ 					pb = gtk.gdk.pixbuf_new_from_file_at_size(fname, 150, -1)
++ 					if pb:
++ 						prev.set_from_pixbuf(pb)
++ 						fdlg.set_preview_widget_active(True)
++ 					else:
++ 						fdlg.set_preview_widget_active(False)
++ 			fdlg.set_preview_widget_active(True)
++ 			fdlg.connect('selection-changed', preview_callback)
++ 			fdlg.set_preview_widget(box)
++ 			# run 
++ 			response = fdlg.run()
++ 			if response == gtk.RESPONSE_OK:
++ 				imgentry.set_text(fdlg.get_filename())
++ 				but.set_image(create_preview(fdlg.get_filename()))
++ 			fdlg.destroy()
++ 		
++ 		but = gtk.Button('')
++ 		but.height = 128
++ 		but.width = 128
++ 		but.set_image(create_preview(default[1]))
++ 		but.connect('clicked', but_callback)
++ 		but.show()
++ 		#make icon label
++ 		lbl = gtk.Label("Icon:")
++ 		lbl.show()
++ 		#make container
++ 		hbox = gtk.HBox()
++ 		hbox.add(lbl)
++ 		hbox.add(but)
++ 		hbox.set_homogeneous(True)
++ 		hbox.show()
++ 		#add button to dialog
++ 		dlg.vbox.set_spacing(10)
++ 		dlg.vbox.add(hbox)
++ 		#run dialog
++ 		resp = dlg.run()
++ 		ret = None
++ 		if resp == gtk.RESPONSE_OK:
++ 			ret = (entry.get_text(), imgentry.get_text())
++ 		dlg.destroy()
++ 		return ret
++ 				
++ 	def button_callback (self, widget, id):
++ 		print _("PRESS: %s") % id
++ 		if id == 'remove':
++ 			self.remove_selected_item()
++ 		if id == 'add':
++ 			new = self.entry_dialog(('',''))
++ 			if new != None:
++ 				self.model.append([new])
++ 		if id == 'edit':
++ 			sel = self.tree.get_selection()
++ 			if sel:
++ 				it = sel.get_selected()[1]
++ 				if it:
++ 					new = self.entry_dialog(eval(self.model.get_value(it, 0)))
++ 					if new != None:
++ 						#self.model.append([new])
++ 						self.model.set_value(it, 0, new)
++ 	
++ 	
++ # TEST	
++ """dlg = ListOptionDialog()
++ dlg.set_list(['test1', 'afarew34s', 'fhjh23faj', 'yxcdfs58df', 'hsdf7jsdfh'])
++ dlg.run()
++ print "RESULT: " + str(dlg.get_list())
++ dlg.destroy()
++ import sys
++ sys.exit(1)"""
++ # /TEST
++ 
+  class ListOptionDialog (gtk.Dialog):
+  	"""An editing dialog used for editing options of the ListOption-type."""
+  	
+***************
+*** 1096,1101 ****
+--- 1312,1346 ----
+  			widget = gtk.HBox()
+  			widget.add(entry)
+  			widget.add(but)
++ 		elif t == ButtonListOption:
++ 			entry= gtk.Entry()
++ 			entry.set_editable(False)
++ 			entry.set_text(str(value))
++ 			entry.show()
++ 			img = gtk.Image()
++ 			img.set_from_stock(gtk.STOCK_EDIT, 1)
++ 			but = gtk.Button('')
++ 			but.set_image(img)
++ 			def open_listeditor(event):
++ 				# open dialog
++ 				dlg = ButtonListOptionDialog()
++ 				# read string from entry and import it through option-class
++ 				# (this is needed to always have an up-to-date value)
++ 				dlg.set_list(option.on_import(entry.get_text()))
++ 				resp = dlg.run()
++ 				if resp == gtk.RESPONSE_OK:
++ 					# set text in entry
++ 					entry.set_text(str(dlg.get_list()))
++ 					# manually call the options-callback
++ 					self.options_callback(dlg, option)
++ 				dlg.destroy()
++ 			but.show()
++ 			but.connect("clicked", open_listeditor)
++ 			self.tooltips.set_tip(but, _('Open ButtonListEditor ...'))
++ 			self.tooltips.set_tip(entry, option.desc)
++ 			widget = gtk.HBox()
++ 			widget.add(entry)
++ 			widget.add(but)
+  		elif t == AccountOption:
+  			widget = gtk.HBox()
+  			vb = gtk.VBox()
+***************
+*** 1217,1222 ****
+--- 1462,1469 ----
+  		elif t == ListOption:	
+  			# the widget is a ListOptionDialog here
+  			val = widget.get_list()
++ 		elif t == ButtonListOption:
++ 			val = widget.get_list()
+  		elif t == AccountOption:
+  			# the widget is a HBox containing a VBox containing two Entries
+  			# (ideally we should have a custom widget for the AccountOption)

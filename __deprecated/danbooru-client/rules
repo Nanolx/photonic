@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
+
+export DH_VERBOSE=1
+export CC="gcc-4.7"
+export CXX="g++-4.7"

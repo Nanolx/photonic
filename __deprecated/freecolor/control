@@ -1,0 +1,13 @@
+Source: freecolor
+Section: utils
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Standards-Version: 3.9.4
+Homepage: http://www.rkeene.org/oss/freecolor/
+
+Package: freecolor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Colorful alternative for free
+ Freecolor displays free memory as a bargraph on the command line.

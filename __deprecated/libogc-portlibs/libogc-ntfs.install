@@ -1,0 +1,3 @@
+opt/devkitpro/libogc/include/ntfs.h
+opt/devkitpro/libogc/lib/cube/libntfs.a
+opt/devkitpro/libogc/lib/wii/libntfs.a

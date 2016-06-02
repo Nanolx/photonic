@@ -1,0 +1,6 @@
+opt/devkitpro/libogc/lib/wii/libtiff.a
+opt/devkitpro/libogc/include/tif_config.h
+opt/devkitpro/libogc/include/tiff.h
+opt/devkitpro/libogc/include/tiffconf.h
+opt/devkitpro/libogc/include/tiffio.h
+opt/devkitpro/libogc/include/tiffvers.h

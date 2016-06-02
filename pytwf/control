@@ -1,0 +1,16 @@
+Source: pytwf
+Section: gnome
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: http://gtk-apps.org/content/show.php/PyTWF?content=102024
+
+Package: pytwf
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-gtk2 (>= 2.6)
+Description: PyTWF
+ Python WidgetFactory
+ .
+ This is an improved version of twf, an application for
+ showcasing GTK+-themes. PyTWF also has a built-in screenshotter.

@@ -1,0 +1,17 @@
+zelda-return-of-the-hylian (6.11-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 18:42:49 +0200
+
+zeldaroth (1:6.11-1nano) unstable; urgency=low
+
+  * new upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Mar 2015 21:47:49 +0100
+
+zeldaroth (20061212-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 20:57:28 +0200

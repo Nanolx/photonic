@@ -1,0 +1,70 @@
+xul-ext-duckduckgoplus (0.5.2-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 29 May 2016 12:22:31 +0200
+
+xul-ext-duckduckgoplus (0.5.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * --- no changes listed ---
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:25:31 +0100
+
+xul-ext-duckduckgoplus (0.4.6-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Added option to show Answers on right in Google
+    - Updated visuals
+    - Improved handling of clashing situations between the Knowledge
+      Graph and Instant Answers on Google.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 07 Nov 2014 18:20:31 +0100
+
+xul-ext-duckduckgoplus (0.4.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  - Fixed 'Show toolbar button' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Jul 2014 10:27:27 +0200
+
+xul-ext-duckduckgoplus (0.4.1-1nano) unstable; urgency=low
+
+  * New upstream minor release
+  - Fixed problems with ToolbarButton on FF 30+ (Australis)
+  - Fixed too big ToolbarButton
+  - Added preference to show Instant Answers in right panel on Google
+  - Improved colision handling between Instant Answers and Google Knowledge Graph
+  - Added suggestions into address bar
+  - Fixed issues with Search Engine's icon
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 09 Jul 2014 17:36:41 +0200
+
+xul-ext-duckduckgoplus (0.3.16-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  - Toolbar icon on Mac updated
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 22 Mar 2014 08:18:37 +0100
+
+xul-ext-duckduckgoplus (0.3.15-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+   - Fixed Instant Answers in Bing in US
+   - Fixed 'remember last search' setting
+   - Added ability to disable automatic opening of changelog
+   - Improved toolbar icon
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 15 Mar 2014 17:55:27 +0100
+
+xul-ext-duckduckgoplus (0.3.8-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 Dec 2013 18:57:16 +0100
+
+xul-ext-duckduckgoplus (0.2.53-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 26 Aug 2013 18:34:17 +0200

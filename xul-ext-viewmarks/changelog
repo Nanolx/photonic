@@ -1,0 +1,35 @@
+xul-ext-viewmarks (2.0.8-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-viewmarks (2.0.8-1nano) unstable; urgency=low
+
+  * New upstream release
+    2.0.7: bugfixes
+    2.0.8: Fixes a bug introduced by the removal of the
+           String.prototype.quote function in Firefox 37
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 30 Apr 2015 20:10:43 +0200
+
+xul-ext-viewmarks (2.0.6-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  * Fixes several user reported bugs
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 02 Mar 2014 19:44:52 +0100
+
+xul-ext-viewmarks (2.0.5-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * Speeds up display of thumbnails
+  * Fixes an error stealing focus when opening a new tab
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 11 Jan 2014 22:55:29 +0100
+
+xul-ext-viewmarks (2.0.3-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 20:04:54 +0100

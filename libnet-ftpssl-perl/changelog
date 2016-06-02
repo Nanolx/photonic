@@ -1,0 +1,11 @@
+libnet-ftpssl-perl (0.29-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 10 Aug 2015 17:47:07 +0200
+
+libnet-ftpssl-perl (0.22-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 03 Aug 2013 21:09:24 +0200

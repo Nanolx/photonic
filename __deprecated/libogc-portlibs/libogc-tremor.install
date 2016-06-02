@@ -1,0 +1,7 @@
+opt/devkitpro/portlibs/ppc/include/tremor
+opt/devkitpro/portlibs/ppc/include/tremor/config_types.h
+opt/devkitpro/portlibs/ppc/include/tremor/ivorbiscodec.h
+opt/devkitpro/portlibs/ppc/include/tremor/ivorbisfile.h
+opt/devkitpro/portlibs/ppc/include/tremor/ogg.h
+opt/devkitpro/portlibs/ppc/include/tremor/os_types.h
+opt/devkitpro/portlibs/ppc/lib/libvorbisidec.a

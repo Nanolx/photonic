@@ -1,0 +1,43 @@
+danbooru-client (1.1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 20:37:17 +0100
+
+danbooru-client (1.0.1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 20:27:02 +0200
+
+danbooru-client (0.9.9-1nano) unstable; urgency=low
+
+  * New upstream release
+  * add pkg-kde-tools to build-deps
+  * add cdbs to build-deps
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 24 Aug 2012 19:47:13 +0200
+
+danbooru-client (0.9-1nano) unstable; urgency=low
+
+  * New upstream
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 03 Sep 2011 20:16:33 +0200
+
+danbooru-client (0.8.1+20110105-3nano) unstable; urgency=low
+
+  * Fix permissions of binaries, outside of /usr/bin/
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 17 Apr 2011 20:28:36 +0200
+
+danbooru-client (0.8.1+20110105-2nano) unstable; urgency=low
+
+  * Fixed packaging
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 17 Apr 2011 20:15:23 +0200
+
+danbooru-client (0.8.1+20110105-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sat, 26 Mar 2011 16:25:31 +0100

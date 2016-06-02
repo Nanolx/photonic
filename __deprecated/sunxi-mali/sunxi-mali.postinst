@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ -d /usr/lib/arm-linux-gnueabihf/mesa-egl ]; then
+    mv /usr/lib/arm-linux-gnueabihf/mesa-egl/ /usr/lib/arm-linux-gnueabihf/.mesa-egl/
+fi
+
+#DEBHELPER#
+
+exit 0

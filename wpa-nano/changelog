@@ -1,0 +1,30 @@
+wpa-nano (2.1~git20131228.d8f114-4nano) unstable; urgency=low
+
+  * add -drc suffix to all package and binary names
+  * remove all stuff related to files that conflict
+    with the official hostapd, wpa_supplicant packages
+  * no longer build wpagui package
+  * enable various options in hostapd config
+  * enable various options in wpa_supplicant config
+  * no longer build udebs
+  * remove all stuff for kfreebsd
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 08 Jan 2014 21:48:34 +0100
+
+wpa-nano (2.1~git20131228.d8f114-3nano) unstable; urgency=low
+
+  * fixup hostapd config
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 07 Jan 2014 21:55:51 +0100
+
+wpa-nano (2.1~git20131228.d8f114-2nano) unstable; urgency=low
+
+  * fixup wpa_supplicant config
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 07 Jan 2014 21:22:54 +0100
+
+wpa-nano (2.1~git20131228.d8f114-1nano) unstable; urgency=low
+
+  * new upstream snapshot
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 07 Jan 2014 19:40:27 +0100

@@ -1,0 +1,17 @@
+opt/devkitpro/libogc/include/sevenzip
+opt/devkitpro/libogc/include/sevenzip/7zAlloc.h
+opt/devkitpro/libogc/include/sevenzip/7zBuf.h
+opt/devkitpro/libogc/include/sevenzip/7zCrc.h
+opt/devkitpro/libogc/include/sevenzip/7zDecode.h
+opt/devkitpro/libogc/include/sevenzip/7zExtract.h
+opt/devkitpro/libogc/include/sevenzip/7zFile.h
+opt/devkitpro/libogc/include/sevenzip/7zHeader.h
+opt/devkitpro/libogc/include/sevenzip/7zIn.h
+opt/devkitpro/libogc/include/sevenzip/7zItem.h
+opt/devkitpro/libogc/include/sevenzip/7zVersion.h
+opt/devkitpro/libogc/include/sevenzip/Bcj2.h
+opt/devkitpro/libogc/include/sevenzip/Bra.h
+opt/devkitpro/libogc/include/sevenzip/CpuArch.h
+opt/devkitpro/libogc/include/sevenzip/LzmaDec.h
+opt/devkitpro/libogc/include/sevenzip/Types.h
+opt/devkitpro/libogc/lib/wii/libsevenzip.a

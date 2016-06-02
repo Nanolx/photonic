@@ -1,0 +1,26 @@
+Source: xserver-xorg-video-fbturbo
+Section: x11
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), libx11-dev, libdri2-dev, sunxi-mali,
+               make, libvdpau-sunxi, pkg-config, libump-dev
+Standards-Version: 3.9.5
+Homepage: http://linux-sunxi.org/
+
+Package: xserver-xorg-video-fbturbo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, sunxi-mali, libump,
+         libvdpau-sunxi, libdri2-1
+Description: Optimized sunxi (Allwiner A10, A13, A20) video driver
+ Video driver, primarily optimized for the devices powered by the
+ Allwinner SoC (A10, A13, A20). It can use some of the 2D/3D hardware
+ acceleration features.
+ .
+ And because this driver is based on xf86-video-fbdev (with none of the
+ original features stripped), it actually supports all the same hardware
+ as xf86-video-fbdev. Essentially, xf86-video-fbturbo can be just used as
+ a drop-in replacement and run on practically any Linux system. There will
+ be no real difference on x86, but any ARM based system should see better
+ performance thanks to some additional optimizations (the elimination of
+ ShadowFB layer, ARM NEON/VFP code for dealing with uncached framebuffer
+ reads, automatic backing store management for faster window moves).

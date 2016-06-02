@@ -1,0 +1,46 @@
+Source: palemoon-installer
+Section: net
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:  debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: palemoon-installer
+Architecture: all
+Depends: libgtk2.0-0,
+         libglib2.0-0,
+         libpango1.0-0,
+         libstdc++6
+Suggests: xul-ext-ublock-origin
+Description: Palemoon Webbrowser Installer
+ This is the official installer for the Palemoon Webbrowser.
+ .
+ Palemoon is a fork of the Firefox webbrowser, including
+ the following features:
+  - Optimized for modern processors
+  - Based on our own optimized layout engine (Goanna)
+  - Safe: forked from mature Mozilla code and regularly updated
+  - Supported by a friendly, active community of users
+  - Familiar, efficient, fully customizable interface
+  - Support for full themes: total freedom over any element's design
+  - Support for easily-created lightweight themes (skins)
+  - Smooth and speedy page drawing and script processing
+  - Increased stability: experience fewer browser crashes
+  - Support for many Firefox extensions
+  - Support for a growing number of Pale Moon exclusive extensions
+  - Extensive and growing support for HTML5 and CSS3
+  - Many customization and configuration options
+  - Able to import existing Firefox profiles with the migration tool
+ .
+ While the Palemoon source code is open source software, the license
+ prohibits distribution of binarys in order to prevent scamming, instead
+ this installer is provided for easy access to Palemoon.
+ .
+ The installer is able to
+  - Install Palemoon
+  - Uninstall Palemoon
+  - Update Palemoon
+  - View License or README of Palemoon
+ .
+ The installer is run as ordinary user and uses 'su' or 'sudo' like commands
+ for elevated rights when they are required.

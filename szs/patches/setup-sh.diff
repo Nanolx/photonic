@@ -1,0 +1,19 @@
+Description: adjust INSTALL_PATH
+ adjust INSTALL_PATH
+ .
+ wit (2.27a-1nano) unstable; urgency=low
+ .
+   * New upstream stable release
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+
+--- wit-2.27a.orig/setup.sh
++++ wit-2.27a/setup.sh
+@@ -57,7 +57,7 @@ fi
+ 
+ #--------------------------------------------------
+ 
+-INSTALL_PATH=/usr/local
++INSTALL_PATH=debian/szs/usr/
+ 
+ if [[ -d $INSTALL_PATH/bin ]]
+ then

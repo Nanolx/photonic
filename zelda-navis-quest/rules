@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/zelda-navis-quest/usr/bin/
+	mkdir -p $(CURDIR)/debian/zelda-navis-quest/usr/share/zelda-navis-quest/
+	install -m755 zeldansq $(CURDIR)/debian/zelda-navis-quest/usr/bin/
+	install -m755 bin/Release/ZeldaNSQ $(CURDIR)/debian/zelda-navis-quest/usr/share/zelda-navis-quest/
+	cp -rv data/ $(CURDIR)/debian/zelda-navis-quest/usr/share/zelda-navis-quest/

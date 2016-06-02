@@ -1,0 +1,77 @@
+kwooty (1.1.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * Version 1.1.0:
+    - Nzb row and corresponding data folder renaming with "F2" shortcut
+    - Nzb row and corresponding data folder deletion by hitting "SHIT+DEL"
+      keyboard shortcut
+    - "Show/hide" menu bar action added and available from "CTRL+M" shortcut
+    - If there is no pending download, do not connect to servers when kwooty
+      is launched from desktop session restoration
+    - Kwallet querying for server password is now performed after kwooty as
+      been fully started
+    - Unrar 5 support
+  * Version 1.0.1:
+    - Lower mandatory KDE version from 4.7 to 4.6 to build kwooty
+    - Fix bug: when successfully downloaded folder was transferred
+      into favorite folder by Category plugin, "Downloads" button would jump
+      into favorite folder instead on jumping into the proper child folder
+  * Version 1.0.0:
+    - Nzb merging feature: if an nzb item is known by user as being incomplete
+      (e.g: missing archives or no par2 files), nzb content can be merged with
+      another item that owns the missing files
+    - Manual extract can be performed via context menu when post download process
+      options have been disabled in settings (feature request #3565812)
+    - Categories plugin: added option that allows to manually choose a transfer
+      folder from context menu
+    - Categories plugin: availability to choose a default transfer folder for
+      all pending downloads
+    - When download retry is performed, all connections to servers are reestablished
+      in order to ensure that there are no broken connections before retrying downloads
+    - Segment data cache management enhanced in order to not get any memory contention
+      in case of extremely low disk write speed (Fix bug #3601043)
+    - In server settings, a warning icon will appear near "Host", "Login" and "Password"
+      fields if leading or trailing white-space have been detected, in order to notify
+      user about potential connection issues
+    - Par2 verifying progress percent is now estimated
+    - "Start all" / "Pause all" buttons are now properly enabled or disabled according
+      to global download status
+    - Several code optimizations
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 20:45:17 +0100
+
+kwooty (0.9.1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 20:35:17 +0200
+
+kwooty (0.9.0-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 24 Aug 2012 19:40:23 +0200
+
+kwooty (0.8.0-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 28 Dec 2011 22:03:15 +0100
+
+kwooty (0.7.2-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 03 Sep 2011 20:10:31 +0200
+
+kwooty (0.7.0-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 May 2011 10:25:10 +0200
+
+kwooty (0.6.3-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sat, 26 Mar 2011 11:28:54 +0100

@@ -1,0 +1,3 @@
+opt/devkitpro/libogc/lib/cube/libext2fs.a
+opt/devkitpro/libogc/lib/wii/libext2fs.a
+opt/devkitpro/libogc/include/ext2.h

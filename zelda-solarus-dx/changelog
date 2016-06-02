@@ -1,0 +1,102 @@
+zelda-solarus-dx (1.10.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix Italian dialogs exceeding the dialog box (thanks Marco).
+  * Fix game-over stopped sometimes using a workaround (#87).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 08 Jan 2016 17:29:46 +0100
+
+zsdx (1.10.2-2nano) unstable; urgency=low
+
+  * proper depends on solarus
+  * make zelda-solarus-dx provide zsdx package
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 24 Nov 2015 20:12:14 +0100
+
+zsdx (1.10.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Upgrade to Solarus 1.4.5.
+  * Add Italian translation (thanks Marco).
+  * Make fairies play a sound when restoring life even when already full (#101).
+  * Fix dialog cursor drawn at wrong position after successive questions (#105).
+  * Dungeon 1: fix unintentional extra difficulty with block alignment (#102).
+  * Dungeon 3: fix enemy entering mini-boss room (#107).
+  * Dungeon 9: fix spikes sending back to wrong room (#108).
+  * Dungeon 10: fix evil tiles door not opening sometimes (#94).
+  * End screen: fix freezing the hero (#109).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:37:35 +0100
+
+zsdx (1.10.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Upgrade to Solarus 1.4.1.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 May 2015 18:12:35 +0200
+
+zsdx (1.10.0-1nano) unstable; urgency=low
+
+  * New upstream release
+   * Upgrade to Solarus 1.4.0.
+   * Fix a minor tile issue in dungeon 8 entrance.
+   * Fix the feather dialog that could be skipped in some languages.
+   * Fix empty line in English dialog describing a bottle with water.
+   * Fix empty buttons in savegame menu when changing language (#90).
+   * Fix translation errors of two items in German (#98).
+   * Dungeon 5: fix a missing door on the minimap (#99).
+   * Dungeon 9: don't allow to skip the boss hint dialog (#93).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 05 May 2015 19:38:11 +0200
+
+zsdx (1.9.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * Use Solarus 1.3.0.
+  * New world minimap. By Neovyse.
+  * Make cmake paths more modifiable. By hasufell.
+  * Fix direction of vertical movement on joypad in menus (#85). By xethm55.
+  * Clarify license of some files.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 08 Sep 2014 09:25:29 +0200
+
+zsdx (1.8.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * New Features
+    - Replace fixed8.fon by a TTF font due to an SDL2 regression (#59).
+    - Switch fullscreen also with F11.
+  * Bug Fixes
+    Dungeon 3 5F: fix falling too early in the hole due to incorrect layers.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Jun 2014 16:13:45 +0200
+
+zsdx (1.7.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix the heart meter not updated until the first save/reload (#67).
+  * Fix wrong teletransportation in Billy’s cave after falling in a hole (#66).
+  * Fix the debugging console no longer working after using F1, F2 or F3.
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 21:14:04 +0100
+
+zsdx (1.6.2-2nano) unstable; urgency=low
+
+  * rebuild with corrected architecture
+  * debian/control: bump standards version to 3.9.4,
+    add homepage, change architecture from any to all
+  * debian/compat: bump compat version to 9
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 03 Aug 2013 21:31:02 +0200
+
+zsdx (1.6.2-1nano) unstable; urgency=low
+
+  * new upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 23 Jul 2013 21:27:39 +0200
+
+zsdx (1.5.1-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 03 Oct 2012 21:01:51 +0200

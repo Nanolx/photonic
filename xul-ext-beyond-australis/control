@@ -1,0 +1,20 @@
+Source: xul-ext-beyond-australis
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/beyond-australis/
+
+Package: xul-ext-beyond-australis
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}, xul-ext-the-fox-only-better
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Replaces: xul-ext-the-fox-only-better (<< 1.3)
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Merged tab and navigation bar for Iceweasel
+ This addon "australifies" and merges the tab and navigation into one
+ tiny bar. The navigation parts will become visible when hovering the
+ tab bar.

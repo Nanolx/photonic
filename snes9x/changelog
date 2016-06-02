@@ -1,0 +1,24 @@
+snes9x (1:1.53+git446-1nano) unstable; urgency=low
+
+  * New upstream Git snapshot
+  * build against latest libpng
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 27 May 2016 09:59:04 +0200
+
+snes9x (1:1.53+git423-1nano) unstable; urgency=low
+
+  * New upstream GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 16 Jul 2015 18:49:26 +0200
+
+snes9x (1:1.53+git400-1nano) unstable; urgency=low
+
+  * New upstream GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 13 Apr 2014 20:02:55 +0200
+
+snes9x (1:1.52-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sun, 13 Feb 2011 15:47:27 +0100

@@ -1,0 +1,131 @@
+dolphin-emu (4.0+git7019-2nano) unstable; urgency=low
+
+  * rebuild using improved build rules from ppa by
+    Glenn Rice <glennricster@gmail.com>
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 11 Jul 2015 15:33:14 +0200
+
+dolphin-emu (4.0+git7019-1nano) unstable; urgency=low
+
+  * New git snapshot
+  * add build-dep on libevdev-dev
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 10 Jul 2015 19:53:47 +0200
+
+dolphin-emu (4.0+git6109-1nano) unstable; urgency=low
+
+  * New git snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 25 Apr 2015 19:40:09 +0200
+
+dolphin-emu (4.0+git5459-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 09 Feb 2015 17:22:11 +0100
+
+dolphin-emu (4.0+git4783-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 21 Dec 2014 17:37:51 +0100
+
+dolphin-emu (4.0+git4125-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 08 Nov 2014 18:27:09 +0100
+
+dolphin-emu (4.0+git3659-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 14 Oct 2014 19:21:27 +0200
+
+dolphin-emu (4.0+git2965-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 04 Sep 2014 16:00:16 +0200
+
+dolphin-emu (4.0+git2490-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 09 Aug 2014 20:08:30 +0200
+
+dolphin-emu (4.0+git2012-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 05 Jul 2014 21:25:13 +0200
+
+dolphin-emu (4.0+git1338-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 13 Apr 2014 20:51:27 +0200
+
+dolphin-emu (4.0+git660-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 19 Jan 2014 19:17:34 +0100
+
+dolphin-emu (4.0+git607-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 11 Jan 2014 21:27:30 +0100
+
+dolphin-emu (4.0+git533-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+  * build using SDL1.2 rather than SDL2.0 (crash)
+  * add libusb-1.0-0-dev to build-dependencies
+  * add libpolarssl-dev < 1.3 to build-dependencies
+  * add libwxbase3.0-dev to build-dependencies
+  * add libwxgtk3.0-dev to build-dependencies
+  * bump libminiupnpc-dev build-dependency to >= 1.7
+  * add libsdl2-dev to build-conflicts
+  * updated hard-coded gcc-4.6 and g++-4.6 build,
+    to gcc-4.8 and g++-4.8 (dolphin now cleanly
+    compiles using GCC newer than 4.6)
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 23:43:19 +0100
+
+dolphin-emu (3.5+git1720-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 06 Aug 2013 14:35:25 +0200
+
+dolphin-emu (3.5+git1411-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 16 Jun 2013 21:14:29 +0200
+
+dolphin-emu (3.5+git1102-1nano) unstable; urgency=low
+
+  * New GIT
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 28 Mar 2013 21:10:15 +0100
+
+dolphin-emu (3.5+git1035-1nano) unstable; urgency=low
+
+  * New GIT
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 17 Mar 2013 10:26:03 +0100
+
+dolphin-emu (3.0+git776-1nano) unstable; urgency=low
+
+  * New GIT
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 Oct 2012 18:16:24 +0200
+
+dolphin-emu (3.0+git755-1nano) unstable; urgency=low
+
+  * New GIT
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Thu, 23 Aug 2012 21:35:24 +0200

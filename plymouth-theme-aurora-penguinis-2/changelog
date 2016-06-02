@@ -1,0 +1,11 @@
+plymouth-theme-aurora-penguinis-2 (1.0-2nano) unstable; urgency=low
+
+  * add debianize.diff
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 05 Apr 2016 20:38:45 +0200
+
+plymouth-theme-aurora-penguinis-2 (1.0-1nano) unstable; urgency=medium
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 05 Apr 2016 19:32:25 +0200

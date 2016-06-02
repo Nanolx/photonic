@@ -1,0 +1,5 @@
+opt/devkitpro/libogc/include/zip
+opt/devkitpro/libogc/include/zip/ioapi.h
+opt/devkitpro/libogc/include/zip/unzip.h
+opt/devkitpro/libogc/include/zip/zip.h
+opt/devkitpro/libogc/lib/wii/libzip.a

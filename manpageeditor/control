@@ -1,0 +1,19 @@
+Source: manpageeditor
+Section: devel
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), make, pkg-config,
+               libgtk2.0-dev, libgtksourceview2.0-dev,
+               libaspell-dev, autotools-dev
+Standards-Version: 3.9.4
+Homepage: http://gtk-apps.org/content/show.php/Man+Page+Editor+?content=160219
+
+Package: manpageeditor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Graphical editor for man pages
+ GTK+ 2 and GTK SourceView 2 based, mostly feature
+ complete editor for manual pages.
+ .
+ It also allows importing existing manpages
+ (also system-installed ones) in order to edit them.

@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+include /usr/share/pkg-kde-tools/makefiles/1/cdbs/kde.mk
+
+DEB_INSTALL_MANPAGES_audex = audex.1
+
+build/audex::
+	docbook2x-man debian/audex.1.docbook
+
+clean::
+	rm -f audex.1
+

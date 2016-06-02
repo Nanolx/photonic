@@ -1,0 +1,18 @@
+Source: lxdream
+Section: games
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 5), autotools-dev, libglib2.0-dev, libgtk2.0-dev, liblircclient-dev,
+               libpulse-dev, alsa-base, libsdl1.2-dev, libisofs-dev, libgl1-mesa-dev, libegl1-mesa-dev,
+               pkg-config, libpng-dev, libunistring-dev
+Standards-Version: 3.9.4
+Homepage: http://www.lxdream.org/
+
+Package: lxdream
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Emulator for the Sega Dreamcast system
+ Lxdream is an emulator for the Sega Dreamcast system,
+ running on Linux and OS X. While it is still in heavy
+ development (and many features are buggy or unimplemented),
+ it is capable of running most demos and some games.

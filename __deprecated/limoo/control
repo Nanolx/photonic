@@ -1,0 +1,26 @@
+Source: limoo
+Section: graphics
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), g++, qt5-qmake, libexiv2-dev, qtbase5-dev,
+               qtquick1-5-dev, qtdeclarative5-dev, qtscript5-dev, libqt5opengl5-dev
+Standards-Version: 3.9.5
+Homepage: http://labs.sialan.org/projects/limoo
+
+Package: limoo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, qml-module-qtgraphicaleffects
+Description: Lightweight Qt5 image viewer
+ Limoo is a simple, modern and light image viewer. Limoo 1.0 is completely
+ recreated and redesigned and based on Qt5 FrameWork and QML 2.0.
+ .
+ Features:
+  - Redesigned Image Viewer
+  - Image Browser
+  - Touch screen support
+  - Modern UserInterface
+  - New multi select method (Basket)
+  - Rotates
+  - Zoom and Pan
+  - Cache and Buffer images to improve performance
+  - View Engine to make images high contrast and high brithness.

@@ -1,0 +1,30 @@
+Source: xul-ext-classic-theme-restorer
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer
+
+Package: xul-ext-classic-theme-restorer
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: (partially) Revert Australis UI in Firefox 29 or newer
+ Restore squared tabs, appmenu, add-ons bar, small button view and
+ more on Australis UI, that was introduced in Firefox 29.
+ .
+ Additionally CTR allows you to:
+   - using colorful svg icons instead of the  standard ones
+   - hide labels from Awesomebar
+   - different themes for in-tab settings
+   - restore old search window
+   - more control about all bars and their appearance
+   - different choosable separators, close and security icons
+   - much more
+ .
+ CTR settings can be synced using builtin Firefox Sync functionality,
+ or im/exported as JSON file locally.

@@ -1,0 +1,21 @@
+Source: zelda-onilink-begins
+Section: games
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), libsdl1.2-dev, libsdl-mixer1.2-dev,
+               libsdl-image1.2-dev,libsdl-gfx1.2-dev, make, g++
+Standards-Version: 3.9.4
+Homepage: http://www.zeldaroth.fr/us/zolb.php
+
+Package: zelda-onilink-begins
+Replaces: zeldaolb
+Provides: zeldaolb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zelda - Oni Link Begins (fangame)
+ Brought down by a terrible curse since his recent
+ victory on the Dark Lord, Link is changing, day by
+ day, into a powerful creature with a destructive
+ nature named Oni-Link. Bannished from Hyrule, the
+ young hylian asks the princess Zelda some help.
+ She shows him his last hope: a portal to a secret world. 

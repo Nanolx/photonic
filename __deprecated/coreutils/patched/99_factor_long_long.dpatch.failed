@@ -1,0 +1,4 @@
+patching file src/factor.c
+Hunk #1 FAILED at 138.
+1 out of 1 hunk FAILED -- saving rejects to file src/factor.c.rej
+md5sum: d66aff84f39fb82fd0529c4537a2d15c  /home/chris/coreutils-8.21/debian/patches/99_factor_long_long.dpatch

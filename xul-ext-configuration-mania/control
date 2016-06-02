@@ -1,0 +1,19 @@
+Source: xul-ext-configuration-mania
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://bitbucket.org/cat_in_136/configuration-mania/wiki/Home
+
+Package: xul-ext-configuration-mania
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Hidden settings for Iceweasel
+ Configuration Mania is a firefox extension
+ provides a interface for tweaking its advanced
+ (hidden) setting.

@@ -1,0 +1,33 @@
+Description: Upstream changes introduced in version 0.4.1-1nano
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ plasma-wallpaper-starfield (0.4.1-1nano) unstable; urgency=low
+ .
+   * Initial release
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- plasma-wallpaper-starfield-0.4.1.orig/CMakeLists.txt
++++ plasma-wallpaper-starfield-0.4.1/CMakeLists.txt
+@@ -22,4 +22,4 @@ kde4_add_plugin(plasma_wallpaper_starfie
+ target_link_libraries(plasma_wallpaper_starfield ${KDE4_PLASMA_LIBS} ${KDE4_KIO_LIBS} ${KDE4_KFILE_LIBS} taskmanager)
+ 
+ install(TARGETS plasma_wallpaper_starfield DESTINATION ${PLUGIN_INSTALL_DIR})
+-install(FILES plasma-wallpaper-starfield.desktop DESTINATION ${SERVICES_INSTALL_DIR})
++install(FILES src/plasma-wallpaper-starfield.desktop DESTINATION ${SERVICES_INSTALL_DIR})

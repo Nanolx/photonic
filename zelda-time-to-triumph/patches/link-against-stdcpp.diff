@@ -1,0 +1,14 @@
+--- a/src/Makefile	2015-03-06 21:38:28.332029001 +0100
++++ b/src/Makefile	2015-03-06 21:39:16.532028049 +0100
+@@ -3,9 +3,9 @@
+ # Date: 13/1/2009 22:46:13
+ #--------------------------------------------------------------
+ 
+-PREFIX  = /usr/local
++PREFIX  = /usr
+ CFLAGS  = -O2 -Wall
+-LDFLAGS = -lSDL_gfx -lSDL_image -lSDL_mixer -lSDL
++LDFLAGS = -lSDL_gfx -lSDL_image -lSDL_mixer -lSDL -lstdc++ -lm
+ 
+ CC = g++
+ RM = rm -f

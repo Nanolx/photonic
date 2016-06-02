@@ -1,0 +1,21 @@
+Source: kcm-ufw
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev
+Standards-Version: 3.9.2
+Homepage: http://kde-apps.org/content/show.php/UFW+KControl+Module?content=137789
+
+Package: kcm-ufw
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KCM for UFW
+ This is a KDE control center module to configure and control the Uncomplicated Firewall.
+ The following features are supported:
+ .
+ 1. Enable/disable firewall
+ 2. Configure firewall default settings
+ 3. Add, edit, and remove rules
+ 4. Re-order rules via drag'n'drop
+ 5. Import/export of rules
+ 6. Setting of some IP tables modules

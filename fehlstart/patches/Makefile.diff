@@ -1,0 +1,12 @@
+--- fehlstart-0.2.8.orig/Makefile
++++ fehlstart-0.2.8/Makefile
+@@ -1,8 +1,6 @@
+-PREFIX ?= /usr/local
++PREFIX ?= /usr
+ INSTALLDIR := $(DESTDIR)$(PREFIX)
+ 
+-CC = gcc
+-
+ PKGS = keybinder gio-unix-2.0
+ INCS = $(shell pkg-config --cflags $(PKGS))
+ LIBS = $(shell pkg-config --libs $(PKGS))

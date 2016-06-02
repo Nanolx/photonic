@@ -1,0 +1,11 @@
+xul-ext-multi-links (3.0.0.19-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-multi-links (3.0.0.19-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 11 Jan 2014 23:01:42 +0100

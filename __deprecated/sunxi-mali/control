@@ -1,0 +1,25 @@
+Source: sunxi-mali
+Section: x11
+Priority: optional
+Maintainer: unknown <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), libdri2-dev, libump-dev
+Standards-Version: 3.9.5
+Homepage: http://linux-sunxi.org/
+
+Package: sunxi-mali
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libdri2-1, libump,
+         sunxi-mali-propritary
+Replaces: libgles1-mesa-dev, libegl1-mesa-dev, libgles2-mesa-dev,
+          libgles1-mesa,     libegl1-mesa,     libgles2-mesa
+Description: Mali 400 userspace drivers
+ Mali 400 userspace drivers
+
+Package: sunxi-mali-propritary
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, libdri2-1, libump,
+         sunxi-mali
+Replaces: libgles1-mesa-dev, libegl1-mesa-dev, libgles2-mesa-dev,
+          libgles1-mesa,     libegl1-mesa,     libgles2-mesa
+Description: Mali 400 userspace drivers
+ Propritary parts of the userspace drivers for Mali 400

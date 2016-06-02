@@ -1,0 +1,13 @@
+Source: nand-extract
+Section: utils
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage:
+
+Package: nand-extract
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Nand Extractor
+ This application can extract files from a Wii nand.bin

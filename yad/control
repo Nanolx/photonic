@@ -1,0 +1,18 @@
+Source: yad
+Section: x11
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), autotools-dev, mime-support,
+               gettext, intltool, libgtk-3-dev, pkg-config,
+               libxml-parser-perl, libxml2, libexpat1,
+               gawk, libwebkitgtk-3.0-dev
+Standards-Version: 3.9.4
+Homepage: http://code.google.com/p/yad/
+
+Package: yad
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Yet Another Dialog
+ YAD is a fork of Zenity with many improvements, such as custom
+ buttons, additional dialogs, pop-up menu in notification icon
+ and more.

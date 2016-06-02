@@ -1,0 +1,15 @@
+lxdream (0.9.1+hg1302.765e514f99a6-1nano) unstable; urgency=low
+
+  * New upstream snapshot
+  * build against latest libpng
+  * refresh glib-fixes.diff
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 27 May 2016 09:42:04 +0200
+
+lxdream (0.9.1+hg1295.9067aff5522d-1nano) unstable; urgency=low
+
+  * New HG snapshot
+  * improved debian packaging scripts
+  * add glib-fixes.patch from AUR (vEX)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 14 Apr 2014 18:06:35 +0200

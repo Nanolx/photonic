@@ -1,0 +1,5 @@
+libvdpau-sunxi (0.2+git20140727-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 23 Aug 2014 00:35:51 +0200

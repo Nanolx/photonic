@@ -1,0 +1,98 @@
+xul-ext-icedove-conversations (2.11.4-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fix issues with the gallery view and the pdf preview
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 26 May 2016 10:42:50 +0200
+
+xul-ext-icedove-conversations (2.11.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    2.11.1
+      - fix the issue where the conversation view gets stuck
+    2.11.3
+      Fix translations and fix Enigmail issue
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 15 May 2016 17:23:50 +0200
+
+xul-ext-icedove-conversations (2.11-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Several fixes to improve compatibility with Enigmail
+    - Misc. fixes following breaking changes in Icedove
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:34:58 +0100
+
+xul-ext-icedove-conversations (2.10.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 'let is the new var' fixed build
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Dec 2015 21:25:30 +0100
+
+xul-ext-icedove-conversations (2.10-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fix attachments not showing with pgp/mime
+    - theme issues on Windows
+    - some mails did not display
+    - gallery view was broken
+    - email addresses in the CC field were mixed up on reply-all.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 10 Aug 2015 16:35:34 +0200
+
+xul-ext-icedove-conversations (2.9.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Huge cleanup and heroic fixes following deprecations / breakages in
+      the Mozilla codebase (Paul Stöcker).
+    - Conversations should integrate properly into dark themes
+      (Tobias Bengfort). 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 30 Apr 2015 20:13:55 +0200
+
+xul-ext-icedove-conversations (2.8.1-1nano) unstable; urgency=low
+
+  * New upstream release
+     * New features
+     - The address for replying can now be changed in the quick reply.
+     - The "quick reply" feature now uses an HTML editor (#369), meaning
+       that no loss of formatting occurs when replying. The message will
+       be sent as HTML only if necessary (just like the regular composition
+       process). This fixes several other issues related to signatures
+       (#353, #644, #779). The hidden, unsupported compose-in-a-tab feature
+       provided by this addon hence also uses HTML composition.
+    - New "open" action for attachments added to a quick-reply.
+    - The "open messages in: a new window" preference (in Advanced >
+      Reading and Display) is now honored. This means that you can open a
+      conversation in a separate window by flipping this preference and
+      double-clicking on a message in the thread pane, or hitting the
+      "pop out" button in the conversation toolbar.
+    - Support for the DKIM verifier addon.
+    - Option to always collapse signatures.
+    * Bugfixes.
+    - Fix the Lightning plugin support.
+    - Contact tooltips now display properly even when the message is collapsed.
+    - The addon no longer waits for images to load before reflowing and
+      adjusting the height of a message.
+    - Several other bugfixes related to changes in Thunderbird.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 11 Aug 2014 18:29:30 +0200
+
+xul-ext-icedove-conversations (2.8-1nano) unstable; urgency=low
+
+  * new upstream release
+    - html in quick reply
+    - fixes numerous issues with signatures
+    - conversations now open in separate windows
+      hence respecting user preferences,
+    - compatibility with the dkim verifier addon
+    - numerous fixes for Thunderbird 31.0 compatibility
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Jul 2014 10:24:11 +0200
+
+xul-ext-icedove-conversations (2.7-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 13 Apr 2014 19:04:25 +0200

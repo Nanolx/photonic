@@ -1,0 +1,2787 @@
+xul-ext-classic-theme-restorer (1.5.3~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+  [locale(s)]
+    - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+    - Estonian (et) translation updated (thanks to Maidur)
+    - Japanese (ja) translation updated (thanks to mm_k)
+    - French (fr) translation updated (thanks to BlackJack)
+  [general change(s)]
+    - internal change for export/import options (thanks to Toady)
+    - minor CTR prefwindow tweaks
+    - additional location bar: text in bar gets selected automatically 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 16:30:13 +0200
+
+xul-ext-classic-theme-restorer (1.5.3~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.2~beta12
+      [fix(es)]
+        - issues with main/PanelUI menu button on tabs toolbar
+        - issues with attribute [mode="text"] on tabs toolbar
+        - issues with main/PanelUI menu button and text mode
+      [new option(s)]
+        - hidden option to add a separator to main/PanelUI menu button
+    1.5.3~beta1
+      [fix(es)]
+        - old search small dropmarker + adjust popup width
+      [new option(s)]
+        - Searchbar: custom width settings for search popups (old search only)
+        - General UI (1): add left/right separator to main/PanelUI menu button
+      [general change(s)]
+        - MacOSX & squared tabs & lw-theme: active tab color tweaks
+      [add-on compatibility]
+        - OmniSidebar + CTRs add-on manager settings
+        - rename Puzzle Toolbars to Puzzle Bars (thanks to Quicksaver)
+    1.5.3~beta2
+      [locale(s)]
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - French (fr) translation updated (thanks to BlackJack)
+      [new option(s)]
+        - Searchbar: return to "default" search engine after search
+        - Toolbar (3): Blue Aero colors > Grey-blue Aero colors 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 26 May 2016 10:38:16 +0200
+
+xul-ext-classic-theme-restorer (1.5.2~beta12-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.2~beta11
+      [locale(s)]
+	- Greek (el) translation updated (thanks to George M.)
+	- Upper Sorbian (hsb) translation updated (thanks to milupo)
+	- Lower Sorbian (dsb) translation updated (thanks to milupo)
+	- Spanish (es) translation updated (thanks to strel)
+	- Slovenian (sl-SI) translation updated (thanks to Klofutar)
+	- Chinese (zh-CN) translation updated (thanks to Cye3s)
+	- Estonian (et) translation updated (thanks to Maidur)
+	- Polish (pl-PL) translation updated (thanks to Mrere)
+	- Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix(es)]
+	- attribute [mode="text"] + rss icon in location bar
+    1.5.2~beta12
+      [fix(es)]
+	- issues with main/PanelUI menu button on tabs toolbar
+	- issues with attribute [mode="text"] on tabs toolbar
+	- issues with main/PanelUI menu button and text mode
+    [new option(s)]
+	- hidden option to add a separator to main/PanelUI menu button
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 20 May 2016 17:58:55 +0200
+
+xul-ext-classic-theme-restorer (1.5.2~beta10-1nano) unstable; urgency=low
+
+  * New upstream release
+  [locale(s)]
+    - Japanese (ja) translation updated (thanks to kk_m)
+  [fix(es)]
+    - about:preferences favicon appearance in some cases
+  [new option(s)]
+    - Location bar (1): extra urlbar > select target (current, new tab, new window)
+  [general change(s)]
+    - moved border rounding settings to own category
+    - minor tweaks for border rounding options 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 May 2016 20:13:18 +0200
+
+xul-ext-classic-theme-restorer (1.5.2~beta9-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.0~beta6
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] keyboard shortcut did not open 'unsorted bookmarks' from popup 
+    1.5.0~beta7
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [change] improved FireIE add-ons compatibility with CTR 
+    1.5.0~beta8
+      [fix] Win7 + HiDPI mode: alt. 'about:preferences' appearance options
+      [fix] Fx48+: Firefox menu > web developer
+      [change] tweaks on 'old search' and 'open in new tab' option
+      [change] 'web developer' gets moved from 'Tools' popup to 'Firefox' popup
+    1.5.0~beta9
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [fix] minor errors caused by previous beta 
+    1.5.1~beta1
+      [locale(s)]
+        - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix(es)]
+        - pinned tabs & 'titlechanged' status
+      [add-on compatibility]
+        - 'FireIE' add-on: padding in some cases
+      [general change(s)]
+        - add-on manager options: font size tweaks for add-on description 
+    1.5.1~beta2
+      [fix(es)]
+        - pinned tabs & 'titlechanged' status
+      [new option(s)]
+        - (Fx48) Location bar (1): alternative 'autocomplete popup' (experimental)
+    1.5.1~beta3
+      [general change(s)]
+        - cosmetic tweaks for "alternative 'autocomplete popup'" option
+        - old search: popup width should mostly match search bar width
+        - add-on manager options: font size tweaks for add-on description
+      [add-on compatibility]
+        - 'Cache status' add-on: status position
+    1.5.1~beta4
+      [locale(s)]
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix(es)]
+        - pinned tabs: image padding in some cases 
+    1.5.1~beta5
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [change(s)]
+        - 'titlechanged' pinned tabs: unified appearance across platforms
+    1.5.1~beta6
+      [locale(s)]
+        - Russian (ru) translation updated (thanks to Alexei)
+      [fix(es)]
+        - (Fx48) Location bar (1): alternative 'autocomplete popup'
+    1.5.1~beta7
+      [new option(s)]
+        - (Fx45+) General UI 1: HTML5 full screen warning
+      [general change(s)]
+        - ui tweaks for "alternative 'autocomplete popup'" option
+        - old search: tweaks for popup width
+    1.5.1~beta8
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Spanish (es) translation updated (thanks to strel)
+      [fix(es)]
+        - MacOS & big icon mode: back/forward button
+      [general change(s)]
+        - minor internal tweaks
+    1.5.1~beta9
+      [locale(s)]
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - Czech (cs) locale updated (thanks to poljos)
+      [fix(es)]
+        - Win10 & Fx47: option to display OS titlebar background
+      [general change(s)]
+        - unlocked tab height settings: up to 250 px possible
+    1.5.1~beta10
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+      [fix(es)]
+        - Win 10 & squared tabs v2: glitch in maximixed mode
+      [general change(s)]
+        - tweaks for alternative 'autocomplete popup' option
+        - tweaks for 'hide i-icon' option 
+    1.5.1~beta11
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+      [fix(es)]
+        - squared pinned tabs: glitch with tab toolbars overflow state 
+    1.5.2~beta1
+      [locale(s)]
+        - French (fr) translation updated & redone (thanks to BlackJack)
+      [new option(s)]
+        - Old search: auto adjust popup width
+      [fix(es)]
+        - Fx48+ & generic favicon options: icons in locationbars popup
+      [general change(s)]
+        - moved search settings on own search category
+      [add-on compatibility]
+        - Searchbar autoresizer (broken by CTR 1.5.1) 
+    1.5.2~beta2
+      [locale(s)]
+        - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+        - Estonian (et) translation updated (thanks to Maidur)
+        - French (fr) translation updated (thanks to BlackJack)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - minor locale tweaks for English and German locales
+      [fix(es)]
+        - CTRs reload button glitch after leaving customizing mode
+      [new option(s)]
+        - General UI 1: about:home > hide snippets
+        - General UI 2: bookmark buttons popup > view sidebar entry
+      [general change(s)]
+        - CTRs history menu button: buttons popup > view sidebar entry
+    1.5.2~beta3
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix(es)]
+        - MacOSX: CTR prefwindows height and width
+      [general change(s)]
+        - moved 'autocomplete' related options to location bar (2) category
+    1.5.2~beta4
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [general change(s)]
+        - (Fx48+) tweaks for 'alternative autocomplete appearance' option
+        - (Fx48+) tweaks for 'autocomplete > disable height limit' option 
+    1.5.3~beta5
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to kk_m)
+        - Estonian (et) translation updated (thanks to Maidur)
+      [fix(es)]
+        - bookmarks menu button issue (thanks to Toady)
+        - (Fx47+) flashing glitch with 'bookmarks star > hide popup' option
+      [new option(s)]
+        - added another icon to 'close icon' options
+      [general change(s)]
+        - (Fx46+) minor tweaks to 'alt. options page v2'
+    1.5.2~beta6
+      [add-on compatibility]
+        - Setting Sanity settings on options page/window
+    1.5.2~beta7
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to kk_m)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - 'Firefox Tour' works, if main/PanelUI menu button is on a top toolbar
+        - MacOSX + tabs not on top v1: active tab appearance
+        - MacOSX + tabs not on top v1: custom tab colors option for active tab
+      [new option(s)]
+        - Location bar (1): border radius settings for location and search bar
+      [general change(s)]
+        - internal changes to movable main/PanelUI menu button to improve compatibility
+        - removed 'main/PanelUI menu button separator' item > use default separators
+        - removed previous 'fix border radius' option 
+    1.5.2~beta8
+      [fix(es)]
+        - main/PanelUI menu button got hidden, if nav-bar was hidden
+      [general change(s)]
+        - error console showed issue with CTRs reload button (if hidden)
+    1.5.2~beta9
+      [locale(s)]
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Japanese (ja) translation updated (thanks to kk_m)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Estonian (et) translation updated (thanks to Maidur)
+      [general change(s)]
+        - minor tweaks for old search popup width option
+        - (Fx48+) tweaks for 'alternative autocomplete appearance' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 15 May 2016 17:10:43 +0200
+
+xul-ext-classic-theme-restorer (1.5.0~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.0~beta4
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Italian (it) translation updated (thanks to Styb)
+      [locale] many tweaks for German locale (thanks to Johnni)
+      [locale] added back ja locale
+      [change] CTR prefwindow: tweaks and fixes (thanks to Johnni)
+      [change] 'File > Restart': show icon only, if 'menu icon' add-ons are used
+    1.5.0~beta5
+      [fix] Win8/10 & large icon mode: location bar size
+      [fix] Win10 & large icon mode + small button mode: identity icon size
+      [fix] Win10 & Fx45+: large icon mode glitches
+      [new option > Toolbars 2] decrease add-on bar height
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:32:57 +0200
+
+xul-ext-classic-theme-restorer (1.5.0~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Italian (it) translation updated (thanks to Styb)
+    [fix] 'general ui > replace generic favicon' options:
+          restored correct folder icons
+    [change] tweaked option 'location bar 2 > hide 'i'-icon (if possible)'
+    [change] minor tweaks and corrections (thanks to maxoku) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 19 Mar 2016 18:05:29 +0100
+
+xul-ext-classic-theme-restorer (1.5.0~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.9~beta5
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] many tweaks and fixes for German locale (thanks to Johnni)
+      [change] CTRs prefwindow tweaks 
+    1.4.9~beta6
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new option > General UI (2)] Fx47+ & Bookmarks star: hide popup
+        (if page is not bookmarked)
+      [new option > Location Bar (1)] disable 'Unified autocomplete'
+        (about:config preference) 
+    1.4.9~beta7
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Win8/10: 'small button mode' glitch
+      [fix] HiDPI: restart button on toolbar glitch 
+    1.4.9~beta8
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [fix] glitch with e10s + curved tabs + custom tab colors
+      [change] tweaks for e10s + CTRs squared tabs 
+    1.4.9~beta9
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Estonian (et) translation updated (thanks to Maidur) 
+    1.4.9~beta10
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] squared tabs: pinned tabs glitch after 1.4.9b8 change
+      [fix] Win10 + squared tabs: pinned tabs glitches
+    1.4.9~beta11
+      [fix] curved tabs + lw-themes + custom tab colors
+    1.4.9~beta12
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] Fx45+ & 'inverted icon options': missing icons
+    1.5.0~beta1
+      [fix] MacOSX: menu buttons on a
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] MacOSX: 'general ui: replace generic favicon' options
+      [fix] "Auto Form" add-on huge icon sizes on toolbars dd-on bar
+      [new option > location bar (2)]: hide labels
+      [new option > location bar (2)]: hide 'i'-icon (if possible)
+      [change] 'Cache status' add-on status: moved to CTRs status area 
+    1.5.0~beta2
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] MacOSX: 'general ui: replace generic favicon' options
+      [fix] "Auto Form" add-on huge icon sizes on toolbars 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:14:33 +0100
+
+xul-ext-classic-theme-restorer (1.4.9~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.8~beta6
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] French (fr) translation updated (thanks to Zefling)
+      [locale] Italian (it) translation updated (thanks to Styb)
+      [fix] Linux/MacOSX + 'version nr. in add-on lists': preferences button label
+      [change] internal tweaks 
+    1.4.8~beta7
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] text mode + main menu button popup 
+    1.4.9~beta1
+      [locale] Italian (it) translation updated (thanks to Styb)
+      [new option > Tabs 2] tab close: bigger icon (Windows/MacOSX only)
+      [new option > add-on manager] replace button labels with icons
+      [new option > add-on manager] show buttons only on 'hover'
+      [new option > location bar] Fx45+: replace 'i'-icon with globe icon 
+    1.4.9~beta2
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new option > General UI 2] Fx47+: hide recently added bookmarks (Windows/Linux)
+      [change] tweaked 'alternative alert box' appearance (thanks to maxoku)
+      [change] tweaked CTRs 'restart' icon
+      [change] added a restart button 
+    1.4.9~beta3
+      [change] 'restart [brand name]' > 'restart'
+      [fix] Fx44+: position of #UITourPopup
+      [new option > General UI 2] Fx47+: hide recently added bookmarks (MacOSX)
+    1.4.9~beta4
+      [locale] Italian (it) translation updated (thanks to Styb)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] many tweaks and fixes for German locale (thanks to Johnni)
+      [change] WinXP: minor tweaks on 'prefs in window' options (thanks to maxoku)
+      [change] minor code tweaks on 'favicon in location bar' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 23 Feb 2016 19:13:23 +0100
+
+xul-ext-classic-theme-restorer (1.4.8~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+    [locale] Russian (ru) translation updated (thanks to Alexei)
+    [locale] Estonian (et) translation updated (thanks to Maidur)
+    [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+    [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+    [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+    [change] expanded empty/generic icon options 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 08 Feb 2016 20:45:44 +0100
+
+xul-ext-classic-theme-restorer (1.4.8~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+    [new option > CTR] 'Restart Firefox' in appmenu and filemenu
+    [change] CTR prefwindow: ui tweaks for empty/generic icon settings
+    [change] CTR prefwindow: moved some preferences between categories 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 05 Feb 2016 18:17:00 +0100
+
+xul-ext-classic-theme-restorer (1.4.8~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.7~beta7
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] Fx44+ & 'icons+text' modes: button width
+      [fix] Fx44+ & 'iconsize=large' attribute on nav-bar: icon size
+      [fix] 'old search' engine list popup: 'add engine' menuitem appearance
+      [change] bookmark popups: label references for 'unsorted bookmarks' menu/item 
+    1.4.7~beta8
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [change] minor tweaks for 'empty/generic' favicon options
+      [change] minor tweaks on 'location bars dropmarker'
+    1.4.7~beta9
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] 'mode=full': dropmarker for toolbar buttons 'type=menu'
+      [change] tweaks for 'prefs in window' option in Windows Classic Vs 
+    1.4.8~beta1
+      [new option > Tabs (1)] 'Show favicon, if a site does not offer one'
+      [new option > General UI (1)] 'Replace generic favicon'
+      [new (sub)option > General UI (1)] 'Unsorted Bookmarks menu'
+      [new (sub)option > Location bar (1)] 'hide stop & reload' buttons: always show 'go'
+      [new option > Location bar (1)] 'Make dropmarker always visible'
+      [change] removed previous 'Show favicon, if a site does not offer one' option
+      [change] removed previous 'Replace generic favicon' option
+    1.4.8~beta2
+      [fix] 'Replace generic favicon' option & bookmark folders
+    1.4.8~beta3
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] HiDPI: icon+text modes
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 02 Feb 2016 17:50:00 +0100
+
+xul-ext-classic-theme-restorer (1.4.7~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.7~beta5
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Danish (da-DK) (thanks to scootergrisen)
+      [fix] 'tab loading animation' options
+      [fix] Win10 & HiDPI + Fx45+ & 'reduce location bars height' option
+      [fix] Fx45+ & big icon mode: loop button
+      [new option > Add-ons Manager] add-on lists: highlight entry on hover
+      [change] preference window: renamed some labels
+      [change] minor tweaks for 'prefs in window' option 
+    1.4.7~beta6
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] tweaks on 'add-on lists: highlight entry on hover' option
+      [change] removed 'open in a new private window' option (Fx29-37)
+      [change] internal tweaks on some options 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 26 Jan 2016 18:32:39 +0100
+
+xul-ext-classic-theme-restorer (1.4.7~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.7~beta3
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [fix] Devtools>Style editor: errors about CTRs 'missing' css files
+      [fix] Win10 & back/forward buttons
+      [new option > General UI 1] old search: small dropmarker (Windows/OSX)
+      [new option > General UI 1] old search: open search in new tab (about:config preference)
+      [new option > General UI 1] old search: middle click to search in foreground tab
+      [change] small button mode: font size of toolbar button badges 
+    1.4.7~beta4
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] typo in German locale 1.4.7b3
+      [change] Linux: hide 'old search > small dropmarker' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 20 Jan 2016 17:49:42 +0100
+
+xul-ext-classic-theme-restorer (1.4.7~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.7~beta1
+      [change] experimental full/text modes: more tweaks
+      [change] experimental full/text modes: selectable in customizing mode
+      [change] old search: remove hidden search engines from popup
+      [change] minor tweaks on 'prefs in window v2' option
+      [change] minor other tweaks 
+    1.4.7~beta2
+      [locale] French (fr) translation updated (thanks to Zefling)
+      [change] 'old search' engine list/popup: middle click on engine
+      [change] minor improvements for 'text/icon+text' modes
+      [change] minor tweaks on 'prefs in window v2' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 16 Jan 2016 11:11:32 +0100
+
+xul-ext-classic-theme-restorer (1.4.6.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  [fix] 'old search': tab key navigation through suggestions
+  [fix] 'old search': temp. workaround for SearchWP add-on
+  [fix] 'Fx46+' & add-ons managers version number: displayed number
+        in update category 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 12 Jan 2016 18:37:50 +0100
+
+xul-ext-classic-theme-restorer (1.4.6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.6~beta9
+      [fix] Firefox 46+: add-ons managers version number
+      [fix] Windows 10 & small button view: menu button dropmarker
+      [fix] preferences page options: glitch with autocomplete box
+      [change] tweaks for experimental "icons+text" mode [mode="full"]
+      [change] tweaks for experimental "text" mode [mode="text"]
+    1.4.6~beta10
+      [locale] Italian (it) translation updated (thanks to gialloporpora)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 08 Jan 2016 17:21:22 +0100
+
+xul-ext-classic-theme-restorer (1.4.6~beta8-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.6~beta7
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] German translation: replaced some labels
+      [fix] Windows + HiDPI + options window v2: checkbox/radio size
+      [fix] Aero colors option: search box border color
+      [fix] Aero colors option + menu bar + Windows classic VS
+      [change] preference window: minor tweaks 
+    1.4.6~beta8
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Chinese (zh-TW) translation updated (thanks to Shyayngs)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Czech (cs) translation updated (thanks to poljos)
+      [change] minor tweaks for 'unsorted bookmarks menu/menuitem' options
+      [change] preferences in window: checks for max. available space (thanks to Mike)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 06 Jan 2016 10:32:35 +0100
+
+xul-ext-classic-theme-restorer (1.4.6~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.5~beta6
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] 'hide tab audio icon' option now also hides the corresponding menu item
+      [change] removed unneeded code from old search (thanks to Toady)
+      [change] internal tweaks 
+    1.4.5~beta7
+      [locale] Italian (it) translation updated (thanks to Styb)
+      [fix] 'old search': using ALT key + Up/down to open menu
+      [fix] 'old search': switching to search box with TAB key
+      [fix] Win10 & aero colors option & mov. b/f button: location/search bar border
+      [fix] WinXP & Fx43+ & small button mode: back-button glitch 
+    1.4.5~beta8
+      [change] added 'old search' button to customizing mode
+      [change] minor tweaks for customizing mode
+      [change] moved 'old search' checkbox to the top of 'General UI 1' 
+    1.4.6~beta1
+      [fix] Fx43+ & add-ons managers compact view: minor glitch
+      [change] 'old search': bigger drop down icon (like on older Fx versions)
+      [change] 'old search' + HiDPI mode: magnifying glass appearance
+      [change] 'old search': code cleanup
+    1.4.6~beta2
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] Linux: 'old search' dropmarker/magnifying glass icons
+      [fix] 'old search': drop text into search box to search
+      [fix] 'remember last selected options category' + default search
+      [fix] 'remember last selected options category' + 'empty icon sheet'
+      [change] 'old search' options internal code tweaks
+      [change] tweaks on 'hide warnings' option
+      [change] height of CTRs prefwindow 
+    1.4.6~beta3
+      [new option > Location bar] number of results in suggestions popup
+      [new option > General UI 1] bookmarks menu button: show 'view toolbar' menuitem
+      [new option > General UI 1] bookmarks menu button: hide 'unsorted bookmarks' menuitem 
+    1.4.6~beta4
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option > Location bar] Remove scrollbars from suggestions popup
+      [change] CTR prefwindow: renamed 'application' button to 'Firefox' button
+      [change] CTR prefwindow: visible Firefox button color in category
+      [change] CTR prefwindow: added new categories to reduce scrolling
+      [change] CTR prefwindow: moved some settings between categories 
+    1.4.6~beta5
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option > Firefox button] custom color for button on toolbars
+      [fix] 'additional location bar': searching with this location bar
+      [change] modified some labels
+      [change] minor tweaks to preference window
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 27 Dec 2015 19:30:08 +0100
+
+xul-ext-classic-theme-restorer (1.4.5~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+  [locale] Spanish (es) translation updated (thanks to strel)
+  [locale] Estonian (et) translation updated (thanks to Maidur)
+  [locale] Greek (el) translation updated (thanks to George M.)
+  [change] tweaks for 'remember last selected options category' option
+  [change] minor tweaks for 'small button mode' option on Windows 10 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 15 Dec 2015 19:17:17 +0100
+
+xul-ext-classic-theme-restorer (1.4.5~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.4~beta9
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] old search > 'manage search engines' link/menuitem 
+    1.4.4~beta10
+      [fix] option 'top level domain images: classic appearance' on some websites 
+    1.4.5~beta1
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] option 'top level domain images: classic appearance' on some websites
+      [fix] Firefox 45+ & favicon in urlbar: icon size on some complete themes
+      [change] HiDPI: minor tweaks on options window 
+    1.4.5~beta2
+      [fix] Fx45+: favicon settings + complete themes
+      [fix] Fx45+: inverted icon settings + loop/hello button
+    1.4.5~beta3
+      [new option > Location bar (1)] custom min/max width for location/search bar
+      [change] prefwindow: moved some options into 'Location bar (2)' category
+      [change] minor internal tweaks and optimizations 
+    1.4.5~beta4
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] browsers 'middle-click paste' feature on identity box
+      [new option > General UI 1] 'unsorted bookmarks' submenu in CTRs bookmarks menu
+      [change] minor location bar tweaks 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Dec 2015 21:16:56 +0100
+
+xul-ext-classic-theme-restorer (1.4.4~beta8-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.4~beta4
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [new option > Location bar] Gray color for unkown identity and chrome pages
+      [change] Fx 44+: tweaks on 'restore empty favicon' option
+      [change] tweaks on 'favicon in identity box' option
+      [change] tweaks on 'Fx icon for valid chrome pages' option 
+    1.4.4~beta5
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] Fx45+: 'click on icon opens page info' option
+      [fix] Fx44+: replaced deprecated NewTabURL calls
+      [fix] hide some CTR options from complete themes
+      [change] tweaks on 'gray color for unknown identity & chrome page' options 
+    1.4.4~beta6
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] last Ukrainian translation update broke CTR for that locale
+      [fix] Fx45+: white empty favicon for tabs option
+      [change] minor internal tweaks 
+    1.4.4~beta7
+      [new option > Location bar] Windows 10: reduce location/search bar height
+      [change] Win10 & 'appbutton on titlebar' & non-default themes: caption buttons 
+    1.4.4~beta8
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option > Toolbars 2] Windows 10: suboption for "title/menu/tabs toolbar
+                     remove bg color" to adjust caption buttons for some OS themes
+      [change] tweaks on 'feed in location bar' option
+      [change] tweaks on 'gray color for unknown identity and chrome pages' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Nov 2015 20:37:35 +0100
+
+xul-ext-classic-theme-restorer (1.4.4~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.4~beta1
+      [new option > Options page]: remember last selected category
+      [new option > Options page]: custom window dimensions for prefwindow
+      [change] padlock icon options: more icons
+      [change] moved all 'about:preferences' options to 'Options page' category
+      [change] tweaks for 'about:preferences' options
+      [change] tweaks for 'left/right nav-bar space' option 
+    1.4.4~beta2
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [change] minor tweaks for 'about:preferences' options
+      [change] tweaks for 'left/right nav-bar space' option 
+    1.4.4~beta3
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [change] OSX/Linux/Windows: tweaks for 'about:preferences' options
+      [change] Fx40-41: tweaks for 'about:preferences' options 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:24:09 +0100
+
+xul-ext-classic-theme-restorer (1.4.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.3~beta10
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix] rare glitch with TabMixPlus and some configurations
+      [change] minor improvements on padlock icons
+      [change] various tweaks for "open 'about:preferences' in a window (v2)" option
+    1.4.3~beta11
+      [fix] open 'about:preferences' in a window (v1/v2): sub dialog width on some locales
+    1.4.3beta~12
+      [new options > General UI (1)] 'about:preferences window appearance' v1&v2 for tabs
+        Note: General > Homepage > 'Use Current page' will always add 'about:preferences'
+        as homepage, because thats the only page currently opened in the new window. No
+        difference to browsers default preferences ui with only preferences tab open.
+    1.4.3~beta13
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [fix] minor issue with "blue toolbars" option 
+    1.4.3~beta14
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [change] "open 'about:preferences' in a window" options
+      [change] minor prefwindow tweaks 
+    1.4.3~beta15
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Firefox 45+: favicon in location bar
+      [fix] Firefox 45+: padlock icon settings
+      [fix] Linux + 'tabs no on top': toolbar glitch
+      [change] internal: 'var' replaced all 'let'/'const' 
+    1.4.3~beta16
+      [change] 'about:preferences' now remembers last category/tab ;-)
+      [change] a few internal tweaks
+    1.4.3~beta17
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option > General UI (1)] open 'about:preferences' in a window (for complete themes)
+      [fix] tabs not on top & Fx42+: issues with titlebar in some cases
+    1.4.3~beta18 (= 1.4.3~beta19)
+      [fix] Fx45+: 'hide padlock icons' & 'show security icons' options
+      [change] favion + padlock: switched positions to match upcoming Fx45+ behavior
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 Nov 2015 19:56:00 +0100
+
+xul-ext-classic-theme-restorer (1.4.3~beta9-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.3~beta5
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [change] Fx42+ & mov. b/f buttons: page proxy icon spacing
+      [change] Fx43+: updated icons padlock options
+      [change] tweaks for 'alt. preferences appearance'
+    1.4.3~ beta6
+      [fix] Fx43+ & favicon in location bar: security icon for not secure connections
+      [new option > Location bar] Fx42+: hide gray color when hovering identity box
+      [change] centered "simulated" preference window on screen
+      [change] option for colorizing identity box for verified/secure connections
+    1.4.3~beta7
+      [fix] minor glitches
+    1.4.3~beta8
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [new option > General UI (1)] open 'about:preferences' in a window (v2)
+      [change] moved 'about:preferences' options into a menulist
+      [change] tweaks on previous 'about:preferences' options
+    1.4.3~beta9
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] 'hide tabs bar with one tab' + pinned tabs: print preview
+      [fix] a few 'big icon mode' glitches
+      [change] various tweaks for "open 'about:preferences' in a window (v2)" option
+      [change] "open 'about:preferences' in a window" options now, display an own
+               'Tools' menu entry and hide the default one, show an own preferences
+               toolbar button and hide the default one 
+      [new option > Location bar] Fx40+: alternative 'reader' icons
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 10 Nov 2015 17:36:32 +0100
+
+xul-ext-classic-theme-restorer (1.4.3~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+    [fix] Windows + HiDPI: glitch with appbutton on titlebar (icon only)
+    [fix] CTR buttons on bookmarks bar + Fx44+: icon size glitch
+    [fix] Fx 40-42: search button glitch with CTRs simulated prefwindow
+    [change] WinXP/7 & Classic visual style & text mode: button appearance 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 04 Nov 2015 20:11:58 +0100
+
+xul-ext-classic-theme-restorer (1.4.3~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.2~beta1
+      [locale] Italian (it) translation updated (thanks to gialloporpora)
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [change] Fx43+: 'old search' checks 'browser.search.openintab' switch
+      [change] Fx43+: 'old search' hides location bars 'change search settings' button 
+    1.4.2~beta2
+      [fix] beta 1 broke zh-CN locale
+      [fix] Fx44+: big icon mode
+      [fix] hide some options for complete themes 
+    1.4.2~beta3
+      [change] Fx42+: experimental tweaks for 'version number' option
+    1.4.2~beta4
+      [locale] Italian (it) translation updated (thanks to gialloporpora)
+      [change] Fx42+: more experimental tweaks for 'version number' optio
+    1.4.2~beta5
+      [locale] French (fr) translation updated (thanks to Zefling) 
+    1.4.2~beta6
+      [fix] 'version number' option + 'release notes'
+      [fix] minor glitches with 'alt. add-ons manager' option 
+    1.4.3~beta1
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] glitch with 'tab close at tab toolbars end' option + TabMixPlus add-on
+      [new option > General UI (1)] classic appearance for 'top level domain' images
+      [new option > General UI (1)] Firefox 44+: alternative appearance for alert notifications
+      [change] Windows Classic VS + 'additional toolbar separators' option 
+    1.4.3~beta2
+      [fix] "classic appearance for 'top lev. domain' images" + some web pages 
+    1.4.3~beta3
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [change] WinXP/7 & Classic visual style & small buttons: button appearance
+      [change] WinXP/7 & Classic visual style & icons+text v3/4: button appearance 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Oct 2015 19:46:21 +0100
+
+xul-ext-classic-theme-restorer (1.4.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.1~beta4
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [fix] latest Fx44 broke 'Old Search' option for Firefox 43 and newer
+      [fix] Fx42+: alt new tab page glitch (thanks to Toady)
+      [fix] fullscreen video + 'hide tabs bar with one visible tab': pinned tabs
+            glitch 
+    1.4.1~beta5
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] Fx40/41: 'alternative new tab' option
+      [fix] Fx42: 'tab separator' options 
+   1.4.1~beta6
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 12 Oct 2015 20:00:58 +0200
+
+xul-ext-classic-theme-restorer (1.4.1~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+    [locale] Estonian (et) translation updated (thanks to Maidur)
+    [fix] favicon in location bar: duplicated security icon (thanks to strel)
+    [fix] HiDPI & Windows & Fx40+ & inverted icons: downloads button glitch
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 02 Oct 2015 19:20:37 +0200
+
+xul-ext-classic-theme-restorer (1.4.1~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.1~beta1
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [new option > General UI (1)] Fx43+: Old Search (experimental)
+      [new option > Add-on Manager] add-on list: 'compact view +'
+    1.4.1~beta2
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] text mode: visibility of star and feed buttons in location bar
+      [change] minor internal tweaks and optimizations
+      [change] support for NoiaButtons 2.0+ improved 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 29 Sep 2015 18:51:27 +0200
+
+xul-ext-classic-theme-restorer (1.4.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.0~beta7
+      [fix] 'Add-on Manager: version number' and 'Cleanest Add-on Manager' add-on
+      [fix] Fx41+: solve issues between 'custom new-tab url' option and other add-ons 
+    1.4.0~beta8
+      [fix] major issue with activity indicator 
+    1.4.0~beta9
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Czech (cs) locale updated (thanks to poljos)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Sep 2015 10:28:08 +0200
+
+xul-ext-classic-theme-restorer (1.4.0~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.0~beta5
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [fix] Windows classic vs + squared tabs: new-tab tab glitch
+      [fix] Windows + squared tabs v2: navigation toolbar overlapping
+      [new option > Add-ons Manager] Fx40+: compact view
+      [change] internal tweaks for 'alt. add-ons manager' option 
+    1.4.0~beta6
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Fx44+ & 'alt. add-ons manager': button size
+      [fix] Fx44+ & 'compact add-on lists': button size
+      [change] minor tweaks for 'compact add-on lists' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Sep 2015 19:05:13 +0200
+
+xul-ext-classic-theme-restorer (1.4.0~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.0~beta3
+      [locale] Chinese (zh-TW) translation updated (thanks to Shyayngs)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [change] tweaks for 'move dropmarker to location bars end' option
+      [change] tweaks for 'tab title in Firefox titlebar' option
+      [change] tweaks for 'hide navigation toolbar' option
+      [change] Win8/10: border color tweaks for "squared tabs australized v2"
+      [change] minor prefwindow improvements (thanks to strel) 
+    1.4.0~beta4
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] Win10 + curved tabs (alt): restored active tabs border
+      [change] 'tab title in Firefox titlebar' option:
+        * title length gets automatically reduced to not overlap with caption buttons
+        * title color adjusts automatically for lw-themes
+        * removed title bars text shadow for lw-themes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Sep 2015 21:36:47 +0200
+
+xul-ext-classic-theme-restorer (1.4.0~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.4.0~beta1
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Estonian (et) translation updated (thanks to Maidur)
+      [new option > Toolbars (2)] navigation toolbar left/right padding
+      [change] tweaks for "remove reload, stop, go separators and spaces" option
+    1.4.0~beta2
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [new option > Tabs (1)] tab title in Firefox titlebar
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 14 Sep 2015 19:02:09 +0200
+
+xul-ext-classic-theme-restorer (1.3.9-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.9~beta12
+      [new option > General UI (1)] open 'about:preferences' in a window
+    1.3.9~beta13
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] appbutton on titlebar (icon only): height glitch
+      [change] Fx41+: visibility of "remove reload, stop, go separators and spaces" option
+    1.3.9~beta14
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix] Windows: 'restore defaults' did not restore correct appbutton
+      [change] 'restore defaults' only affects CTRs preferences from now on
+      [change] added more preferences to CTRs "classic preset" 
+    1.3.9~beta15
+      [fix] go button direction for rtl locales
+      [fix] "default theme" position in add-on managers 'appearance' category 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Sep 2015 18:14:32 +0200
+
+xul-ext-classic-theme-restorer (1.3.9~beta11-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.9~beta10
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] squared tabs australized v1 & v2: lw-theme glitches
+      [fix] minor prefwindow tweaks and fixes
+      [new option > Toolbars (2)] Windows 10: hide OS caption buttons
+      [new option > Location Bar] Fx43+: remove reload, stop, go separators and spaces
+      [new option > Tabs (1)] nav-bar throbber animation for tabs
+      [change] internal changes to 'activity throbber' option
+      [change] prefwindow appearance of padlock icon options 
+    1.3.9~beta11
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Fx42+: minor glitch with 'padlock icon options'
+      [change] internal changes to avoid issues with overlay files
+      [change] Fx40+: removed obsolete developer theme switches
+      [change] moved 'Prevent Developer theme from being enabled' option
+      [change] Fx43+: removed switch to 'restore the old search ui'
+      [change] Fx43+: removed switch to restore 'the old preferences window'
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 08 Sep 2015 19:41:54 +0200
+
+xul-ext-classic-theme-restorer (1.3.9~beta9-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Spanish (es) translation updated (thanks to strel)
+    [fix] minor css fixes
+    [fix] minor prefwindow tweaks and fixes
+    [change] prefwindow: moved & relabeled some options (thanks to strel)
+    [change] reverted beta 8 changes for now (> Bug1035091 got backed out) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 05 Sep 2015 18:46:47 +0200
+
+xul-ext-classic-theme-restorer (1.3.9~beta8-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.9~beta7
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] add-on version number option: glitch when some add-ons get uninstalled
+      [change] internal optimizations (thanks to Toady) 
+    1.3.9~beta8
+      [fix] removed most @-moz-document references because of Bug 1035091
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 03 Sep 2015 17:39:34 +0200
+
+xul-ext-classic-theme-restorer (1.3.9~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+    [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+    [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+    [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+    [fix] Win10 & Fx40+: borders of " alt. curved tabs"
+    [new option > Tabs (2)] more tab separators (Windows/MacOSX only) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 01 Sep 2015 19:33:52 +0200
+
+xul-ext-classic-theme-restorer (1.3.9~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.9~beta3
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] Fx42 (20150825) & small button view: identity box alignment
+      [fix] Fx42 (20150825) & mov. back-forward: identity box alignment
+      [fix] Win10: options to hide top toolbar borders
+      [change] Win10 & Fx40+: appbutton in titlebar
+      [change] Win10 & Fx40+ & 'appbutton in titlebar': tweaks for min/max/close
+      [change] Win8 & Fx40+: 'appbutton on titlebar' size
+      [change] big icon mode: experimental support for non-default button icons 
+    1.3.9~beta4
+      [new locale] Estonian (et) (Maidur)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix] Fx43+ & tab separator options: separator visibility
+      [new] option: general ui close icons 
+    1.3.9~beta5
+      [fix] Fx 43+: tab separator visibility
+      [fix] Fx 43+: tab separator options
+      [fix] Windows & Fx40+ & HiDPI: inverted icons settings
+      [new] option: alternative 'options page' appearance
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 30 Aug 2015 19:21:03 +0200
+
+xul-ext-classic-theme-restorer (1.3.9~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.9~beta1
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] Fx42+: update indicator on panel-ui button
+      [fix] big icons: loop-button size glitch
+      [new] option: toggle old 'xpi-install window'
+      [change] code cleanup (thanks to erosman) 
+    1.3.9~beta2
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] Win7 + HiDPI mode: big icons option
+      [change] minor prefwindow tweaks for complete themes
+      [change] minor tweaks for complete themes
+      [change] updated classic preset prefs 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 24 Aug 2015 16:38:03 +0200
+
+xul-ext-classic-theme-restorer (1.3.8~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.8~beta4
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new] (Windows/MacOSX) option: tab separators
+      [new] option: tab throbbers (green one from Fx39)
+      [change] tweaks for Win10s 'remove bg color from title/menu/tab bars' option
+      [change] removed 'white tab separator' option -> use new separator option instead
+      [change] removed 'alt tab throbber' option -> use new tab throbber option instead
+      [change] support for 'Classic Toolbar Buttons add-on'
+        - Using CTRs big icons along with CTBs large/small nav-bar buttons
+        - style is not possible anymore. Switch to CTBs 'simple' style for
+        - both features to work properly together.
+      [change] CTR preference window cleanup (WIP):
+        - size tweaks
+        - moved some Tabs (1) and Tabs (2) options
+        - minor other tweaks 
+    1.3.8~beta5
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Windows & Fx43+ & small button mode: identity box
+      [fix] Windows & Fx43+ & mov. back-forward: identity box
+      [fix] Win10 & Fx40+ & small button mode: urlbar/searchbar border colors
+      [fix] Win10 & Fx40+ & mov. back/forward: urlbar/searchbar border colors
+      [change] inverted icon settings: updated support for some buttons
+      [change] various minor improvements 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 20 Aug 2015 19:24:31 +0200
+
+xul-ext-classic-theme-restorer (1.3.8~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.8~beta2
+      [fix] Windows + CTRs buttons + Fx40+: icon size for HiDPI values
+    1.3.8~beta3
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] Win10 & Fx40+ & appbutton in titlebar: min/max/close buttons
+      [fix] Win10 & Fx40+ & big icon mode: hidpi support
+      [fix] Windows & Fx42+ & small button view: identity box
+      [fix] Windows & Fx42+ & mov. back-forward buttons: identity box
+      [fix] removed obsolete readinglist entries from bookmarks menus
+      [new] option: set browser channel color automatically
+      [new] Win10 option: remove bg color from title/menu/tab bars
+      [new] advanced option: toggle audio play icon on tabs
+      [new] option: more tab close icons
+      [change] Fx40/41: returned 'reading list' switch ('Advanced' category)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Aug 2015 19:30:20 +0200
+
+xul-ext-classic-theme-restorer (1.3.8~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    [fix] Win10 & Fx40+ & appbutton in titlebar: fullscreen mode
+    [fix] Win10 & Fx40+ & small button view: bookmarks buttons list icon
+    [fix] back/forward clipping in icons/icons+text/text modes
+    [new] option: hide warnings on add-ons list
+    [new] option: keep bookmarks toolbar in fullscreen mode
+    [change] CTR preference window cleanup (WIP):
+      - new 'Add-on Manager' category contains add-on manger related options
+      - new 'Tabs (2)' category contains 'tab close' and 'Fx mockup' options
+      - moved some tabs related options to 'Tabs (1)' category
+      - moved most settings that hide something to 'General UI (2)'
+      - removed deprecated 'dev theme button' switch from 'Advanced' category
+      - removed deprecated 'reading list' switch from 'Advanced' category 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 13 Aug 2015 18:42:32 +0200
+
+xul-ext-classic-theme-restorer (1.3.7.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+    [fix] Win8 + tabs on top + squared tabs (v2\a): missing border below tabs
+    [fix] Win10 + Fx40+ + tabs on top + squared tabs (v1/2\a): missing border below tabs
+    [fix] Win10 + Fx40+ + tabs not on top v1: left/right tabs toolbar borders
+    [fix] Win10 + Fx40+: appbutton on titlebar adjustments
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 12 Aug 2015 19:15:03 +0200
+
+xul-ext-classic-theme-restorer (1.3.7-1nano) unstable; urgency=low
+
+  * New upstream release
+  - [fix] favicon in locationbar+security icons option: mixed identity icon glitch 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 10 Aug 2015 16:39:41 +0200
+
+xul-ext-classic-theme-restorer (1.3.7~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.7~beta1
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] Win10: appbutton in titlebar size
+      [fix] Win10 + squared tabs: invisible line below tabs
+      [fix] Win10 + tabs not on top mode: visible line below tabs
+      [fix] Win10 + squared tabs + lw-themes: invisible line below tabs
+      [new] option: squared tabs (australized) (v2)
+      [new] option: remove tabs top corner roundness for
+        -- squared tabs (v2)
+        -- squared tabs (australized) (v2)
+      [new] option: close tab icons (16x16px only)
+        -- red close icon (already known + has to be set again)
+        -- Windows 7 close icon
+        -- Windows 10 close icon
+        -- Windows 10 inverted close icon
+        --> options can override default close icons
+      [change] Win 10 + normal window mode: 'appbutton on titlebar' reduced
+        -- titlebars vertical size
+        -- titlebars min/max/close vertical size
+    1.3.7~beta2
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Win10 + Fx40+: appbutton in maximized view
+      [fix] Win10 + Fx40+: button size on nav-bar
+      [change] Win10 + small button view + Fx40+: font size in location bar
+      [change] prefwindow: close tab icons option (menulist->radio group)
+    1.3.7~beta3
+      [change] Win10 + small button view + Fx40+: font size in location bar
+      [change] Win10 + small button view + Fx40+: identity icons
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 08 Aug 2015 18:59:11 +0200
+
+xul-ext-classic-theme-restorer (1.3.6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.6~beta7
+      [change] Fx42+ (20150726): updated identity box icons (svg)
+      [change] Fx42+: tweaks for small button mode
+    1.3.6~beta8
+      [fix] Win8/10: white separator option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 01 Aug 2015 19:10:24 +0200
+
+xul-ext-classic-theme-restorer (1.3.6~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.6~beta5
+      [new] switch to toggle fullscreen animations
+      [new] switch to toggle fullscreen animations for html5 content
+      [change] Fx42+: tweaks for small button mode
+      [change] Fx42+: tweaks for icon+text modes
+      [change] Fx42+: tweaks for text mode
+      [change] Fx42+: tweaks for big icon mode
+    1.3.6~beta6
+      [locale] Danish (da-DK) (thanks to scootergrisen)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] e10s + crashed tab: misplaced info icon
+      [fix] Fx42 & Win8+: tab close icon in some cases
+      [change] Win10: appbutton size (+ caption button sizes)
+      [change] Win10: small button view + urlbar size
+      [change] Fx42+: small button view + identity box
+      [change] Fx42+: small button view + urlbar size
+      [change] Fx42+: movable b/f buttons + identity box
+      [change] Fx42+: movable b/f buttons + urlbar size
+      [change] Fx42+: tweaks for 'alt. newtab page' option
+      [change] Fx42+: tweaks for small button mode
+      [change] tweaks for 'add-on bar in fullscreen' option (thanks top paltus)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 25 Jul 2015 19:54:55 +0200
+
+xul-ext-classic-theme-restorer (1.3.6~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.6~beta2
+      [fix] Nightly + 'Aero toolbar colors' option
+      [change] removed obsolete tab clip width option
+      [change] tweaks for 'alt. appearance for add-on manager' option
+    1.3.6~beta3
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [change] tweaks for 'alt. appearance for add-on manager' option
+    1.3.6~beta4
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [change] removed OMTC about:config switch from prefwindow
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 16 Jul 2015 18:28:53 +0200
+
+xul-ext-classic-theme-restorer (1.3.6~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.5~beta5
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [change] 'appbutton on toolbar (text only)': customizable text
+    1.3.5~beta6
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+    1.3.6~beta1
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Turkish (tr) translation updated (thanks to Bekir Uçarci & Toady)
+      [new] Fx40+ option: alternative appearance for add-on manager
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 13 Jul 2015 18:51:51 +0200
+
+xul-ext-classic-theme-restorer (1.3.5~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.3~beta5
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [change] Windows + tabs not on top v1 + lw-themes + Fx38+
+      [change] additional note for 'Pocket' checkbox on preference window
+      [change] minor pref window tweaks for RTL locales
+    1.3.3~beta6
+      [fix] Fx29-39: CTR button appearance + high dpi values
+      [change] lw-themes + tabs not on top v1 + Fx38+: line below tabs
+               toolbar
+      [change] removed option "remove underline on e10s tabs"
+      [change] internal changes to minimize amount of new validator warnings
+    1.3.3~beta7
+      [fix] rounded tabs + custom colors + TabMixPlus: active tab appearance
+            TMP currently breaks active tab ui on Fx39+. This fix should
+            override that glitch when using custom color options provided
+            by CTR.1.3.3 beta 7
+      [fix] rounded tabs + custom colors + TabMixPlus: active tab appearance
+            TMP currently breaks active tab ui on Fx39+. This fix should
+            override that glitch when using custom color options provided by CTR.
+    1.3.3~beta8
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] French (fr) translation updated (thanks to David V.)
+      [new] gray icons for appbutton on toolbar option
+      [change] meeting add-on validators new rules
+    1.3.3~beta9
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix] disable 'context menu entries' to remove buttons, when button in urlbar
+      [fix] big icon option: bookmarks and panel menu buttons on nav-bar
+    1.3.3~beta10
+      [fix] minor glitch with 'alt. new tab' page and 4+ rows
+      [fix] minor tweaks for 'small button' mode
+    1.3.4~beta1
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [change] removed TMP workaround for colorized curved tabs
+    1.3.4~beta2
+      [fix] Faviconize tab add-on: throbber position
+      [new] movable 'go' button (uses same icon as forward button)
+      [new] option: hide location bars 'go' button
+    1.3.4~beta3
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [new] (Fx41+) experimental option: restore add-on version number
+    1.3.4~beta4
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+    1.3.5~beta1
+      [change] Fx40+ option: 'show add-on version number'
+    1.3.5~beta2
+      [new] options for Fx42+: set own about:newtab page (-> CTRs prefwindow)
+      [fix] 'show add-on version number' add-ons managers update category
+      [change] show all dev theme switches on prefwindow
+    1.3.5~beta3
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Czech (cs) locale updated (thanks to poljos)
+      [fix] tab text settings won't affect tab badges anymore
+      [change] panel menu button on tabs bar option
+    1.3.5~beta4
+      [change] tweaks for 'panel menu button on tabs bar' option
+      [change] tweaks for Firefox Developer Edition
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jul 2015 17:40:56 +0200
+
+xul-ext-classic-theme-restorer (1.3.3~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.3~beta3
+      [change] reduced size of exported .json file (thanks to Toady)
+      [change] removed a few duplicated menu items from appmenu
+    1.3.3~beta4
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix] Fx40+: Windows + small buttons mode + higher dpi res than 100%
+      [fix] Fx40+: glitches with 'curved tabs alt' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 24 May 2015 14:11:12 +0200
+
+xul-ext-classic-theme-restorer (1.3.3~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.3~beta1
+      [fix] Fx31.x: 'hide toolbar context menu entries' option
+      [fix] Faviconize tab add-on + tab close (forced)
+      [fix] MacOSX + HiDPI + star/feed button in location bar
+      [change] Fx40+: (re)added option to prevent developer theme from
+               being enabled
+      [change] Fx40+: removed temp. dev theme changes
+      [change] Fx40+: tiny tweaks for developer theme & appbutton on
+               titlebar
+    1.3.3~beta2
+      [change] improved support for 'Faviconize tab' add-on
+      [change] Fx40+: tweaks for 'prevent dev theme' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 20 May 2015 18:47:11 +0200
+
+xul-ext-classic-theme-restorer (1.3.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    [fix] Fx40+: big icon mode
+    [fix] typos on prefwindow (thanks to vlakoff)
+    [change] internal improvements (thanks to Toady)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 May 2015 18:01:27 +0200
+
+xul-ext-classic-theme-restorer (1.3.2~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.2~beta2
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix] higher CPU load with 'Tab Kit 2' add-on and some tab variations
+      [fix] prefwindow: minor display errors with complete themes
+      [fix] Windows: lw-themes + reduce space above tabs bar option
+      [new] add/remove CTR prefs to/from Sync
+    1.3.2~beta3
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix] Reduce space above tabs bar + lw-themes + maximized mode
+      [new] Fx40+: switch for browsers 'Pocket'-feature
+    1.3.2~beta4
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [change] Fx40+: tweaked 'alt. new tab page' option
+    1.3.2~beta5
+      [change] Fx40+ internal improvement of 'alt. new tab page' option
+      [change] CTRs prefwindow: pocket pref visible for Fx 38.0.5+ now
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 13 May 2015 18:52:49 +0200
+
+xul-ext-classic-theme-restorer (1.3.2~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    [fix] Windows + Fx40+: icon size of some buttons
+      --> non-default OS dpi settings + small buttons mode + Fx40+ will
+      --> increase button width as result of that fix
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 05 May 2015 19:16:37 +0200
+
+xul-ext-classic-theme-restorer (1.3.1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.1:
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [change] tweaks for mov. back/foward buttons menu popup
+    1.3.1.1:
+      [fix] back/forward popup appearance on mouse over
+      [fix] 'new tab' tabs border for large squared tabs
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 30 Apr 2015 20:08:51 +0200
+
+xul-ext-classic-theme-restorer (1.3.1~beta10-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.3.1~beta6
+      [fix] Windows + Fx40+: wrong icon sizes in some cases
+      [change] appbutton in titlebar + lw-themes: minor tweaks
+      [change] Windows + Dev Thme + Fx40+: removed white window color
+    1.3.1~beta7
+      [fix] locale files: Replaced brandDTD namespace with overlayDTD
+      (thanks to Toady)
+      [fix] possible memory leak in a multi-window environment
+      [fix] Win8: squared tabs + lw-themes
+      [new] option: skip print buttons print preview
+    1.3.1~beta8
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] beta7s 'print-button' option refused to work in some cases
+    1.3.1~beta9
+      [fix] UTF8 converter for appbuttons title option (thanks to FateRover)
+      [fix] Win Xp/7 classic vs + TMP + squared tabs: gap at tab toolbars end
+      [new] option to hide toolbar context menu entries added in Fx29+
+      [change] small nav-bar buttons: tweaks for buttons inside location bar
+    1.3.1~beta10
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [change] small nav-bar buttons: tweaks for buttons inside identity box
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 24 Apr 2015 19:45:09 +0200
+
+xul-ext-classic-theme-restorer (1.3.1~beta5-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    [fix] Fx40+: removed curved tab overlays appearing on squared tabs
+    [change] Fx36-39: dev theme tweaks
+    [change] Fx40+: removed dev theme prefs from CTRs prefwindow
+    [change] Fx40+: experimental "Developer Theme" tweaks and changes
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 10 Apr 2015 18:38:05 +0200
+
+xul-ext-classic-theme-restorer (1.3.1~beta4-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.3.1~beta3
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Russian (ru) translation updated (thanks to 3deshka)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [change] added 'reading list' menu entries to bookmark popups
+    1.3.1~beta4
+      [fix] Russian locale file was broken in beta 3
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Apr 2015 20:18:37 +0200
+
+xul-ext-classic-theme-restorer (1.3.1~beta2-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.3.1~beta1
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix] small button view: panel menu buttons badge color on update
+      [fix] application, back and forward buttons for Alfred Kaysers themes
+      [new] option: top toolbar separators for Windows Classic visual style
+      [change] tab width tweaks for squared tabs
+      [change] star/feed in location bar: reading mode buttons position
+    1.3.2~beta2
+      [fix] squared tabs: beta1 caused a glitch in customizing mode
+      [change] 'close button' on toolbars end: space tabs <-> 'close button'
+      [change] tweaks for TabMixPlus add-on
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 03 Apr 2015 19:11:55 +0200
+
+xul-ext-classic-theme-restorer (1.3.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    1.3.0~beta22
+      [fix] text mode: missing bookmarks chevron
+      [change] icon size tweaks (thanks to Virtual_ManPL & VEG-BY)
+      [change] icons for alt. 'new-tab page' option (thanks to VEG-BY)
+    1.3.0~beta23
+      [fix] issue when enabling/disabling 'alt. new-tab page' option
+      [change] more tweaks on 'alt. new-tab page' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Mar 2015 19:27:47 +0100
+
+xul-ext-classic-theme-restorer (1.3.0~beta21-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.3.0~beta18
+      [fix] Win 7 AeroBasic/Classic + squared tabs + lw-theme: line below
+            active tab
+      [change] Win 7 AeroBasic/Classic: appbutton tweaks
+      [change] 'alt. new-tab page' option: changed icons
+    1.3.0~beta19
+      [new] switches for 'readers' about:config prefs
+      [fix] a specific 'tab close' option combination
+      [change] 'bookmarks panel menu' option: sub menus
+      [change] prefwindow: tweaks for 'advanced' category
+    1.3.0~beta20
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [locale] fixed some typos (thanks to milupo)
+      [change] alt. 'new-tab page' option: tweaked icon edges
+      [change] alt. 'new-tab page' option: removed icon focus indicator
+    1.3.0~beta21
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] improved "developer theme" + "tab color settings"
+      [change] alt. 'new-tab page' option: restored toggle button
+      [change] alt. 'new-tab page' option: tweaked appearance
+      [change] Linux: fix for action/toggle-button size on some toolbars
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Mar 2015 18:54:51 +0100
+
+xul-ext-classic-theme-restorer (1.3.0~beta17-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    [change] appbutton on toolbar: extended icon settings
+    [change] removed obsolete strings from locale files
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 Mar 2015 19:09:32 +0100
+
+xul-ext-classic-theme-restorer (1.3.0~beta16-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.3.0~beta14
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] prefwindow: classic preset was broken in some cases
+      [change] prefwindow: tweaks for developer theme prefs
+    1.3.0~beta15
+      [new] option (Windows): show menubar in fullscreen mode (if its active)
+      [change] minor tweaks to some options
+      [change] locale improvements (thanks to Toady)
+      [change] internal tweaks (thanks to Toady)
+    1.3.0~beta16
+      [change] appbutton on toolbar: switched to icon without dropmarker
+      [change] appbutton on toolbar: corrected icon size
+      [change] removed temporal code for toolbar button badges
+      [change] internal changes to CTRs default button icons
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 17 Mar 2015 18:56:56 +0100
+
+xul-ext-classic-theme-restorer (1.3.0~beta13-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.3.0~beta10
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [change] prefwindow: info for 'Hide Caption Titlebar Plus' add-on
+    1.3.0~beta11
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [fix] 'Profile Switcher' add-on could break some CTR features on
+            second window
+    1.3.0~beta12
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] tweaked 'tab close' settings to avoid issues with TMP
+      [change] tweaked tab font settings bold & italic
+    1.3.0~beta13
+      [fix] tab close options: pinned and protected tabs
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 11 Mar 2015 19:35:34 +0100
+
+xul-ext-classic-theme-restorer (1.3.0~beta9-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.3.0~beta5
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] hide tab bar with one tab + Windows: all tab variations supported
+      [fix] small button view + Windows + Fx36+: toggle/action button size
+    1.3.0~beta6
+      [fix] TMP + Windows Aero + squared tabs: gap on tab toolbars end
+      [new] sub-option to keep/hide Fx titlebar for 'hide tab bar with one tab' option
+      [change] tweaked the option "reduce nav-bar height"
+      [change] prefwindow: additional descriptions and minor tweaks
+    1.3.0~beta7
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] added 'ColorfulTabs not fully compatible' info to prefwindow
+      [change] 'inv. icon options' also affect loop/call button
+      [change] improved support for Tangofox and Tangerinefox themes
+    1.3.0~beta8
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] compact nav-bar option: seperator size
+      [new] option to hide bookmark buttons label on bookmarks toolbar
+      [new] option to transform bookmarks popup menu into a panel menu
+    1.3.0~beta9
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [fix] squared tabs: pinned tabs glitch
+      [change] improved "The Fox, only better" support (thanks to Luis M.)
+      [change] squared tabs: removed unused code (needs testing)
+      [change] squared tabs: tweaks for TabMixPlus (needs testing)
+      [change] Windows/Linux + context menu entries option: access keys
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Mar 2015 18:58:54 +0100
+
+xul-ext-classic-theme-restorer (1.3.0~beta5-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+    [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+    [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+    [fix] hide tab bar with one tab + Windows: all tab variations supported
+    [fix] small button view + Windows + Fx36+: toggle/action button size
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Feb 2015 21:45:36 +0100
+
+xul-ext-classic-theme-restorer (1.3.0~beta4-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.9.6
+      [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+      [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+      [change] tweaks for the "option to show alternative address input"
+    1.3.0~beta1
+      [locale] fixed some typos on German locale
+      [fix] rare issue with missing location bar & broken customizing mode
+      [new] option to hide text shadow from toolbar items and tabs (thanks to Toady)
+      [change] confirm dialogs show browsers short name (thanks to Toady)
+      [change] replaced hardcoded labels with global variables (thanks to Toady)
+      [change] prefwindow additions
+      [change] Foxtab add-on breaks Firefox ui and gets now disabled on startup
+      [change] "Restore defaults" & CTRs toolbar configuration
+    1.3.0~beta2
+      [change] delayed location bar position check to fix issues on some systems
+    1.3.0~beta3
+      [change] reverted Foxtab add-on checks
+    1.3.0~beta4
+      [change] reverted fix to prevent location bars false position
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 24 Feb 2015 20:58:06 +0100
+
+xul-ext-classic-theme-restorer (1.2.9.5-1nano) unstable; urgency=low
+
+  * New upstream minor release
+    1.2.9.4
+      [locale] Italian (it) translation updated (thanks to Styb)
+      [fix] "Puzzle Toolbars" add-ons urlbar and some of CTRs toolbar
+            options
+      [new] ALT+W shows an alternative address input for those who hide
+            default address bar
+      [change] export prefs to txt improvements (thanks to Toady)
+    1.2.9.5
+      [change] alternative address input uses default key combo: ALT+D
+               (en-us), ALT+S (de)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Feb 2015 17:54:12 +0100
+
+xul-ext-classic-theme-restorer (1.2.9.3-1nano) unstable; urgency=low
+
+  * New upstream minor release
+    - [locale] Portuguese (pt-BR) translation updated (thanks to Claudio)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Feb 2015 17:54:12 +0100
+
+xul-ext-classic-theme-restorer (1.2.9.2-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    1.2.9.1
+      [new locale] Turkish (tr) (Bekir Uçarci)
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [fix] prefwindow glitch occuring on Greek locale
+      [change] new file format to import/export prefs (thanks to Toady)
+    1.2.9.2
+      [locale] Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [locale] Turkish (tr) translation updated (thanks to Bekir Uçarci & Toady)
+      [fix] 'feed button in urlbar' ui & LavaFox/BlackFox themes
+      [change] prefwindow: moved some settings
+      [change] internal changes on how 'pref service' is used (thanks to Toady)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 28 Jan 2015 16:42:57 +0100
+
+xul-ext-classic-theme-restorer (1.2.9-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    [locale] Spanish (es) translation updated (thanks to strel)
+    [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+    [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+    [change] prefwindow changes and tweaks
+    [change] minor code improvements
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Jan 2015 18:47:13 +0100
+
+xul-ext-classic-theme-restorer (1.2.9~beta10-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.9~beta10
+      [locale] Russian (ru) translation updated (thanks to 3deshka)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new] e10s switch for Nightly users, that use "old prefwindow"
+      [change] internal add-on bar tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 24 Jan 2015 10:22:01 +0100
+
+xul-ext-classic-theme-restorer (1.2.9~beta9-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.9~beta8
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new] option for Fx36+: use old prefwindow instead of prefs in tab
+      [change] activity indicator: tweaks for multiple window navigation
+      [change] new '#main-window' attribute for devs: "ctraddon_version"
+      [change] reverted "hide tabs toolbar with one tab" 1.2.6 code changes
+      [change] Windows + maximized mode + appbutton: dev theme tweaks
+    1.2.9~beta9
+      [fix] Win7/8 + big icon mode: search bar size
+      [new] option: prevent developer theme from being enabled
+      [new] switch for the 'about:config' pref 'insert related tab after current tab'
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 21 Jan 2015 17:57:51 +0100
+
+xul-ext-classic-theme-restorer (1.2.9~beta7-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.9~beta6
+      [new] option: add-on bar in fullscreen mode
+      [change] code cleanup
+    1.2.9~beta7
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] MacOSX + tabs not on top + 'alt curved tabs': drag&drop tabs
+      [fix] MacOSX + developer theme: tab appearance after restart
+      [change] split 'alt tabs toolbar color' option into two options
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 17 Jan 2015 13:43:21 +0100
+
+xul-ext-classic-theme-restorer (1.2.9~beta5-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.9~beta1
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [locale] Chinese (zh-TW) translation updated (thanks to Shyayngs)
+      [locale] Japanese (ja) translation updated (thanks to ma2moto)
+      [locale] Spanish (es) translation updated (thanks to strel)
+      [locale] Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new] option for Fx35+: enable/disable developer theme using CTRs prefwindow
+      [new] option for WinXP: remove 'resizer' below scrollbars
+      [new] option for Windows/Linux: 'icons + text' mode v3
+      [change] tweaks for 'icons + text' modes v1 & v2
+      [change] various minor tweaks and fixes
+    1.2.9~beta2
+      [new] 'tabs (not) on top' button in customizing mode (requested a few times)
+      [new] option for Windows/Linux: 'icons + text' mode v4 (smaller spaces)
+      [change] disabled tab 'appearance' pref, if 'developer theme' is active (Fx35+)
+      [change] prefwindow tweaks
+    1.2.9~beta3
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Linux + mov. window control buttons in fullscreen visibility
+    1.2.9~beta4
+      [fix] text mode: tabs toolbar buttons should not display text
+      [fix] Linux: tab height, if tab scroll buttons are visible
+      [change] text mode tweaks (1/2)
+    1.2.9~beta5
+      [change] text mode tweaks (2/2)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 11 Jan 2015 18:03:45 +0100
+
+xul-ext-classic-theme-restorer (1.2.8.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    1.2.7~beta4
+      [locale] French (fr) translation updated (thanks to David V.)
+      [fix] 'hide close button for one visible tab' option
+      [new] option: reduce nav-bar height, if movable b/f buttons are used
+      [change] moved about:config preferences to 'Expert tweaks' category
+      [change] extended descriptions for 'new' about:config preferences
+    1.2.7~beta5
+      [locale] French (fr) translation updated (thanks to David V.)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] Windows/Linux: tweaks for 'reduce nav-bar height' option
+      [change] MacOSX: removed 'reduce nav-bar height' option
+      [change] MacOSX: tweaks for 'active tabs bg color for toolbars' option
+    1.2.7~beta6
+      [locale] French (fr) translation updated (thanks to David V.)
+      [new] option: remove underline from e10s tabs
+      [fix] sheet option: autocomple dropdowns empty icons
+      [fix] prefwindow: build string in title got duplicated in some cases
+      [fix] prefwindow: import did not work for some prefs
+      [change] star in urlbar option: now restartless
+      [change] feed in urlbar option: now restartless
+    1.2.7~beta7
+      [locale] Tabs (not) on top label tweaks
+      [fix] visibility of 'remove underline from e10s tabs' option
+      [fix] MacOSX + tabs not on top v2: glitch while switching tab options
+      [change] added info for 'tabs not on top v2' prefrence
+    1.2.7~beta8
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] panel menu button: icon size was broken in recent Fx builds
+      [fix] text/icons+text & location bar not on nav-bar & star/feed in location bar
+      [fix] text/icons+text: loop button
+      [new] option: svg colors for toolbar button icons
+    1.2.7~beta9
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] tiny glitch with feed/star button in location bar
+      [new] option (all OS): AeroBlue colors on toolbars (and tabs)
+    1.2.8~beta1
+      [fix] 'appbutton on titlebar v1/v2' options and fullscreen mode
+      [fix] some minor glitches when using small buttons on Win8
+      [fix] feed-button in location bar caused a harmless error in console
+      [fix] '(alt) menubar color'option + non-default OS visual styles
+      [change] 'hide nav-bar bg color' option affects 'the fox only better add-on'
+      [change] prefwindow: additional info for 'the fox only better add-on'
+    1.2.8~beta2
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [fix] feed button was only visible on last opened window
+      [fix] tab width only worked on first window, if actitivity indicator was enabled
+      [fix] prevented some warnings on error console
+      [new] option: hidden appbutton in titlebar
+    1.2.8.1
+      [fix] recent appbutton changes could add a line above tabs in 'tabs not on top' mode
+    1.2.8.2
+      [new locale] Slovenian (sl-SI) (thanks to Klofutar)
+      [new locale] Danish (da-DK) (thanks to scootergrisen)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 27 Dec 2014 09:37:49 +0100
+
+xul-ext-classic-theme-restorer (1.2.7~beta3-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.6~beta17
+      [new] options: force menu items to be first/last element on toolbar
+      [change] minor tweaks for "squared tabs v2"
+      [change] minor tweaks for "appbutton on tabs toolbar" + "higher position" combo
+    1.2.7~beta1
+      [fix] activity indicator did no work on multible windows in some cases
+      [fix] activity indicator broke 'tabsontop=false' attribute in some cases
+      [fix] squared tabs v2: pinned tabs height, if tab scroll buttons are visible
+      [change] activity indicator option needs browser restart again
+    1.2.7~beta2
+      [locale] French (fr) translation updated (thanks to David V.)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [new] option: tab min-height (WIP)
+      [new] option: active tabs background color for toolbars (WIP)
+      [new] option: custom colors for appbutton on titlebar & tabs toolbar
+      [change] reverted "squared tabs v2" height changes
+      [change] tabs not on top: increased space between menubar & navbar
+    1.2.7~beta3
+      [locale] Russian (ru) translation updated (thanks to Alexei)
+      [fix] 'hide close button for one visible tab' option
+      [new] (on) prefwindow: some useful, unlabled about:config prefs
+      [change] tabs not on top: space between menubar & navbar
+      [change] tab height option also works with themes now
+      [change] 'active tabs bg color for toolbars' affects menubar...
+      [change] prefwindow: minor tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 01 Dec 2014 17:06:33 +0100
+
+xul-ext-classic-theme-restorer (1.2.6~beta16-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.6~beta12
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [change] MacOSX + 'tabs not on top' mode: 'titlebar content' position
+      [change] tweaks for 'double click to open a new tab' option
+      [change] enabling/disabling 'activity indicator': no restart required
+      [change] enabling/disabling 'hide tabs toolbar with one tab': no restart required
+    1.2.6~beta13
+      [locale] tweaks for German locale suggested by Camp-firefox.de members
+      [fix] last beta broke 'Hide tabs toolbar with one tab' add-on
+      [change] removed obsolete 'Findbar bottom position' option from menulist
+    1.2.6~beta14
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [fix] Windows + 'private tab' add-ons tab on tabs toolbar
+      [fix] text mode: urlbars reload, stop, go buttons
+      [fix] 'white tab button' option: all tabs button size
+      [new] option: alternative 'new tab' page
+      [change] minor other css tweaks
+    1.2.6~beta15
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] Windows + TabMixPlus + 'private tab' add-ons tab on tabs toolbar
+      [change] squared tabs: 'new tab' button tweaks
+      [change] loop/call button tweaks
+    1.2.6~beta16
+      [fix] Windows + ColorfulTabs + 'private tab' add-ons button/tab on tabs toolbar
+      [change] squared tabs v1: improved support for ColorfulTabs add-on
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Nov 2014 20:47:33 +0100
+
+xul-ext-classic-theme-restorer (1.2.6~beta11-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.6beta10
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [change] code cleanup
+      [change] more urlbar border color tweaks
+    1.2.6beta11
+      [fix] appbutton lost its visual 'open' state in some cases
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 10 Nov 2014 16:49:12 +0100
+
+xul-ext-classic-theme-restorer (1.2.6~beta9-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.6~beta6
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] general locale tweaks
+      [change] display CTRs version number on prefwindow
+      [change] more prefwindow tweaks
+    1.2.6~beta7
+      [change] appbutton title: support for Fx developer edition
+      [change] prefwindow improvements
+    1.2.6~beta8
+      [fix] fixed some typos
+      [new] option: set appbutton title (only short names look fine)
+    1.2.6~beta9
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [change] urlbar border color tweaks
+      [change] nav-bar / add-on bar: text mode tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 07 Nov 2014 18:17:12 +0100
+
+xul-ext-classic-theme-restorer (1.2.6~beta5-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.5~beta3
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] Win7/8 + 'replace context icons' option: 125% & 150% OS font size values
+      [new] option: set delay time for restored iconsize option (->Toolbar settings)
+      [change] iconsize='small/large' attribute option
+      [change] Win8 + default visual style + default Fx theme: minimize button
+    1.2.5~beta4
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] tweaks for German locale suggested by Camp-firefox.de members
+      [locale] general locale tweaks
+      [fix] WinXP/7Classic: Ghostery add-ons toolbarbutton + small button mode
+      [change] prefwindow tweaks
+    1.2.5~beta5
+      [locale] general locale tweaks
+      [change] menu items in other toolbars option: hide menu items
+      [change] more prefwindow tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 02 Nov 2014 19:19:31 +0100
+
+xul-ext-classic-theme-restorer (1.2.6~beta2-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.5~beta20
+      [fix] Linux: 'hide private browsing mask' option
+      [fix] MacOSX: small button view on Retina display
+    1.2.5~beta21
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [new] option: white empty dotted favicon for tabs (->Gen.UI->Mockup)
+      [new] option: enable 0-20 additional toolbars (->Toolbar settings)
+      [change] removed separate 'inv. icon' options for additional toolbars
+      [change] 'mov. status panel' option for 'Puzzle Toolbars'
+      [change] 'mov. status panel' option on prefwindow
+    1.2.5~beta22
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [change] minor tweaks
+    1.2.6~beta1
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [fix] hidden CTR menuitems could be accessed by keyboard
+      [fix] 'tab close - hide for one visible tab' option
+      [fix] 'white empty dotted favicon for tabs' option
+      [fix] MacOSX: 'white color for tab buttons' option
+      [fix] 'z-index' of some buttons on tabs toolbar
+      [change] unlocked 'alt. icon option' for all CTRs 'tab close modes'
+      [change] temp. reverted icon color tweaks for big icon mode
+      [change] activity indicator can now be disabled on prefwindow
+      [change] hide stop/reload in urlbar: switch dropmarker and go button position
+      [change] prefwindow: reorganized some preferences
+    1.2.6~beta2
+      [new] option: show menubars menuitems on other toolbars
+      [new] option: move urlbar dropmarker to toolbars end
+      [change] reverted last betas 'hide stop/reload in urlbar' tweaks
+      [change] win7/8 small button mode: button states for non-Aero OS themes
+      [change] winXP small button mode: button states
+      [change] prefwindow tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 21 Oct 2014 18:05:11 +0200
+
+xul-ext-classic-theme-restorer (1.2.5~beta19-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.5~beta16
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [fix] replace generic favicon with sheet favicon option
+      [new] CTR toolbar button (requested)
+      [change] 'panic' & 'apps' buttons support for big/inverted icons options
+    1.2.5~beta17
+      [fix] prevent CTRs preference window from being opened multiple times
+      [change] 'mov. status panel' option on prefwindow
+    1.2.5~beta18
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix] small button view/add-on bar: 'Disconnect' add-ons button badge
+      [change] tweaks for "Puzzle Toolbars" add-on
+    1.2.9~beta19
+      [new] option: unloaded tab color settings override hov. tabs settings
+      [new] option: unread tab color settings override hov. tabs settings
+      [new] option: disable icon+text/text only mode for vertical toolbar
+      [change] internal tab color & text tweaks
+      [change] tiny prefwindow tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 11 Oct 2014 18:27:15 +0200
+
+xul-ext-classic-theme-restorer (1.2.5~beta15-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.5~beta12
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [locale] Greek (el) translation updated (thanks to George M.)
+      [locale] Polish (pl-PL) translation updated (Mrere)
+      [fix] curved tabs + lightweight themes: tab color settings
+      [new] option: reduce space between movable back-forward buttons
+      [new] option: hide double arrow on nav-bars end (experimental chevron fix)
+      [change] prefwindow: last selected category gets 'remembered'
+      [change] Windows + squared tabs: increased space between tabs and window controls
+    1.2.5~beta13
+      [locale] Polish (pl-PL) translation updated (Mrere)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [change] bookmarks star & rss feed buttons in urlbar
+      [change] remove obsolete code
+    1.2.5~beta14
+      [new] options to enable two more additional toolbars
+      [change] cleanup 'appmenu->web developer' popup
+    1.2.5~beta15
+      [locale] Polish (pl-PL) translation updated (thanks to Mrere)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] additional toolbars (& some complete themes): toolbars were always visible
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 05 Oct 2014 19:13:22 +0200
+
+xul-ext-classic-theme-restorer (1.2.5~beta11-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.5~beta7
+      [locale] Polish (pl-PL) translation updated (Mrere)
+      [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix] MacOSX + themes: CTRs tab appearance was not always disabled properly
+      [new] option: click on identity icon to open page info window (requested)
+      [change] more tweaks on move 'star/feed-button into urlbar' code
+      [change] reorganized some prefwindow settings
+      [change] MacOSX appmenu entries (more accurate now)
+      [change] application menu
+    1.2.5~beta8
+      [fix] glitches with appmenus history submenus (previous beta issue)
+      [fix] exclude middle/right click from submenus (previous beta issue)
+    1.2.5~beta9
+      [new] option: bookmarks context menu entry 'open in a new private window'
+      [new] option: enable/disable clickable menus (from beta7) inside appmenu
+      [fix] Windows + classic tabs: space at tabs end in fullscreen mode
+      [fix] MacOSX + small toolbar buttons: top/bottom margin glitches
+    1.2.5~beta10
+      [fix] Linux/MacOSX + small button mode: action/toggle button size
+    1.2.5~beta11
+      [fix] inverted icon options: call button support
+      [fix] Linux + inverted icon options: some buttons on tabs toolbar
+      [fix] Windows: text/icons+text modes and call button on nav-bar
+      [fix] MacOSX + CTR button in palette: icon colors
+      [fix] big icon option: call button support
+      [fix] big icon option: icon colors of some CTR buttons
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 25 Sep 2014 17:50:37 +0200
+
+xul-ext-classic-theme-restorer (1.2.5~beta6-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.5~beta4
+     [fix] Windows + 'hide context menu icons' option: menuitem space
+    1.2.5~beta5
+      [locale] French (fr) translation updated (thanks to David V.)
+      [new] option to enable CTRs entry in main panel menu (hamburger/three stripes button)
+      [fix] Jetpack add-ons with "action buttons" + small nav-bar buttons
+      [fix] added beta2s 'startup delay' option to import/export list
+      [change] 'hide context menu icons' option: optimize context menu
+      [change] minor prefwindow tweaks
+    1.2.5~beta6
+      [new] option: hide 'popup blocked' info button in urlbar
+      [new] option: hide close button on sidebars
+      [new] option: open custom url when clicking activity indicator
+      [change] reorganized some prefwindow settings
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 13 Sep 2014 19:59:17 +0200
+
+xul-ext-classic-theme-restorer (1.2.5~beta3-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.5~beta2
+      [new] option to enable/disable startup delay for 'hide tab toolbar with one tab' option
+      [fix] Jetpack add-ons with "toggle buttons" on navigation toolbar
+      [fix] Windows Classic VS + tabs not on top + Fx32+: tab toolbars bottom border
+    1.2.5~beta3
+      [locale] Polish (pl-PL) translation updated (Mrere)
+      [fix] Jetpack add-ons + "toggle buttons" + small nav-bar buttons
+      [fix] Linux + 'hide context menu icons' option: label position
+      [fix] feed-button in urlbar, when urlbar is not in nav-bar
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 04 Sep 2014 21:30:57 +0200
+
+xul-ext-classic-theme-restorer (1.2.5~beta1-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.4~beta7
+      [fix] Windows + appbutton (icon only) on titlebar + max. view
+      [change] manor code tweaks
+    1.2.5~beta1
+      [fix] appbuttons 'no border' option: appbutton position
+      [fix] 'hide tab toolbar with one tab' option: startup delay
+      [fix] movable status item on tabs toolbar
+      [change] support for 'Gmail Manager NG' v0.6.5.2 in movable status item
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 02 Sep 2014 18:25:35 +0200
+
+xul-ext-classic-theme-restorer (1.2.4~beta6-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    1.2.4~beta3
+      [fix] activity indicator did not show animation in some cases
+      [fix] feed-button in urlbar + multiple windows
+      [change] many (experimental) changes to improve performance
+    1.2.4~beta4
+      [locale] added missing locale strings for mov. window controls
+      [fix] MacOSX + icons+text mode: buttons on bookmarks toolbar
+      [fix] Linux + small button view: feed-button padding in urlbar
+      [change] reduced file size of some images
+      [change] movable status bar area tweaks
+    1.2.4~beta5
+      -- no upload --
+    1.2.4~beta6
+      [locale] new Polish (pl-PL) locale (Mrere)
+      [fix] double click to open new tab should not affect right click
+      [fix] AeroGlass+non defaul VS+tabs not on top: line color below tab
+      [change] many internal code tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 21 Aug 2014 19:29:46 +0200
+
+xul-ext-classic-theme-restorer (1.2.4~beta2-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    [locale] Ukrainian (uk) translation updated (thanks to Sacredwheels)
+    [new] activity indicator/throbber (move it to toolbars in customizing mode)
+    [change] temporary reverted v1.2.3 tab color changes
+    [change] squared tabs + TMPs tab progress tweaks
+    [change] removed tab width restriction
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 11 Aug 2014 18:34:12 +0200
+
+xul-ext-classic-theme-restorer (1.2.4~beta1-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    [locale] Portuguese (pt-BR) translation updated (thanks to Claudio)
+    [locale] Greek (el) translation updated (thanks to George M.)
+    [fix] missed to add some newer options to export list
+    [fix] inverted icons: new tab button on all toolbars
+    [change] "Vertical Toolbar" add-on & icons+text/text modes
+    [change] new icons for CTRs bookmarks/history buttons in customizing palette and panel menu
+    [change] preference window tweaks (thanks to George M.)
+    [experimental] non-optimized native toolbar modes 'full' and 'text'
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 08 Aug 2014 17:13:25 +0200
+
+xul-ext-classic-theme-restorer (1.2.3~beta7-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.2.3~beta7
+    [locale] French (fr) translation updated (thanks to David V.)
+    [locale] Japanese (ja) translation updated (thanks to Momdo)
+    [fix] small nav-bar buttons + buttons with svg icons
+  1.2.3~beta6
+    [locale] German locale tweaks suggested by Camp-firefox.de members
+    [removed] 1.2.3beta5 option to hide add-on bar when urlbar is focused
+    [reverted] 1.2.3beta5 changes to 'replace context menu icons' option
+  1.2.3~beta5
+    [locale] Greek (el) translation updated (thanks to George M.)
+    [locale] Russian (ru) translation updated (thanks to AlexanderT)
+    [locale] German locale tweaks suggested by Camp-firefox.de members
+    [new] option to hide add-on bar when urlbar is focused
+    [new] option for 'tab close' on toolbar: alternative icon
+    [new] option for 'tab close': alternative position on tab (tabs start)
+    [fix] MacOSX: minor icon glitches
+    [fix] MacOSX + tabs not on top + Fx32+: tabs toolbar appearence
+    [change] prefwindow tweaks in some areas
+    [change] redone option: replace context menu icons with labels (more accurate now)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 01 Aug 2014 19:09:33 +0200
+
+xul-ext-classic-theme-restorer (1.2.3~beta4-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.2.3~beta4
+    [new] option: "about:config" setting "browser.tabs.
+          closeWindowWithLastTab"
+    [new] option for Fx32+: replace context menu icons with labels
+          (for default theme only)
+    [change] reverted 1.2.3beta3 close-button changes
+  1.2.3~beta3
+    [locale] new Greek (el) locale (thanks to George M.)
+    [locale] German locale tweaks suggested by Camp-firefox.de members
+    [locale] Russian (ru) translation updated (thanks to AlexanderT)
+    [locale] all translators are listed in CTRs about window inside add-ons
+             manager now
+    [change] CTRs close tab button on toolbars start/end should not close
+             window, if only one tab is visible
+    [change] CTRs prefwindow restart call observes quit cancel request e.g.
+             when a dl is running (thanks to George M.)
+  1.2.3~beta2
+    [fix] MacOSX + 'feed-button in urlbar': urlbar size
+    [fix] MacOSX + Personas + 'tabs no on top': glitches on windows with
+          hidden chrome
+    [change] 'feed-button in urlbar' option: hide button, if no feeds are
+             available
+    [change] increased some timeout values
+  1.2.3~beta1
+    [locale] new Ukranian (uk) translation (thanks to Sacredwheels)
+    [locale] Spanish (es) translation updated (thanks to strel)
+    [fix] MacOSX + inverted icons on tabs toolbar: tab scroll buttons glitch
+    [new] option: move feed-button into urlbar
+    [new] tab close option: hide close for one tab
+    [new] option: hide empty favicon on pinned tabs
+    [change] minor changes on "replace generic favicon..." option
+    [change] tab color/font settings for "hovered tab" do not override tab
+             color/font settings for "unread/unloaded tab", if settings for
+             both are enabled
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Jul 2014 10:32:55 +0200
+
+xul-ext-classic-theme-restorer (1.2.2-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  1.2.2~beta14
+  [change] 'favicon in urlbar' tweaks
+    > 'favicon in urlbar' + 'empty favicon' option: dotted icon...
+    > 'favicon in urlbar' + 'sheet favicon' option: sheet icon...
+    > 'favicon in urlbar' without other favicon options: default icon...
+    > ...for websites without favicon
+  1.2.2~beta13
+  [locale] Russian (ru) translation updated (thanks to radion-t & AlexanderT)
+  [fix] MacOSX: issues with Personas + tabs not on top
+  [fix] MacOSX + Fx32+: issues tabs not on top
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 09 Jul 2014 17:39:27 +0200
+
+xul-ext-classic-theme-restorer (1.2.2~beta12-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.2.2~beta12
+    [locale] Russian (ru) translation updated (thanks to radion-t)
+    [locale] Portuguese (pt-BR) translation (thanks to Claudio)
+    [locale] Chinese (zh-TW) translation updated (thanks to Shyayngs)
+    [locale] Italian (it) translation updated (thanks to gialloporpora)
+    [locale] Japanese (ja) translation updated (thanks to Momdo)
+    [locale] Upper Sorbian (hsb) translation updated (thanks to milupo)
+    [locale] Lower Sorbian (dsb) translation updated (thanks to milupo)
+    [fix] green/blue identity-box option: only for valid state
+    [fix] MacOSX: squared tabs australized + tabs not on top + Personas
+  1.2.2~beta11
+    [locale] Chinese (zh-CN) translation updated (thanks to jzhone)
+    [fix] 'hide tabs toolbar with one tab' + OS titlebar
+    [fix] MacOSX + small toolbar button option: urlbar glitch
+    [change] MacOSX/Linux: prefwindow tweaks
+  1.2.2~beta10
+    [fix] tabs not on top + popup windows with disabled 'menubar'
+    [fix] 'Bookmarks tab v2.2' add-on: new tab issue
+    [fix] 'replace generic favicon...' option + live marks
+    [change] improved tab-width code
+  1.2.2~beta9
+    [locale] French translation updated (thanks to David V.)
+    [fix] tab width settings (again like on beta6 internally)
+    [fix] 'replace generic favicon' option does not replace padlocks anymore
+    [fix] 'green/blue identity-box' does not replace padlock icons anymore
+  1.2.2~beta8
+    [fix] MacOSX + Personas/leightweight themes: glitches
+    [fix] small button view + mov. b/f button: forward button glitch
+    [change] more tweaks to reduce gap occurrence on tab toolbars end
+  1.2.2~beta7
+    [locale] new cs-CZ (Czech) locale (thanks to Michal S)
+    [locale] French translation updated (thanks to David V.)
+    [locale] modified German locale
+    [fix] urlbar/address bar on other toolbars + movable b/f button
+    [change] prefwindow: tab min/max width settings
+      > menulist -> textbox (for numbers)
+      > overrides TabMixPlus/TabUtilities tab-width setting for non-default values
+      > values below 48px won't change tab size below 48px (->glitches)
+    [change] padlock icons settings do not depend on "favicon in urlbar" anymore
+    [change] Windows + CTRs curved tabs: tab toolbars end space in maximized mode
+    [change] prefwindow (WIP): more tweaks to optimize prefwindow handling
+    [change] minor other tweaks
+  1.2.2~beta6
+    [locale] some changes and fixes for the new prefwindow (WIP)
+    [fix] Windows Classic: minimize button bug
+    [fix] Windows Classic + Fx31+: tab close on tab toolbars end
+    [change] Windows + squared tabs v1/australized: tab toolbars end space
+    [change] prefwindow (WIP): more tweaks to optimize prefwindow handling
+  1.2.2~beta5
+    [fix] MacOSX prefwindow glitches (tested on 10.8/10.9)
+  1.2.2~beta4
+    [locale] fixed some bugs in German locale
+    [change] prefwindow: moved some settings
+    [change] prefwindow: modified ui
+  1.2.2~beta3 (broken, same as ~beta4)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 05 Jul 2014 20:47:41 +0200
+
+xul-ext-classic-theme-restorer (1.2.2~beta2-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.2.2~beta2
+    [fix] previous beta and "green/blue identity box colors" option -> missing padlock
+    [change] reordered prefwindow settings
+    [change] "green/blue identity box colors" -> box border
+    [change] appmenu popup tweaks
+    [change] 'tabs not on top' tweaks (needs testing)
+  1.2.2~beta1
+    [new] padlock options for favicon in urlbar: hidden, default, classic, modern
+    [new] option for other security icons, which got hidden by "favicon in urlbar"
+    [change] WindowsXP/Linux: changed some appmenu popup icons
+    [change] prefwindow: special tab -> sub tabs order
+    [change] prefwindow: all favicon options are now in one settings group on "special tweaks"
+  1.2.1~beta11
+    [fix] minor glitch in "replace favicon..." option
+    [change] minor tweak on "hide nav-bar" option
+    [change] minor change for some labels on CTRs preference window
+  1.2.1~beta10
+    [change] Win 8 / Win 7 Aero: 'new tab' appearance for 'curved tabs (alternative)'
+    [fix] white mok color option for tab toolbar buttons + TUs protected tabs
+    [fix] tab close option: display nowhere + TUs protected tabs
+  1.2.1~beta9
+    [fix] curved tabs (alt Aero) + TabMixPlus + pinned tabs
+    [change] some tweaks on appmenu popup for other toolbars than nav-bar
+  1.2.1~beta8
+    [fix] favicon in url: icon space still could be empty on some websites
+    [fix] Windows 7/8: identity-box item paddings on small button view
+    [fix] menuitem in toolbar context menu broke other add-ons which also modified that menu
+  1.2.1~beta7
+    [fix] possible fix for MacOSX: inverted icons + Retina displays
+    [fix] possible fix for MacOSX: star-button in urlbar + Retina displays
+    [change] favicon in url: more space between padlock and favicon
+    [change] import error message can now be translated
+  1.2.1~beta6
+    [new] prefwindow: import/export/restore settings
+    [new] prefwindow: classic preset
+    [change] prefwindow: moved some settings
+    [change] prefwindow: request restart confirmation for some options
+    [change] experimenting with appmenu popup position
+  1.2.1~beta5
+    [fix] appbutton on nav-bar: glitch with jumping popup menu in some cases
+    [fix] favicon in urlbar: some websites cheated an empty icon into urlbar
+    [fix] possible fix for MacOSX + inverted icon + Retina displays
+    [fix] WinXP+small button mode: space at nav-bars end
+    [fix] Linux: non-movable buttons glitch caused by a CTR option
+    [removed] Linux: double click to open a new tab
+  1.2.1~beta4
+    [fix] issues with tabs not on top mode introduced in beta3
+    [change] moved "panel menu button like appbutton appearance" option to main appbutton menulist
+  1.2.1~beta3
+    [locale] French translation updated (thanks to David V.)
+    [fix] wrong 'tab close' button on tab bar appearance in some cases
+    [new] option: display CTR menu item in toolbars context menu (disabled by default)
+    [new] (sub)option: hide padlock for "favicon in urlbar"
+    [change] moved option "force closebutton on all tabs" to tab close menulist
+    [change] tweaked "alt. identity-box colors" option
+    [change] minor other tweaks
+  1.2.1~beta2
+    [locale] French translation updated (thanks to David V.)
+    [locale] fixed some errors and optimized some option names on German locale
+    [new] option: remove background color from add-ons bar (Windows)
+    [new] option: inverted icons for add-ons bar
+    [new] option: alternavite menubar position v2 (Windows)
+    [new] option: favicon in urlbar
+    [new] option: hide tabs toolbar with one tab
+    [new] option: restore empty favicon
+    [new] option: alternative identity-box colors for verified websites
+    [change] some Windows exclusive settings are also visible on Linux/MacOSX
+    [change] option: "alt color for tabs toolbar" also affects 'tabs on top'
+    [change] minor other tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Jun 2014 16:35:12 +0200
+
+xul-ext-classic-theme-restorer (1.2.1~beta1-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.2.1~beta1
+    [locale] new dsb/hsb locales (thanks to milupo)
+    [locale] ja-JP translation updated (thanks to Momdo)
+    [locale] zh-TW translation updated (thanks to Shyayngs)
+    [new] option (Windows only): move menubar to a lower position (out of titlebar)
+    [fix] Fx29/30: text only mode + tab close button on tabs toolbar
+    [fix] squared tabs on rtl locales
+    [change] tabs on top + maximized mode: appbutton on tabs toolbar top border
+    [change] added icon for unserted bookmarks menuitem to CTRs bookmarks menu button
+    [change] replaced star image in bookmarks popup for star-button in urlbar option
+    [change] star-button in urlbar insert code (probably fixes a rare issue)
+  1.2.0~beta19
+    [fix] Fx31+ + text only mode: CTRs tab close button on tabs toolbar
+    [fix] typo in German locale
+    [change] Windows/Linux + Fx32+: restored "OK" button on CTRs prefwindow
+  1.2.0~beta18
+    [new] options: inverted toolbar button icons for menubar,
+          tabs toolbar, nav-bar, bookmarks bar, additional toolbar
+    [fix] glitch on prefwindow, where "OK"-button got cut off in some rare cases
+    [fix] random glitch where overflow button refused to disappear while star-button was in urlbar
+  1.2.0~beta17
+    [locale] French translation updated (thanks to David V.)
+    [locale] Italian translation updated (thanks to gialloporpora)
+    [new] Windows + tabs on top: appbutton in Firefox titlebar "v2" options
+    [fix] glitch with addons bar and "Multirow Bookmarks Toolbar Plus v1.2" addon
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 05 Jun 2014 19:42:37 +0200
+
+xul-ext-classic-theme-restorer (1.2.0~beta16-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.2.0beta16
+    [change] split option: remove tab toolbars background fog/color into two options
+    [change] preference window: minor tweaks
+    [change] preference window: moved some settings
+    [change Fx31+] tab close button options
+  1.2.0beta15
+    [locale] French translation updated (thanks to David V.)
+    [fix] WinXP + Personas: active tab glitch
+    [change] Windows: tweaked add-ons bar for "toobaritems"
+    [change] some other minor tweaks
+  1.2.0beta14
+    [new] option: tab not on top (v2) experimental
+    [change] Windows 7 Classic VS: appbutton on titlebar tweak
+    [change] Windows: tweaked add-ons bar
+    [change] Windows 8: tweaks for small button view
+  1.2.0beta13
+    [change] back/forward history button padding
+    [change] improved compatibility with PersonalMenu add-on v6.2.0
+  1.2.0beta12
+    [locale] pt-BR translation (thanks to Claudio)
+    [locale] French translation updated (thanks to David V.)
+    [locale] ja-JP translation updated (thanks to Momdo)
+    [change] separate color options for unread and unloaded tabs
+    [change] tabs not on top mode: tab-dropmarkers arrow position
+    [change] Win7Aero + squared tabs (v1): pinned tabs notification color
+    [change] minor tweaks on small button mode
+    [change] preference window: added more text info
+    [change] improved compatibility with PersonalMenu add-on v6.2.0b2+
+    [change] squared tabs v1 + tabs not on top + ColorfulTabs: removed white line above tab strip
+  1.2.0beta11
+    [locale] zh-CN localization updated (thanks to jzhone)
+    [fix] large icons option: forward button
+    [fix] TreeStyleTabs glitch caused by recent beta changes
+    [change] previously hidden settings are visible now
+  1.2.0beta10
+    [change] TMPs/TUs tab color settings get disabled once on CTRs first run,
+    so people won't see corrupted squared tabs. TMPs/TUs settings can be enabled
+    afterwards again and will stay.
+  1.2.0beta9
+    [fix] Win8 + small button view: 1px glitch below navigation toolbar
+    [fix] Windows + squared tabs: gap at toolbars end, if newtab button/tab was removed
+    [change] added a link to versions page on CTR prefwindow
+    [change] TMPs/TUs tab color settings get disabled once CTRs tab
+  1.2.0beta8
+    [fix] custom tab colors: textfield for hovered tabs text
+    [removed] option: movable panel ui button
+  1.2.0beta7
+    [locale] French translation updated (thanks to David V.)
+    [new] option: reduce space above tabs toolbar (if possible)
+    [new] Windows option: alternative color for tabs toolbar (tabs not on top mode)
+    [new] option: hide private browsing mask
+    [fix] MacOSX + Personas + tabs not on top mode: titlebar padding
+    [fix] MacOSX + Personas + tabs not on top mode: toolbar colors
+    [change] minor tweaks for first install/run
+    [change] tweaks on 'mov. panel menu button' option
+  1.2.0beta6
+    [fix] MacOSX option: toggle menuitem in tools menu
+    [fix] wrong label for old tabs in titlebar option
+  1.2.0beta5
+    [change] tweaks on recently added options to hide toolbar borders
+    [change] custom tab colors for squared tabs work with Personas now
+    [change] selecting 'appbutton on titlebar' manually switches also to Fx titlebar
+  1.2.0beta4
+    [new] option: white appmenu button color
+    [new] option: hide panel menu labels
+    [new] option: scrollbars instead of arrows in menupopups
+    [new] option: hide all borders for top toolbars
+    [fix Fx32+] Windows 7/8: small button view
+    [fix] other glitches reported on Mozillazine forums
+    [fix] appbutton on titlebar (icon only): gap in maximized mode
+    [change] star-button in urlbar now behaves more like pre-Australis
+    [change] CTRs prefwindow: reorganized some settings
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 May 2014 21:16:40 +0200
+
+xul-ext-classic-theme-restorer (1.2.0~beta3-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  v1.2.0beta3
+    [locale] added correct accesskeys to toolbar context menu (from Fx28)
+    [fix] Linux: glitch with checked toolbar buttons
+    [fix] compact menu option: left/right padding for bookmarks menu
+    [fix] icons+text mode: b/f history dropmarker button icon
+    [fix] other glitches reported on Mozillazine forums
+  v1.2.0beta1
+    [locale] zh-CN localization (thanks to jzhone)
+    [change] fixes from 1.1.9 release to have them on beta channel too
+  v1.1.9beta22
+    [new] zh-TW translation (thanks to Shyayngs)
+    [new] Japanese translation (thanks to Momdo)
+    [update] French translation (thanks to David V.)
+    [fix] MacOSX + OS titlebar + tabs not on top + inactive window: nav-bar
+    [fix Fx31+] Windows + mov. b/f button: urlbar padding
+    [fix] partly reverted latest addon bar changes. They caused too much trouble
+    [fix] Linux + tabs not on top + fullscreen view: upper toolbars did not appear on hover
+    [fix] double click to open new tab: excluded tab scroll-/toolbar buttons
+    [change] various issues reported on Mozillazine forums
+  v1.1.9beta20
+    [new Fx31+] tab close option: on tab toolbars 'start' (=before tabs)
+    [new] option: hide movable back/forward buttons history popup on mouse press
+    [new] Windows option: hide navigation toolbars background (mainly for AeroGlass)*1
+    [new] Windows option: hide bookmark toolbars background (mainly for AeroGlass)
+    [new] Windows option: bookmark toolbars top border (mainly for AeroGlass) *1
+    [fix] Windows: searchbar height, if moved to add-ons bar
+    [fix] Linux + mov. back/forward button: recent position changes by Mozilla
+  v1.1.9beta19
+    [fix] recent beta builds broke movable panel menu button in some cases
+    [fix] Windows + small button view: glitch if the last button was a menu button
+    [fix] temporal support of ShowIP add-on (dev needs to add support for other toolbars)
+    [fix] Win8 + tabs not on top: more tweaks on tab toolbar in maximized mode
+    [change] Windows/Linux: addon bar appearance and addon bar button (more like on pre-Australis)
+    [change] double click opens new tab: urlbar focus
+  v1.1.9beta18
+    [update] French translation (thanks to David V.)
+    [update] Italian translation (thanks to gialloporpora)
+    [fix] Win XP/8/Vista&7(AeroBasic) + tabs not on top: tab toolbar glitch in maximized mode
+    [fix] CTR prefwindow: some options did not hide correctly
+    [fix] appbutton on add-on bar: altered popup position to not close browser by accident
+  v1.1.9beta17
+    [new Fx31+] tab close options: default, active only, none, on tab toolbars end
+    [new] option: movable panel menu button *
+    [update] Italian translation (thanks to gialloporpora)
+    [update] French translation (thanks to David V.)
+    [fix] themes; CTRs history/bookmarks menu buttons on nav-bar
+    [change Fx 31+] previous option to show close button on all tabs not needed anymore
+    [change] Windows + maximzed mode: tweaks for appbutton and tabs
+    [change] switching themes (default->third party->default) only disables tab color settings now
+    [change] tweaks on appmenus submenu popups
+    [change] removed some temporary fixes which are not required anymore
+  v1.1.9beta16
+    [fix] pinned tabs issue with TU and tabs not on top mode
+    [fix] mov. b/f button + small button view + rtl locales
+    [change] small button view + star-button in urlbar left/right space
+    [change] space between tabs and appbutton in maximized mode
+    [change] space appmenu icon in titlebar and menubar
+    [change] help menu min-width
+  v1.1.9beta15
+    [fix] squared tabs: protected/locked/pinned tabs and TMP/TU addons
+    [fix] Windows small button mode: urlbar and star button margins
+    [fix] some tweaks for rtl locales
+    [fix] Windows + squared tabs: tabs toolbar gap in maximized mode
+  v1.1.9beta14
+    [fix] issues with pinned tabs and a few add-ons
+    [change] almost all CTR ids changed (requested by AMO editors) *
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 06 May 2014 19:07:02 +0200
+
+xul-ext-classic-theme-restorer (1.1.9~beta13-1nano) unstable; urgency=low
+
+  * New upstream beta release
+    [new] option: increase add-on bars height (if not empty)
+    [new] option: hide zomm-reset button on toolbars
+    [change] 'compact panel menus' option removes unicorn animation from empty panel ui menu
+    [change] css tweaks for rtl locales
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Apr 2014 21:40:17 +0200
+
+xul-ext-classic-theme-restorer (1.1.9~beta12-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.1.9~beta10
+   [change] Windows Aero visual style: appmenu tweaks for themes
+  1.1.9~beta11
+    [fix] WinXP + squared tabs: tabs toolbar glitch
+    [fix] Win8 + squared tabs + tabs not on top: pinned tabs glitch
+    [fix] MacOSX + mov. b/f button: urlbar glitches
+    [fix] Win7/Win8: appmenu colors for third party visual styles
+  1.1.9~beta12
+    [fix] tabs not on top: pinned tabs clipping (thanks to PimpUigi)
+    [change] option to open 'new tab' on double click checks 'browser.newtab.url'
+    [change] some option strings on CTRs prefwindow
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 20 Apr 2014 07:35:49 +0200
+
+xul-ext-classic-theme-restorer (1.1.9~beta9-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.1.9~beta5
+    [new] Windows option: double click on titlebars appbutton closes Fx
+    [fix Fx30+] Windows + 'small button view': icon stretching
+    [fix Fx30+] Windows + 'icon+text mode': icon stretching
+  1.1.9~beta6
+    [change] tab not on top: tweaks on squared tabs
+    [change] small button view tweaks for Windows 7/8
+    [change] option: double click on titlebars appbutton closes current window now
+  1.1.9~beta7
+    [new] option: restore empty favicon
+    [new] button: history menu button (for those who dislike the history panel view button)
+    [change] prefwindow 'special tweaks tab': some settings got reordered
+  1.1.9~beta8
+    [fix] MacOSX: history menu button dropmarker
+    [fix] PersonalToolbar: bookmarks menu button dropmarker
+  1.1.9~beta9
+    [fix] navbars iconsize option for all Fx builds (20140415+)
+    [fix] remove menubars transparancy (OS titlebar + tabs not on top) (Win7/8)
+    [fix] Linux Gtk theme: tab close button image was not always visible
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 16 Apr 2014 18:49:31 +0200
+
+xul-ext-classic-theme-restorer (1.1.9~beta4-1nano) unstable; urgency=low
+
+  * New upstream beta release
+  1.1.9~beta4
+    [new Fx31+] option: disable panel animation
+    [fix Fx31+] Windows + small nav-bar buttons: icon sizes
+    [change] 'white tab separators/white tab buttons' are two options now
+  1.1.9~beta3
+    [new] option: remove menubars transparancy (OS titlebar + tabs not on top) (Win7/8)
+    [new] option: remove menubars menu background (AeroGlass/Win8)
+    [fix] squared tabs + 'Private Tab' add-on
+    [change] Windows + small icon view: minor tweaks
+    [change] Italian translation (thanks to gialloporpora)
+  1.1.9~beta2
+    [fix] MacOSX + 'tabs not on top': nav-bar/tabs toolbar visibility in html5 fullscreen videos
+    [fix] MacOSX: high res. icons for Retina (thanks to bsiegel for testing)
+    [change] MacOSX + 'tabs not on top': slightly brighter tabs toolbar for inactive windows
+  1.1.9~beta1
+    [fix] star-button in urlbar: hide on typing, restore on switching tabs/content loading
+    [fix] tabs not on top + Aero: tabs toolbar left/right borders
+    [fix] MacOSX: high res. icons for Retina (tests/feedback needed)
+  1.1.8
+    !!! IMPORTANT status-bar change !!!
+    If the status-bar does not appear after update to v1.1.8,
+    search for it in customizing mode, move it to your favorite toolbar and restart Firefox.
+    !!! IMPORTANT status-bar change !!!
+    [new] Italian translation (thanks to gialloporpora)
+    [new] option: double click on tabs toolbar opens a new tab (about:newtab)
+    [new] show back-forward history menu when holding CTRs back/foward buttons
+    [new] options: "bold" and "italic" text (custom tab color settings)
+    [new] appbutton option: hide borders and background colors
+    [new] appbutton option: purple color for normal & private mode
+    [new] OSX option: reduce top gap (tabsintitlebar + tabsontop)
+    [new] textboxes for custom tab color settings (compatible with color names, hex values, rgb(a) and hsl(a) values)
+    [fix] tab-width resetting on new window in some cases
+    [fix] temp fix for 'Request Policy' add-on
+    [fix] tab text settings + curved tabs: bold/italic options
+    [fix] always remove bookmarking animation for star-button in urlbar
+    [fix] Linux + Fx31: small button view (slightly affects Fx29/30)
+    [fix] option to disable bookmarking animation
+    [fix] custom min/max tab-width value reset on every 'new window' (v1.1.7 bug)
+    [fix] MacOSX + curved tabs: background middle
+    [fix] MacOSX + squared tabs: newtab icon
+    [fix] MacOSX + tabs not on top: tabs toolbar background color
+    [fix] curved alternative tabs + Windows classic themes: new tab button
+    [fix] disappearing menu entries in some cases
+    [fix] TabUtilities+squared tabs: pinned tab overlapping
+    [fix] squared pinned tabs: protected/locked appearance
+    [change] minor tweaks for lightweight themes (Personas)
+    [change] tab width settings are hidden now, if TMP/TU is active
+    [change] minor tweaks on CTRs prefwindow
+    [change] minor tweaks on appmenu
+    [change] Windows AeroGlass + tabs not on top: 'no tab fog' option removes toolbars background color
+    [change] MacOSX nav-bar color: OS titlebar + tabs not on top + normal sizemode
+    [change] hide star-button in urlbar when typing into urlbar
+    [change] appmenu now uses Fx28 (menu)item ids *1
+    [change] removed cloned popup for movable appbutton *2
+    [change] Linux + Fx31: changes to urlbar border (slightly affects Fx29/30)
+    [change] Linux + Fx31: CTRs border fix option visible for Linux again
+    [change] Linux + tabs not on top: tab font colors are black again *3
+    [change] prefwindow: textbox sizes are not fixed
+    [change] prefwindow: a few more selectable tab-width values
+    [change] make empty status-bar item more visible in customizing mode
+    [change] statusbar option: toggling without restart
+    [change] statusbar panel is movalbe now *4
+    [change] internal changes for panel ui button
+    [change] internal changes to improve theme support
+    [change] Windows Vista/7/8 + small button view: nav-bar buttons on non-Aero themes
+    [change] WindowsXP + small button view: nav-bar buttons
+    [change] removed tab clipping
+    [change] WindowsXP/classic: new-tab icon
+    [change] tweaks for 'tabs not on top' mode
+    *1 Improves compatibility and also fixes issues some add-ons had trying to add items to menubar.
+    *2 both appbuttons (titlebar/toolbar) share same menupopup now
+    *3 CTRs tab color settings can override 'black color', if needed for custom OS themes!
+    *4 if status bar gets lost in palette, it gets moved to nav-bar automatically
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 12 Aug 2014 20:49:16 +0200
+
+xul-ext-classic-theme-restorer (1.1.7-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  - [new] more tab min/max-width settings *1
+  - [new] option: alternative colors for panel menus
+  - [new] custom color options for "unread tabs" *2
+  - [fix] Nightly tour popup position (independant of panelui button position)
+  - [fix] Windows: 'star-button in urlbar' + 'text mode'/'icons+text modes'
+  - [fix] resizing bug for custom tab-width settings
+  - [fix] custom text color settings for some third party themes *3
+  - [fix] star-button in urlbar: removed borders for some cases
+  - [fix] 'tabs not on top': 'print preview/edit'-toolbar position
+  - [fix] MacOSX + squared tabs: 'new tab' & 'tab scroll' button overlapping
+  - [fix] Windows/Linux + text only mode: downloads button position
+  - [fix] curved alternative tabs on recent Australis builds
+  - [fix] option: toggle visibility of CTRs menu item in tools menu
+  - [fix] MacOSX: small nav-bar button
+  - [fix] MacOSX: icons + text mode
+  - [fix] MacOSX: text only mode
+  - [change] alt panel menu colors: affects submenus
+  - [change] curved tabs: 'new-tab' button appearance
+  - [change] disable CTRs tab min/max-width settings for TMP and TU *4
+  - [change] big icons/compact panels: new 'sidebars-button'/'-panel' support
+  - [change] add bookmarks menu button to bookmarks toolbar on first run automatically
+  - [change] tweaks for rtl locales
+  - [change] Windows: appmenu tweaks
+  - [change] spaces, springs, separators: code clean up
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 22 Mar 2014 08:13:25 +0100
+
+xul-ext-classic-theme-restorer (1.1.6-1nano) unstable; urgency=low
+
+  * new upstream stable release
+  - [new] option: toggle visibility of CTRs menu item in app menu
+  - [new] option: toggle visibility of CTRs menu item in tools menu
+  - [new] option: icon only for appbutton on titlebar
+  - [new] option: text only for appbutton on toolbars *
+  - [fix] squared tabs + Nightly 20140304+: tabs height
+  - [fix] recent nightly broke CTRs tab-fog removal
+  - [fix] appbutton on toolbar + alt icons: padding in some cases
+  - [fix] add-ons manager could lose CTRs name in some cases
+  - [change] Windows 8(.1): adopted colors for Aurora builds (20140306+)
+  - [change] main CTR icon
+  - [change] removed previous 'appbutton text' option *
+  - [change] prefwindow: moved some options to 'special 2' tab
+    * previous 'appbutton text' option is now inside appbutton menulist
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 12 Mar 2014 19:18:09 +0100
+
+xul-ext-classic-theme-restorer (1.1.5-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 02 Mar 2014 19:56:07 +0100

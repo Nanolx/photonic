@@ -1,0 +1,19 @@
+Description: bump maximum iceweasel version to 24.*
+ Bump maximum iceweasel version to 24.*
+ .
+ xul-ext-pretty-install (1.0-1nano) unstable; urgency=low
+ .
+   * initial release
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+
+--- xul-ext-pretty-install-1.0.orig/install.rdf
++++ xul-ext-pretty-install-1.0/install.rdf
+@@ -19,7 +19,7 @@
+       <r:Description>
+         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id>
+         <minVersion>4.0</minVersion>
+-        <maxVersion>4.0.*</maxVersion>
++        <maxVersion>24.*</maxVersion>
+       </r:Description>
+     </targetApplication>
+ 

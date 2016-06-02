@@ -1,0 +1,35 @@
+zelda-book-of-mudora (0.9-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 17:33:26 +0200
+
+zelda-book-of-mudora (0.8+git683-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 19 Mar 2016 18:12:09 +0100
+
+zelda-book-of-mudora (0.8+git671-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 23 Feb 2016 19:32:14 +0100
+
+zelda-book-of-mudora (0.7+git643-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 05 Feb 2016 18:13:27 +0100
+
+zelda-book-of-mudora (0.6-2nano) unstable; urgency=low
+
+  * proper depend on solarus
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 24 Nov 2015 20:20:14 +0100
+
+zelda-book-of-mudora (0.6-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:59:43 +0100

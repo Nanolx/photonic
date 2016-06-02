@@ -1,0 +1,17 @@
+Source: ascii-design
+Section: text
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), cmake, qtbase5-dev, g++, 
+Standards-Version: 3.9.5
+Homepage: http://ascii-design.sourceforge.net/
+
+Package: ascii-design
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, figlet
+Recommends: figlet-fonts-extra
+Description: Design ascii art from plain text
+ Ascii Design is an ascii-art program based on figlet engine.
+ You can create art based text for many types of decorations
+ for web sites, e-mail, text files etc...
+ 

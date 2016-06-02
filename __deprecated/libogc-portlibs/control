@@ -1,0 +1,117 @@
+Source: libogc-portlibs
+Section: devel
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://devkitpro.org
+
+Package: libogc-expat
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported expat for libOGC
+
+Package: libogc-freetype
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported freetype for libOGC
+
+Package: libogc-jpeg
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported jpeg for libOGC
+
+Package: libogc-mxml
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported mini xml for libOGC
+
+Package: libogc-png
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported png for libOGC
+
+Package: libogc-tremor
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported lowmem tremor for libOGC
+
+Package: libogc-zlib
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported zlib for libOGC
+
+Package: libogc-gd
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported gd for libOGC
+
+Package: libogc-mupdf
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported mupdf for libOGC
+
+Package: libogc-7zip
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported 7zip for libOGC
+
+Package: libogc-unrar
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported unrar for libOGC
+
+Package: libogc-tiff
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported tiff for libOGC
+
+Package: libogc-zip
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported zip for libOGC
+
+Package: libogc-ext2fs
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported ext2fs for libOGC
+
+Package: libogc-ntfs
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported ntfs3g for libOGC
+
+Package: libogc-nfs
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported nfs for libOGC
+
+Package: libogc-sdl
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc, libogc-freetype, libogc-jpeg, libogc-png, libogc-smpeg
+Description: ported SDL for libOGC
+
+Package: libogc-smpeg
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc, libogc-sdl
+Description: ported SMPEG for libOGC
+
+Package: libogc-dopmii
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: dopmii for libOGC
+
+Package: libogc-pngu
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: ported pngu for libOGC
+
+Package: libogc-grrlib
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc-freetype, libogc-jpeg, libogc-png, libogc-zlib, libogc-pngu
+Description: GRRLIB for libOGC
+
+Package: libogc-runtimeiospatch
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc
+Description: runtimeiospatch for libOGC

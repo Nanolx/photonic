@@ -1,0 +1,22 @@
+iqpuzzle (0.9.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+  [Upstream]
+  * Added settings dialog; mouse buttons; GUI language.
+  * Added Bulgarian translation (thanks to bogo1966)
+  * Bug fix: Highscore
+  * Bug fix: Wrongly solved, if piece intersects board and not all pcs needed.
+  * Added new boards
+
+  [Nanolx]
+  * add iqpuzzle-data arch-indep package
+  * bump build depends to Qt5
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 May 2015 17:38:12 +0200
+
+iqpuzzle (0.8.1-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 02 Sep 2014 17:43:22 +0200

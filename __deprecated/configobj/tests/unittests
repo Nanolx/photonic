@@ -1,0 +1,17 @@
+#!/bin/sh
+set -efu
+
+pythons="$(pyversions -r 2> /dev/null)"
+
+cp -a tests "$ADTTMP"
+cd "$ADTTMP"
+
+for python in $pythons; do
+	echo "=== $python ==="
+	$python tests/test_configobj.py
+	if [ "$python" = "python2.7" ]; then
+		PYTHONWARNINGS=default $python -m unittest discover -s tests
+	else
+		PYTHONWARNINGS=default $python $(which unit2) discover -s tests
+	fi
+done 2>&1

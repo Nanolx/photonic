@@ -1,0 +1,18 @@
+ftpsync (1.3.07-1nano) unstable; urgency=low
+
+  * new upstream release
+  * debian/control: bump standards-version to 3.9.4, add homepage,
+    bump debhelper build-dependency to 8.0+, add build-dependency
+    on make, update my mail-address, change arch from "any" to "all"
+  * debian/copyright: update to new format, update my mail address,
+    add information that was previously missing
+  * debian/docs: updated
+  * debian/compat: bump compat version to 8
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 03 Aug 2013 20:57:17 +0200
+
+ftpsync (1.3.03-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sat, 26 Mar 2011 20:11:54 +0100

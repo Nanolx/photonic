@@ -1,0 +1,4 @@
+opt/devkitpro/libogc/lib/wii/libgd.a
+opt/devkitpro/libogc/include/gd.h
+opt/devkitpro/libogc/include/gd_io.h
+opt/devkitpro/libogc/include/gdfx.h

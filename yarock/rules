@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+export CMAKE_CXX_FLAGS = "$(CPPFLAGS) -fPIC"
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DENABLE_QT5=ON -DENABLE_VLC=ON \
+		-DENABLE_MPV=ON -DENABLE_PHONON=ON \
+		-DCMAKE_POSITION_INDEPENDENT_CODE=TRUE \

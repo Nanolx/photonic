@@ -1,0 +1,243 @@
+xul-ext-download-status-bar (13.4.2.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix for Pale Moon 26
+  * Fix for Checksum that caused Firefox 47 and later to become nonfunctional
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:23:54 +0100
+
+xul-ext-download-status-bar (12.3.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    no changelog provided
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 07 Nov 2014 18:19:19 +0100
+
+xul-ext-download-status-bar (12.2.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - No Auto Focus for Details Panel
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 21 Oct 2014 18:06:22 +0200
+
+xul-ext-download-status-bar (11.9.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    11.8.0: Locale Update
+    11.9.0: Popup no Auto Focus
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 11 Oct 2014 18:23:27 +0200
+
+xul-ext-download-status-bar (11.5.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    11.0.5: --no changelog provided--
+    11.1.0: Locale Support
+    11.3.0: Fix for Broken Nightly Support
+    11.5.0: Fix for Nightly Options Windows
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 05 Oct 2014 19:25:47 +0200
+
+xul-ext-download-status-bar (11.0.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    10.7.0: --no upload--
+    10.8.0: Panel Reverse Download Listing
+    10.9.0: --no changelog provided--
+    11.0.0: --no changelog provided--
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 02 Sep 2014 18:32:16 +0200
+
+xul-ext-download-status-bar (10.6.0-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    10.3.0: Trim Source URL (You can modify trim behaivor for Source URL
+            by altering extensions.downloadbar.trimsourceurl preference
+            from about:config. Restart is required after change.)
+    10.4.0: Flag for Taiwan in Help Page
+    10.5.0: Flush Bundles
+    10.6.0: Estonian Flag
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 21 Aug 2014 19:24:37 +0200
+
+xul-ext-download-status-bar (10.2.0-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - locale support
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 11 Aug 2014 18:35:58 +0200
+
+xul-ext-download-status-bar (10.1.0-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 12 Jul 2014 20:49:27 +0200
+
+xul-ext-download-status-bar (10.0.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    9.9.2:  Delete File Bug Fix
+    9.9.3:  Fallback Support
+    9.9.6:  Better Algorithm for Open Download Tab
+    10.0.0: Help Page for First Run
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 05 Jun 2014 19:37:05 +0200
+
+xul-ext-download-status-bar (9.9.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    9.2.5: Icon Change for Show File
+    9.3.0: Locale Update
+    9.3.5: Reset Statistics Locale / Locale Update
+    9.4.0: Send To Folder History
+    9.5.5: Thunderbird Support
+    9.7.0: SeaMonkey Support
+    9.7.5: Locale Update
+    9.8.0: String Bundles by Javascript
+    9.8.5: Enable Clear All Menu Option
+    9.8.6: File Extension Case Sensitivity Fix
+    9.8.8: Help Page Style Update
+    9.8.9: Locale Update / Statistics Page Favicon
+    9.9.1: Locale Update
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 May 2014 21:43:27 +0200
+
+xul-ext-download-status-bar (9.2.0-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  9.1.0
+    - Insert Download Item at the top of the list for Download Panel
+    (Please modify extensions.downloadbar.insertdownloadattopoflist
+    preference to "true" in about:config to activate feature for
+    Download Panel)
+  9.2.0
+    - Rename Window Persistent Width and Height
+    - Toolbar Button Default Styling
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 06 May 2014 19:10:04 +0200
+
+xul-ext-download-status-bar (8.9.5-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  * Auto Clear Bug Fix
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Apr 2014 21:47:22 +0200
+
+xul-ext-download-status-bar (8.9.0-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  8.9.0:
+    Reset Statistics Restart Bug Fix
+  8.8.5:
+    Reset Statistics Context Menu
+  8.8.0:
+    Panel Hover Bug Fix
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 12 Apr 2014 20:55:31 +0200
+
+xul-ext-download-status-bar (8.7.5-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * Persistent Statistics (Statistics page is now independent
+    from History entries. Clearing download items will not
+    remove Statistics details.)
+  * Statistics Page Center Bug Fix
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 07 Apr 2014 17:29:23 +0200
+
+xul-ext-download-status-bar (8.5.5-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  8.4.5
+   Help Page Updates
+   Locale Update
+  8.5.0
+   -no changes listed-
+  8.5.5
+   Statistics Page Update
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Thu, 03 Apr 2014 19:48:49 +0200
+
+xul-ext-download-status-bar (8.3.5-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  - Toggle Bar and Close Bar Algorithm Updates
+    (They will toggle or close bar for all windows)
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 24 Mar 2014 19:36:11 +0100
+
+xul-ext-download-status-bar (8.1.5-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  - locale updates
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 22 Mar 2014 08:16:11 +0100
+
+xul-ext-download-status-bar (8.1.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  7.9.0:
+   Auto Clear Bug Fix
+  7.9.5:
+   'Launch' and 'Show File' Menuitem Clear Bug Fix
+  8.0.0:
+   Nightly Download Bar Fix
+  8.1.0:
+   Nightly Download Bar Fix
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 21 Mar 2014 08:12:17 +0100
+
+xul-ext-download-status-bar (7.8.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  7.8.0:
+   Button Types: Iconic, Text Iconic, and Text
+  7.7.0:
+   Thumbnail CSS Update
+  7.6.5:
+   Image Preview Bug Fix
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 19 Mar 2014 09:07:39 +0100
+
+xul-ext-download-status-bar (7.6.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+   - Double Click Algorithm Update
+   - Speed Color Bug Fix
+   - Tools Menu
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 17 Mar 2014 08:33:47 +0100
+
+xul-ext-download-status-bar (7.5.0-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  7.5.0:
+   Tools Menu
+  7.4.5:
+   Update Clear bugfix
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 15 Mar 2014 17:52:43 +0100
+
+xul-ext-download-status-bar (7.3.0-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  7.0.0:
+   Input Color Fix for Firefox 28
+  7.1.0:
+   Automatic Bar Close fix for Firefox 25 and below.
+   Help Page Style Update
+  7.2.0:
+   Autoscrollbox for Download Panel
+   Double Click fix for Firefox 25
+   Flash Video Downloader fix
+  7.3.0:
+   NAN Bug Fix
+   Statistics Page Style Update
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 12 Mar 2014 19:22:37 +0100
+
+xul-ext-download-status-bar (6.6.5-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 02 Mar 2014 20:03:29 +0100

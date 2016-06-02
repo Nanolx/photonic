@@ -1,0 +1,33 @@
+xul-ext-dovesec (2.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - ThunderSec now supports Spam URI Realtime Blackhole Lists (SURBL). With
+      this enhancement, message bodies are also inspected in addition to message
+      headers and links included in the message body are tested against SURBL
+      services (Issue #22).
+    - Optionally displays a notification bar when no security violations are
+      found. This functionality is enabled by default but can be adjusted from
+      Preferences (Issue #19).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 16 Jan 2016 11:13:57 +0100
+
+xul-ext-dovesec (1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - ThunderSec now supports interaction with junk mail controls. There is a
+      button to mark a message as junk when it fails DNSBL/DKIM or SPF checks.
+      There is also an advanced setting in preferences (disabled by default)
+      that allows automatically marking messages as Junk if they fail DNSBL,
+      DKIM or SPF checks. (Issue #20)
+    - Fixes a bug that prevents Thunderbird from shutting down. This issue was
+      first seen in Thunderbird 38.0.1. (Issue #18)
+    - Fixes a bug that causes CPU utilization while Thunderbird is idle.
+      (Issue #17)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 06 Sep 2015 09:16:19 +0200
+
+xul-ext-dovesec (1.0.2-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 30 Aug 2015 19:44:12 +0200

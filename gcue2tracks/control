@@ -1,0 +1,14 @@
+Source: gcue2tracks
+Section: sound
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.3
+
+Package: gcue2tracks
+Architecture: all
+Depends: python (>=2.4), python-glade2, python-gtk2, bash, cuetools, shntool (>= 3.0), ffmpeg
+Suggests: flac, flake, wavpack, lame, id3v2, vorbis-tools, python-mutagen, monkeys-audio
+Description: Tool for spliting audio CD image to tracks with cue sheet info.
+ CUE 2 Tracks, Tool for spliting audio CD image to tracks with cue sheet info
+ http://trac2.assembla.com/gCue2trac/wiki

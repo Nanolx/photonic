@@ -1,0 +1,51 @@
+szs (1.50a-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 1.47a: new CT-CODE
+  * 1.48a: wctct
+  * 1.49a: misc fixes
+  * 1.50a: CT-CODE & Cheats
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 16 May 2016 10:44:30 +0200
+
+szs (1.46a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 17:37:38 +0100
+
+szs (1.40a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 24 Apr 2015 19:56:00 +0200
+
+szs (1.39a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 11 Apr 2015 19:58:43 +0200
+
+szs (1.36b-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 20 Jan 2015 19:48:00 +0100
+
+szs (1.35c-1nano) unstable; urgency=low
+
+  * New upstream stable release
+ 
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 20 Aug 2014 22:41:27 +0200
+
+szs (1.27a-1nano) unstable; urgency=low
+
+  * New upstream stable release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 Dec 2013 20:15:07 +0100
+
+szs (1.20a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 06 Aug 2013 17:44:37 +0200

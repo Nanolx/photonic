@@ -1,0 +1,27 @@
+Source: easystroke
+Section: x11
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), make, pkg-config, libgtkmm-3.0-dev, xserver-xorg-dev,
+               intltool, libgtk-3-dev, libglib2.0-dev, libdbus-glib-1-dev, libx11-dev, quilt,
+               libboost-serialization-dev
+Standards-Version: 3.9.4
+Homepage: http://sourceforge.net/apps/trac/easystroke/
+
+Package: easystroke
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         xautomation,
+         wmctrl,
+         xserver-xorg-input-evdev
+Suggests: xserver-xorg-input-aiptek,
+          xserver-xorg-input-multitouch,
+          xserver-xorg-input-mutouch,
+          xserver-xorg-input-synaptics,
+          xserver-xorg-input-wacom
+Description: Gestures for X11
+ This application can record gestures made with mouse or
+ input-tablet, record them and assign them to various
+ functions, window-managing commands or self-defined commands.
+ .
+ xte (from xautomation) and wmctrl expand the possibilities.

@@ -1,0 +1,3 @@
+opt/devkitpro/portlibs/ppc/include/expat.h
+opt/devkitpro/portlibs/ppc/include/expat_external.h
+opt/devkitpro/portlibs/ppc/lib/libexpat.a

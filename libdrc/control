@@ -1,0 +1,39 @@
+Source: libdrc
+Section: libs
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0),
+  autotools-dev,
+  libx264-drc-dev,
+  libdrm-dev,
+  libgl1-mesa-dev,
+  libegl1-mesa-dev,
+  libglu1-mesa-dev,
+  quilt,
+  libsdl1.2-dev
+Standards-Version: 3.9.4
+Homepage: http://www.libdrc.org
+
+Package: libdrc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         linux-image-photonic-amd64 [amd64],
+         linux-image-photonic-i386 [i386]
+Suggests: libdrc-examples
+Description: Library for Wii U GamePad integration
+  This library allows integration of Wii U GamePad
+  into applications.
+  .
+  Currently libdrc does:
+	 - Streams and encodes video and audio data from a PC to a GamePad
+	 - Handles input data from a GamePad and passes it to either the
+	   application or the operating system
+
+Package: libdrc-examples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libdrc
+Description: Library for Wii U GamePad integration
+  This packages contains the following example applications for libdrc:
+	 - 3dtest
+	 - simpleaudio
+	 - tsdraw

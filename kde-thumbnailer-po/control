@@ -1,0 +1,19 @@
+Source: kde-thumbnailer-po
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev
+Standards-Version: 3.9.2
+Homepage: http://kde-apps.org/content/show.php/KDE+PO+Thumbnailer?content=142036
+
+Package: kde-thumbnailer-po
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KDE Thumbnailer for PO files
+ kde-thumbnailer-po is a preview image generator plugin
+ for gnu gettext translation and gettext translation template.
+ .
+ green --- translated
+ blue --- fuzzy
+ red --- untranslated
+ yellow --- obsoleted

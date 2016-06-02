@@ -1,0 +1,21 @@
+Source: texel
+Section: sound
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, libsox-dev, libsqlite3-dev,
+               libofa0-dev, libmusicbrainz3-dev, libqt4-dev,
+               libqtwebkit-dev, libechonest-dev, zlib1g-dev,
+               libboost-serialization-dev
+Standards-Version: 3.9.3
+Homepage: http://kde-apps.org/content/show.php/Texel?content=156784
+
+Package: texel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmusicbrainz3-6
+Description: Texel is a mass music meta data tagger.
+ It's designed to work as a spreadsheet document. It supports features like
+ complex formulars and copy content down to other cells. Features like cover
+ searching on internet pages, fuzzy duplicate detection and freedb lookup
+ (based only on tracks, not on CDs or even the order) are available. Core GUI
+ can be enhanced with docks to display details. Playlists are read and altered
+ automatically when file names change.

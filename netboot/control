@@ -1,0 +1,13 @@
+Source: netboot
+Section: net
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), libc6-dev, gcc
+Standards-Version: 3.9.4
+Homepage: http://brokestream.com/netboot.html
+
+Package: netboot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Simple pxe-compatible dhcp and tftp server
+ simple pxe-compatible dhcp and tftp server

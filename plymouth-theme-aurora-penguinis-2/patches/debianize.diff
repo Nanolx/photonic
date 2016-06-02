@@ -1,0 +1,35 @@
+Description: debianize the plymouth theme
+ Adjust aurora-penguinis-2.plymouth definition file for Debian compliance.
+ .
+ plymouth-theme-aurora-penguinis-2 (1.0-1nano) unstable; urgency=medium
+ .
+   * Initial release
+Author: Christopher Roy Bratusek <nano@jpberlin.de>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- plymouth-theme-aurora-penguinis-2-1.0.orig/aurora-penguinis-2/aurora-penguinis-2.plymouth
++++ plymouth-theme-aurora-penguinis-2-1.0/aurora-penguinis-2/aurora-penguinis-2.plymouth
+@@ -1,8 +1,8 @@
+ [Plymouth Theme]
+-Name=Aurora-Penguinis-Plymouth-2
++Name=aurora-penguinis-2
+ Description=A theme that features a background with a logo.
+ ModuleName=script
+ 
+ [script]
+-ImageDir=/lib/plymouth/themes/Aurora-Penguinis-Plymouth-2
+-ScriptFile=/lib/plymouth/themes/Aurora-Penguinis-Plymouth-2/aurora-penguinis-2.script
++ImageDir=/usr/share/plymouth/themes/aurora-penguinis-2
++ScriptFile=/usr/share/plymouth/themes/aurora-penguinis-2/aurora-penguinis-2.script

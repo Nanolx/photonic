@@ -1,0 +1,14 @@
+Source: kde-audiothumbs
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev, libflac++-dev, libtag1-dev
+Standards-Version: 3.9.2
+Homepage: http://kde-apps.org/content/show.php/AudioThumbs?content=145088
+
+Package: kde-audiothumbs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Audio-thumbanils for dolphin and konqueror
+ Plugin for KDE file managers (Dolphin and Konqueror) to preview cover
+ arts embedded in Audio (MP3, FLAC, M4A, OGG) file tags as Thumbnails.

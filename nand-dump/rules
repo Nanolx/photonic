@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/nand-dump/usr/bin/
+	install -m755 nand $(CURDIR)/debian/nand-dump/usr/bin/nand-dump
+	mkdir -p $(CURDIR)/debian/nand-dump/usr/share/pixmaps/
+	install -m644 icon.png $(CURDIR)/debian/nand-dump/usr/share/pixmaps/nand-dump.png

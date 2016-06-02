@@ -1,0 +1,186 @@
+xul-ext-send-later (5.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New features:
+    - Messages can now be scheduled to send on a minutely basis, i.e., every minute,
+      or every 2 minutes, or every 3 minutes, etc. Delivery of recurring messages
+      can now be restricted by time of day and day of week. This restriction is
+      enforced on the message's initial scheduled delivery time and in each
+      subsequently scheduled recurring delivery. Furthermore, there is a preference
+      you can enable to enforce it on late message delivery as well. In other words,
+      if Thunderbird isn't running when at the scheduled delivery time, and when
+      you launch Thunderbird the current time conflicts with the delivery restrictions,
+      then by default the message will be delivered despite the conflict, but if
+      you enable the preference, then delivery will be delayed until the delivery
+      restrictions are satisfied.
+    - There is a new preference you can enable to prevent Send Later from delivering
+      messages late, e.g., because Thunderbird wasn't running at the scheduled
+      delivery time. When this preference is enabled, Send Later will pop up a
+      warning about the late message instead of delivering it.
+  * Bug fixes:
+    - The shortcut buttons in the compose window toolbar are now disabled when a
+      previously scheduled message with recurrence is edited. In this context,
+      the user should open the Send Later dialog to reschedule the message, rather
+      than using shortcut buttons.
+    - The "week of the month" checkbox (e.g., "1st Saturday of the month", "3rd
+      Tuesday of the month") in the scheduling dialog is now disabled correctly
+      when the user clears the scheduled send time or switches to a recurrence
+      frequency other than monthly.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 16:36:17 +0200
+
+xul-ext-send-later (4.4.5-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Disable scheduling messages when Enigmail is active
+    Unfortunately, limitations in the Thunderbird add-on framework make it
+    somewhere between difficult and impossible to make scheduled messages with
+    Send Later work safely and properly when the Enigmail add-on is installed
+    and enabled.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 15 May 2016 17:22:03 +0200
+
+xul-ext-send-later (4.4.4-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Bug: Fix Send Later column after using quick filter
+    Previously, if you used the quick filter bar to search messages in the Drafts
+    folder, then the Send Later column would stop working. This is fixed.
+  - Bug: Fix incompatibility with the Mnenhy add-on
+    Recent necessary changes made Send Later incompatible with the Mnenhy add-on,
+    because Mnenhy replaces certain core Thunderbird components. Send Later now
+    has a workaround for this problem. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 30 Aug 2015 19:28:56 +0200
+
+xul-ext-send-later (4.4.4~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Work around problems caused by Mnenhy add-on:
+    .
+    The Mnenhy add-on replaces the Thunderbird header display pane with one of
+    its own, which causes Send Later -- which overlays its functionality on top
+    of the standard Thunderbird header display pane -- to malfunction. This, in
+    turn, causes Mnenhy to malfunction, thereby causing problems with message
+    display.
+    .
+    This change mitigates this problem by suppressing the exceptions within Send
+    Later caused by Mnenhy's UI changes. The Send Later functionality for
+    automatically hiding or displaying the x-send-later-at header as needed still
+    doesn't work with Mnenhy, but at least everything else should work after this
+    change. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 12 Aug 2015 19:16:16 +0200
+
+xul-ext-send-later (4.4.4~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    4.4.2~beta1
+      - The add-on name which shows up in the status bar at the bottom of
+        the main window has been changed from "Send Later 3" to "Send Later".
+      - A bug which caused displayed message headers sometimes to be
+        aligned incorrectly has been fixed.
+      - There is now a Brazilian Portuguese translation, thanks to "wetabax"
+    4.4.2~beta2
+      - Bug fix: The previous beta released introduce a bug which caused
+        the wrong message's header to display about the messages after
+        opening a message in its own tab and then moving to a different
+        message in that tab. 
+    4.4.2~beta3
+      - Bug fix: When the prompt window comes up, the "Every" checkbox
+        shouldn't be displayed until a send time has been entered and a
+        recurrence other than "none" has been specified.
+      - Maintenance: Upgrade to SugarJS 1.4.1, which should be mostly
+        transparent to users but may improve locale support.
+    4.4.2~beta4
+      - Bug fix: Prior to this fix, if the user ran Thunderbird when the
+        system clock was incorrectly set in the future, and then subsequently
+        the system clock was fixed, Send Later would stop delivering
+        scheduled messages until the current time "caught up" to the
+        previous, future time.
+      - Make some non-functional changes to appease the
+        addons.mozilla.org add-on validator.
+    4.4.3
+      - Bug fix: If the user runs Thunderbird when the system clock is
+        incorrectly set in the future, and then subsequently the system
+        clock is fixed, Send Later would stop delivering scheduled messages.
+    4.4.4~beta1
+      - Bug fix: Previously, if you used the quick filter bar to search
+        the messages in the Drafts folder, then the Send Later column
+        would stop working.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 01 Aug 2015 21:35:08 +0200
+
+xul-ext-send-later (4.4.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+     Compatibility fix for Thunderbird 37+. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Mar 2015 19:44:11 +0100
+
+xul-ext-send-later (4.4-1nano) unstable; urgency=low
+
+  * New upstream release
+    All the shortcut keys in the Send Later prompt window mentioned in
+    the user guide now work in Mac OS, using the Mac OS command key as
+    for other standard Mac OS shortcut keys.
+
+    On other platforms (e.g., Windows, Linux), the key for activating
+    shortcuts has changed from Alt to Ctrl.
+
+    The Ctrl key is what we should have been using all along, but we
+    were using Alt instead for historical reasons. In order to make
+    shortcuts work on Mac OS, we need to standardize on the "correct"
+    shortcut key on all platforms, hence the change on the other platforms. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 25 Jan 2015 10:26:31 +0100
+
+xul-ext-send-later (4.3.1-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    4.3.0
+      * Scheduled messages are no longer sent repeatedly when the Drafts
+        folder is corrupted. Instead, when Send Later encounters a message
+        in the Drafts folder that it has already sent, it displays an error
+        notifying the user that the Drafts folder needs to be repaired.
+      * The X-Enigmail-Draft-Status header is now removed from scheduled
+        messages before they are sent by Send Later.
+      * Compatibility with Thunderbird 26+ and Seamonkey 2.23+.
+      * Some debug log messages generated by Send Later have been downgraded
+        in priority to make them easier for folks who care about such things
+        to ignore them.
+      * Send Later now warns you on exit if you have pending messages
+        scheduled to be sent, to help you avoid accidentally quitting
+        when you meant to leave the application running so it could send
+        the messages. There is a checkbox in the message you can uncheck
+        if you don't want to be warned again.
+      * It is once again possible to use local mailing lists in scheduled
+        messages. This functionality was broken by a recent Thunderbird release
+        but is now fixed.
+      * Translation updates. Thank you as always to my translators, including
+        new translator Kari Eveli!
+      * More robust performance in foreign languages.
+    4.3.1
+      * Fix the accelerator keys for the shortcut buttons, i.e., you can
+        now type Alt-1, Alt-2, or Alt-3 in the Send Later dialog to activate
+        the first, second, or third shortcut button. This has been broken
+        for over two years, but no one reported the problem until recently!
+      * Update the Japanese translation. Thanks, as always, to my awesome translators!
+      * Eliminate some unnecessary error log messages showing up in the error console.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 11 Jan 2015 18:12:53 +0100
+
+xul-ext-send-later (4.2.4-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    - Remove the "X-Enigmail-Draft-Status" header before
+      sending a scheduled message.
+    - French and Dutch translation updates.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Jun 2014 16:48:12 +0200
+
+xul-ext-send-later (4.2.3-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 13 Apr 2014 19:15:53 +0200

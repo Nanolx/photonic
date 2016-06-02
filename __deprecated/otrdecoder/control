@@ -1,0 +1,16 @@
+Source: otrdecoder
+Section: video
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage: http://www.onlinetvrecorder.com
+
+Package: otrdecoder
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: OTR-Key decoder
+ This is the official decoder for .otrkey files.
+ OTR-Keys contain TV-Shows recorded via onlinetvrecorder.com,
+ which are encrypted. Only TV-Shows you previously
+ put on your record-list can be decrypted.

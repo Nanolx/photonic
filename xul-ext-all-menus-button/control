@@ -1,0 +1,26 @@
+Source: xul-ext-all-menus-button
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/thunderbird/addon/all-menus-button
+
+Package: xul-ext-all-menus-button
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Toolbar button for Icedove and Iceweasel that holds menus
+ The extension provides a button that can be placed anywhere, that contains all
+ the menus of the menubar. It can be used independently of the menu bar as a
+ complete replacement. Or it can be used with the menu bar as a way of collapsing
+ less used items.
+ .
+ The extension has its own option window, that lets you set what menus appear on
+ the menubar, and which ones appear in the button's menu.
+ .
+ There are also a set of buttons that open each of the menus independently. The
+ advantage is again that they can be placed anywhere.

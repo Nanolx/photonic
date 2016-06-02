@@ -1,0 +1,92 @@
+xul-ext-save-images (1.1.0.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Fixed: partially - selecting a language causes the add-on to be not
+             signed and therefore disabled
+    - Added: filters now also apply to background images 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 15 May 2016 17:26:41 +0200
+
+xul-ext-save-images (1.1.0.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Fixed: preferences that used the getComplexValue function were not working
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:31:51 +0100
+
+xul-ext-save-images (1.1.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - Added: ability to save only the selected images
+    - Changed: back to using saveURI but with a check for the correct
+      number of parameters (sorts out the problem of private browsing
+      as well)
+    - Added: When using 'Open *** in Tabs', the opened tabs are now
+      opened relative to the last opened tab so that the sequence is
+      maintained 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 17 Mar 2015 18:54:21 +0100
+
+xul-ext-save-images (1.0.9-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Changed: SI_doImageSave to use Download.fetch for Firefox v36+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 24 Jan 2015 10:23:39 +0100
+
+xul-ext-save-images (1.0.8-1nano) unstable; urgency=low
+
+  * New upstream minor release
+  - compatibility fix with Iceweasel 35+
+ 
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 15 Jan 2015 18:17:09 +0100
+
+xul-ext-save-images (1.0.7-1nano) unstable; urgency=low
+
+  * New upstream minor release
+    1.0.6
+      - Fixed: nsIIOservice errors caused by trying to save background
+               images that were actually gradients
+    1.0.7
+      - Fixed: nsIIOservice errors caused by trying to convert blank
+               URL's to URI's with makeURI
+      - Added: images from inputs with type="image" will now be saved
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 25 Sep 2014 17:55:21 +0200
+
+xul-ext-save-images (1.0.5-1nano) unstable; urgency=low
+
+  * New upstream minor release
+  - Updated: Chinese simplified locale
+  - Changed: removed tabArr and instead added attributes to the
+    tabs themselves to indicate whether they should be closed
+  - Changed: placed closeTabs, showSIDoneMsg and showSaveDetails
+    in separate function that is called after setTimeout to allow
+    async cache calls to complete
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 07 Sep 2014 17:36:33 +0200
+
+xul-ext-save-images (1.0.4-1nano) unstable; urgency=low
+
+  * New upstream minor relesae
+   --no changelog provided--
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 02 Sep 2014 18:35:03 +0200
+
+xul-ext-save-images (1.0.3-1nano) unstable; urgency=low
+
+  * New upstream minor release
+    - Changed: labels for left and right tabs, added << and >> respectively to give clearer indication of the direction
+    - Changed: FF32 uses a new cache system so updated to work with both v1 & v2
+    - Added: general option to allow the selection of the language to be used by "Save Images"
+    - Added: Chinese - Traditional (Thanks to Rogeer Chen)
+    - Added: when opening image links/links, a delay can be applied so that not all links are opened at once
+    - Added: an option to bypass the "Select Links' dialog box when opeining multiple links/images at once
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 01 Aug 2014 19:13:16 +0200
+
+xul-ext-save-images (1.0.2-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 15 Apr 2014 18:56:04 +0200

@@ -1,0 +1,61 @@
+xul-ext-disconnect (3.15.3-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-disconnect (3.15.3-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    -- no changelog provided --
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 29 Jan 2015 16:47:17 +0100
+
+xul-ext-disconnect (3.14-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - Improved compatibility with Firefox Australis
+    - Sunsetted Secure Wi-Fi.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 May 2014 21:36:17 +0200
+
+xul-ext-disconnect (3.11.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * upstream changes
+    - shrunk tracking counter
+    - de-uglified toolbar button on windows
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Fri, 07 Feb 2014 21:05:46 +0100
+
+xul-ext-disconnect (3.10.2-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * upstream changes:
+    - Reduced download size
+    - Improved compatibility with Play TV
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Thu, 23 Jan 2014 21:03:29 +0100
+
+xul-ext-disconnect (3.10.1-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  * 3.10.1:
+    - Reduced startup time
+    - Fixed cosmetic bookmarking bug
+  * 3.10.0:
+    - Capped tracking counter at 100 requests
+    - Made counter optional
+    - Improved compatibility with popular sites and other add-ons
+  * 3.9.3:
+    -  Improved compatibility with popular sites and other add-ons
+  * 3.9.2:
+    -  Cleaned up global namespace
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 11 Jan 2014 22:48:37 +0100
+
+xul-ext-disconnect (3.9.1-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 19:57:12 +0100

@@ -1,0 +1,3 @@
+version=3
+opts=uversionmangle=s/_/\+svn/;s/_rc// \
+ http://www.portaudio.com/archives/pa_stable_v(19_.*)\.t(?:ar\.)?gz

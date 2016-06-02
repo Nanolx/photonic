@@ -1,0 +1,87 @@
+diff --git a/dialogs.cpp b/dialogs.cpp
+index a70f746..230b3bc 100644
+--- a/dialogs.cpp
++++ b/dialogs.cpp
+@@ -413,8 +413,9 @@ SettingsDialog::SettingsDialog(QWidget *parent) : QDialog(parent)
+ 
+ 	// Slide show delay
+ 	QLabel *slideDelayLab = new QLabel(tr("Delay between slides in seconds: "));
+-	slideDelaySpin = new QSpinBox;
+-	slideDelaySpin->setRange(1, 3600);
++	slideDelaySpin = new QDoubleSpinBox;
++	slideDelaySpin->setRange(0.1, 3600.0);
++	slideDelaySpin->setSingleStep(0.1);
+ 	slideDelaySpin->setValue(GData::slideShowDelay);
+ 	QHBoxLayout *slideDelayHbox = new QHBoxLayout;
+ 	slideDelayHbox->addWidget(slideDelayLab);
+diff --git a/dialogs.h b/dialogs.h
+index 79cb3ab..f01dc7b 100644
+--- a/dialogs.h
++++ b/dialogs.h
+@@ -102,7 +102,7 @@ private:
+ 	QCheckBox *imageInfoCb;
+ 	QCheckBox *noSmallThumbCb;
+ 	QCheckBox *reverseMouseCb;
+-	QSpinBox *slideDelaySpin;
++	QDoubleSpinBox *slideDelaySpin;
+ 	QCheckBox *slideRandomCb;
+ 	KeyGrabLineEdit *keyLine;
+ 	QRadioButton *startupDirRadios[3];
+diff --git a/global.cpp b/global.cpp
+index 331b869..c76bd5e 100644
+--- a/global.cpp
++++ b/global.cpp
+@@ -51,7 +51,7 @@ namespace GData
+ 	int cropWidthPercent;
+ 	int cropHeightPercent;
+ 	bool noEnlargeSmallThumb;
+-	int slideShowDelay;
++	float slideShowDelay;
+ 	bool slideShowRandom;
+ 	bool slideShowActive;
+ 	QMap<QString, QAction *> actionKeys;
+diff --git a/global.h b/global.h
+index b1ed4cb..d027e80 100644
+--- a/global.h
++++ b/global.h
+@@ -66,7 +66,7 @@ namespace GData
+ 	extern int cropWidthPercent;
+ 	extern int cropHeightPercent;
+ 	extern bool noEnlargeSmallThumb;
+-	extern int slideShowDelay;
++	extern float slideShowDelay;
+ 	extern bool slideShowRandom;
+ 	extern bool slideShowActive;
+ 	extern QMap<QString, QAction *> actionKeys;
+diff --git a/mainwindow.cpp b/mainwindow.cpp
+index 7782ea4..2670ab6 100644
+--- a/mainwindow.cpp
++++ b/mainwindow.cpp
+@@ -1820,7 +1820,7 @@ void Phototonic::writeSettings()
+ 	GData::appSettings->setValue("shouldMaximize", (bool)isMaximized());
+ 	GData::appSettings->setValue("defaultSaveQuality", (int)GData::defaultSaveQuality);
+ 	GData::appSettings->setValue("noEnlargeSmallThumb", (bool)GData::noEnlargeSmallThumb);
+-	GData::appSettings->setValue("slideShowDelay", (int)GData::slideShowDelay);
++	GData::appSettings->setValue("slideShowDelay", (float)GData::slideShowDelay);
+ 	GData::appSettings->setValue("slideShowRandom", (bool)GData::slideShowRandom);
+ 	GData::appSettings->setValue("editToolBarVisible", (bool)editToolBarVisible);
+ 	GData::appSettings->setValue("goToolBarVisible", (bool)goToolBarVisible);
+@@ -1901,7 +1901,7 @@ void Phototonic::readSettings()
+ 		GData::appSettings->setValue("exifThumbRotationEnabled", (bool)false);
+ 		GData::appSettings->setValue("reverseMouseBehavior", (bool)false);
+ 		GData::appSettings->setValue("showHiddenFiles", (bool)false);
+-		GData::appSettings->setValue("slideShowDelay", (int)5);
++		GData::appSettings->setValue("slideShowDelay", (float)5.0);
+ 		GData::appSettings->setValue("slideShowRandom", (bool)false);
+ 		GData::appSettings->setValue("editToolBarVisible", (bool)true);
+ 		GData::appSettings->setValue("goToolBarVisible", (bool)true);
+@@ -1937,7 +1937,7 @@ void Phototonic::readSettings()
+ 	GData::flipV = false;
+ 	GData::defaultSaveQuality = GData::appSettings->value("defaultSaveQuality").toInt();
+ 	GData::noEnlargeSmallThumb = GData::appSettings->value("noEnlargeSmallThumb").toBool();
+-	GData::slideShowDelay = GData::appSettings->value("slideShowDelay").toInt();
++	GData::slideShowDelay = GData::appSettings->value("slideShowDelay").toFloat();
+ 	GData::slideShowRandom = GData::appSettings->value("slideShowRandom").toBool();
+ 	GData::slideShowActive = false;
+ 	editToolBarVisible = GData::appSettings->value("editToolBarVisible").toBool();
+ 

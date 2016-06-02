@@ -1,0 +1,5 @@
+/usr/lib/*/librazormount.so.*
+/usr/lib/*/librazorqt.so.*
+/usr/lib/*/librazor-global*.so.*
+/usr/lib/*/libsys*.so.*
+/usr/share/librazorqt/

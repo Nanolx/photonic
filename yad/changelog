@@ -1,0 +1,230 @@
+yad (0.36.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 0.36.0
+    - add --no-selection option to list dialog
+    - improve --center option
+    - add spell checking support for text field in form and text-info dialog
+    - add gtksourceview support to text-info dialog
+    - fix setting initial value for numeric text entry in entry dialog
+    - do not close print dialog when preview button is clicked
+    - add --monitor option to icon dialog
+    - change default font for text-info and print text files to Monospace
+    - quote field values for button callback in form dialog
+  * 0.36.1
+    - fix quoting buttons commands in form dialog
+  * 0.36.2
+    - honor precision for floats in numeric fields of form and entry dialogs
+    - fix settings title and icon for browser mode in html dialog
+  * 0.36.3
+    - fix segfault when parse desktop files with missed or empty Comment field 
+      in icons dialog
+    - code and output cleanup
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 12 May 2016 19:45:14 +0200
+
+yad (0.35.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - add BAR column type to list dialog
+    - add SZ column type to list dialog (displays human readable sizes)
+    - add --show-cursor option to text dialog
+    - fix handling leading spaces in button callback of form dialog
+    - fix --show-hidden behavior
+    - switch float output from %g to %f
+    - fix setting custom bg color in text-info dialog for gtk3
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 30 Mar 2016 18:24:05 +0200
+
+yad (0.34.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fix clearing fields in form when --cycle-read is using
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:40:20 +0100
+
+yad (0.34.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fix expander
+    - update man page
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 27 Feb 2016 22:07:56 +0100
+
+yad (0.34.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - add --select-action to list dialog
+    - add -separate-output to font dialog
+    - honor --quoted-output option in font dialog
+    - add --show-hidden option to file selection dialogs
+    - add --watch-bar to multi-progress dialog
+    - improve handling of autoclosing event in multi-progress dialog
+    - improve output of color values in form dialog
+    - fix build with gtk+-3.0 and webkit-3.0
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 23 Feb 2016 19:17:31 +0100
+
+yad (0.33.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fix timeout handling
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 16 Jan 2016 11:15:27 +0100
+
+yad (0.33.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 0.31.2
+    - fix setting default value for completion entry in form dialog
+  * 0.32.0
+    - enable rules-hint for icons list in icon browser
+    - add --splash options (thanks to Konstantin Baierer)
+    - add --no-focus option
+    - fix timeout progressbar layout for gtk3 builds
+    - add --num-output option for output index of active element in combo-boxes
+  * 0.33.0
+    - add --picture dialog, a simple image viewer
+    - add --focus-field option to form dialog for set initialy fosuced field
+    - add --complete option for extended completions in entry fields
+    - add ability to fill form data through stdin
+    - fix handling empty data in form dialog
+    - improvements in browser mode of html dialog
+    - add --float-precision option
+    - improve output of floating point numbers
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 06 Jan 2016 10:34:48 +0100
+
+yad (0.31.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.31.1: fix segmentation fault in html dialog
+    0.31.2: fix segmentation fault in list dialog when separators enabled but
+            --sep-value is unset
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Oct 2015 19:42:43 +0100
+
+yad (0.31.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - add separators to list dialog
+    - use YAD_OPTIONS variable for specify default yad arguments
+    - add --no-rules-hint option to list dialog
+    - add parameters for controlling palletes in color selection
+    - remove some entries from settings file
+    - set default open command and date format through the settings file
+    - add additional filter settings for file selection dialogs
+    - apply filter and preview settings to all of file selection dialogs
+    - fix settings custom icon theme
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Sep 2015 18:23:38 +0200
+
+yad (0.30.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.29.0:
+    - fix focus problems in html dialog
+    - set default encoding from locale for html widget
+    - fix quoted output in form dialog
+    - add --no-escape option to prevent close dialog when Esc is pressed
+    - show gtk version within --version and about dialog
+    - fix build with gcc 5.x
+    0.29.1:
+    - fix build without HTML dialog
+    0.30.0:
+    - add paned dialog
+    - add --parent-win option to make dialog transient for special window
+    - add --uri-color option for setting text color of URIs in text-info dialog
+    0.30.1:
+    - fix parsing orientation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 08 Sep 2015 19:44:43 +0200
+
+yad (0.28.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    [upstream]
+      - fix output order for rows in form dialog
+    [Nanolx]
+      - add dependency on libwekit-dev (for HTML widget)
+      - drop dependency on libcroco3-dev
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 16 Mar 2015 18:17:05 +0100
+
+yad (0.28.0-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - add HTML dialog
+    - add different output formats for color dialog
+    - add mnemonic feature for field labels in form and entry dialogs
+    - add completion entry as field type in form dialog
+    - add output by rows in form dialog when layout with several columns
+      is used
+    - fix labels in multiprogress dialog
+    - fix print to file in print dialog
+    - fix setup arguments for double-click action in list dialog
+    - update man page
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 07 Mar 2015 07:29:07 +0100
+
+yad (0.27.0-1nano) unstable; urgency=low
+
+  * Version 0.27.0
+    - add --hidden option to notification icon
+    - add --tooltip-column option to list dialog
+    - add --gtkrc option
+    - fix detection of expandind columns in list dialog
+    - fix markup handling
+    - add YAD_XID variable for dialogs children
+    - code cleanup for remove deprecated api
+  * Version 0.26.1
+    - fix output in list dialog for check and radiolists
+    - fix button alignment in form dialog
+    - don't add last item separator in multifile field of form dialog
+  * Version 0.26.0
+    - double-click actions in list dialog can change values in current row
+    - impove handling of markup text in list dialog
+    - add FBTN field type (relief buttons) to form dialog
+    - add buttons with custom icons
+    - add labels with icons for tab labels in notebook dialog
+    - remove --align option for notebook dialog
+    - numeric entries aligned to the right side
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 04 Aug 2014 20:02:55 +0200
+
+yad (0.25.1-1nano) unstable; urgency=low
+
+  * Version 0.25.1
+    - use normal window hints for dialog windows
+    - fix menu in notification icon (issue #196)
+  * Version 0.25.0
+    - add --menu option for notification icon
+    - add --maximized and --fullscreen options
+    - unify --listen option for different kind of dialogs
+    - replace --stdin option by --listen in icon dialog
+  * Version 0.24.1
+    - fix parsing menu in notification dialog
+  * Version 0.24.0
+    - add --auto-close option for multi-progress dialog
+    - add --image-path option
+    - add --no-click option to list dialog
+    - allow clear text in text-info dialog with ^L
+    - new translations
+    - bug fixes
+  * Version 0.23.1
+    - wait for child termination in notebook dialog
+    - honour custom width and height settings in unresizable dialogs
+  * Version 0.23.0
+    - add --quoted-output option for file, form and list dialogs
+    - add default values for combo-box field in form dialog
+    - fix dialogs responses when working in notebook mode
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 Dec 2013 19:32:29 +0100
+
+yad (0.22.1-1nano) unstable; urgency=low
+
+  * initial release
+  * add dependency on pkg-config
+  * add --enable-icon-browser to configure-flags
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 06 Aug 2013 22:15:10 +0200

@@ -1,0 +1,11 @@
+# nano patches
+nano/mac80211-drc.patch
+
+# zen patches
+zen/3.12.6-1.patch
+
+# debian specific patches.
+debian/version.patch
+debian/kernelvariables.patch
+#debian/doc-build-parallel.patch
+#debian/Kbuild-kconfig-Verbose-version-of-listnewconfig.patch

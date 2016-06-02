@@ -1,0 +1,33 @@
+Description: Makefile fix for DESTDIR
+ This patch adjusts DESTDIR to FHS
+Author: Arnaud Cornet <arnaud.cornet@gmail.com>
+
+Index: polarssl-1.2.0/Makefile
+===================================================================
+--- polarssl-1.2.0.orig/Makefile	2012-04-05 14:07:50.000000000 +0200
++++ polarssl-1.2.0/Makefile	2012-11-03 14:44:44.484470153 +0100
+@@ -17,18 +17,18 @@
+ 	cd library  && $(MAKE) all && cd ..
+ 
+ install:
+-	mkdir -p $(DESTDIR)/include/polarssl
+-	cp -r include/polarssl $(DESTDIR)/include
++	mkdir -p $(DESTDIR)/usr/include/polarssl
++	cp -r include/polarssl $(DESTDIR)/usr/include
+ 	
+-	mkdir -p $(DESTDIR)/lib
+-	cp library/libpolarssl.* $(DESTDIR)/lib
++	mkdir -p $(DESTDIR)/usr/lib
++	cp library/libpolarssl.* $(DESTDIR)/usr/lib
+ 	
+-	mkdir -p $(DESTDIR)/bin
++	mkdir -p $(DESTDIR)/usr/bin
+ 	for p in programs/*/* ; do              \
+ 	    if [ -x $$p ] && [ ! -d $$p ] ;     \
+ 	    then                                \
+ 	        f=$(PREFIX)`basename $$p` ;     \
+-	        cp $$p $(DESTDIR)/bin/$$f ;     \
++	        cp $$p $(DESTDIR)/usr/bin/$$f ;     \
+ 	    fi                                  \
+ 	done
+ 

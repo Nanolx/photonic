@@ -1,0 +1,27 @@
+Source: xul-ext-send-later
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/thunderbird/addon/send-later-3/
+
+Package: xul-ext-send-later
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Full featured "send later" for Icedove
+ Changes the "Send Later" command (Ctrl+Shift+Return)
+ in the message composition window, so that instead of
+ merely copying the message into your Outbox so that it
+ is sent the next time you go online or do "Send Unsent
+ Messages", a dialog pops up which allows you to specify
+ when the message will be sent.
+ .
+ You can specify a specific time and date, or click
+ "15 mins later", "30 mins later" or "2 hours later",
+ or click "Put in Outbox" to get the built-in Icedove
+ "Send Later" functionality (i.e., copy to Outbox).

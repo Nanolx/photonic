@@ -1,0 +1,11 @@
+nand-extract (1:0.76-1nano) unstable; urgency=low
+
+  * New upstream SVN
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sat, 02 Apr 2011 20:48:35 +0200
+
+nand-extract (r71-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sun, 20 Feb 2011 14:42:15 +0100

@@ -1,0 +1,19 @@
+Source: xul-ext-barlesque
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://github.com/AllSeeingEye/Barlesque
+
+Package: xul-ext-barlesque
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Improved addon-bar for Iceweasel 4.x+
+ Barlesque is an extension for Iceweasel 4.x+ that
+ reclaims useful window space by collapsing the wide
+ grey add-on bar into a neat set of add-on buttons.

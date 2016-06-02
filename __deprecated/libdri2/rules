@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+deb_source := $(shell dpkg-parsechangelog | sed -n 's/^Source: //p')
+deb_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
+upstream_version := $(shell echo '$(deb_version)' | sed 's/.*://; s/-[^-]*$$//')
+git_rev := $(shell echo '$(upstream_version)' | sed 's/.*+//')
+
+override_dh_install:
+	find debian/tmp -name '*.la' -delete
+	dh_install --fail-missing
+
+override_dh_strip:
+	dh_strip -plibdri2-1 --dbg-package=libdri2-dbg
+	dh_strip -s --remaining-packages
+
+%:
+	dh $@ --with quilt,autoreconf --builddirectory=build/
+

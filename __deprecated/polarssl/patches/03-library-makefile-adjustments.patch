@@ -1,0 +1,28 @@
+Description: Debian adjustment for library/Makefile
+ This patch adjusts library/Makefile Debian specific
+Author: Roland Stigge <stigge@antcom.de>
+
+---
+ library/Makefile |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+--- polarssl-1.2.2.orig/library/Makefile
++++ polarssl-1.2.2/library/Makefile
+@@ -24,7 +24,7 @@ endif
+ 
+ SONAME=libpolarssl.so.0
+ 
+-DLEXT=so
++DLEXT=so.0
+ # OSX shared library extension:
+ # DLEXT=dylib
+ 
+@@ -69,7 +69,7 @@ libpolarssl.a: $(OBJS)
+ 	echo "  RL    $@"
+ 	$(AR) s $@
+ 
+-libpolarssl.so: libpolarssl.a
++libpolarssl.$(DLEXT): libpolarssl.a
+ 	echo "  LD    $@"
+ 	$(CC) ${LDFLAGS} -shared -Wl,-soname,$(SONAME) -o $@ $(OBJS)
+ 

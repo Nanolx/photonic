@@ -1,0 +1,23 @@
+Source: xul-ext-toggle-referer
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/toggle-referer/
+
+Package: xul-ext-toggle-referer
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Referer settings for Iceweasel
+ This addon allows a user to toggle referers between 3 states:
+ .
+ Referer 0: Never send the Referer header or set document.referer
+ Referer 1: Send the Referer header when clicking on a link, and
+            set document.referrer for the following page
+ Referer 2: Send the Referer header when clicking on a link or
+            loading an image, and set document.referrer for the following page.

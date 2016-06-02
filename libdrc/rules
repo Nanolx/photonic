@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+export LDFLAGS=""
+
+%:
+	dh $@  --with autotools-dev
+
+override_dh_auto_configure:
+	./configure --prefix=/usr
+
+override_dh_auto_clean:
+	touch Makefile.config
+	dh_auto_clean

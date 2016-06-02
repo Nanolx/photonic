@@ -1,0 +1,21 @@
+kchildlock (0.91.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - updates needed for packaging of actual versions (opensuse 13.x)
+    - correct existing bugs for 64 bit versions of KDE
+    - communication wih DBUS now no more needs Console Kit
+    - some minor rework done for the deamon (mainly get_active_session)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 15 Aug 2015 20:32:08 +0200
+
+kchildlock (0.90.4.2-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 20:42:27 +0200
+
+kchildlock (0.90.3-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 11 Sep 2011 10:26:39 +0200

@@ -1,0 +1,42 @@
+kcm-systemd (0.7.0-1nano) unstable; urgency=low
+
+  * new upstream release
+  - Added ability to configure storage of core dumps
+    (requires systemd 215 or higher)
+  - Added support for RemoveIPC option in logind.conf
+  - Minor user interface changes
+  - Bugfixes
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 27 Jul 2014 18:51:37 +0200
+
+kcm-systemd (0.6.1-1nano) unstable; urgency=low
+
+  * new upstream release
+  0.6.1 (2014-04-04)
+    - Fix a crash introduced in kcmsystemd 0.6.0
+      when systemd version < 209.
+  0.6.0 (2014-03-27)
+    - Redesigned user interface.
+    - Added support for several new configuration options
+      introduced by systemd 209 through 212.
+    - Ability to reload/reexecute the systemd daemon.
+    - Ability to mask/unmask units.
+    - Configuration file parsing code rewritten.
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 06 Apr 2014 17:29:00 +0200
+
+kcm-systemd (0.5.0-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    - Ability to control non-loaded units
+    - Ability to isolate units
+    - Improved tooltips for units tab
+    - Bugfixes
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 31 Dec 2013 09:17:25 +0100
+
+kcm-systemd (0.4.0-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 Dec 2013 19:25:28 +0100

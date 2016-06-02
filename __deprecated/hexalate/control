@@ -1,0 +1,17 @@
+Source: hexalate
+Section: games
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), g++, qt5-qmake, qtbase5-dev
+Standards-Version: 3.9.5
+Homepage: http://qt-apps.org/content/show.php/Hexalate?content=102401
+
+Package: hexalate
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A color matching game
+ Hexalate is a color matching game. The goal of the game is to rotate
+ and position seven circles so that each touching line matches in color.
+ You rotate circles by right clicking, and you move circles by dragging
+ them. The game stores the positions and rotations of the circles across
+ runs.

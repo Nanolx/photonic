@@ -1,0 +1,20 @@
+Description: bump version to 0.5.2
+ master on git repository says it's version 0.5.0, though 0.5.5
+ has been released months ago, bump the version.
+ .
+ razorqt (0.5.2+git20131215.94b803-1nano) unstable; urgency=low
+ .
+   * New upstream git 94b803
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+
+--- razorqt-0.5.2+git20131215.94b803.orig/CMakeLists.txt
++++ razorqt-0.5.2+git20131215.94b803/CMakeLists.txt
+@@ -18,7 +18,7 @@ endif ()
+ 
+ set(MAJOR_VERSION 0)
+ set(MINOR_VERSION 5)
+-set(PATCH_VERSION 0)
++set(PATCH_VERSION 2)
+ set(RAZOR_VERSION ${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION})
+ add_definitions(-DRAZOR_VERSION=\"${RAZOR_VERSION}\")
+ message(STATUS "")

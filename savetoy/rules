@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+export DH_VERBOSE=1
+export LDFLAGS+="-L/usr/lib64 -lz"
+
+%:
+	dh $@ 
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/savetoy/usr/bin/
+	install -m755 saveToy $(CURDIR)/debian/savetoy/usr/bin/savetoy
+	mkdir -p $(CURDIR)/debian/savetoy/usr/share/pixmaps/
+	install -m644 savetoy-nobanner.png $(CURDIR)/debian/savetoy/usr/share/pixmaps/savetoy-nobanner.png
+	install -m644 savetoy-noicon.png $(CURDIR)/debian/savetoy/usr/share/pixmaps/savetoy-noicon.png

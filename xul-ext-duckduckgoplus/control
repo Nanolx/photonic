@@ -1,0 +1,19 @@
+Source: xul-ext-duckduckgoplus
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox
+
+Package: xul-ext-duckduckgoplus
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: DuckDuckGo integration for Iceweasel
+ DuckDuckGo is a search engine that does not
+ track you. We believe that better search and
+ real privacy are not mutually exclusive.

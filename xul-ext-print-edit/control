@@ -1,0 +1,23 @@
+Source: xul-ext-print-edit
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/firefox/addon/print-edit/
+
+Package: xul-ext-print-edit
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Edit web page prior to printing
+ Allows editing of the web page content while in
+ Print Preview mode.
+ .
+ Editing the web page prior to printing can compact
+ the layout and remove unwanted content such as adverts,
+ sidebars and blank pages. Any element can be formatted,
+ hidden or deleted.

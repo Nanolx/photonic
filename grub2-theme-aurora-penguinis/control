@@ -1,0 +1,21 @@
+Source: grub2-theme-aurora-penguinis
+Section: admin
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://bitbucket.org/gemlion/aurora-penguinis
+
+Package: grub2-theme-aurora-penguinis
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, grub-common
+Description: Aurora Penguinis Theme for GRUB2
+ GRUB2 Theme based on the official KDE 5.3 wallpaper.
+ .
+ To enable the theme add/change the following in /etc/default/grub:
+ .
+   GRUB_THEME=/boot/grub/themes/aurora-penguinis/theme.txt
+ .
+ Then issue (as root) the following command:
+ .
+   grub-mkconfig -o /boot/grub/grub.cfg

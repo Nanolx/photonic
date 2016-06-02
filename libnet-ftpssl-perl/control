@@ -1,0 +1,29 @@
+Source: libnet-ftpssl-perl
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: libio-socket-ip-perl (>= 0.20) | libio-socket-inet6-perl,
+                     libnet-libidn-perl,
+                     libnet-ssleay-perl (>= 1.46),
+                     libsocket-perl (>= 1.950) | perl (>= 5.15.6) | libsocket6-perl,
+                     netbase,
+                     libdatetime-locale-perl,
+                     perl,
+                     procps
+Standards-Version: 3.9.4
+Homepage: https://metacpan.org/release/Net-FTPSSL
+
+Package: libnet-ftpssl-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libnet-ssleay-perl (>= 1.46),
+         libdatetime-locale-perl,
+         libio-socket-ip-perl (>= 0.20) | libio-socket-inet6-perl,
+         netbase
+Description: Perl module implementing FTP over SSL
+ Net::FTPSSL is an object oriented Perl module which
+ implements a simple FTPS client over a Secure Socket
+ Layer (SSL) or Transport Layer Security (TLS) connection
+ written following the directives described in RFC959 and RFC2228

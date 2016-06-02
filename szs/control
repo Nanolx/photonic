@@ -1,0 +1,36 @@
+Source: szs
+Section: devel
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), libbz2-dev, gcc, liblzma-dev
+Standards-Version: 3.9.4
+Homepage: http://szs.wiimm.de/
+
+Package: szs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Wiimms SZS Tools
+ wszst (Wiimms SZS Tool):
+ This is the archive manipulation tool:
+ List, compare, (de-)compress, extract and create
+ SZS, U8, BRRES, BREFF, BREFT and RARC archives.
+ .
+ wbmgt (Wiimms BMG Tool):
+ This is the main BMG manipulation tool:
+ Convert and patch raw and text BMG (message) files.
+ .
+ wimgt (Wiimms Image Tool):
+ This is the image manipulation and conversion tool:
+ Extract and convert graphic images. The file formats TPL, TEX, BTI, BREFT and PNG are supported.
+ .
+ wkclt (Wiimms KCL Tool):
+ This is the main KCL conversion tool:
+ Analyze, modify, export and create KCL and OBJ files.
+ .
+ wkmpt (Wiimms KMP Tool):
+ This is the main KMP conversion tool:
+ Analyze, modify, export and create (compile) KMP files.
+ .
+ wstrt (Wiimms StaticR Tool):
+ This is the StaticR.rel manipulation tool:
+ Manipulate Mario Karts 'StaticR.rel' file.

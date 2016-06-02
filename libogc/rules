@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+export DEB_BUILD_OPTIONS=nostrip
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	rm -f $(CURDIR)/gc/ogc/libversion.h
+	dh_auto_clean

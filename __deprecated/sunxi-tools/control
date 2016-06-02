@@ -1,0 +1,13 @@
+Source: sunxi-tools
+Section: admin
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), gcc, make, libc6-dev, libusb-1.0-0-dev
+Standards-Version: 3.9.5
+Homepage: http://linux-sunxi.org/Main_Page
+
+Package: sunxi-tools
+Architecture: armel armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Tools to help hacking Allwinner A10 based devices
+ Tools to help hacking Allwinner A10 based devices

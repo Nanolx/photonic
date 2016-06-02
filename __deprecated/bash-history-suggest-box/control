@@ -1,0 +1,15 @@
+Source: bash-history-suggest-box
+Section: utils
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libncurses5-dev, libreadline-dev
+Standards-Version: 3.9.4
+Homepage: https://github.com/dvorka/hstr
+
+Package: bash-history-suggest-box
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, bash
+Description: Colorful history suggestions for Bash
+ Bash history suggest box is a command line utility which brings
+ improved Bash command completion from the history. It aims to make
+ completion easier to use and more efficient than Ctrl-r.

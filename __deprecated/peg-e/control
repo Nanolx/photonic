@@ -1,0 +1,17 @@
+Source: peg-e
+Section: games
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), g++, qt5-qmake, qtbase5-dev
+Standards-Version: 3.9.5
+Homepage: http://qt-apps.org/content/show.php/Peg-E?content=98289
+
+Package: peg-e
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Clickety solitair game
+ Peg-E is a peg solitaire game in which you jump over pieces in order
+ to remove them from the board, ultimately trying to eliminate all but
+ one. The boards are randomly generated, with 100 levels of difficulty.
+ The game auto-saves, and has undo-redo capability. Pieces can move
+ horizontally, vertically, and diagonally.

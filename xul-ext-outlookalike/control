@@ -1,0 +1,26 @@
+Source: xul-ext-outlookalike
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/thunderbird/addon/outlookalike/
+
+Package: xul-ext-outlookalike
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Make Icedove look like Outlook 2010
+ OutlookAlike applies an Outlook (2010) like Look
+ and Feel to Thunderbird. At the moment it's an early
+ beta version.
+ .
+ Hints:
+  * disable standard menu bar (menubar > right-click)
+  * select "Icons beside Text" (menubar > right-click > customize)
+  * select "Use Small Icons" (menubar > right-click > customize)
+  * move the australified menu-button into OutlookAlike menubar
+    (menubar > right-click > customize)

@@ -1,0 +1,29 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Beyond Australis
+Upstream-Contact: Quicksaver <quicksaver@gmail.com>
+Source: https://addons.mozilla.org/en-US/firefox/addon/beyond-australis/
+
+Files: *
+Copyright: 2012-2014 Quicksaver <quicksaver@gmail.com>
+License: MPL-2.0
+
+Files: debian/*
+Copyright: 2014 Christopher Roy Bratusek <nano@jpberlin.de>
+License: GPL-3
+
+License: MPL-2.0
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+    .
+    Covered Software is provided under this License on an "as is"
+    basis, without warranty of any kind, either expressed, implied, or
+    statutory, including, without limitation, warranties that the
+    Covered Software is free of defects, merchantable, fit for a
+    particular purpose or non-infringing. The entire risk as to the
+    quality and performance of the Covered Software is with You.
+    Should any Covered Software prove defective in any respect, You
+    (not any Contributor) assume the cost of any necessary servicing,
+    repair, or correction. This disclaimer of warranty constitutes an
+    essential part of this License. No use of any Covered Software is
+    authorized under this License except under this disclaimer.

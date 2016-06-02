@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+chmod 755 /usr/lib/python*/dist-packages/danbooru/danbooru2nepomuk.py
+chmod 755 /usr/lib/python*/dist-packages/danbooru/danbooru_client.py
+
+exit 0

@@ -1,0 +1,7 @@
+--- /dev/null
++++ zelda3t-20091212/zelda3t
+@@ -0,0 +1,4 @@
++#!/bin/sh
++
++cd /usr/share/zelda-time-to-triumph/
++./Zelda3T

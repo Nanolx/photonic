@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+DH_VERBOSE = 1
+
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE) -C src
+
+override_dh_clean:
+	$(MAKE) -C src clean
+	dh_clean
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/zelda-time-to-triumph/usr/bin/
+	mkdir -p $(CURDIR)/debian/zelda-time-to-triumph/usr/share/zelda-time-to-triumph/
+	install -m755 zelda3t $(CURDIR)/debian/zelda-time-to-triumph/usr/bin/
+	install -m755 src/Zelda3T $(CURDIR)/debian/zelda-time-to-triumph/usr/share/zelda-time-to-triumph/
+	cp -rv src/data/ $(CURDIR)/debian/zelda-time-to-triumph/usr/share/zelda-time-to-triumph/

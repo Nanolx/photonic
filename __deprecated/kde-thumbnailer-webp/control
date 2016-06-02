@@ -1,0 +1,14 @@
+Source: kde-thumbnailer-webp
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev, kdebase-workspace-dev, libwebp-dev
+Standards-Version: 3.9.3
+Homepage: http://kde-apps.org/content/show.php/KDE+WebP+Thumbnailer?content=148652
+
+Package: kde-thumbnailer-webp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: WebP Thumbnailer for KDE Applications
+ Thumbnailer for KDE Applications (eg: Konqueror, Dolphin),
+ to provide extended preview of WebP files.

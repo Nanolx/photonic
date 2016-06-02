@@ -1,0 +1,35 @@
+Description: make Makefile honour $(DESTDIR)
+ and install examples.
+ .
+ libdrc (1.0~git20140107.a3b79b-1nano) unstable; urgency=low
+ .
+   * new upstream snapshot
+   * add libdrc-examples package
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+---
+
+--- libdrc-1.0~git20140107.a3b79b.orig/Makefile
++++ libdrc-1.0~git20140107.a3b79b/Makefile
+@@ -43,12 +43,16 @@ distclean: clean
+ 	rm -f libdrc.pc Makefile.config libdrc.a libdrc.so $(DEMOS_BINS)
+ 
+ install: all
+-	install -d $(PREFIX)/lib $(PREFIX)/lib/pkgconfig
+-	install -d $(PREFIX)/include/drc $(PREFIX)/include/drc/c
+-	install libdrc.a libdrc.so $(PREFIX)/lib
+-	install libdrc.pc $(PREFIX)/lib/pkgconfig
+-	install include/drc/*.h $(PREFIX)/include/drc
+-	install include/drc/c/*.h $(PREFIX)/include/drc/c
++	install -d $(DESTDIR)/$(PREFIX)/lib $(DESTDIR)/$(PREFIX)/lib/pkgconfig
++	install -d $(DESTDIR)/$(PREFIX)/include/drc $(DESTDIR)/$(PREFIX)/include/drc/c
++	install libdrc.a libdrc.so $(DESTDIR)/$(PREFIX)/lib
++	install libdrc.pc $(DESTDIR)/$(PREFIX)/lib/pkgconfig
++	install include/drc/*.h $(DESTDIR)/$(PREFIX)/include/drc
++	install include/drc/c/*.h $(DESTDIR)/$(PREFIX)/include/drc/c
++	install -d $(DESTDIR)/$(PREFIX)/bin
++	install -m755 demos/3dtest/3dtest $(DESTDIR)/$(PREFIX)/bin
++	install -m755 demos/simpleaudio/simpleaudio $(DESTDIR)/$(PREFIX)/bin
++	install -m755 demos/tsdraw/tsdraw $(DESTDIR)/$(PREFIX)/bin
+ 
+ uninstall:
+ 	@echo TODO

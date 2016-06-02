@@ -1,0 +1,19 @@
+Source: xul-ext-image-toolbar
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/image-toolbar
+
+Package: xul-ext-image-toolbar
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Single-click access for common actions on images.
+  Single-click access to common actions for images (e.g. saving,
+  copying, printing).  This extension is intended to provide a
+  replacement for the equivalent toolbar in Internet Explorer.

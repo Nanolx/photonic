@@ -1,0 +1,56 @@
+#!/usr/bin/make -f
+DH_VERBOSE = 1
+
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+DEB_PREF = $(shell gcc -print-multiarch)
+
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),m68k))
+	export DEB_CFLAGS_MAINT_APPEND = -Wall -g -O0
+endif
+
+DEB_CONFIGURE_USER_FLAGS = --with-readline
+
+dev_extras = debian/tmp -name install-aliases -o -name rep_config.h -o -name *.a -o -name *.jl
+
+rep_extras = debian/tmp/usr/lib/$(DEB_PREF)/rep debian/tmp/usr/share/rep -name *.jlc -o -name *.so
+
+dh_install_auto = xargs dh_install --autodest
+
+sm := $(shell grep '^Package: librep[0-9]' debian/control | sed -e 's@^Package: librep\([0-9][0-9]*\).*@\1@' )
+
+%:
+	dh $@ --with autotools-dev --with autoreconf
+
+override_dh_auto_clean:
+	-$(MAKE) gitclean
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(shell dpkg-buildflags --export=configure) $(DEB_CONFIGURE_USER_FLAGS)
+
+override_dh_auto_build:
+	env LC_ALL=C dh_auto_build
+
+override_dh_installdocs:
+	dh_installdocs --link-doc=librep$(sm)
+
+override_dh_installchangelogs:
+	dh_installchangelogs -plibrep$(sm) NEWS
+
+override_dh_auto_install:
+	dh_auto_install
+	dh_install
+	find $(dev_extras) | $(dh_install_auto) -plibrep-dev
+	find $(rep_extras) | $(dh_install_auto) -prep
+
+override_dh_strip:
+	dh_strip -a --dbg-package=librep-dbg
+
+override_dh_makeshlibs:
+	dh_makeshlibs -Xusr/lib/$(DEB_PREF)/rep/
+
+override_dh_shlibdeps:
+	dh_shlibdeps -- --warnings=2

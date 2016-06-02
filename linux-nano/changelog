@@ -1,0 +1,8 @@
+linux-nano (3.12-1) unstable; urgency=low
+
+  * import linux-liquorix 6.dmz.1
+  * set version to 1drc
+  * add drc-patch from https://bitbucket.org/memahaxx/drc-mac80211/ \
+        commits/4a9823cf2a6733bc15a05cffaebd8850d07451a7
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 01 Jan 2014 20:16:37 +0100

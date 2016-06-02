@@ -1,0 +1,111 @@
+xul-ext-adblock-edge (2.1.9-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    [*]Issue 2041 - Filter Preferences: Findbar not fully functional
+       in Firefox 36
+    [*]Issue 2010 - Replace for-each loops with for-of loops
+    [*]Compatible with Firefox 39 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 03 Apr 2015 19:14:51 +0200
+
+xul-ext-adblock-edge (2.1.8-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    [*]Compatible with Firefox 38
+    [*]First run tab removed
+    [*]Updated subscription list
+    [*]Issue 1675 - Use String.trim() to strip leading and trailing
+       whitespaces
+    [*]Issue 1670 - Removed Hide placeholders option from the UI
+    [*]Modified mobile labels from ABP to ABE
+    [*]issue 1713 - (Disable/Enable on ...) not showing on FF Mobile
+    [*]Updated AUTHORS file. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 02 Feb 2015 20:41:44 +0100
+
+xul-ext-adblock-edge (2.1.7-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    [*]Compatible with Firefox 37
+    [*]Issue 1510 - Stop using OS.File.readTo() 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 27 Dec 2014 09:52:49 +0100
+
+xul-ext-adblock-edge (2.1.6-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    [*]Modified Documentation URL
+    [*]Compatible with Firefox 36
+    [*]Issue 139 - Removed references to Timeline and timeline.js
+    [*]Issue 139 - Removed unused timelineID parameters still being passed in
+    [*]Issue 1381 - Element hiding exceptions broken in Firefox 35
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 10 Nov 2014 16:47:33 +0100
+
+xul-ext-adblock-edge (2.1.5-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    [*] Fixed subscriptions list typo
+    [*] Modified blockable items sidebar shortcut value to CTRL+SHIFT+U
+    [*] Removed fallback function
+    [*] issue #1129 - use keyCode in keydown event instead of charCode
+    [*] Issue 1241 - Element hiding exceptions broken in Firefox 34
+    [*] issue #362 - RequestNotifier.getDataForNode should return last
+        entry attached to a node
+    [*] Moved No mercy lists to "additional lists"
+    [*] Added Fanboy's Ultimate list.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 25 Sep 2014 17:46:22 +0200
+
+xul-ext-adblock-edge (2.1.4-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    [*] Issue 656 - Replace some __proto__ with Object.create
+    [*] Added Anti-Adblock Warning list
+    [*] issue #660 - Switched to HTTP cache API V2 from Firefox 32 and above
+    [*] issue #660 - create context info using 'fromLoadContext' method
+    [*] issue #290 - override ignoreSameDoc parameter to false for Seamonkey
+    [*] Issue 653 - Object.defineProperty instead of defineGetter / defineSetter
+    [*] Issue 455 - Find function - No indication when keyword is not found
+    [*] Issue 716 - Filter position cannot be changed using Ctrl-Up/Down keys
+    [*] Compatible with Firefox 34
+    [*] Fixed australis icon customization tab, added 32x64 pixel icon image
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 04 Aug 2014 19:58:27 +0200
+
+xul-ext-adblock-edge (2.1.3-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    [*]Home/End keys are broken when editing a filter
+    [*]Opening settings from first-run page doesn't work on android
+    [*]Disabled ABP icon in toolbar re-appears after SeaMonkey restart
+    [*]Clear hash part of the URL when generating filter suggestions
+    [*]ElemHideFilter.domains getter doesn't persist on Safari
+    [*]Work around WebKit bug which breaks element hiding on Safari
+    [*]override default context menu of icon only when left click action is redefined
+    [*]use WeakMap instead of setUserData and getUserData methods
+    [*]patterns.ini isn't being written on Firefox 20 (Permission denied)
+    [*]Allow users to enforce ABP being loaded completely at Firefox startup, even if delaying it
+    [*]AdBlock button is slow to appear on toolbar after launching Firefox
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 May 2014 16:51:32 +0200
+
+xul-ext-adblock-edge (2.1.2-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    [*]Issue 261 - FilterNotifier doesn't support listeners removing themselves when triggered.
+    [*]Issue 301 - Change for each to for .. of .. in lib/
+    [*]Issue 153 - FilterStorage.firstRun isn't being set.
+    [*]Issue 340 - Element hiding reports NS_ERROR_NOT_AVAILABLE to error console
+    [*]Issue 341 - Pop-up blocking fails if the pop-up URL redirects.
+    [*]Issue 354 - Avoid calling toUpperCase until we actually invoke the domain getter
+    [*]issue 99 - initialization CustomizableUI after UI initDone and prevent calling CustomizableUI methods for FF mobile.
+    [*]Italian Locales updated.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 May 2014 21:34:59 +0200
+
+xul-ext-adblock-edge (2.1.1-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 16 Apr 2014 19:31:12 +0200

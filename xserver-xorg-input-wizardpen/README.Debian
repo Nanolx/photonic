@@ -1,0 +1,31 @@
+This is the driver for wizardpen tablets, which means most of the
+non-wacom ones out there. Some of the supported USB tablets:
+
+Acecad Flair II GT-504
+DigiPro 5.5×4” Graphics Tablet
+Digital Ink Pad (A4 format)
+G-pen
+Genius Wizardpen
+Genius Mousepen
+Genius Easypen i405
+Genius
+iBall
+Manhattan
+Pentagram
+QWare
+Trust TB-3100
+Trust TB-5300
+Trust TB-6300
+UC-LOGIC
+iBall Tablet PF8060
+AIPTEK HyperPen 10000 U
+
+The sources do not really have a stable upstream, as several
+(abandoned) projects provide info and patches. Most reliable
+source (as of 2010) is https://launchpad.net/wizardpen which
+contains recent version packaged for DEB systems as well as
+tgz source.
+
+More information could be found on several sites, including:
+http://digitalbluewave.blogspot.com/2009/09/what-linux-wizardpen-driver-needs-right.html
+https://help.ubuntu.com/community/TabletSetupWizardpen

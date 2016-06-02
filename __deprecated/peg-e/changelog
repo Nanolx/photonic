@@ -1,0 +1,13 @@
+peg-e (1.2.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - FIXED: Application layout did not respect RTL languages
+    - FIXED: All new games used the same seed in Windows
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Jan 2015 18:39:22 +0100
+
+peg-e (1.2.0-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 24 Jan 2015 18:55:34 +0100

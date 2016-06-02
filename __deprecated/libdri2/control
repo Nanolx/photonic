@@ -1,0 +1,43 @@
+Source: libdri2
+Section: libs
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9),
+               quilt,
+               dh-autoreconf,
+               libdrm-dev (>= 2.4.32),
+               libxext-dev,
+               pkg-config,
+               x11proto-xext-dev,
+               x11proto-dri2-dev,
+               libxfixes-dev,
+               xutils-dev
+Standards-Version: 3.9.3
+
+Package: libdri2-dev
+Section: libdevel
+Architecture: armhf
+Depends: ${misc:Depends},
+         libdri2-1 (= ${binary:Version})
+Description: library for the DRI2 extension to the X Window System -- development files
+ This package provides the development environment for libdri2.
+
+Package: libdri2-1
+Section: libs
+Architecture: armhf
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: library for the DRI2 extension to the X Window System -- runtime
+ This package provides the runtime environment for libdri2.
+
+Package: libdri2-dbg
+Section: debug
+Priority: extra
+Architecture: armhf
+Multi-Arch: same
+Depends: ${misc:Depends},
+         libdri2-1 (= ${binary:Version})
+Description: library for the DRI2 extension to the X Window System -- debugging symbols
+ This package provides the debugging symbols for the libdri2 package.

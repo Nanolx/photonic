@@ -1,0 +1,61 @@
+phototonic (1.5.1-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - New toolbar in viewer mode for image manipulation actions
+    - Added Bookmarks feature
+    - Fixed sorting order when sorting by time and size
+    - Added Find Duplicate Images feature
+    - Added shortcuts for changing the focus to the Find and Path text
+      areas
+    - Enhancements to Copy to and Move to dialogs
+    - Can now set thumbnails background image
+    - Enhancements to Colors dialog, added color balance feature
+    - Added Crop to Selection feature
+    - Added mouse shortcuts for Reset/Original Zoom
+    - Added feedback notification for transformation actions in viewer
+    - Changed Cropping dialog orientation to percentage cropping for
+      continuous image cropping
+    - Image data now showed in sections
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 22 Nov 2014 19:10:09 +0100
+
+phototonic (1.4-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - Viewer is now available in the thumbnails layout as a Dock
+    - Thumbnails can now also be rotated according Exif orientation
+    - Added Debian packaging scripts
+    - Enhances to external application dialog
+    - Added Czech translation
+    - Added French translation
+    - Better feedback when starting external applications
+    - Settings dialog controls are now grouped in tabs
+    - Added 16px size application icon
+    - Improvements to German translation
+    - Can now rename an image when in viewer
+    - Added busy indicator for some actions in thumbnails layout
+    - Changes to version scheme
+    - Open image action now toggles closing the image when in viewer
+    - Consolidate feedback in viewer to bubbles
+    - Tool bars icon size is now custom
+    - Confirmation is asked when moving folders around in the tree
+    - Fixes to slowness and other bugs when closing image from full screen
+    - Fixed folder focus stealing issue when creating a new folder
+    - Fixes for some untranslated dialogs
+    - Fix dialogs creating shadow over image under KDE
+    - Fixes for wrong dock sizes when toggling layouts
+    - Fixed slowness when inverting selection
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 25 Sep 2014 18:16:01 +0200
+
+phototonic (1.03+20140809-git.75bb83-1nano) unstable; urgency=low
+
+  * New GIT snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 09 Aug 2014 20:17:40 +0200
+
+phototonic (1.03-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 08 Aug 2014 18:51:59 +0200

@@ -1,0 +1,4 @@
+usr/include/xorg/glamor.h
+usr/lib/*/libglamor.so
+usr/lib/*/pkgconfig/glamor.pc
+usr/lib/*/pkgconfig/glamor-egl.pc

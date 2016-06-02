@@ -1,0 +1,4 @@
+opt/devkitpro/portlibs/ppc/include/png.h
+opt/devkitpro/portlibs/ppc/include/pngconf.h
+opt/devkitpro/portlibs/ppc/include/pnglibconf.h
+opt/devkitpro/portlibs/ppc/lib/libpng.a

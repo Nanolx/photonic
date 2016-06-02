@@ -1,0 +1,14 @@
+Source: zelda-book-of-mudora
+Section: games
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, zip
+Standards-Version: 3.9.4
+Homepage: https://sites.google.com/site/zeldabom/
+
+Package: zelda-book-of-mudora
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.4.5)
+Description: Zelda Fangame using Solarus engine
+ Zelda Book of Mudora is a "The Legend Of Zelda - A Link To The Past"-like
+ Fangame using the Solarus OpenSource game engine.

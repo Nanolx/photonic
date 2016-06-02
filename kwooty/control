@@ -1,0 +1,15 @@
+Source: kwooty
+Section: net
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 7.0.50~), cmake, libqt4-dev, kdelibs5-dev, kdebase-workspace-dev
+Standards-Version: 3.9.1
+Homepage: http://kde-apps.org/content/show.php/Kwooty?content=114385
+
+Package: kwooty
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description:A user-friendly nzb usenet binary downloader
+  Kwooty handles automatic file repairing archive extraction,
+  multi-server support, smart par2 download, shutdown scheduler,
+  categories plugin, etc...

@@ -1,0 +1,11 @@
+gdiskdump (0.7.1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 25 Jun 2011 13:05:01 +0200
+
+gdiskdump (0.7) unstable; urgency=low
+
+  * Initial release.
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 11 Jun 2011 16:47:16 +0200

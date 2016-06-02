@@ -1,0 +1,161 @@
+xul-ext-febe (8.9.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix for Quick Backup > Create single xpi 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:36:27 +0200
+
+xul-ext-febe (8.9.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    8.9.0
+      - Fix for cookies backup/restore changes in Fx 44
+      - Fix for search plugins backup/restore changes in Fx 44
+      - Fix for permissions backup/restore changes in Fx 44
+      - Wrote replacement for deprecated Application.storage API
+      - Fixed FEBE debug console
+      - Latest locales
+    8.9.1
+      --- no changes listed ---
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:26:42 +0100
+
+xul-ext-febe (8.8.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Fix for bug 1203159 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 26 Jan 2016 18:31:38 +0100
+
+xul-ext-febe (8.8.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Fix for extension restore. Will also now install multipack extensions (cleopacks). 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Dec 2015 21:19:41 +0100
+
+xul-ext-febe (8.8-1nano) unstable; urgency=low
+
+  * New upstream release
+    - If a file is locked when trying to backup (cookies, form fill history,
+      permissions), an error message is displayed on the results report but
+      the backup will continue.
+    - FEBE progress window no longer 'grows' in size after each backup.
+      Once manually resized, it should keep that size.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 Nov 2015 19:54:44 +0100
+
+xul-ext-febe (8.7-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Check the file size of formfill history, permissions, and cookies
+      and if zero-length, do not attempt to backup.
+    - FEBE will not try to contact AMO for extension information while
+      performing a Full Profile backup
+    - A problem with the routine that contacts AMO has been fixed so the
+      "FEBE was unable to load the extension data in real-time before
+      the backup." message should not occur as often.
+    - FEBE will now recognize newly installed 'restartless' addons
+      immediately.
+    - FEBE progress window will now remember the last position it was
+      displayed.
+    - A link to the FEBE support forum is available from the FEBE menu.
+    - For Firefox v36.0 - v40.0a2
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 19 May 2015 19:46:31 +0200
+
+xul-ext-febe (8.6-1nano) unstable; urgency=low
+
+  * New upstream minor release
+    - When creating/restoring full profile, an option to create a desktop
+      icon is available (Windows only)
+    - More reliable checks for items on file to backup (e.g, cookies,
+      permissions, etc.)
+    - All sqlite calls are now asynchronous
+    - Remove deprecated XPCOM calls
+    - For Fx v36 - v38.a2
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Mar 2015 19:29:53 +0100
+
+xul-ext-febe (8.3-1nano) unstable; urgency=low
+
+  * New upstream minor release
+    - FEBE now checks for the existence of 'cache2' when determining
+      'Ignore cache' setting.
+    - FEBE color scheme tweaked for a softer tone.
+    - FEBE color scheme is now optional. See FEBE options > Advanced >
+      Miscellaneous > FEBE colors
+    - There appears to be two different versions of permissions.sqlite
+      in the wild. FEBE will now determine which version is in use and
+      backup/restore accordingly.
+    - FEBE will no longer attempt to restore an empty backup file. A
+      warning is displayed and the restore aborted.
+    - Added "AMO Rating" to tooltips on FEBE results report
+    - Fix for duplicate "OK" button in FEBE options window (Mac and Linux).
+    - No "Invalid date" messages. Should display "(unknown)" or "Never"
+      when applicable.
+    - Better error trapping for restore formfill history.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 21 Jan 2015 17:59:10 +0100
+
+xul-ext-febe (8.2-1nano) unstable; urgency=low
+
+  * New upstream minor release
+    * New styling applied to all FEBE windows
+    * Shortcut key for FEBE backup: Shift-Ctrl-Alt-B (Windows and Linux)
+      or Shift-Command-Option-B (Mac)
+    * Shortcut key for FEBE options: Shift-Ctrl-Alt-F (Windows and Linux)
+      or Shift-Command-Option-F (Mac)
+    * Progress window now properly displays backup progress
+    * Updated with the latest locales available
+    * For Fx 24.0 - 35.0a1
+    * Fixed date storage issue that was affecting missed backup notices
+      (DD/MM/YYYY vs MM/DD/YYYY)
+    * Added "Remind on startup if scheduled backup is missed - If canceled,
+      remind again after XX minutes" in 'When to backup' pane.
+    * Added warning if scheduled backup was missed in 'When to backup' pane.
+    * Fixed user-defined backup. Now restore file open window correctly
+      filters for filename/type.
+    * Fixed permissions restore
+    * Modified code to be ES6 compliant
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 27 Dec 2014 09:44:27 +0100
+
+xul-ext-febe (8.0.5-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Minor update with most current locales.
+    - Made .json bookmark backup synchronous to be
+      compatible with Pale Moon.
+    - Fix for filepicker routine for Mac
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 07 Nov 2014 18:24:41 +0100
+
+xul-ext-febe (8.0.4-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    - FEBE code completely rewritten to wrap all functions into a single
+      object (AMO recommendation)
+    - Added Dropbox support, removed Box.net support
+    - Support added for up to three additional backup locations for webDAV,
+      CDs, DVDs, thumbdrives, networked drives, etc.
+    - Profile backup name now contains the Firefox version number.
+    - Added 'Grace period" (seconds) to backup on startup/shutdown.
+    - Added 'Tolerance' (seconds) for determining if scheduled backup was missed
+    - Scheduled backup UI redesigned
+    - No restart needed when changing backup schedule
+    - New option: Perform delayed backup
+    - Items can be added to ignore list during backup
+    - Created function to test backup directory permissions
+    - Created function to list all add-ons
+    - Created function to manually load and save extension data
+    - If FEBE cannot load the extension data in real-time, a saved copy of
+      the data will be used instead.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Jun 2014 16:44:59 +0200
+
+xul-ext-febe (7.3.0.1-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 19:45:17 +0100

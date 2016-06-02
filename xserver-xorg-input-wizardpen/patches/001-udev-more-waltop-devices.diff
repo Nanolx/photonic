@@ -1,0 +1,32 @@
+Description: Support for more Waltop devices in udev-rule
+ This patch adds support for device ids 0031 and 0034 of waltop
+ manufactured (and rebranded) grahpic tablets, so that those are
+ properly recognized by and set-up with this x11 driver.
+ .
+ xserver-xorg-input-wizardpen (0.8.2-1nano) unstable; urgency=low
+ .
+   * improved debian/rules
+   * improved debian/control
+   * revised debian/copyright
+   * removed debian/*.fdi (we rely on udev now)
+   * bumped compat version to 8 (debian/compat)
+   * bumpat standards-version to 3.9.4 (debian/control)
+   * recommend easystroke
+   * set debian/source/format to "3.0 (quilt)"
+   * add patches/001-aiptek-waltop-slimtablet.diff
+     adds support for  Waltop manufactured graphic tablets
+     device ids: 0031 + 0034
+   * drop non-required build-dependencies
+Author: Christopher Roy Bratusek <nano@tuxfamily.org>
+
+--- xserver-xorg-input-wizardpen-0.8.2.orig/udev/67-xorg-wizardpen.rules
++++ xserver-xorg-input-wizardpen-0.8.2/udev/67-xorg-wizardpen.rules
+@@ -13,6 +13,8 @@ ENV{ID_VENDOR_ID}=="0460",  ENV{ID_MODEL
+ 
+ # Waltop
+ ENV{ID_VENDOR_ID}=="172f",  ENV{ID_MODEL_ID}=="0038", ENV{x11_driver}="wizardpen"
++ENV{ID_VENDOR_ID}=="172f",  ENV{ID_MODEL_ID}=="0034", ENV{x11_driver}="wizardpen"
++ENV{ID_VENDOR_ID}=="172f",  ENV{ID_MODEL_ID}=="0031", ENV{x11_driver}="wizardpen"
+ 
+ # UC-Logic Technology Corp
+ # SuperPen WP3325U Tablet

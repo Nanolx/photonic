@@ -1,0 +1,13 @@
+libogc-portlibs (2013.08-1nano) unstable; urgency=low
+
+  * add libruntimeiospatch
+  * fix architecture of all packages
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 06 Aug 2013 16:37:25 +0200
+
+
+libogc-portlibs (2012-08-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 25 Aug 2012 01:16:11 +0200

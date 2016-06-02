@@ -1,0 +1,33 @@
+xul-ext-ui-eraser (0.1.9-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-ui-eraser (0.1.9-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    0.1.9
+      - Fix bug that involves with UI in multipanelview by using
+        event.originalTarget. 
+    0.1.8
+      - Reset option will be within the colour picker panel and this panel
+        will now be available only in design mode.
+    0.1.7
+      - Use CustomizableUI.jsm for button creation.
+    0.1.6
+      - Fix codes due to Mozilla addition of the UI panel in FF29. When
+        in design mode, the UI panel will be inaccessible. When in the UI
+        panel, the UI Eraser button will be disabled.
+    0.1.5
+      - Fix codes due to Mozilla removal of add-ons toolbar in FF29. If
+        first run, button will be placed on the navigation bar. And if
+        found on the add-ons toolbar, will be moved to the palette.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 09 Feb 2015 16:24:17 +0100
+
+xul-ext-ui-eraser (0.1.4-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 14 Dec 2013 19:48:44 +0100

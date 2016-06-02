@@ -1,0 +1,21 @@
+Source: kchildlock
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev
+Standards-Version: 3.9.2
+Homepage: http://kde-apps.org/content/show.php/KChildlock?content=88124
+
+Package: kchildlock
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: KDE child locking KCM
+ kchildlock is a tool to monitor and restrict the time a child spends
+ on the computer. The limits can be specified per day of the week, by
+ lower and upper hour limits, maximum daily usage time, and maximum
+ weekly usage time.
+ .
+ The same restriction limits can be applied to applications based on
+ the user login.
+ .
+ This is a SystemSettings Module.

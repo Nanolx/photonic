@@ -1,0 +1,18 @@
+xul-ext-super-start (7.4.0-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-super-start (7.4.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - compatible with Iceweasel 41+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 Nov 2015 19:50:58 +0100
+
+xul-ext-super-start (7.3.3-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 09 Feb 2015 16:49:32 +0100

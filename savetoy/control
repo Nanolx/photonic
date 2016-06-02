@@ -1,0 +1,14 @@
+Source: savetoy
+Section: utils
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage:
+
+Package: savetoy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Wii nand savegame utility
+ This application can extract/dump Wii savegames
+ from/to a given nand image

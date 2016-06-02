@@ -1,0 +1,25 @@
+xul-ext-locationbar-enhancer (5.3-2nano) unstable; urgency=low
+
+  * rebuild to reflect iceweasel > firefox transistion
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:57:24 +0200
+
+xul-ext-locationbar-enhancer (5.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * compatibility fix for Iceweasel 44+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 27 Jan 2016 21:36:11 +0100
+
+xul-ext-locationbar-enhancer (5.2-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+  * compatibility fix for Iceweasel 35+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 15 Jan 2015 18:15:47 +0100
+
+xul-ext-locationbar-enhancer (5.1-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 27 Aug 2013 20:07:17 +0200

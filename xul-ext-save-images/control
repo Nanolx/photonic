@@ -1,0 +1,28 @@
+Source: xul-ext-save-images
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/save-images/
+
+Package: xul-ext-save-images
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Easily save images in Iceweasel
+ Save Images saves the images from the current tab page, from the cache,
+ to a specified location, with either the images original file name or
+ a file name that you specify.
+ .
+ The size, dimensions and types of images saved may be chosen,
+ with options if the file size is unknown or if duplicate files
+ are found. Images may be either saved from the current tab,
+ left or right of the current tab or from all tabs.
+ .
+ Also, all or selected links or image links in the current page can
+ be opened in a new tab or multiple tabs. There are shortcut keys for
+ some of the menu options.

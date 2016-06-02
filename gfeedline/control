@@ -1,0 +1,19 @@
+Source: gfeedline
+Section: net
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), python, python-distutils-extra,
+               python-xdg
+Standards-Version: 3.9.5
+Homepage: https://code.google.com/p/gfeedline/
+
+Package: gfeedline
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends},
+         gir1.2-gtk-3.0, python-gi, python-twisted,
+         python-beautifulsoup, python-webkit, gir1.2-webkit-3.0
+Description: GTK+ social network client
+ GFeedline is a social network client that supports:
+ - Facebook
+ - Twitter
+ - Tumblr

@@ -1,0 +1,17 @@
+--- a/Makefile	2015-08-08 19:54:15.354403873 +0200
++++ b/Makefile	2012-08-25 00:59:25.000000000 +0200
+@@ -280,10 +281,10 @@
+ #---------------------------------------------------------------------------------
+ install: install-headers
+ #---------------------------------------------------------------------------------
+-	@mkdir -p $(DEVKITPRO)/libogc
+-	@cp -frv include $(DEVKITPRO)/libogc
+-	@cp -frv lib $(DEVKITPRO)/libogc
+-	@cp -frv libogc_license.txt $(DEVKITPRO)/libogc
++	@mkdir -p $(DESTDIR)/$(DEVKITPRO)/libogc
++	@cp -frv include $(DESTDIR)/$(DEVKITPRO)/libogc
++	@cp -frv lib $(DESTDIR)/$(DEVKITPRO)/libogc
++	@cp -frv libogc_license.txt $(DESTDIR)/$(DEVKITPRO)/libogc
+ 
+ 
+ #---------------------------------------------------------------------------------

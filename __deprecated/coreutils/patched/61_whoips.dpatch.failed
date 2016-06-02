@@ -1,0 +1,15 @@
+patching file src/who.c
+Hunk #2 succeeded at 103 with fuzz 1.
+Hunk #5 succeeded at 435 (offset 10 lines).
+Hunk #6 succeeded at 713 (offset 9 lines).
+Hunk #7 succeeded at 847 (offset -79 lines).
+can't find file to patch at input line 133
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|--- coreutils-8.13/man/who.1    2011-09-08 10:29:17.000000000 -0400
+|+++ -   2011-09-12 13:35:55.454592819 -0400
+--------------------------
+No file to patch.  Skipping patch.
+1 out of 1 hunk ignored
+md5sum: 17cd49785343a2d5ef53e0d0bab0927d  /home/chris/coreutils-8.21/debian/patches/61_whoips.dpatch

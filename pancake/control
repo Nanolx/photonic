@@ -1,0 +1,14 @@
+Source: pancake
+Section: x11
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, libwnck-dev, libgtk2.0-dev, libx11-dev, libconfuse-dev, dh-autoreconf
+Standards-Version: 3.9.4
+Homepage: https://github.com/lynxed/pancake
+
+Package: pancake
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: X11 desktop panel
+ A highly-configureable, modular, themeable, GTK+-2.0-driven panel for X11.
+

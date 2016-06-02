@@ -1,0 +1,61 @@
+Source: glamor-egl
+Section: x11
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@tuxfamily.org>
+Build-Depends:
+ debhelper (>= 9),
+ dh-autoreconf,
+ pkg-config,
+ quilt,
+ xutils-dev,
+ x11proto-dri2-dev,
+ libdrm-dev (>= 2.4.23),
+ xserver-xorg-dev (>= 2:1.10),
+ libgl1-mesa-dev (>= 9.2-1ubuntu3),
+ libpixman-1-dev,
+ libegl1-mesa-dev,
+ libgbm-dev,
+ libatomic-ops-dev,
+Standards-Version: 3.9.4
+Vcs-Git: git://git.debian.org/git/pkg-xorg/driver/glamor-egl
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/driver/glamor-egl.git
+Homepage: http://www.freedesktop.org/wiki/Software/Glamor
+
+Package: libglamor0
+Section: libs
+Architecture: linux-any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Pre-Depends: ${misc:Pre-Depends},
+Multi-Arch: same
+Description: shared graphics acceleration library based on OpenGL
+ Glamor is a library for accelerating 2D graphics using GL functions.
+ .
+ This package contains the shared library.
+
+Package: libglamor-dev
+Section: libdevel
+Architecture: linux-any
+Depends:
+ libglamor0 (= ${binary:Version}),
+ ${misc:Depends},
+Multi-Arch: same
+Description: shared graphics acceleration library based on OpenGL -- development files
+ Glamor is a library for accelerating 2D graphics using GL functions.
+ .
+ This package contains the development environment for compiling drivers against
+ the libglamor library.
+
+Package: xserver-xorg-glamoregl
+Section: x11
+Architecture: linux-any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Pre-Depends: ${misc:Pre-Depends},
+Multi-Arch: same
+Description: X.Org X server -- graphics acceleration module based on OpenGL
+ Glamor is a library for accelerating 2D graphics using GL functions.
+ .
+ This package contains the X.Org module.

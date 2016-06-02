@@ -1,0 +1,20 @@
+Source: kio-clipboard
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, kdelibs5-dev
+Standards-Version: 3.9.2
+Homepage:
+
+Package: kio-clipboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, klipper
+X-Python-Version: >≠ 2.6
+Suggests: dolphin, konqueror
+Description: Clipboard/Klipper KDE Input/Output Slave
+ kio_clipboard implements kio-slaves, plugins for KDEs io system. It makes the
+ content of clipboards available inside file management. That means you can
+ access the clipboards entries using standard file dialogs like 'File open' or
+ 'Save File', you even can use a file browser and access entries. In general
+ you can use the slaves wherever you can use an url inside KDE to get access to
+ the clipboards content. There are no temporary files generated.

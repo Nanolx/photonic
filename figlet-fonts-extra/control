@@ -1,0 +1,15 @@
+Source: figlet-fonts-extra
+Section: text
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9) 
+Standards-Version: 3.9.5
+Homepage: http://ascii-design.sourceforge.net/
+
+Package: figlet-fonts-extra
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, figlet
+Description: Additional set of fonts for figlet
+ A large library of extra fonts for figlet.
+ .
+ Recommended, if you use ascii-design.

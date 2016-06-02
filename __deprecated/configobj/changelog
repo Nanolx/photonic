@@ -1,0 +1,12 @@
+configobj (5.0.5-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 08 Jun 2014 18:42:44 +0200
+
+configobj (5.0.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  * add python3-configobj package
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Thu, 20 Mar 2014 11:42:07 +0100

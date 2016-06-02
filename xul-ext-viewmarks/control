@@ -1,0 +1,22 @@
+Source: xul-ext-viewmarks
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/viewmarks
+
+Package: xul-ext-viewmarks
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Visual bookmarks addon for Iceweasel
+  Browse your bookmarks visually: create, edit, and
+  manage preview images for all your bookmarks.
+  .
+  Use bookmark images as a speed dial on newly opened
+  tabs. Quickly transfer bookmarks, links and texts to
+  your mobile phone or tablet computer using QR codes.

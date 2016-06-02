@@ -1,0 +1,51 @@
+zelda-roth-se (1.0.8-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Increase rupee drop rates (#86).
+  * Increase chances of getting bombs before dungeon 1.
+  * Fix inappropriate English translation.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Dec 2015 21:34:48 +0100
+
+zelda-roth-se (1.0.7-2nano) unstable; urgency=low
+
+  * proper depend on solarus
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 24 Nov 2015 20:18:12 +0100
+
+zelda-roth-se (1.0.7-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Use Solarus 1.4.5.
+  * Allow to customize keyboard and joypad controls (#2).
+  * Add title screen music (#74).
+  * Add left/right arrows in pause menus to indicate possible actions (#60).
+  * Show the current floor when it changes.
+  * Fix typo in French dialogs in the intro.
+  * Fix the blue potion dialog in English (#78).
+  * Fix entities falling in holes even when hooked to the hookshot.
+  * Fix caps lock state ignored after restarting the game (#20).
+  * Fix hero stuck in a cliff near shadow village.
+  * Fix hammer stakes pushed too early (#65).
+  * Fix enemies active in other regions before taking the first separator (#72).
+  * Fix enemy projectiles not removed when taking a separator (#71).
+  * Fix saving with life 0 during the game-over sequence (#82).
+  * Fix collisions of fire rod and ice rod (#55).
+  * Fix torches staying on after game over.
+  * Fix weak cavern wall already open in south-east.
+  * Make the hammer activate crystals (#75).
+  * Improve moving the camera with Ctrl+direction (#34).
+  * Remember the last savegame played.
+  * Dungeon 5: fix falling hands not properly removed.
+  * Dungeon 7: fix a door not correctly aligned.
+  * Dungeon 9: fix door closed when leaving without Zelda after boss key (#79).
+  * Dungeon 9: fix boss door reopening after killing him (#81).
+  * Dungeon 9: update soldier sprites to the original ones.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 16:43:38 +0100
+
+zelda-roth-se (1.0.6-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 Nov 2015 20:04:01 +0100

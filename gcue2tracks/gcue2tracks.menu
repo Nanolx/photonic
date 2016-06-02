@@ -1,0 +1,4 @@
+?package(gcue2tracks):needs="X11" section="Applications/Sound"\
+  title="gCue2tracks" command="/usr/bin/gcue2tracks"\
+  icon="/usr/share/pixmaps/gCue2tracks.png"
+

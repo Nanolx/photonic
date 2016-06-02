@@ -1,0 +1,17 @@
+Source: ohne-schwarzenegger
+Section: utils
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage:
+
+Package: ohne-schwarzenegger
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Wii nand converter
+ Ohne Schwarzenegger is a converter for Wii nand images.
+ .
+ With the correct information of bad blocks, boot1/boot2 etc,
+ it can convert a nand.bin of another Wii to be compatible
+ (and thus installable via BootMii) with your Wii.

@@ -1,0 +1,6 @@
+screenlets (0.1.2-9nano) photonic; urgency=medium
+
+  * new upstream
+  * apply patch to improve buttonlist
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Mon, 20 Sep 2010 16:54:44 +0200

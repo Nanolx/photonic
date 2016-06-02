@@ -1,0 +1,26 @@
+xul-ext-textlink (5.0.2016031501-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Works on Nightly 48.0a1.
+    - Manages custom preferences under its own namespace.
+    - Open all URIs correctly when the menu item "Open ... in Tabs"
+      is selected immediately.
+    - Update pl locale (by Piotr Drąg, thanks!)
+    - Deactivate context menu items correctly when there is no URI in the selection.
+    - Deactivate tooltip on disabled menu items in the context menu.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:30:29 +0100
+
+xul-ext-textlink (5.0.2015060501-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Works correctly on the multi-process mode (E10S).
+    - Improved: Add a new locale hy-AM (Armenian), translated by Hrant Ohanyan.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 30 Aug 2015 19:26:56 +0200
+
+xul-ext-textlink (4.1.2013040601-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 27 Aug 2013 20:27:03 +0200

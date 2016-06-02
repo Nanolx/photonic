@@ -1,0 +1,21 @@
+Source: solarus-quest-editor
+Section: games
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), cmake, libopenal-dev, libmodplug-dev, libphysfs-dev, libsdl2-dev,
+               libsdl2-gfx-dev, libsdl2-image-dev, libsdl2-ttf-dev, vorbis-tools, libvorbis-dev,
+               liblua5.1-0-dev, libluajit-5.1-dev, qtbase5-dev, qttools5-dev, qttools5-dev-tools,
+               libmodplug-dev, solarus
+Standards-Version: 3.9.6
+Homepage: http://www.solarus-games.org/
+
+Package: solarus-quest-editor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus
+Description: Quest editor for Solarus
+ Solarus Quest Editor is a free and open-source game editor for Solarus.
+ .
+ It is written in C++ with Qt. It helps you managing your project, and
+ editing maps, sprites, tilesets, dialogs, scripts, musics and sounds. 
+ .
+ Tutorials: http://www.solarus-games.org/development/tutorials/

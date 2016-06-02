@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ ! -e /usr/bin/Limoo ]; then
+    ln -s /usr/lib/$(uname -m)-linux-gnu/qt5/bin/Limoo /usr/bin/Limoo
+fi
+
+#DEBHELPER#
+
+exit 0

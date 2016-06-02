@@ -1,0 +1,32 @@
+Source: wit
+Section: otherosfs
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), libbz2-dev, gcc, liblzma-dev
+Standards-Version: 3.9.4
+Homepage: http://wit.wiimm.de/
+
+Package: wit
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Wiimms ISO/WBFS Tools
+ Wiimms ISO Tools is a set of command line tools to manipulate
+ Wii and GameCube ISO images and WBFS containers. The toolset
+ consists of the following tools:
+ .
+ wit (Wiimms ISO Tool):
+ This is the main ISO manipulation tool: It can list, analyze,
+ verify, convert, split, join, patch, mix, extract, compose,
+ rename and compare Wii and GameCube discs. It can create and
+ dump different other Wii file formats.
+ .
+ wwt (Wiimms WBFS Tool):
+ This is the main WBFS manipulation tool (WBFS manager): It can
+ create, check, repair, verify and clone WBFS files and partitions.
+ It can list, add, extract, remove, rename and recover ISO images
+ as part of a WBFS.
+ .
+ wdf (Wiimms WDF Tool):
+ wdf is a support tool for WDF, WIA and CISO archives. It convert
+ (pack and unpack), compare and dump WDF, WIA (dump and cat only)
+ and CISO archives.

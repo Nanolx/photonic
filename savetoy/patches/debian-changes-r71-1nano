@@ -1,0 +1,195 @@
+Description: Upstream changes introduced in version r71-1nano
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ savetoy (r71-1nano) unstable; urgency=low
+ .
+   * Initial release
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Christopher Roy Bratusek <zanghar@freenet.de>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- savetoy-r71.orig/main.cpp
++++ savetoy-r71/main.cpp
+@@ -1,4 +1,4 @@
+-#include "../WiiQt/includes.h"
++#include "WiiQt/includes.h"
+ #include "mainwindow.h"
+ 
+ int main(int argc, char *argv[])
+--- savetoy-r71.orig/mainwindow.cpp
++++ savetoy-r71/mainwindow.cpp
+@@ -3,9 +3,9 @@
+ #include "ngdialog.h"
+ #include "textdialog.h"
+ 
+-#include "../WiiQt/tools.h"
+-#include "../WiiQt/savebanner.h"
+-#include "../WiiQt/savedatabin.h"
++#include "WiiQt/tools.h"
++#include "WiiQt/savebanner.h"
++#include "WiiQt/savedatabin.h"
+ 
+ #include "quazip.h"
+ #include "quazipfile.h"
+--- savetoy-r71.orig/mainwindow.h
++++ savetoy-r71/mainwindow.h
+@@ -3,8 +3,8 @@
+ 
+ #include "saveloadthread.h"
+ #include "savelistitem.h"
+-#include "../WiiQt/savebanner.h"
+-#include "../WiiQt/includes.h"
++#include "WiiQt/savebanner.h"
++#include "WiiQt/includes.h"
+ 
+ namespace Ui {
+     class MainWindow;
+--- savetoy-r71.orig/ngdialog.cpp
++++ savetoy-r71/ngdialog.cpp
+@@ -1,7 +1,7 @@
+ #include "ngdialog.h"
+ #include "ui_ngdialog.h"
+-#include "../WiiQt/keysbin.h"
+-#include "../WiiQt/savedatabin.h"
++#include "WiiQt/keysbin.h"
++#include "WiiQt/savedatabin.h"
+ 
+ NgDialog::NgDialog(QWidget *parent) :
+     QDialog(parent),
+--- savetoy-r71.orig/ngdialog.h
++++ savetoy-r71/ngdialog.h
+@@ -1,8 +1,8 @@
+ #ifndef NGDIALOG_H
+ #define NGDIALOG_H
+ 
+-#include "../WiiQt/includes.h"
+-#include "../WiiQt/tools.h"
++#include "WiiQt/includes.h"
++#include "WiiQt/tools.h"
+ 
+ namespace Ui {
+     class NgDialog;
+--- savetoy-r71.orig/saveToy.pro
++++ savetoy-r71/saveToy.pro
+@@ -14,35 +14,35 @@ SOURCES += main.cpp\
+         mainwindow.cpp \
+     savelistitem.cpp \
+     saveloadthread.cpp \
+-    ../WiiQt/tools.cpp \
+-    ../WiiQt/savebanner.cpp \
+-    ../WiiQt/aes.c \
+-	../WiiQt/sha1.c \
+-    ../WiiQt/sharedcontentmap.cpp \
+-    ../WiiQt/tiktmd.cpp \
+-    ../WiiQt/uidmap.cpp \
+-    ../WiiQt/nanddump.cpp \
+-    ../WiiQt/wad.cpp \
+-    ../WiiQt/bn.cpp \
+-    ../WiiQt/ec.cpp \
+-    ../WiiQt/savedatabin.cpp \
+-    ../WiiQt/keysbin.cpp \
++    WiiQt/tools.cpp \
++    WiiQt/savebanner.cpp \
++    WiiQt/aes.c \
++	WiiQt/sha1.c \
++    WiiQt/sharedcontentmap.cpp \
++    WiiQt/tiktmd.cpp \
++    WiiQt/uidmap.cpp \
++    WiiQt/nanddump.cpp \
++    WiiQt/wad.cpp \
++    WiiQt/bn.cpp \
++    WiiQt/ec.cpp \
++    WiiQt/savedatabin.cpp \
++    WiiQt/keysbin.cpp \
+     ngdialog.cpp \
+     textdialog.cpp
+ 
+ HEADERS  += mainwindow.h \
+     savelistitem.h \
+     saveloadthread.h\
+-    ../WiiQt/tools.h \
+-    ../WiiQt/savebanner.h \
+-    ../WiiQt/sharedcontentmap.h \
+-    ../WiiQt/tiktmd.h \
+-    ../WiiQt/uidmap.h \
+-    ../WiiQt/nanddump.h \
+-    ../WiiQt/wad.h \
+-    ../WiiQt/savedatabin.h \
+-    ../WiiQt/ec.h \
+-    ../WiiQt/keysbin.h \
++    WiiQt/tools.h \
++    WiiQt/savebanner.h \
++    WiiQt/sharedcontentmap.h \
++    WiiQt/tiktmd.h \
++    WiiQt/uidmap.h \
++    WiiQt/nanddump.h \
++    WiiQt/wad.h \
++    WiiQt/savedatabin.h \
++    WiiQt/ec.h \
++    WiiQt/keysbin.h \
+     quazip/include/zip.h \
+     quazip/include/unzip.h \
+     quazip/include/quazipnewinfo.h \
+--- savetoy-r71.orig/savelistitem.cpp
++++ savetoy-r71/savelistitem.cpp
+@@ -6,7 +6,7 @@ SaveListItem::SaveListItem( SaveBanner b
+     QImage im = banner.BannerImg();
+     if( !im.isNull() )
+     {
+-        im.load( ";/noBanner.png" );
++        im.load( "/usr/share/pixmaps/savetoy-nobanner.png" );
+     }
+     QString tex = banner.Title();
+     if( tex.isEmpty() )
+--- savetoy-r71.orig/savelistitem.h
++++ savetoy-r71/savelistitem.h
+@@ -2,8 +2,8 @@
+ #define SAVELISTITEM_H
+ 
+ 
+-#include "../WiiQt/savebanner.h"
+-#include "../WiiQt/includes.h"
++#include "WiiQt/savebanner.h"
++#include "WiiQt/includes.h"
+ 
+ 
+ class SaveListItem : public QListWidgetItem
+--- savetoy-r71.orig/saveloadthread.cpp
++++ savetoy-r71/saveloadthread.cpp
+@@ -1,7 +1,7 @@
+ #include "saveloadthread.h"
+ #include "quazip.h"
+ #include "quazipfile.h"
+-#include "../WiiQt/savedatabin.h"
++#include "WiiQt/savedatabin.h"
+ 
+ Q_DECLARE_METATYPE( PcSaveInfo )
+ SaveLoadThread::SaveLoadThread( QObject *parent ) : QThread( parent )
+--- savetoy-r71.orig/saveloadthread.h
++++ savetoy-r71/saveloadthread.h
+@@ -2,8 +2,8 @@
+ #define SAVELOADTHREAD_H
+ 
+ //#include "savelistitem.h"
+-#include "../WiiQt/includes.h"
+-#include "../WiiQt/nanddump.h"
++#include "WiiQt/includes.h"
++#include "WiiQt/nanddump.h"
+ #define DESC_VERSION 1
+ enum
+ {

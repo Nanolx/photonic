@@ -1,0 +1,24 @@
+Source: libvdpau-sunxi
+Section: x11
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), libx11-dev, make, sunxi-mali
+Standards-Version: 3.9.5
+Homepage: http://linux-sunxi.org/
+
+Package: libvdpau-sunxi
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Experimental VDPAU implementation for sunxi SoCs.
+ Most features of full VDPAU are missing, only decoding of h264, mpeg1,
+ mpeg2 and output of software-decoded videos will work.
+ .
+ Output bypasses X video driver, hence don't try to use Xv at the same
+ time.
+ .
+ mplayer:
+   $ mplayer -vo vdpau -vc ffmpeg12vdpau,ffh264vdpau, [filename]
+ mpv:
+   $ mpv --vo=vdpau --hwdec=vdpau --hwdec-codecs=all [filename]
+ enable OSD:
+   $ export VDPAU_OSD=1

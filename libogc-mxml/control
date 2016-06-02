@@ -1,0 +1,12 @@
+Source: libogc-mxml
+Section: devel
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), make
+Standards-Version: 3.9.4
+Homepage: http://devkitpro.org
+
+Package: libogc-mxml
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libogc, devkitppc
+Description: ported mxml for libOGC

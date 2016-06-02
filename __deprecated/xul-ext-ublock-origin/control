@@ -1,0 +1,35 @@
+Source: xul-ext-ublock-origin
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/thunderbird/addon/ublock-origin/
+
+Package: xul-ext-ublock-origin
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}, xul-ext-adblock-edge
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Block Ads in Icedove and Iceweasel
+  An efficient blocker: easy on memory and CPU footprint, and yet can load and
+  enforce thousands more filters than other popular blockers out there.
+  .
+  Flexible, it's more than an "ad blocker": it can also read and create filters
+  from hosts files. Out of the box, these lists of filters are loaded and enforced:
+  .
+   - EasyList
+   - Peter Lowe’s Ad server list
+   - EasyPrivacy
+   - Malware domains
+  .
+  More lists are available for you to select if you wish:
+  .
+   - Fanboy’s Enhanced Tracking List
+   - Dan Pollock’s hosts file
+   - hpHosts’s Ad and tracking servers
+   - MVPS HOSTS
+   - Spam404
+   - And many others

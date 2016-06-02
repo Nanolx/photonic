@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_auto_clean:
+	dh_auto_clean
+	[ ! -f bindings/cpp/Makefile ] || $(MAKE) distclean -C bindings/cpp
+	rm -f bindings/cpp/doc/Makefile doc/html/*
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-cxx
+
+override_dh_auto_build:
+	dh_auto_build
+	doxygen
+
+DEBVERSION := $(shell dpkg-parsechangelog | egrep '^Version:' | cut -f 2 -d ' ')
+UPVERSION:=$(shell echo $(DEBVERSION) | sed -e 's/^.*://' -e 's/-[0-9.]*$$//' -e 's/.dfsg$$//')
+UPDATE:=$(shell echo $(UPVERSION) | sed -e 's/^.*\+svn//')
+
+FILENAME := portaudio19_$(UPVERSION).orig.tar.gz
+URL := https://www.portaudio.com/repos/portaudio/trunk
+SRCDIR := portaudio19-$(UPVERSION)
+
+get-orig-source:
+	@dh_testdir
+	@mkdir -p ../tarballs
+	@echo Downloading $(FILENAME) from $(URL) ...
+	@svn export -r{$(UPDATE)T0000Z} $(URL) ../tarballs/$(SRCDIR)
+	@echo Building snapshot tarball
+	@GZIP=-9 tar -caf ../tarballs/$(FILENAME) -C ../tarballs $(SRCDIR)
+	@echo Cleaning up
+	@rm -rf ../tarballs/$(SRCDIR)

@@ -1,0 +1,2 @@
+usr/lib/*/xorg/modules/libglamoregl.so	usr/lib/xorg/modules
+usr/share/X11/xorg.conf.d/glamor.conf

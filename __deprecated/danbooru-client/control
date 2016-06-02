@@ -1,0 +1,18 @@
+Source: danbooru-client
+Section: net
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+# Not really but required for CDBS
+XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), cmake, libqt4-dev, python-qt4 (>= 4.5.0), pkg-kde-tools, cdbs
+Standards-Version: 3.9.1
+Homepage: http://www.dennogumi.org
+
+Package: danbooru-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Client for Danbooru-like imageboards
+ This is a Qt-Client for Danbooru-like imageboards.
+ .
+ It allows to search and batch-download, preview and
+ gettings image informations.

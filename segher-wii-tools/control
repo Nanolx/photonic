@@ -1,0 +1,25 @@
+Source: segher-wii-tools
+Section: utils
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage:
+
+Package: segher-wii-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Segher's Wii Tools
+ A collections of tools to aid in effort of Wii Homebrew
+ .
+ Contains:
+ * negentig -- decode and unpack a disc image
+ * tachtig  -- decode and unpack a saved data wad (data.bin)
+ * zeventig -- decode and unpack an installer wad
+ * twintig  -- pack and encode a saved data wad
+ * zestig   -- decode and unpack Wii flash images
+ * tpl2ppm  -- obvious
+ * dol2elf  -- obvious
+ * tmd-dump -- obvious
+ * zelda-cksum -- check and fix checksums in Zelda TP savegames
+ * lego-cksum -- check and fix checksums in Lego* savegames

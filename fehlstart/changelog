@@ -1,0 +1,25 @@
+fehlstart (0.4-1nano) unstable; urgency=low
+
+  * New upstream stable release
+  0.4
+   * rewrote gui in cairo
+   * removed old gtk code
+   * tuned scoring algorithm
+   * added more settings
+   * tried to clean code
+  0.3.1
+   * window color setting
+   * fixed crash with commands
+  0.3.0
+   * updated gui
+   * complete internal overhaul
+   * instant updates (timeout setting obsolete)
+   * new setting style: default, gtk
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 13 Apr 2014 19:45:37 +0200
+
+fehlstart (0.2.8-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 13 Oct 2012 18:04:05 +0200

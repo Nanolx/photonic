@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+
+%:
+	dh --sourcedirectory=gtk --parallel $@
+
+override_dh_auto_configure:
+	dh_auto_configure --sourcedirectory=$(CURDIR)/unix -- --bindir=/usr/games --enable-netplay
+
+override_dh_auto_build:
+	dh_auto_build --sourcedirectory=$(CURDIR)/unix
+	$(MAKE) -C $(CURDIR)/unix clean
+	dh_autoreconf
+	dh_auto_configure --sourcedirectory=$(CURDIR)/gtk -- --bindir=/usr/games --enable-netplay
+	dh_auto_build --sourcedirectory=$(CURDIR)/gtk
+
+override_dh_install:
+	dh_install
+	mkdir -p debian/snes9x-x/etc/snes9x
+	install -m 644 docs/snes9x.conf.default debian/snes9x-x/etc/snes9x/snes9x.conf
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f $(CURDIR)/unix/snes9x $(CURDIR)/unix/config.log $(CURDIR)/unix/config.status \
+		$(CURDIR)/unix/Makefile $(CURDIR)/gtk/config.log $(CURDIR)/gtk/config.status \
+		$(CURDIR)/gtk/config.log $(CURDIR)/gtk/Makefile $(CURDIR)/gtk/config.info \
+		$(CURDIR)/unix/config.info $(CURDIR)/gtk/po/POTFILES $(CURDIR)/gtk/data/Makefile
+	dh_autoreconf_clean
+
+override_dh_installchangelogs:
+	dh_installchangelogs docs/changes.txt

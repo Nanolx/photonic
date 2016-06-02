@@ -1,0 +1,22 @@
+Source: zelda-time-to-triumph
+Section: games
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), libsdl1.2-dev, libsdl-mixer1.2-dev, libsdl-image1.2-dev,libsdl-gfx1.2-dev
+Standards-Version: 3.9.4
+Homepage: http://www.zeldaroth.fr/us/z3t.php
+
+Package: zelda-time-to-triumph
+Provides: zelda3t
+Replaces: zelda3t
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zelda - Time To Triumph (fangame)
+ After the events that occured in Termina and the victory
+ of the hero on his evil alter-ego, Zelda and Link knew that,
+ from the bottom of hell, Ganon the immortal drawed his power
+ from his wish to the Triforce, and rounded up his army with
+ a view to invade Hyrule. Until the day when, after months
+ spent watching out for an attack, an event came up and put
+ an end to this endless waiting. 
+ 

@@ -1,0 +1,25 @@
+Source: xul-ext-lightbeam
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), mozilla-devscripts (>= 0.19~)
+Standards-Version: 3.9.4
+Homepage: https://addons.mozilla.org/en-US/firefox/addon/lightbeam/
+
+Package: xul-ext-lightbeam
+Architecture: all
+Recommends: ${xpi:Recommends}
+Provides: ${xpi:Provides}
+Breaks: ${xpi:Breaks}
+Enhances: ${xpi:Enhances}
+Depends: ${misc:Depends}, ${xpi:Depends}
+Description: Interactive visualizations of web activity
+ Using interactive visualizations, Lightbeam enables you to see the
+ first and third party sites you interact with on the Web.
+ .
+ As you browse, Lightbeam reveals the full depth of the Web today,
+ including parts that are not transparent to the average user. Using two
+ distinct interactive graphic representations — Graph and List — Lightbeam
+ enables you to examine individual third parties over time and space,
+ identify where they connect to your online activity and provides ways
+ for you to engage with this unique view of the Web.

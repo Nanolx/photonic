@@ -1,0 +1,5 @@
+x264-nano (3:0.140.9999+drc-1nano) unstable; urgency=medium
+
+  * x264 with drc support
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Wed, 01 Jan 2014 21:04:55 +0100

@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE=1
+export LDFLAGS += -lX11 -lgmodule-2.0
+
+%:
+	dh $@ #--with autoreconf --with autotools-dev

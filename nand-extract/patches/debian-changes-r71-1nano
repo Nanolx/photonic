@@ -1,0 +1,183 @@
+Description: Upstream changes introduced in version r71-1nano
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ nand-extract (r71-1nano) unstable; urgency=low
+ .
+   * Initial release
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Christopher Roy Bratusek <zanghar@freenet.de>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- nand-extract-r71.orig/boot2infodialog.h
++++ nand-extract-r71/boot2infodialog.h
+@@ -1,8 +1,8 @@
+ #ifndef BOOT2INFODIALOG_H
+ #define BOOT2INFODIALOG_H
+ 
+-#include "../WiiQt/includes.h"
+-#include "../WiiQt/blocks0to7.h"
++#include "WiiQt/includes.h"
++#include "WiiQt/blocks0to7.h"
+ 
+ namespace Ui {
+     class Boot2InfoDialog;
+--- nand-extract-r71.orig/main.cpp
++++ nand-extract-r71/main.cpp
+@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
+     Q_INIT_RESOURCE( rc );
+ 
+     QApplication a(argc, argv);
+-	QApplication::setWindowIcon( QIcon( ":/icon.png" ) );
++	QApplication::setWindowIcon( QIcon( "/usr/share/pixmaps/nand-extract.png" ) );
+     NandWindow w;
+     w.show();
+     return a.exec();
+--- nand-extract-r71.orig/nandExtract.pro
++++ nand-extract-r71/nandExtract.pro
+@@ -5,24 +5,24 @@ TARGET = nandExtract
+ TEMPLATE = app
+ SOURCES += main.cpp \
+     nandwindow.cpp \
+-    ../WiiQt/blocks0to7.cpp \
+-    ../WiiQt/tiktmd.cpp \
+-    ../WiiQt/nandbin.cpp \
+-    ../WiiQt/tools.cpp \
+-    ../WiiQt/savebanner.cpp \
+-    ../WiiQt/aes.c \
+-    ../WiiQt/sha1.c \
++    WiiQt/blocks0to7.cpp \
++    WiiQt/tiktmd.cpp \
++    WiiQt/nandbin.cpp \
++    WiiQt/tools.cpp \
++    WiiQt/savebanner.cpp \
++    WiiQt/aes.c \
++    WiiQt/sha1.c \
+     nandthread.cpp \
+     boot2infodialog.cpp \
+-    ../WiiQt/nandspare.cpp
++    WiiQt/nandspare.cpp
+ 
+ HEADERS += nandwindow.h \
+-    ../WiiQt/tiktmd.h \
+-    ../WiiQt/nandbin.h \
+-    ../WiiQt/tools.h \
++    WiiQt/tiktmd.h \
++    WiiQt/nandbin.h \
++    WiiQt/tools.h \
+     nandthread.h \
+     boot2infodialog.h \
+-    ../WiiQt/nandspare.h
++    WiiQt/nandspare.h
+ 
+ FORMS += nandwindow.ui \
+     boot2infodialog.ui
+--- nand-extract-r71.orig/nandthread.h
++++ nand-extract-r71/nandthread.h
+@@ -1,8 +1,8 @@
+ #ifndef NANDTHREAD_H
+ #define NANDTHREAD_H
+ 
+-#include "../WiiQt/includes.h"
+-#include "../WiiQt/nandbin.h"
++#include "WiiQt/includes.h"
++#include "WiiQt/nandbin.h"
+ 
+ 
+ //TODO:  this thread really isnt setup to be inturruptable.  especially while it is extracting the full nand.bin
+--- nand-extract-r71.orig/nandwindow.cpp
++++ nand-extract-r71/nandwindow.cpp
+@@ -1,7 +1,7 @@
+ #include "nandwindow.h"
+ #include "ui_nandwindow.h"
+ #include "boot2infodialog.h"
+-#include "../WiiQt/tools.h"
++#include "WiiQt/tools.h"
+ 
+ NandWindow::NandWindow( QWidget *parent ) : QMainWindow( parent ), ui( new Ui::NandWindow ), nThread( this )
+ {
+@@ -76,7 +76,7 @@ void NandWindow::SetUpBlockMap()
+ {
+     ui->graphicsView_blocks->setScene( &gv );
+ 
+-    QPixmap grey( ":/grey.png" );
++    QPixmap grey( "/usr/share/pixmaps/nand-extract-grey.png" );
+ 
+     quint16 i = 0;
+     for( quint16 y = 0; y < 288; y += 9 )		//create all the blocks and make them grey
+@@ -111,10 +111,10 @@ void NandWindow::SetUpBlockMap()
+     QGraphicsTextItem *resText = new QGraphicsTextItem( tr( "Reserved" ) );
+ 
+     QGraphicsPixmapItem *greySquare = new QGraphicsPixmapItem( grey );
+-    QGraphicsPixmapItem *blackSquare = new QGraphicsPixmapItem( QPixmap( ":/black.png" ) );
+-    QGraphicsPixmapItem *blueSquare = new QGraphicsPixmapItem( QPixmap( ":/blue.png" ) );
+-    QGraphicsPixmapItem *greenSquare = new QGraphicsPixmapItem( QPixmap( ":/green.png" ) );
+-    QGraphicsPixmapItem *pinkSquare = new QGraphicsPixmapItem( QPixmap( ":/pink.png" ) );
++    QGraphicsPixmapItem *blackSquare = new QGraphicsPixmapItem( QPixmap( "/usr/share/pixmaps/nand-extract-black.png" ) );
++    QGraphicsPixmapItem *blueSquare = new QGraphicsPixmapItem( QPixmap( "/usr/share/pixmaps/nand-extract-blue.png" ) );
++    QGraphicsPixmapItem *greenSquare = new QGraphicsPixmapItem( QPixmap( "/usr/share/pixmaps/nand-extract-green.png" ) );
++    QGraphicsPixmapItem *pinkSquare = new QGraphicsPixmapItem( QPixmap( "/usr/share/pixmaps/nand-extract-pink.png" ) );
+ 
+     greySquare->setPos( x, y + fm.height() / 2 );
+     freeText->setPos( greySquare->pos().x() + 8 + spacing, y );
+@@ -320,11 +320,11 @@ void NandWindow::DrawBlockMap( QList<qui
+         qWarning() << "NandWindow::DrawBlockMap -> current blocks are fucked up, son" << hex << blocks.size();
+         return;
+     }
+-    QPixmap blue( ":/blue.png" );
+-    QPixmap green( ":/green.png" );
+-    QPixmap pink( ":/pink.png" );
+-    QPixmap grey( ":/grey.png" );
+-    QPixmap black( ":/black.png" );
++    QPixmap blue( "/usr/share/pixmaps/nand-extract-blue.png" );
++    QPixmap green( "/usr/share/pixmaps/nand-extract-green.png" );
++    QPixmap pink( "/usr/share/pixmaps/nand-extract-pink.png" );
++    QPixmap grey( "/usr/share/pixmaps/nand-extract-grey.png" );
++    QPixmap black( "/usr/share/pixmaps/nand-extract-black.png" );
+ 
+     for( quint16 i = 0; i < 0x1000; i++ )
+     {
+--- nand-extract-r71.orig/nandwindow.h
++++ nand-extract-r71/nandwindow.h
+@@ -1,7 +1,7 @@
+ #ifndef NANDWINDOW_H
+ #define NANDWINDOW_H
+ 
+-#include "../WiiQt/includes.h"
++#include "WiiQt/includes.h"
+ #include "nandthread.h"
+ 
+ namespace Ui {
+--- nand-extract-r71.orig/rc.qrc
++++ nand-extract-r71/rc.qrc
+@@ -1,10 +1,10 @@
+ <RCC>
+     <qresource prefix="/">
+-        <file>blue.png</file>
+-        <file>green.png</file>
+-        <file>grey.png</file>
+-        <file>pink.png</file>
+-        <file>black.png</file>
+-        <file>icon.png</file>
++        <file>nand-extract-blue.png</file>
++        <file>nand-extract-green.png</file>
++        <file>nand-extract-grey.png</file>
++        <file>nand-extract-pink.png</file>
++        <file>nand-extract-black.png</file>
++        <file>nand-extract.png</file>
+     </qresource>
+ </RCC>

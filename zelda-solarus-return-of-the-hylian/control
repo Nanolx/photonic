@@ -1,0 +1,24 @@
+Source: zelda-roth-se
+Section: games
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, zip
+Standards-Version: 3.9.4
+Homepage: http://solarus-games.org
+
+Package: zelda-roth-se
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.4.5)
+Description: Zelda Fangame using Solarus engine
+ Zelda Return of the Hylian Solarus Edition is a
+ "The Legend Of Zelda - A Link To The Past"-like Fangame using
+ the Solarus OpenSource game engine.
+ .
+ After Link's victory over Ganon (in "A Link to the Past"),
+ no one knows what Link's wish to the Triforce was. But this
+ wish reunified the Light World and the Dark World and brought
+ the 7 wise men's descendants back to life. Peace was back in
+ Hyrule. But unfortunately, this wish also ressurected Ganon
+ and his henchmen. He was preparing his revenge, but he couldn't
+ do anything without the Triforce. One night, a familiar voice
+ speaks to Link in his sleep…

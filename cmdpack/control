@@ -1,0 +1,147 @@
+Source: cmdpack
+Section: devel
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8), gcc, libc6-dev
+Standards-Version: 3.9.4
+Homepage: http://www.neillcorlett.com/cmdpack/
+
+Package: cmdpack
+Architecture: any
+Depends: cmdpack-bin2iso,
+         cmdpack-bincomp,
+         cmdpack-brrrip,
+         cmdpack-byteshuf,
+         cmdpack-byteswap,
+         cmdpack-cdpatch,
+         cmdpack-ecm,
+         cmdpack-fakecrc,
+         cmdpack-hax65816,
+         cmdpack-id3point,
+         cmdpack-pecompat,
+         cmdpack-rels,
+         cmdpack-screamf,
+         cmdpack-subfile,
+         cmdpack-uips,
+         cmdpack-usfv,
+         cmdpack-vb2rip,
+         cmdpack-wordadd,
+         cmdpack-zerofill
+Description: Collection of command-line utilities
+ Dummy package with dependency on all other cmdpack
+ packages.
+
+Package: cmdpack-bin2iso
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: bin2iso
+Description: Collection of command-line utilities
+ Tool to convert CD-ROM .bin images to .iso images
+
+Package: cmdpack-bincomp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to compare binary files.
+
+Package: cmdpack-brrrip
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to rip SNES brr-sound-samples.
+
+Package: cmdpack-byteshuf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to (un)shuffle bytes in a file.
+
+Package: cmdpack-byteswap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to swap byte-order of files.
+
+Package: cmdpack-cdpatch
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool for CD-XA image insertion/extraction.
+
+Package: cmdpack-ecm
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ En/Decoder for Error Code Modeler (EMC) format.
+
+Package: cmdpack-fakecrc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to fake the CRC32 of a file
+
+Package: cmdpack-hax65816
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ 65c816 disassembler.
+
+Package: cmdpack-id3point
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ ID3v1 tagging tool.
+
+Package: cmdpack-pecompat
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to maximize compatibility of a Win32 PE file.
+
+Package: cmdpack-rels
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Relative search tool (for ROM Hacking).
+
+Package: cmdpack-screamf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ AMF to S3M converter.
+
+Package: cmdpack-subfile
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to extract a portion of a file.
+
+Package: cmdpack-uips
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to apply or create IPS patches.
+
+Package: cmdpack-usfv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to create or verify SFV files.
+
+Package: cmdpack-vb2rip
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to rip VB2 sound samples.
+
+Package: cmdpack-wordadd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Addtion word puzzle solver.
+
+Package: cmdpack-zerofill
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Collection of command-line utilities
+ Tool to create large, empty files.

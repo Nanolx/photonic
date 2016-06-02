@@ -1,0 +1,18 @@
+Source: nand-dump
+Section: utils
+Priority: extra
+Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage: http://code.google.com/p/wiiqt/
+
+Package: nand-dump
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Nand Dump
+ This application can download files from NUS
+ (Nintendo Update Server) and dump them into an
+ extraced WII nand.
+ .
+ Packing the files as WAD is currently not supported.
+ For this functionality, refer back to qwad.

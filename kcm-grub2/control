@@ -1,0 +1,16 @@
+Source: kcm-grub2
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 7.0.50~), cmake, kdelibs5-dev, libhd-dev,
+ libpackagekit-qt2-dev, libmagick++-dev, libqapt-dev
+Standards-Version: 3.9.4
+Homepage: http://kde-apps.org/content/show.php/GRUB2+Bootloader+KCModule?content=139643
+
+Package: kcm-grub2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, grub2, os-prober
+Description: Grub2 KCM
+ This is a KCM (KDE Control-Center Module), which
+ allows configuration of the GRand Unified Bootloader
+ (GRUB) version 2.

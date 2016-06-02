@@ -1,0 +1,15 @@
+Source: kcm-systemd
+Section: kde
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 7.0.50~), cmake, kdelibs5-dev, libboost1.54-all-dev,
+Standards-Version: 3.9.1
+Homepage: http://kde-apps.org/content/show.php/Kcmsystemd?content=161871
+
+Package: kcm-systemd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, systemd
+Description: KDE System Settings module for systemd
+ Systemd control module for KDE. Provides a graphical frontend
+ for the systemd daemon, which allow for viewing and controlling
+ systemd units, as well as modifying configuration files.

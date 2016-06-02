@@ -1,0 +1,18 @@
+Source: cutemarked
+Section: text
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), g++, libhunspell-dev, libmarkdown2-dev,
+               libgstreamer0.10-dev, gstreamer0.10-plugins-base-apps,
+               libsqlite3-dev, qtbase5-dev, libqt5webkit5-dev, qttools5-dev,
+               qttools5-dev-tools, qt5-default, libqt5opengl5-dev
+Standards-Version: 3.9.5
+Homepage: https://cloose.github.io/CuteMarkEd/
+
+Package: cutemarked
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Advanced Qt5 Markdown-Editor
+ A Qt-based, free and open source markdown editor with
+ live HTML preview, math expressions, code syntax
+ highlighting and syntax highlighting of markdown document.

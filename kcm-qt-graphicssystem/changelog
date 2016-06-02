@@ -1,0 +1,11 @@
+kcm-qt-graphicssystem (1.3-1nano) unstable; urgency=low
+
+  * Fix script creation if $KDEHOME/env directory does not exist
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 11 Sep 2011 19:35:14 +0200
+
+kcm-qt-graphicssystem (1.2-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <zanghar@freenet.de>  Sat, 12 Mar 2011 15:06:03 +0100

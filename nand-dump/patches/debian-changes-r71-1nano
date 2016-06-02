@@ -1,0 +1,131 @@
+Description: Upstream changes introduced in version r71-1nano
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ nand-dump (r71-1nano) unstable; urgency=low
+ .
+   * Initial release
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Christopher Roy Bratusek <zanghar@freenet.de>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- nand-dump-r71.orig/main.cpp
++++ nand-dump-r71/main.cpp
+@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
+ {
+ 	Q_INIT_RESOURCE( rc );
+     QApplication a(argc, argv);
+-	QApplication::setWindowIcon( QIcon( ":/icon.png" ) );
++	QApplication::setWindowIcon( QIcon( "/usr/share/pixmaps/nand-dump.png" ) );
+     MainWindow w;
+     w.show();
+ 
+--- nand-dump-r71.orig/mainwindow.cpp
++++ nand-dump-r71/mainwindow.cpp
+@@ -1,9 +1,9 @@
+ #include "mainwindow.h"
+ #include "ui_mainwindow.h"
+-#include "../WiiQt/settingtxtdialog.h"
+-#include "../WiiQt/tiktmd.h"
+-#include "../WiiQt/tools.h"
+-#include "../WiiQt/wad.h"
++#include "WiiQt/settingtxtdialog.h"
++#include "WiiQt/tiktmd.h"
++#include "WiiQt/tools.h"
++#include "WiiQt/wad.h"
+ 
+ 
+ MainWindow::MainWindow( QWidget *parent ) : QMainWindow( parent ), ui( new Ui::MainWindow ), nus ( this )
+--- nand-dump-r71.orig/mainwindow.h
++++ nand-dump-r71/mainwindow.h
+@@ -1,9 +1,9 @@
+ #ifndef MAINWINDOW_H
+ #define MAINWINDOW_H
+ 
+-#include "../WiiQt/includes.h"
+-#include "../WiiQt/nusdownloader.h"
+-#include "../WiiQt/nanddump.h"
++#include "WiiQt/includes.h"
++#include "WiiQt/nusdownloader.h"
++#include "WiiQt/nanddump.h"
+ 
+ namespace Ui {
+     class MainWindow;
+--- nand-dump-r71.orig/mainwindow.ui
++++ nand-dump-r71/mainwindow.ui
+@@ -11,7 +11,7 @@
+    </rect>
+   </property>
+   <property name="windowTitle">
+-   <string>QtShitGetter</string>
++   <string>NAND-Dump</string>
+   </property>
+   <widget class="QWidget" name="centralWidget">
+    <layout class="QVBoxLayout" name="verticalLayout">
+--- nand-dump-r71.orig/nand.pro
++++ nand-dump-r71/nand.pro
+@@ -13,30 +13,30 @@ TEMPLATE = app
+ 
+ SOURCES += main.cpp\
+         mainwindow.cpp \
+-    ../WiiQt/tools.cpp \
+-    ../WiiQt/sharedcontentmap.cpp \
+-    ../WiiQt/tiktmd.cpp \
+-    ../WiiQt/nusdownloader.cpp \
+-    ../WiiQt/uidmap.cpp \
+-    ../WiiQt/nanddump.cpp \
+-    ../WiiQt/settingtxtdialog.cpp \
+-    ../WiiQt/wad.cpp \
+-    ../WiiQt/aes.c \
+-    ../WiiQt/sha1.c
++    WiiQt/tools.cpp \
++    WiiQt/sharedcontentmap.cpp \
++    WiiQt/tiktmd.cpp \
++    WiiQt/nusdownloader.cpp \
++    WiiQt/uidmap.cpp \
++    WiiQt/nanddump.cpp \
++    WiiQt/settingtxtdialog.cpp \
++    WiiQt/wad.cpp \
++    WiiQt/aes.c \
++    WiiQt/sha1.c
+ 
+ HEADERS  += mainwindow.h \
+-    ../WiiQt/tools.h \
+-    ../WiiQt/uidmap.h \
+-    ../WiiQt/sharedcontentmap.h \
+-    ../WiiQt/tiktmd.h \
+-    ../WiiQt/nusdownloader.h \
+-    ../WiiQt/uidmap.h \
+-    ../WiiQt/nanddump.h \
+-    ../WiiQt/settingtxtdialog.h \
+-    ../WiiQt/wad.h
++    WiiQt/tools.h \
++    WiiQt/uidmap.h \
++    WiiQt/sharedcontentmap.h \
++    WiiQt/tiktmd.h \
++    WiiQt/nusdownloader.h \
++    WiiQt/uidmap.h \
++    WiiQt/nanddump.h \
++    WiiQt/settingtxtdialog.h \
++    WiiQt/wad.h
+ 
+ FORMS    += mainwindow.ui \
+-    ../WiiQt/settingtxtdialog.ui
++    WiiQt/settingtxtdialog.ui
+ 
+ RESOURCES += \
+     rc.qrc

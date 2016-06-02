@@ -1,0 +1,384 @@
+xul-ext-configuration-mania (1.23.2016051501-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Supporting decoder options in "Browser"->"Multimedia" has been updated (issue #221):
+    - "Enable Window Media Foundation" has been marked as obsolete since Firefox 42 (ref Bug 1185782)
+    - "Enable Window Media Foundation" which requires Firefox 44 has also been added (ref Bug 1234092)
+    - "Enable FFmpeg" has been added and requires Firefox 44 (ref Bug 1214932)
+    - "Enable built-in FFVPX" has been added and requires marked as Firefox 45 (ref Bug 1240630)
+    - "Enable Gecko Media Plugins (GMPs)" has been added and marked as requires Firefox 44 (ref Bug 1214932)
+    - "Enable Apple MP4" has been added (ref Bug 1209388)
+  * "Debug"->"Disable popup auto hide." has been added (issue #220)
+  * "Browser"->"Other"->"View source with external editor" is now enabled even if "View source in a new tab" is checked (issue #213)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 18 May 2016 20:14:56 +0200
+
+xul-ext-configuration-mania (1.23.2016031901-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Bugfix: issue#214 "Patch 1254752 breaks CM"
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 28 Mar 2016 12:35:10 +0200
+
+xul-ext-configuration-mania (1.23.2016030901-1nano) unstable; urgency=low
+
+  * New upstream release
+  * "Security"->"JavaScript"->"More Advanced"->"Disable Changing images" has
+    been marked as obsolete since Firefox 43 (issue#211)
+  * New pref
+    * "HTTP Network"->"Header"->"Accept-Encoding (for HTTPS)" (issue#212)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:22:51 +0100
+
+xul-ext-configuration-mania (1.23.2015123102-1nano) unstable; urgency=low
+
+  * New upstream release
+  * "Add-ons"->"Allow unsigned add-ons to be installed" has been deleted by AMO
+    reviewer request. (issue#209)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 06 Jan 2016 10:31:29 +0100
+
+xul-ext-configuration-mania (1.23.2015121901-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix version message in "Addons"->"Allow unsigned add-ons to be installed" 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 27 Dec 2015 19:33:07 +0100
+
+xul-ext-configuration-mania (1.23.2015121301-1nano) unstable; urgency=low
+
+  * New upstream release
+    - "notificationclick" has been added to "Security"->"Popup Win"->"Allow to
+      open when" (issue#208)
+    - "Add-ons"->"Allow unsigned add-ons to be installed" (issue#192)
+    - "Browser"->"Other"->"Enable One-Click Searches UI in the search bar" has
+      been renamed to "Disable One-Click Searches UI in the search bar" and mark
+      it as obsolete since Firefox 43 (issue#207)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 15 Dec 2015 19:15:37 +0100
+
+xul-ext-configuration-mania (1.23.2015110501-1nano) unstable; urgency=low
+
+  * New upstream release
+    - The obsolute/require-msg tag such as "Obsolete since Firefox XX" has changed
+      to be highlighted on mouse over. (issue #203)
+    - "UI"->"Other"->"Unix (X-Window) style mouse behaviour"->"Go to URL stored
+      in clipboard by middle mouse click" has changed to be disabled when
+      "Paste when clicked middle mouse button" is checked. (issue #204)
+    - Fix some memory leak (issue #205)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 10 Nov 2015 17:40:21 +0100
+
+xul-ext-configuration-mania (1.23.2015101801-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.23.2015100301
+      - A regression-bug issue has been fixed: "reset" button does not work (#197)
+    1.23.2015101801
+      - "Security"->"Privacy"->"Tracking Protection"->"Enable Tracking Protection
+        for Private Browsing", issue #200
+      - "Browser"->"Page control"->"Force frames to be resizable" has been marked
+        as "Obsolete since Firefox 42", issue #198
+      - "UI"->"Others"->"Open Preference in tab instead of dialog" has been
+        replaced with "Open Preference in dialog instead of tab" marked as
+        "Obsolete since Firefox 42". issue #199
+      - "Option" button on the addon panel (about:addons) has changed to open
+        a dialog, not a tab. issue #199
+      - "Configuration Mania" widget button has changed to activate/focus the
+        existing about:confmania tab (i.e. not to open a new tab) when the tab
+        already opened. issue #202
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Oct 2015 19:49:32 +0100
+
+xul-ext-configuration-mania (1.23.2015092101-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New pref: "Browser"->"Others"->"View source in a new tab" (issue #191)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Sep 2015 19:06:51 +0200
+
+xul-ext-configuration-mania (1.23.2015090101-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New pref
+      - "Browser"->"Others"->"Network predictor"->"Max number of sockets
+         allowable for a speculative connection." issue #189
+    - Bugfix
+      - issue #195 "Debug"->"For Debbuging"->"Enable JavaScript dump() output"->
+        "Output file"->"Browse..." opens a "Open" file dialog, not "Save" file
+        dialog.
+    - Full compatible with e10s, issue #193
+    - "Browser"->"TabBrowsing"->"New Tab"->"URL" has been marked as obsolete
+       since Firefox 41, issue #190
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 01 Sep 2015 19:31:53 +0200
+
+xul-ext-configuration-mania (1.22.2015081001-1nano) unstable; urgency=low
+
+  * New upstream release
+    - This release has droped Firefox 31-37 support.
+    - New preferences:
+      - "Security"->"Popup Win."->"On opening new window by clicking links that
+         specify target attribute" (issue #186)
+      - "Browser"->"Others"->"Firefox Hello" (issue #181)
+      - "Browser"->"Page control"->"Enable CSS vertical text" (issue #188)
+    - "Reset" button on the panel now asks whether revert the settings to the
+       default values or the values before the addon installation. (issue #183)
+    - The in-content configuration mania panel (about:confmania) has been
+      changed to new design. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 10 Aug 2015 16:37:54 +0200
+
+xul-ext-configuration-mania (1.21.2015062401-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.21.2015060101
+      - "Open with about:config" has been added on the context menu
+        (issue #178)
+      - 'Browser'->'Others'->'Jumplist' has been moved to 'UI'->'Taskbar'
+        ->'Jumplist' (issue #161)
+      - New preference
+        - 'Browser'->'Web API'->'Enable Service Workers' (issue #180)
+        - 'Browser'->'Web API'->'Enable Web Components (Shadow DOM)'
+          (issue #182)
+        - 'Browser'->'Page control'->'Image'->'Multiple Source Image'
+          (issue #179)
+    1.21.2015062401
+      - "Reset" buttons has been added on each panel in in-content
+        configuration mania (about:confmania). issue #184
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jul 2015 17:48:14 +0200
+
+xul-ext-configuration-mania (1.21.2015041501-1nano) unstable; urgency=low
+
+  * New upstream release
+    - "Browser" -> "Multimedia" -> "Enable on Youtube only (youtube.com,
+      youtube-nocookie.com)" has been marked as Firefox 36-37; issue #174
+    - Add an OMTC warning message in Browser -> Page control -> Hardware
+      acceleration; issue #173
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 24 Apr 2015 19:47:34 +0200
+
+xul-ext-configuration-mania (1.21.2015040701-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    Follow AMO guideline
+      Revert to the value it had before the addon is installed instead
+      of the default if users choose "Revert" on the dialog on disabling
+      uninstalling. (issue #170)
+    Bugfix
+      Fix issue #172 History/State does not works when about:confmania
+      is reloaded
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Apr 2015 20:35:48 +0200
+
+xul-ext-configuration-mania (1.21.2015040201-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Open a dialog that asks users on disabling/uninstalling if they
+      want to keep the changes.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 03 Apr 2015 18:11:25 +0200
+
+xul-ext-configuration-mania (1.20.2015030801-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Textual change
+      - "Browser"->"Multimedia"->"Enable OpenH264 Video Codec" is marked
+        as "Firefox 33-36"
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 11 Mar 2015 19:27:23 +0100
+
+xul-ext-configuration-mania (1.20.2015021801-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    - New Config
+      - "Security"->"Privacy"->"Tracking Protection (Firefox 33+)"
+        (issue #165)
+      - "UI"->"Find in page"->"Set find term to selection text when find
+        bar is opened and Ctrl-F is pressed." (issue #168)
+      - "Browser"->"Multimedia"->"Enable OpenH264 Video Codec (Firefox 33+)"
+        (issue #164)
+      - "Browser"->"Page control"->"Plugins"->"Disable protected mode in
+        Flash Player 11.3+ (Windows Vista/7:Firefox 35+,
+        Windows 8:Firefox 36+)" (issue #167)
+      - "Browser"->"Multimedia"->"Enable Media Source Extensions"
+        (issue #169)
+      - "UI"->"Others"->"Themes" (issue #166)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 24 Feb 2015 21:01:15 +0100
+
+xul-ext-configuration-mania (1.20.2015021401-1nano) unstable; urgency=low
+
+  * new upstream bugfix release
+    - Bugfix (UI enhancement)
+      - Enlarge "Security"->"Popup Win."->"Allow to open with:"
+      - Let "UI"->"Other"->"Apply instance and the dialog is modeless"
+        disabled unless "UI"->"Other"->"Open Preference in tab instead of
+        dialog" is checked. (issue #163)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 15 Feb 2015 13:29:00 +0100
+
+xul-ext-configuration-mania (1.20.2014120302-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    - Drop Firefox 24-30 support.
+    - New Config
+        "Browser"->"Others"->"Network predictor", issue #150
+        "Browser"->"Others"->"Enable One-Click Searches UI in the search bar
+          (Firefox 34+)", issue #159
+        "Browser"->"Page control"->"Enable Off Main Thread Compositing
+          (OMTC)", issue #162
+    - Moved/Renamed Config (issue #161)
+        "Browser"->"Others"->"Action when Pressing [Backspace] :" has been
+           moved to "UI"->"Key Navigation"->"Action when Pressing [Backspace] :"
+        "Browser"->"Others"->"Enable Geolocation" has been moved to "Browser"
+           ->"Web API"->"Enable Geolocation"
+        "Browser"->"Others"->"Enable Full Screen API" has been moved to
+          "Browser"->"Web API"->"Enable Full Screen API"
+        "Browser"->"Others"->"Enable Battery Status API" has been moved
+          to "Browser"->"Web API"->"Enable Battery Status API"
+        "Browser"->"Others"->"Enable Messaging (SMS) API" has been moved
+          to "Browser"->"Web API"->"Enable Messeging (SMS) API"
+        "Browser"->"Others"->"Enable Vibration API" has been moved to
+          "Browser"->"Web API"->"Enable Vibration API"
+        "Browser"->"Page control"->"Enable WebGL" has been moved to "Browser"
+          "Web API"->"Enable WebGL"
+        "Browser"->"Smart Browsing"->"Enable Internet Keywords" has been
+          moved (and renamed) to "Browser"->"Location Bar"->"Unknown Locations"
+        "Browser"->"Smart Browsing"->"Domain Guessing" has been moved to
+          "Browser"->"Location Bar"->"Gomain Guessing"
+    - Fix bug
+        issue #160 WARNING: gPrefWindow.prefBrowser.onSmartBrowsingSyncFrom
+          is not a function
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 27 Nov 2014 09:42:07 +0100
+
+xul-ext-configuration-mania (1.19.2014111601-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    * Electrolysis(e10s) --- multiprocess Firefox --- experimental support
+      (mozilla bug 1096056, issue#157)
+    * The in-content configuration mania URL is now about:confmania
+      (instead of chrome: address).
+    * fix issue#158: Right-click context menu is not displayed on the
+      in-content configuration mania tab
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Nov 2014 20:50:57 +0100
+
+xul-ext-configuration-mania (1.19.2014101101-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    "Browser"->"Page control"->"Enable CSS 3D Transform" has been
+    removed since `layout.3d-transforms.enabled` is no longer used
+    (i.e. CSS 3D transform is always enabled.), issue #154
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 11 Oct 2014 18:29:11 +0200
+
+xul-ext-configuration-mania (1.19.2014091501-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    Update of locale messages and the compatible version.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 25 Sep 2014 17:52:19 +0200
+
+xul-ext-configuration-mania (1.19.2014082301-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    Bugfix
+      In-content Configuration Mania UI layout is broken on Firefox 31
+      (issue #151)
+     'Configuration Mania' menuitem no function on a non-official firefox
+     build which does not have 'browser.preferences.inContent' pref
+     (e.g. Palemoon) (issue #153)
+    Pref change
+     "Browser"->"Page control"->"Disable frames (up-to Firefox 31)" has
+     been added and the "Enable frames" has been removed (issue #152)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 02 Sep 2014 18:29:01 +0200
+
+xul-ext-configuration-mania (1.19.2014072201-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    New prefs
+      'Debug'->'For Debugging'->'Enable JavaScript dump() output'->'Output
+      file:' issue #149
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Jul 2014 10:35:22 +0200
+
+xul-ext-configuration-mania (1.19.2014062402-1nano) unstable; urgency=low
+
+  * new upstream stable release
+    New prefs
+      "Security"->"JavaScript"->"More Advanced"->"Disallow to dispatch
+      clipboard events" issue #146
+      "Browser"->"Other"->"Geolocation service URL" issue #148
+      "Browser"->"Session Store"->"Store extra session data"->
+      "On quit Firefox" issue #147
+      "Browser"->"Session Store"->"Restore on demand" issue #147
+    Bugfix
+      fix a bug that "Browser"->"Other"->"View source with external editor"
+      ->"Editor path:" is not displayed.
+    Textual change
+      "Security"->"Anti-Virus"->"Disable saving the security zone information
+      in the Alternate Data Stream of downloaded executable files on Windows"
+      is marked as "Firefox 26-28" issue #145
+      "Browser"->"TabBrowsing"->"Display a close button" is marked as up-to
+      Firefox 30 issue #144
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Jun 2014 16:41:45 +0200
+
+xul-ext-configuration-mania (1.19.2014040501-1nano) unstable; urgency=low
+
+  * new upstream stable release
+  * "Browser" -> "Download" -> "Use download panel" is marked as up-to
+    Firefox 27
+  * "Browser" -> "Tab Browsing" -> "Tabs on Top" is marked as up-to
+    Firefox 28
+  * Firefox 29+ Australis UI support
+  * Configuration Mania is now restartless! (a.k.a. bootstrap extension)
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 07 Apr 2014 17:27:07 +0200
+
+xul-ext-configuration-mania (1.18.2014022801-1nano) unstable; urgency=low
+
+  * new upstream stable release:
+  * Drop Firefox 17-23 support
+  * Update user-agent preset (issue #136)
+  * New Preference: "Security"->"Anti-Virus"-> "Disable saving the security
+    zone information in the Alternate Data Stream of downloaded executable
+    files on Windows" (issue #135)
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 02 Mar 2014 19:37:02 +0100
+
+xul-ext-configuration-mania (1.17.2014011501-1nano) unstable; urgency=low
+
+  * new upstream stable release
+  * New preferences:
+    - Browser->abs->Warn me when closing other multiple tabs
+    - Browser->Others->Jumplist
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Thu, 23 Jan 2014 21:00:51 +0100
+
+xul-ext-configuration-mania (1.17.2013121401-1nano) unstable; urgency=low
+
+  * new upstream stable release
+  * New preferences:
+    - Browser->Others->Exceptions... FullScreen (issue #129)
+    - Browser->Others->Exceptions... Geolocation (issue #129)
+    - "UI"->"Other"->"Selection behaviour when double-clicking text" (issue #130)
+    - Browser->Media->EnableXXX (issue #122)
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 11 Jan 2014 22:49:37 +0100
+
+xul-ext-configuration-mania (1.17.2013102002-1nano) unstable; urgency=low
+
+  * new upstream stable release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 08 Dec 2013 19:01:07 +0100
+
+xul-ext-configuration-mania (1.17.2013082001-1nano) unstable; urgency=low
+
+  * initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Mon, 26 Aug 2013 18:27:28 +0200

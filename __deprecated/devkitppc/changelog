@@ -1,0 +1,20 @@
+devkitppc (26-3nano) unstable; urgency=low
+
+  * fixup packaging
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sun, 19 Jan 2014 19:00:02 +0100
+
+devkitppc (26-2nano) unstable; urgency=low
+
+  * add i386 version
+  * package amd64 version as: devkitppc-amd64
+  * package i386 version as: devkitppc-i386
+  * make amd64 and i386 version conflict each other
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Tue, 06 Aug 2013 15:50:17 +0200
+
+devkitppc (26-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@tuxfamily.org>  Sat, 25 Aug 2012 00:32:06 +0200

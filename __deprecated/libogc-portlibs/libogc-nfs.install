@@ -1,0 +1,3 @@
+opt/devkitpro/libogc/lib/cube/libnfs.a
+opt/devkitpro/libogc/lib/wii/libnfs.a
+opt/devkitpro/libogc/include/nfs.h

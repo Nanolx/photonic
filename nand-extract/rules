@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/nand-extract/usr/bin/
+	install -m755 nandExtract $(CURDIR)/debian/nand-extract/usr/bin/nand-extract
+	mkdir -p $(CURDIR)/debian/nand-extract/usr/share/pixmaps/
+	install -m644 *.png $(CURDIR)/debian/nand-extract/usr/share/pixmaps/

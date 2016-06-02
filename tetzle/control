@@ -1,0 +1,16 @@
+Source: tetzle
+Section: games
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), g++, qt5-qmake, qtbase5-dev
+Standards-Version: 3.9.5
+Homepage: http://qt-apps.org/content/show.php/Tetzle?content=81398
+
+Package: tetzle
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Jiqsaw puzzle game
+ A jigsaw puzzle game that uses tetrominoes for the pieces. Any image
+ can be imported and used to create puzzles with a wide range of sizes.
+ Games are saved automatically, and you can select between currently in
+ progress games.

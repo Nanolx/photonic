@@ -1,0 +1,22 @@
+Source: iqpuzzle
+Section: games
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 9), qtbase5-dev, qt5-qmake, pkg-config
+Standards-Version: 3.9.5
+Homepage: https://launchpad.net/iqpuzzle
+
+Package: iqpuzzle
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, iqpuzzle-data
+Description: A diverting I.Q. challenging puzzle
+ Pentominos are used as puzzle pieces and currently
+ 47 different board shapes are available, which have
+ to be filled with them.
+
+Package: iqpuzzle-data
+Architecture: all
+Replaces: iqpuzzle (<< 0.9.0)
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A diverting I.Q. challenging puzzle
+ Data files for iqpuzzle.
