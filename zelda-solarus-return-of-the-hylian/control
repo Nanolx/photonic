@@ -1,4 +1,4 @@
-Source: zelda-roth-se
+Source: zelda-solarus-return-of-the-hylian
 Section: games
 Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
@@ -6,7 +6,9 @@ Build-Depends: debhelper (>= 8.0.0), cmake, zip
 Standards-Version: 3.9.4
 Homepage: http://solarus-games.org
 
-Package: zelda-roth-se
+Package: zelda-solarus-return-of-the-hylian
+Provides: zelda-roth-se
+Replaces: zelda-roth-se
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.4.5)
 Description: Zelda Fangame using Solarus engine
