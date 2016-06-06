@@ -1,3 +1,11 @@
+xul-ext-dovesec (2.0.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Addresses a compatibility warning for Thunderbird versions 41.0 and above
+    - Fixes a bug that cause stuck DNS queries (issue #24)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jun 2016 16:11:44 +0200
+
 xul-ext-dovesec (2.0-1nano) unstable; urgency=low
 
   * New upstream release
