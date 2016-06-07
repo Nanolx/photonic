@@ -1,3 +1,20 @@
+xul-ext-classic-theme-restorer (1.5.3~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      - Polish (pl-PL) translation updated (thanks to Mrere)
+      - Japanese (ja) translation updated (thanks to mm_k)
+      - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+    [general change(s)]
+      - disable HTML5 video fullscreen warning: adjusted default timings '400->200'
+    [add-on compatibility]
+      - added incompatibility warning for 'Tabs on Bottom' add-on
+      - added incompatibility warning for 'Tabs on Bottom (Australis)' add-on 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 07 Jun 2016 19:05:35 +0200
+
 xul-ext-classic-theme-restorer (1.5.3~beta3-1nano) unstable; urgency=low
 
   * New upstream release
