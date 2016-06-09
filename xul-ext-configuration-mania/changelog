@@ -1,3 +1,11 @@
+xul-ext-configuration-mania (1.23.2016060901-1nano) unstable; urgency=low
+
+  * New upstream release
+    - "Add-ons"->"Run browser plugins in an own process (OOPP)" has been marked
+      as obsolete since Firefox 43, issue #224
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 09 Jun 2016 19:35:01 +0200
+
 xul-ext-configuration-mania (1.23.2016051501-1nano) unstable; urgency=low
 
   * New upstream release
