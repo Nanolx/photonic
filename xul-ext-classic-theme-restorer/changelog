@@ -1,3 +1,27 @@
+xul-ext-classic-theme-restorer (1.5.3~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.3~beta5
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - removed all "(about:config preference)" references
+      [general change(s)]
+        - minor prefwindow fixes
+        - added full names of default "about:config" preferences 
+    1.5.3~beta6
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Greek (el) translation updated (thanks to George M.)
+        - Italian (it) translation updated (thanks to Styb)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix(es)]
+        - Windows 10 & Fx47+ & maximized mode: issue with custom tab height of 24/25px
+        - MacOSX & Fx47+ & 'reduce space above tabs' option: stopped working after restart 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 09 Jun 2016 19:32:52 +0200
+
 xul-ext-classic-theme-restorer (1.5.3~beta4-1nano) unstable; urgency=low
 
   * New upstream release
