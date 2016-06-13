@@ -1,3 +1,25 @@
+xul-ext-classic-theme-restorer (1.5.4~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.3~beta7
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Danish (da-DK) translation updated (thanks to scootergrisen)
+        - optimized a few English descriptions (thanks to scootergrisen)
+      [fix(es)]
+        - Autocomplete Popup > Alternative appearance: missing 'bookmarked'-indicator
+    1.5.4~beta1
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new option(s)]
+        - Location bar (2): Remove 'Search with...'/'Visit' (Fx48+)
+      [fix(es)]
+        - Advanced > Pocket: default preference changed in Fx46
+      [general change(s)]
+        - Fx49+: removed 'browser.urlbar.unifiedcomplete' from prefwindow 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 13 Jun 2016 16:32:45 +0200
+
 xul-ext-classic-theme-restorer (1.5.3~beta6-1nano) unstable; urgency=low
 
   * New upstream release
