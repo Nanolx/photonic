@@ -1,3 +1,33 @@
+xul-ext-send-later (5.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Send Later is now fully compatible with Enigmail! Many thanks to Patrick
+      Brunschwig from the Enigmail development team for working with me to make
+      this possible.
+    - Thunderbird now pops up the spell-check-before-send window (if it is enabled)
+      and checks messages for empty Subject lines when they are scheduled using
+      buttons or input fields on the compose window toolbar. Previously, neither
+      spell-checking nor the empty-subject check would happen in this context
+      (i.e., this was a bug, and it is now fixed).
+    - The "Send Now" button in the Send Later dialog now pops up a dialog when
+      it is used, to ensure that users don't click it when they actually meant
+      to click the scheduled send button. There is a checkbox in this dialog to
+      allow it to be suppressed in the future.
+    - In a further effort to reduce confusion about the "Put In Outbox" and
+      "Send Now" buttons in the Send Later dialog, the "Put In Outbox" button
+      is now only visible when the dialog is popped up using "File | Send Later"
+      or Ctrl-Shift-Enter, and the "Send Now" button is now only visible when the
+      "'Send' Does 'Send Later'" preference is enabled and the dialog is popped
+      up using "File | Send Now" or Ctrl-Enter.
+    - This release includes many translation updates. Thanks, as always, to my
+      wonderful team of translators!
+    - This release increases compatibility settings for newer Thunderbird and
+      Seamonkey releases.
+    - As a side benefit of the other work enumerated above, a good chunk of the
+      add-on's code has been cleaned up and refactored.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 15 Jun 2016 18:45:04 +0200
+
 xul-ext-send-later (5.0.1-1nano) unstable; urgency=low
 
   * New upstream release
