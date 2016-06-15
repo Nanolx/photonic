@@ -1,3 +1,17 @@
+xul-ext-classic-theme-restorer (1.5.4~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Japanese (ja) translation updated (thanks to mm_k)
+      - Russian (ru) translation updated (thanks to Alexei)
+      - Estonian (et) translation updated (thanks to Maidur)
+    [fix(es)]
+      - Win10: 'Tab title in Fx titlebar' option refused to work
+      - Aero colors option + 'Responsive Design Mode': toolbar glitch
+      - Add-on managers 'compact view+' option was visible with full themes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 15 Jun 2016 18:47:24 +0200
+
 xul-ext-classic-theme-restorer (1.5.4~beta1-1nano) unstable; urgency=low
 
   * New upstream release
