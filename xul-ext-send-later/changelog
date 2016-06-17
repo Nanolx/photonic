@@ -1,3 +1,10 @@
+xul-ext-send-later (5.2.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - see: https://addons.mozilla.org/en-US/thunderbird/addon/send-later-3/versions/?page=1#version-5.2.1
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 17 Jun 2016 19:33:55 +0200
+
 xul-ext-send-later (5.1-1nano) unstable; urgency=low
 
   * New upstream release
