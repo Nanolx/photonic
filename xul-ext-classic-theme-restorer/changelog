@@ -1,3 +1,39 @@
+xul-ext-classic-theme-restorer (1.5.4~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.4~beta3
+      [locale(s)]
+      - Czech (cs) translation updated (thanks to poljos)
+      - Polish (pl-PL) translation updated (thanks to Mrere)
+      - Japanese (ja) translation updated (thanks to mm_k)
+      - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix(es)]
+      - Win10: custom tab height option
+      [new option(s)]
+      - Tabs (1): always show 'all tabs' button
+      [general change(s)]
+      - various minor changes
+    1.5.4~beta4
+      [locale(s)]
+      - Polish (pl-PL) translation updated (thanks to Mrere)
+      - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+      - Fx50 + squared tabs v1 + container tabs
+      - Fx50 + squared tabs (australized) v1 + container tabs
+      [new option(s)]
+      - Advanced: added switch for privacy.userContext.enabled (Fx50+)
+      - Advanced: added switch for findbar.modalHighlight (Fx50+)
+      - Advanced: added switch for findbar.highlightAll (Fx50+)
+      - Advanced: added switch for dom.flyweb.enabled (Fx50+)
+    1.5.4~beta5
+      [locale(s)]
+      - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new option(s)]
+      - Location bar (2) > Autocomplete popup: 'bold & underlined' marking of hits 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 17 Jun 2016 19:34:51 +0200
+
 xul-ext-classic-theme-restorer (1.5.4~beta2-1nano) unstable; urgency=low
 
   * New upstream release
