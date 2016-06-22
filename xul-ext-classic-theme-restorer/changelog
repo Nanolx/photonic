@@ -1,3 +1,42 @@
+xul-ext-classic-theme-restorer (1.5.4~beta8-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.4~beta6
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+        - possible issue with "remove 'search with' and 'visit'" option
+        - Fx50 + 'alternative add-ons manager appearance': empty space glitch
+        - Fx50 + 'add-ons manager compact view': empty space glitch
+      [general change(s)]
+        - options window button: label tweak
+        - minor tweaks on CTRs prefwindow (thanks to strel)
+        - Fx47+ & MacOSX & 'hide tabs toolbar with one tab': removed 'reduced
+          hiding delay on startup' option
+    1.5.4~beta7
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+      [new option(s)]
+        - Location bar (3) > Show separator between results
+      [general change(s)]
+        - moved 'autocomplete popup' option to Location bar (3) category 
+    1.5.4~beta8
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Spanish (es) translation updated (thanks to strel)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option(s)]
+        - Location bar (3) > Autocomplete popup > Highlighting of text hits
+      [general change(s)]
+        - removed autocomplete popup option 'bold & underlined marking of hits'
+        - minor tweaks on 'alt autocomplete popup' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 22 Jun 2016 19:41:38 +0200
+
 xul-ext-classic-theme-restorer (1.5.4~beta5-1nano) unstable; urgency=low
 
   * New upstream release
