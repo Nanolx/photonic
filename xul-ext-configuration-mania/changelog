@@ -1,3 +1,17 @@
+xul-ext-configuration-mania (24.0.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Versioning rule has changed to semver-based. So this version is 24.0.0
+      (not 1.24.xxxxxxxxxx) (issue#229)
+    - Firefox 38-44 support has been dropped. (issue #223)
+    - Search bar on the panel has been added (issue#226)
+    - Configuration Mania is now in-content panel only. (issue#225)
+    - "Browser"->"Page control"->"Hardware acceleration"->"Enable Off Main
+      Thread Compositing (OMTC)" has been marked as obsolete since Firefox 48
+      (issue #222).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 26 Jun 2016 20:23:27 +0200
+
 xul-ext-configuration-mania (1.23.2016060901-1nano) unstable; urgency=low
 
   * New upstream release
