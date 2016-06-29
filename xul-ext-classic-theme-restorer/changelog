@@ -1,3 +1,37 @@
+xul-ext-classic-theme-restorer (1.5.4~beta12-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.4~beta10
+      [locale(s)]
+        - Italian (it) translation updated (thanks to Styb)
+        - many tweaks for German locale (thanks to Johnni)
+      [new option(s)]
+        - Location bar (3) > Aero colors for highlighted results (Fx48+)
+      [general change(s)]
+        - many minor improvements
+        - modified 'alt. autocomplete popup' option
+        - dropped support for Fx 29-44 
+    1.5.4~beta11
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+        - pinned tab width: glitches caused by beta10
+        - small button mode: glitches caused by beta10
+      [general change(s)]
+        - Fx48: removed 'browser.urlbar.unifiedcomplete' switch from prefwindow
+    1.5.4~beta12
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix(es)]
+        - (Fx48 beta 3+) 'alt. autocomplete' option error 
+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 29 Jun 2016 19:33:00 +0200
+
 xul-ext-classic-theme-restorer (1.5.4~beta9-1nano) unstable; urgency=low
 
   * New upstream release
