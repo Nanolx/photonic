@@ -1,3 +1,9 @@
+szs (1.52a-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 03 Jul 2016 12:31:52 +0200
+
 szs (1.51a+r7132-1nano) unstable; urgency=low
 
   * New upstream release
