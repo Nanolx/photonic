@@ -1,3 +1,9 @@
+cutemarked (0.11.3-2nano) unstable; urgency=low
+
+  * new build against libhunspell 1.4
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 10 Jul 2016 10:54:43 +0200
+
 cutemarked (0.11.3-1nano) unstable; urgency=low
 
   * New upstream release
