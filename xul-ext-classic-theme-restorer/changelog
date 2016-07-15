@@ -1,3 +1,14 @@
+xul-ext-classic-theme-restorer (1.5.5~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    [general change(s)]
+      - CTR prefwindow: added 'Support' button with links to forums and Github
+      - increased delay for applying 'alt. bg color for panel menu popups' option
+    [add-on compatibility]
+      - CTR prefwindow: additional note for 'Add-on Compatibility Reporter' users 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 Jul 2016 21:29:42 +0200
+
 xul-ext-classic-theme-restorer (1.5.5~beta2-1nano) unstable; urgency=low
 
   * New upstream release
