@@ -1,3 +1,20 @@
+xul-ext-classic-theme-restorer (1.5.5~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.5~beta4
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+        - Windows & Fx47+ & OS titlebar & 'double click to open new tab' option
+      [add-on compatibility]
+        - TabMixPlus: close button icons settings affect TMPs close button on tab bar 
+    1.5.5~beta5
+      [fix(es)]
+        - issues with 'alternative background color for panel menu popups' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 17 Jul 2016 10:17:46 +0200
+
 xul-ext-classic-theme-restorer (1.5.5~beta3-1nano) unstable; urgency=low
 
   * New upstream release
