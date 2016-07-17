@@ -1,3 +1,9 @@
+segher-wii-tools (20101221-2nano) unstable; urgency=low
+
+  * rebuild against latest libssl
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 14 Jul 2016 16:55:03 +0200
+
 segher-wii-tools (20101221-1nano) unstable; urgency=low
 
   * Initial release

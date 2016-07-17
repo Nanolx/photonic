@@ -1,8 +1,8 @@
 Source: segher-wii-tools
 Section: utils
 Priority: extra
-Maintainer: Christopher Roy Bratusek <zanghar@freenet.de>
-Build-Depends: debhelper (>= 7.0.50~)
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 7.0.50~), make, libssl-dev, gcc
 Standards-Version: 3.9.1
 Homepage:
 
