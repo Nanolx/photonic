@@ -1,3 +1,13 @@
+xul-ext-classic-theme-restorer (1.5.5~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Estonian (et) translation updated (thanks to Maidur)
+    [general change(s)]
+      - Fx47+ & Windows titlebar & 'Tabs (1) > double click to open new tab' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 18 Jul 2016 16:41:31 +0200
+
 xul-ext-classic-theme-restorer (1.5.5~beta5-1nano) unstable; urgency=low
 
   * New upstream release
