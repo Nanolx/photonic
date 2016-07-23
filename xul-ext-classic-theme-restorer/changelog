@@ -1,3 +1,25 @@
+xul-ext-classic-theme-restorer (1.5.5~beta8-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.5~beta7
+      [locale(s)]
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - glitches with 'general ui (1) > mov. back/forward buttons' option
+        - glitches with 'general ui (1) > small navigator toolbar buttons' option
+      [general change(s)]
+        - minor prefwindow tweaks
+    1.5.5~beta8
+      [fix(es)]
+        - 'Location/search bar > reduce location/search bars height': location bars border (Windows 10)
+        - 'General ui (1) > mov. back/forward buttons': location bars button overlapping on add-on bar
+      [general change(s)]
+        - 'Add-on manager > alt. appearance' option: support for new 'Get Add-ons' page
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 23 Jul 2016 10:40:14 +0200
+
 xul-ext-classic-theme-restorer (1.5.5~beta6-1nano) unstable; urgency=low
 
   * New upstream release
