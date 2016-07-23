@@ -1,3 +1,18 @@
+xul-ext-configuration-mania (24.1.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New pref:
+    - "Security"->"SSL"->"SSL Protocol Versions"->"TLS 1.3" (issue #230)
+    - "Security"->"Content"->"Same origin policy for local documents" (issue #228)
+    - "Security"->"Referrer"->"Spoof Referrer URL and use the target URL as the
+      referrer" (issue #232)
+    - "Security"->"Referrer"->"Referrer URL trimming policy", "Security"->"Referrer"
+      ->"Cross origin policy" (issue #232)
+  * "Debug"->"Developer Tools"->"Enable remote debugging for Android Firefox"
+    has been renamed to "Enable remote debugging" (issue #231)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 23 Jul 2016 10:42:17 +0200
+
 xul-ext-configuration-mania (24.0.0-1nano) unstable; urgency=low
 
   * New upstream release
