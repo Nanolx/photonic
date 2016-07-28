@@ -1,3 +1,15 @@
+xul-ext-classic-theme-restorer (1.5.5~beta9-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Estonian (et) translation updated (thanks to Maidur)
+      - Spanish (es) translation updated (thanks to strel)
+      - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+    [fix(es)]
+      - glitches with 'general ui (1) > mov. back/forward buttons' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 28 Jul 2016 19:44:27 +0200
+
 xul-ext-classic-theme-restorer (1.5.5~beta8-1nano) unstable; urgency=low
 
   * New upstream release
