@@ -1,3 +1,10 @@
+solarus-quest-editor (1.5.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * see changelog.txt
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 28 Jul 2016 19:41:46 +0200
+
 solarus-quest-editor (1.4.5-1nano) unstable; urgency=low
 
   * New upstream release

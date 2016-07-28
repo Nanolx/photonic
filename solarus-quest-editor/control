@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
 Build-Depends: debhelper (>= 9), cmake, libopenal-dev, libmodplug-dev, libphysfs-dev, libsdl2-dev,
                libsdl2-gfx-dev, libsdl2-image-dev, libsdl2-ttf-dev, vorbis-tools, libvorbis-dev,
-               liblua5.1-0-dev, libluajit-5.1-dev, qtbase5-dev, qttools5-dev, qttools5-dev-tools,
-               libmodplug-dev, solarus
+               libluajit-5.1-dev, qtbase5-dev, qttools5-dev, qttools5-dev-tools, libmodplug-dev,
+               solarus
 Standards-Version: 3.9.6
 Homepage: http://www.solarus-games.org/
 
