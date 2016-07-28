@@ -1,3 +1,11 @@
+zelda-solarus-xd (1.11.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Upgrade to Solarus 1.5.0.
+  * Fix typo in French dialogs.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 28 Jul 2016 19:43:17 +0200
+
 zelda-solarus-xd (1.10.3-1nano) unstable; urgency=low
 
   * New upstream release
