@@ -1,3 +1,16 @@
+xul-ext-print-edit (16.10-1nano) unstable; urgency=low
+
+  * New upstream release
+    16.9
+      • Chg: Updated language translations (will need further updating).
+      • Chg: Updated to be compatible with Firefox 50.0.
+      • Fix: Print Preview toolbar did not display the new Simplify Page button (FF49+). Fixed.
+      • Fix: Saving PDF crashed because new outerWindowID parameter is required in call to print (FF49+) (e10s). Fixed.
+    16.10
+      • Fix: Save as HTML Complete cropped images whose natural size was greater than their displayed size. Fixed.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 28 Jul 2016 19:45:51 +0200
+
 xul-ext-print-edit (16.8-1nano) unstable; urgency=low
 
   * New upstream release
