@@ -1,3 +1,10 @@
+solarus (1.5.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * see changelog.txt
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 28 Jul 2016 19:29:09 +0200
+
 solarus (1.4.5-1nano) unstable; urgency=low
 
   * New upstream release

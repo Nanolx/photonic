@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
 Build-Depends: debhelper (>= 8.0.0), cmake, libopenal-dev, libmodplug-dev, libphysfs-dev, libsdl2-dev,
                libsdl2-gfx-dev, libsdl2-image-dev, libsdl2-ttf-dev, vorbis-tools, libvorbis-dev,
-               liblua5.1-0-dev, libluajit-5.1-dev
+               libluajit-5.1-dev
 Standards-Version: 3.9.3
 Homepage: http://www.solarus-engine.org/
 
