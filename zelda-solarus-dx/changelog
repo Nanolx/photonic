@@ -1,3 +1,14 @@
+zelda-solarus-dx (1.11.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Upgrade to Solarus 1.5.
+  * Fix wrong layer when leaving dungeon 10.
+  * Dungeon 2: Fix sound played twice when activating the statues.
+  * Dungeon 9: fix geting back to room entrance when touching spikes.
+  * English dialogs: rename Pegasus Shoes to Pegasus Boots.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 28 Jul 2016 19:35:53 +0200
+
 zelda-solarus-dx (1.10.3-1nano) unstable; urgency=low
 
   * New upstream release
