@@ -1,3 +1,17 @@
+zelda-solarus-return-of-the-hylian (1.1.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Upgrade to Solarus 1.5.
+  * Add German translation (thanks Wuzzy2!).
+  * Add Spanish translation (thanks Diarandor!).
+  * Fix initial cursor position in savegame menu after a new game.
+  * Fix stuck in a cliff west of the castle (#87).
+  * Fix silver arrows incorrectly changing the arrow counter (#88).
+  * Fix stats showing 47/46 monsters if a chicken was killed (#89).
+  * Dungeon 4: fix crash when picking the crystal as rabbit (#91).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 28 Jul 2016 19:34:08 +0200
+
 zelda-solarus-return-of-the-hylian (1.0.8-1nano) unstable; urgency=low
 
   * New upstream release

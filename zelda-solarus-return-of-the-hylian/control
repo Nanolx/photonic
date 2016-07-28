@@ -10,7 +10,7 @@ Package: zelda-solarus-return-of-the-hylian
 Provides: zelda-roth-se
 Replaces: zelda-roth-se
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.4.5)
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.5.0)
 Description: Zelda Fangame using Solarus engine
  Zelda Return of the Hylian Solarus Edition is a
  "The Legend Of Zelda - A Link To The Past"-like Fangame using
