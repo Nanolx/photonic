@@ -1,3 +1,22 @@
+xul-ext-classic-theme-restorer (1.5.5.1~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.5~beta10
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+      [fix(es)]
+        - tabs not on top mode: titlebar some windows with hidden toolbars
+    1.5.5.1~beta1
+      [locale(s)]
+        - French (fr) translation updated (thanks to BlackJack)
+      [fix(es)]
+        - movable location bar & Firefox 48s location bar popup
+        - 'Tabs (1) > hide tabs toolbar with one tab' option: glitch after startup (Windows)
+      [add-on compatibility]
+        - 'Web Developer' add-on: toolbar button appearance 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 31 Jul 2016 12:18:09 +0200
+
 xul-ext-classic-theme-restorer (1.5.5~beta9-1nano) unstable; urgency=low
 
   * New upstream release
