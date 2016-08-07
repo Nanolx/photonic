@@ -1,3 +1,35 @@
+patchimage (7.0.0-1nano) unstable; urgency=low
+
+  * new upstream stable release
+  * install 32bit pre-compiled tools into patchimage-tools-i386 package
+  * install 64bit pre-compiled tools into patchimage-tools-amd64 package
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 06 Aug 2016 22:00:50 +0200
+
+patchimage (6.3.0-1nano) unstable; urgency=low
+
+  * new upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 27 Jul 2016 18:35:32 +0200
+
+patchimage (6.2.2-1nano) unstable; urgency=low
+
+  * new upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 03 Jul 2016 20:23:24 +0200
+
+patchimage (6.2.1-1nano) unstable; urgency=low
+
+  * new upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 03 Jul 2016 12:21:38 +0200
+
+patchimage (6.2.0-1nano) unstable; urgency=low
+
+  * new upstream stable release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 02 Jul 2016 10:45:54 +0200
+
 patchimage (6.1.0-1nano) unstable; urgency=low
 
   * new upstream stable release
