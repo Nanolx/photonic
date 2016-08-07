@@ -1,3 +1,24 @@
+xul-ext-classic-theme-restorer (1.5.5.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      - Polish (pl-PL) translation updated (thanks to Mrere)
+      - Japanese (ja) translation updated (thanks to mm_k)
+    [fix(es)]
+      - Fx48+ & 'icons+text' mode & HiDPI mode: downloads button on navigation toolbar
+      - Fx48+ & 'General Ui (2) > Bookmarks menu button > other bookmarks' options
+      - Fx48+ & 'unsorted bookmarks' labels: renanamed to 'other bookmarks'
+      - Windows & Fx 47+ & 'Tabs (1) > hide tabs toolbar with one tab' option
+      - Fx48+: 'Location bar (3) > Autocomplete popup > alternative appearance' option
+      - Windows/MacOS & Fx 47+ & 'Tabs (1) > hide tabs toolbar with one tab' option
+      - Win8 &'Tabs (1) > tabs not on top': wrong tabs toolbar color
+    [general change(s)]
+      - Fx49+: removed 'Firefox Hello' switch from CTRs prefwindow
+      - minor prefwindow tweaks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 07 Aug 2016 09:41:41 +0200
+
 xul-ext-classic-theme-restorer (1.5.5.1~beta1-1nano) unstable; urgency=low
 
   * New upstream release
