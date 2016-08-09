@@ -1,3 +1,23 @@
+xul-ext-send-later (6.0.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    - BUG: Scheduling messages with monthly recurrence was broken and has been fixed.
+    - BUG: Fix incompatibility with Thunderbird versions before 17.
+    - BUG: Fix incompatibility with Seamonkey versions newer than 2.41a1.
+    - BUG: Fix the pop-up menu in the main Thunderbird window so it only pops up
+      when you click on the Thunderbird part of the status bar, rather than when
+      you click anywhere in the status bar.
+    - ENHANCEMENT: When there are no dynamic scheduling functions defined, i.e.,
+      before the first time the user has opened the dynamic function editor,
+      desensitize the dynamic function selector in the Send Later prompt window,
+      since there are no dynamic functions to select.
+    - ENHANCEMENT: Fix the height of the dynamic function pop-up menu in the Send
+      Later prompt window so that it is correctly full height, rather than being
+      very short until the user selects a function.
+    - I18N: Translation updates. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 09 Aug 2016 17:05:43 +0200
+
 xul-ext-send-later (6.0.2-1nano) unstable; urgency=low
 
   * New upstream release
