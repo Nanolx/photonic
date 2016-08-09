@@ -1,3 +1,40 @@
+xul-ext-classic-theme-restorer (1.5.5.3~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.5.3~beta1
+      [locale(s)]
+        - Polish (pl-PL) translation modified (thanks to hawkeye116477)
+        - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+        - Spanish (es) translation updated (thanks to strel)
+        - French (fr) translation updated (thanks to BlackJack)
+      [new option(s)]
+        - 'CTR > Other > Underline new options for current Firefox version'
+        -- currently only affecting Fx 47, 48, 50
+      [fix(es)]
+        - Fx48+ & 'Location bar (3) > Autocomplete popup > alternative appearance'
+    1.5.5.3~beta2
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere & hawkeye116477)
+      [fix(es)]
+        - Fx 45-47 & 'unsorted bookmarks' labels on localized browser versions
+        - MacOS/Linux: label of CTRs options window button
+      [new option(s)]
+        - Fx48: 'Tabs (2) > New tap page url > custom private new tab page url'
+      [add-on compatibility]
+        - 'TabMixPlus' add-on: fixed activity indicator on locked tabs 
+    1.5.5.3~beta3
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Polish (pl-PL) translation updated (thanks to Mrere & hawkeye116477)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+        - links/menuitems on CTRs prefwindow did nothing, if prefwindow was opened from add-on manager
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 09 Aug 2016 17:00:24 +0200
+
 xul-ext-classic-theme-restorer (1.5.5.2-1nano) unstable; urgency=low
 
   * New upstream release
