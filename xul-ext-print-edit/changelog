@@ -1,3 +1,13 @@
+xul-ext-print-edit (17.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Chg: Updated to be compatible with Firefox 51.0.
+    • Chg: Declared as multiprocess compatible (e10s).
+    • Fix: Conflict with Duplicate Tabs Closer add-on prevented
+      entry into print preview mode. Fixed. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 09 Aug 2016 17:04:40 +0200
+
 xul-ext-print-edit (16.10-1nano) unstable; urgency=low
 
   * New upstream release
