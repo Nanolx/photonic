@@ -1,3 +1,18 @@
+qt5-configuration-tool (0.25-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added environment variables verification
+  * added Frensh translation (Geiger David)
+  * updated Slovak translation (Ján Ďanovský)
+  * updated Russian translation
+  * updated Czech translation (fri)
+  * updated German translation (Ettore Atalan)
+  * updated Dutch (Netherlands) translation (Heimen Stoffels)
+  * updated Polish translation (Tomasz Przybył)
+  * updated Chinese (Taiwan) translation (Jeff Huang)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 10 Aug 2016 21:11:25 +0200
+
 qt5-configuration-tool (0.24-1nano) unstable; urgency=low
 
   * New upstream release
