@@ -1,3 +1,23 @@
+xul-ext-classic-theme-restorer (1.5.5.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.5.3~beta4
+      [new option(s)]
+        - Fx48+: 'Location bar (3) > Autocomplete popup > custom height limit'
+        - Fx50+: Location bar (3) > Autocomplete popup > Remove 'search with' and 'visit' items
+        - Fx51: 'Advanced > Autocomplete popups search selection' (default Fx setting!)
+      [fix(es)]
+        - Fx48+: 'Location bar (3) > Autocomplete popup > alternative appearance'
+        - Fx48+: 'Toolbars (1) > icons+text (exp.)' & downloads button: width value
+      [general change(s)]
+        - MacOS: restored prefwindows "OK" button
+        - removed code leftovers from Win8s metro button
+    1.5.5.3~beta5
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Polish (pl-PL) translation updated (thanks to Mrere) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 13 Aug 2016 10:08:34 +0200
+
 xul-ext-classic-theme-restorer (1.5.5.3~beta3-1nano) unstable; urgency=low
 
   * New upstream release
