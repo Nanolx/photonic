@@ -1,3 +1,28 @@
+xul-ext-classic-theme-restorer (1.5.6~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.6~beta1
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - French (fr) translation updated (thanks to BlackJack)
+      [fix(es)]
+        - Location bar (3) > Autocomplete popup > disable height limit (thanks to atelierJVA)
+        - Fx51+: Location bar (2) > "Favicon": image color/opacity
+        - Fx51+: Location bar (2) > "replace i-icon with globe": image color/opacity
+      [new option(s)]
+        - Fx48+: General UI (1) > General 'about:' pages: alternative appearance
+        - Windows/Linux & Fx50+: General UI (2) > Bookmarks on toolbar: old appearance
+      [general change(s)]
+        - Location bar (3) > Autocomplete popup > Remove 'search with' and 'visit' items
+    1.5.6~beta2
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - Tabs (1) > Tabs > remove empty favicon from pinned tabs
+        - Fx49+: General UI (2) > Bookmarks popup: hide recently added bookmarks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 17 Aug 2016 20:00:52 +0200
+
 xul-ext-classic-theme-restorer (1.5.5.3-1nano) unstable; urgency=low
 
   * New upstream release
