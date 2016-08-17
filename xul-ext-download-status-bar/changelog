@@ -1,3 +1,10 @@
+xul-ext-download-status-bar (14.0.0.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * e10s Multi Process Firefox 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 17 Aug 2016 19:59:40 +0200
+
 xul-ext-download-status-bar (13.4.2.2-1nano) unstable; urgency=low
 
   * New upstream release
