@@ -1,3 +1,11 @@
+xul-ext-print-edit (17.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Fix: Previous fix for conflict with Duplicate Tabs Closer add-on did not
+      work in all cases. Fixed. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 17 Aug 2016 19:55:49 +0200
+
 xul-ext-print-edit (17.0-1nano) unstable; urgency=low
 
   * New upstream release
