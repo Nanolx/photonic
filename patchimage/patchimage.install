@@ -1,0 +1,5 @@
+usr/bin/patchimage
+usr/share/patchimage/data
+usr/share/patchimage/database
+usr/share/patchimage/patches
+usr/share/patchimage/scripts
