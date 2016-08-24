@@ -1,3 +1,17 @@
+xul-ext-classic-theme-restorer (1.5.6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.6~beta5
+      [locale(s)]
+        - French (fr) translation updated (thanks to BlackJack)
+      [fix(es)]
+        - Location bar (3) > Autocomplete popup > disable height limit
+    1.5.6~beta6
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 24 Aug 2016 16:45:20 +0200
+
 xul-ext-classic-theme-restorer (1.5.6~beta4-1nano) unstable; urgency=low
 
   * New upstream release
