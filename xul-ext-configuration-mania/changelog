@@ -1,3 +1,15 @@
+xul-ext-configuration-mania (24.2.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New pref
+    - "Browser"->"Other"->"Show Recently Bookmarked on the bookmark menu"
+      (issue #234)
+    - "Security"->"JavaScript"->"UI-Spoofing"->"Scroll bars" has been marked as
+      obsolte since Firefox 49. (issue #235)
+  * Fix some layout on the small-size window
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 24 Aug 2016 16:47:20 +0200
+
 xul-ext-configuration-mania (24.1.0-1nano) unstable; urgency=low
 
   * New upstream release
