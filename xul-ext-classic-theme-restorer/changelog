@@ -1,3 +1,36 @@
+xul-ext-classic-theme-restorer (1.5.7~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.7~beta1
+      locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+      fix(es)]
+        - Fx51+: General UI (1) > bookmarks menu button > popups panel menu appearance
+        - Linux: 'General UI (3) > inverted icon settings' (needs more testing)
+      new option(s)]
+        - Fx48+: Tabs (1) > switch for 'browser.ctrlTab.previews' preference
+        - Tabs colors&text > unloaded/unread tabs > 'reduce tab visibility'
+        - Firefox button > button on toolbar > more icons
+        - MacOS: General UI (1) > 'movable back/forward buttons' > reduce nav-bar height
+        - Fx51+: General UI (2) > switch for 'browser.download.showPanelDropmarker' preferences
+        - Add-on manager > Always show 'Recent updates' category
+        - Toolbar (2) > Findbar > Close findbar when scrolling page
+      general change(s)]
+        - Windows/Linux: rewritten 'General UI (1) > movable back/forward buttons > reduce nav-bar height
+        - Code tweaks for 'General UI (3) > inverted icon settings' 
+    1.5.7~beta2
+      locale(s)]
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      fix(es)]
+        - dropmarkers & 'General UI (1) > movable b/f buttons > reduce nav-bar height' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 09 Sep 2016 13:03:53 +0200
+
 xul-ext-classic-theme-restorer (1.5.6-1nano) unstable; urgency=low
 
   * New upstream release
