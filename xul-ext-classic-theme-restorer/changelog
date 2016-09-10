@@ -1,3 +1,12 @@
+xul-ext-classic-theme-restorer (1.5.7~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    [fix(es)]
+      - Fx51: 'Tabs (2) > tab separator options'
+      - Fx51: 'Tabs (1) > tab variations' and separators 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 10 Sep 2016 17:40:13 +0200
+
 xul-ext-classic-theme-restorer (1.5.7~beta2-1nano) unstable; urgency=low
 
   * New upstream release
