@@ -1,3 +1,21 @@
+xul-ext-classic-theme-restorer (1.5.7~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.7~beta4
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Estonian (et) translation updated (thanks to Maidur)
+      [fix(es)]
+        - Firefox titlebar + customizing mode: movable separators and spaces on
+          menu/tabs toolbar
+        - squared (normal/australized) tabs v1 + tabs not on top + pinned tabs:
+          tab height glitch 
+    1.5.7~beta5
+      [new option(s)]
+        - Fx51+: Toolbars (3) > Top toolbars: old left and right padding
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 16 Sep 2016 18:08:57 +0200
+
 xul-ext-classic-theme-restorer (1.5.7~beta3-1nano) unstable; urgency=low
 
   * New upstream release
