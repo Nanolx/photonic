@@ -1,3 +1,16 @@
+xul-ext-configuration-mania (24.3.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New pref
+    - "Browser"->"Web API"->"Enable Web Assembly" (issue #236)
+  * Bug fix
+    - Make "View source in a new tab" disabled when "View source with external
+      editor" checked. (issue #213)
+  * "Other"->"Firefox Hello" has been marked as obsoluted since Firefox 49.
+    (issue #238)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 17 Sep 2016 09:52:47 +0200
+
 xul-ext-configuration-mania (24.2.0-1nano) unstable; urgency=low
 
   * New upstream release
