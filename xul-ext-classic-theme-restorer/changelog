@@ -1,3 +1,24 @@
+xul-ext-classic-theme-restorer (1.5.8~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.7~beta7
+      [locale(s)]
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+    1.5.8~beta1
+      [locale(s)]
+        - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+        - French (fr) translation updated (thanks to BlackJack)
+      [fix(es)]
+        - Fx48+ & 'Replace generic favicon' options: search glass glitch
+        - Fx50+: Location bar (3) > Remove 'search with...' and 'visit' items
+      [new option(s)]
+        - Toolbars (2) > Findbar > custom width for findbox 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Sep 2016 20:51:20 +0200
+
 xul-ext-classic-theme-restorer (1.5.7~beta6-1nano) unstable; urgency=low
 
   * New upstream release
