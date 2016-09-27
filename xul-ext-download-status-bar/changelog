@@ -1,3 +1,10 @@
+xul-ext-download-status-bar (15.0.0.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New Downloads.jsm for Icedove
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 27 Sep 2016 17:38:27 +0200
+
 xul-ext-download-status-bar (14.0.0.0-1nano) unstable; urgency=low
 
   * New upstream release
