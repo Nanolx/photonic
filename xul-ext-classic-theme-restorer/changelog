@@ -1,3 +1,27 @@
+xul-ext-classic-theme-restorer (1.5.8~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.8~beta2
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - Fx52+: General UI (1) > bookmarks menu button > popups panel menu appearance
+        - Toolbars (3) > 'Aero' colors: colorize findbar too
+        - Toolbars (3) > 'Aero' colors: add-on manager glitch
+      [add-on compatibility]
+        - Findbar tweak & 'Toolbars (2) > Findbar > custom width for findbox' option
+    1.5.8~beta3
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+        - glitches with 'Location bar (3) > Autocomplete popup > alt. appearance' option
+      [new option(s)]
+        - Location bar (3) > Autocomplete popup > hide page title (thanks to Cobinja)
+      [general change(s)]
+        - padding for 'Location bar (3) > Autocomplete popup > Aero colors...' option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 27 Sep 2016 17:35:52 +0200
+
 xul-ext-classic-theme-restorer (1.5.8~beta1-1nano) unstable; urgency=low
 
   * New upstream release
