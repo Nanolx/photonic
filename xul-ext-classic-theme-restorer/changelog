@@ -1,3 +1,24 @@
+xul-ext-classic-theme-restorer (1.5.8~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.8~beta4
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - Fx50 beta: glitches with 'Location bar (3) > Autocomplete popup > alt. appearance' option
+    1.5.8~beta5
+      [locale(s)]
+      - Japanese (ja) translation updated (thanks to mm_k)
+      [general change(s)]
+        - preference window tweaks
+        - code cleanup
+        - Location bar (3) > Autocomplete popup > 'Hide page title' do
+          not hide title for 'Search with...' and 'Visit'" items
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 28 Sep 2016 18:34:37 +0200
+
 xul-ext-classic-theme-restorer (1.5.8~beta3-1nano) unstable; urgency=low
 
   * New upstream release
