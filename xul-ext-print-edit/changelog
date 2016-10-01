@@ -1,3 +1,12 @@
+xul-ext-print-edit (17.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Chg: Updated to be compatible with Firefox 52.0.
+    • Fix: Setting of docShell.isActive in frame script sometimes caused
+           Firefox to hang with spinner (FF51+).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 01 Oct 2016 10:11:08 +0200
+
 xul-ext-print-edit (17.2-1nano) unstable; urgency=low
 
   * New upstream release
