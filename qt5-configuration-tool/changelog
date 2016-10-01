@@ -1,3 +1,17 @@
+qt5-configuration-tool (0.27-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.26:
+      * fixed stellarium compatibility
+      * updated French translation (Geiger David)
+      * updated Greek translation (Dimitrios Glentadakis)
+    0.27:
+      * added D-Bus tray support
+      * added feature to disable debug output
+      * updated documentation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 01 Oct 2016 10:12:16 +0200
+
 qt5-configuration-tool (0.25-1nano) unstable; urgency=low
 
   * New upstream release
