@@ -1,3 +1,14 @@
+xul-ext-configuration-mania (25.0.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Bugfix
+    - issue #241 "Max Number of timer-based reflows to perform" is set to "0"
+      (not "-1") by default
+  * "Browser"->"TabBrowsing"->"Tab Groups" has been removed (obsolete since
+    Firefox 45) issue #240
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 03 Oct 2016 09:58:14 +0200
+
 xul-ext-configuration-mania (24.3.0-1nano) unstable; urgency=low
 
   * New upstream release
