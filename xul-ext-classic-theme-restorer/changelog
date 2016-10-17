@@ -1,3 +1,68 @@
+xul-ext-classic-theme-restorer (1.5.8.1~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.8~beta7
+      [locale(s)]
+        - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+      [fix(es)]
+        - Fx50+ & Location bar (3) > Autocomplete popup >
+          'Alt. appearance': click events
+        - Fx50+ & Location bar (3) > Autocomplete popup >
+          'Hide page title': click events 
+    1.5.8~beta8
+      [locale(s)]
+        - Italian (it) translation updated (thanks to Styb)
+      [new option(s)]
+        - Searchbar > Clear search box after search > delay
+        - Searchbar > Revert to first search engine after search > delay
+      [general change(s)]
+        - tweaks for 'Tabs (1) > Tab title in Firefox titlebar' option 
+    1.5.8~beta9
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new option(s)]
+        - Tabs (1) > Tab title in Firefox titlebar > Centered
+      [general change(s)]
+        - increased delays maximum value to 99999 (ms) for the options
+        - Searchbar > Clear search box after search
+        - Searchbar > Revert to first search engine after search
+    1.5.8~beta10
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - last betas broke Firefox 45.x support (Fx48+ was fine)
+    1.5.8~beta11
+      [locale(s)]
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - French (fr) translation updated (thanks to BlackJack)
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix(es)]
+        - macOS & Tabs (1) > Tabs toolbar > 'reduce space above toolbar'
+        -- does not override 'hide with only one visible tab' spaces anymore
+      [general change(s)]
+        - macOS & Tabs (1) > Tabs toolbar > hide with only one visible tab'
+        -- 'reduce space above toolbar' option has to be enabled, if tabs
+            are on top, to reduce the gap above tabs toolbar
+    1.5.8~beta12
+      [locale(s)]
+        - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+        - Greek (el) translation updated (thanks to George M.)
+      [general change(s)]
+        - tweaks for 'Tabs (1) > Tab title in Firefox titlebar' option
+    1.5.8.1~beta1
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+        - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+        - Developer Edition theme & CTRs prefwindow
+        - Firefox button menu: 'Web Developer' menuitem issues 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 17 Oct 2016 20:18:40 +0200
+
 xul-ext-classic-theme-restorer (1.5.8~beta6-1nano) unstable; urgency=low
 
   * New upstream release
