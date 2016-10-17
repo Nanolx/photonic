@@ -1,0 +1,725 @@
+Source: nanolx
+Section: misc
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), make
+Standards-Version: 3.9.4
+
+Package: nanolx-base
+Architecture: all
+Depends: nanolx-admin,
+         nanolx-apt-tools,
+         nanolx-apt-sources,
+         nanolx-cli,
+         nanolx-x11,
+         nanolx-x11-theme,
+         nanolx-security,
+         nanolx-net,
+         nanolx-xul-addons,
+         nanolx-devel-cli,
+         nanolx-devel-android,
+         nanolx-devel-x11,
+         nanolx-media-codecs,
+         nanolx-media-cli,
+         nanolx-media-x11,
+         nanolx-games,
+         nanolx-games-emu,
+         nanolx-games-hacking
+Description: Nanolx base package
+ Installation instructions:
+   a) apt-get install nanolx-apt-sources
+   b) /usr/sbin/apt-getkeys.sh
+   c) proceed with this package (or any other nanolx-* meta-package)
+ .
+ This package depends on all other nanolx-* meta-packages.
+
+Package: nanolx-admin
+Architecture: all
+Depends: synaptic,
+         system-config-lvm,
+         hdparm,
+         gsmartcontrol,
+         aptitude,
+         gadmin-samba,
+         gadmin-rsync,
+         kuser,
+         gksu | kdesudo,
+         lm-sensors,
+         ntfs-3g,
+         dosfstools,
+         btrfs-tools,
+         lsof,
+         localepurge,
+         bleachbit,
+         gtkorphan,
+         galternatives,
+         gkdebconf,
+         aptsh,
+         needrestart,
+         cpufrequtils,
+         gprename,
+         cruft-ng,
+         lm-sensors,
+         fancontrol,
+         xsensors,
+         cryptsetup,
+         gparted,
+         grub2-theme-aurora-penguinis,
+         plymouth-theme-aurora-penguinis-2
+Description: Nano admin package
+ This meta-package installs useful tools for system administration:
+ - synaptic
+ - system-config-lvm
+ - hdparm
+ - gparted
+ - gsmartcontrol
+ - aptitude
+ - gadmin-samba
+ - gadmin-rsync
+ - kuser
+ - gksu | kdesudo
+ - lm-sensors
+ - ntfs-3g
+ - dosfstools
+ - btrfs-tools
+ - lsof
+ - localepurge
+ - bleachbit
+ - gtkorphan
+ - galternatives
+ - gkdebconf
+ - needrestart
+ - cpufrequtils
+ - gprename
+ - cruft-ng
+ - lm-sesnors
+ - fancontrol
+ - xsensors
+ - cryptsetup
+
+Package: nanolx-apt-tools
+Architecture: all
+Depends: apt-file,
+         apt-listchanges,
+         apt-rdepends,
+         apt-show-versions,
+         apt-transport-https,
+         debdelta,
+         reprepro,
+         cupt,
+         libcupt4-1-downloadmethod-wget | libcupt4-1-downloadmethod-curl
+Description: Collection of tools for apt
+ This meta-package installs useful tools for working with apt,
+ including apt-transport-https and debdelta.
+
+Package: nanolx-apt-sources
+Architecture: all
+Depends: gui-apt-key,
+         wget
+Description: Collection of extra sources for apt
+ This meta-package installs extra apt-sources on the system.
+ .
+ Reading https://github.com/Nanolx/nanolx/blob/master/README.nanolx-apt-sources
+ prior to installing this package is recommended.
+
+Package: nanolx-cli
+Architecture: all
+Depends: coreutils,
+         vim,
+         gpm,
+         less,
+         rsync,
+         bash,
+         bash-completion,
+         shc,
+         mc,
+         p7zip-full,
+         zip,
+         xz-utils,
+         unrar,
+         dcfldd,
+         bashstyle-ng (>= 9.0~rc1),
+         fortunes-flashrider,
+         fdupes,
+         unp,
+         sqlite3 | sqlite,
+         sudo
+Description: Collection of basic command line tools
+ This meta-package installs extra command line tools on the system.
+ .
+ These are:
+ - coreutils-nano (coreutils with progressbar patch)
+ - BashStyle-NG
+ - vim
+ - gpm
+ - less
+ - rsync
+ - mc
+ - bash
+ - bash-completion
+ - shc
+ - dcfldd
+ - fortunes-flashrider
+ - mc
+ - zip, rar, p7zip, xz
+ - fdupes
+ - unp
+ - sqlite
+ - sudo
+
+Package: nanolx-x11
+Architecture: all
+Depends: compton,
+         conky,
+         fehlstart,
+         lightdm,
+         lightdm-gtk-greeter,
+         rep (>= 0.92),
+         rep-gtk (>= 0.90),
+         sawfish (>= 1.9.1),
+         sawfish-pager (>= 0.90),
+         ssd (>= 0.40),
+         x11-xserver-utils,
+         xsettingsd,
+         spacefm-gtk3 | spacefm,
+         easystroke,
+         konsole,
+         gucharmap,
+         lumina-desktop,
+         xarchiver,
+         yad,
+         qt5-configuration-tool | bash,
+         trayer
+Description: Collection of X11 applications
+ This meta-package installs extra X11 applications on the system.
+ .
+ These are:
+ - compton
+ - conky
+ - gucharmap
+ - fehlstart
+ - lightdm (with gtk-greeter)
+ - librep (with gtk-binding)
+ - sawfish (with sawfish-pager and session-dialog)
+ - x11-xserver-utils
+ - xsettingsd
+ - spacefm
+ - easystroke
+ - konsole
+ - xarchiver
+ - Lumina Desktop Environment
+ - YAD (GTK+ Dialogs from shell scripts)
+ - Qt5 Configuration Tool
+ - Trayer
+
+Package: nanolx-x11-theme
+Architecture: all
+Depends: gtk2-engines-terranova,
+         gtk2-engines-pixbuf,
+         oxygencursors,
+         oxygen-icon-theme
+Description: Collection of themes
+ This meta-package installs themes on the system.
+ .
+ These are:
+ - TerraNova (GTK+2, engine with themes)
+ - PixBuf (GTK+2, engine)
+ - Oxygen Cursors
+ - Oxygen Icon-Theme
+
+Package: nanolx-security
+Architecture: all
+Depends: bastille | bash,
+         chkrootkit,
+         clamav,
+         clamtk,
+         clamassassin,
+         gufw,
+         tor,
+         torsocks,
+         tor-geoipdb,
+         psad,
+         hardening-includes | bash,
+         hardening-wrapper | bash,
+         i2p,
+         i2p-router,
+         seahorse,
+         gksu,
+         gpgv,
+         pinentry-gtk2,
+         enigmail,
+         keepassx
+Description: Collection of security related tools
+ This meta-package installs security related. You won't get a secure
+ system by just installing this package.
+ .
+ Reading https://github.com/Nanolx/nanolx/blob/master/README.nanolx-security
+ prior to installing this package is recommended
+ .
+ These are:
+ - bastille
+ - chkrootkit
+ - clamav (with clamtk ui and clamassassin spam filter)
+ - gufw
+ - tor (with torsocks and tor-geoipdb)
+ - psad
+ - harden
+ - i2p
+ - seahorse
+ - gksu
+ - gpgv (with pinentry-gtk2)
+ - keepassx
+
+Package: nanolx-net
+Architecture: all
+Depends: openssh-client,
+         wireshark,
+         luakit,
+         firefox | iceweasel,
+         privoxy,
+         qbittorrent,
+         filezilla,
+         icedove,
+         smbnetfs,
+         ftpsync,
+         kvirc,
+         gfeedline,
+         openvpn,
+         openresolv,
+         palemoon-installer
+Description: Collection of network applications
+ This meta-package installs network applications.
+ .
+ These are:
+ - openssh-client
+ - wireshark
+ - firefox (or iceweasel before the switch back to firefox)
+ - privoxy (with different configurations and adblock blocklist converter)
+ - qbittorrent
+ - filezilla
+ - icedove
+ - smbnetfs
+ - ftpsync
+ - kvirc
+ - gfeedline
+ - openvpn
+ - openresolv
+ - palemoon-installer
+
+Package: nanolx-xul-addons
+Architecture: all
+Depends: xul-ext-configuration-mania,
+         xul-ext-download-status-bar,
+         xul-ext-febe,
+         xul-ext-image-toolbar,
+         xul-ext-multi-links,
+         xul-ext-print-edit,
+         xul-ext-save-images,
+         xul-ext-send-later,
+         xul-ext-textlink,
+         xul-ext-beyond-australis,
+         xul-ext-toggle-referer,
+         xul-ext-ublock-origin,
+         xul-ext-classic-theme-restorer,
+         xul-ext-greasemonkey,
+         xul-ext-https-everywhere,
+         xul-ext-noscript,
+         xul-ext-stylish,
+         xul-ext-tabmixplus,
+         xul-ext-uppity,
+         xul-ext-useragentswitcher,
+         xul-ext-unote,
+         xul-ext-html5-video-everywhere,
+         xul-ext-super-start,
+         xul-ext-dovesec,
+         xul-ext-all-menus-button,
+         icedove,
+         firefox | iceweasel
+Description: Collection of XUL addons
+ This meta-package installs several addons for Firefox and Icedove.
+ .
+ - configuration-mania
+ - download-status-bar
+ - febe
+ - image-toolbar
+ - multi-links
+ - print-edit
+ - save-images
+ - send-later
+ - textlink
+ - beyond-australis
+ - toggle-referer
+ - uBlock Origin
+ - classic-theme-restorer
+ - greasemonkey
+ - https-everywhere
+ - noscript
+ - stylish
+ - tabmixplus
+ - uppity
+ - useragentswitchter
+ - super start
+ - µNote
+ - HTML5 Video Everywhere
+ - Dove Sec
+ - All menus button
+
+Package: nanolx-media-codecs
+Architecture: all
+Depends: gstreamer1.0-alsa,
+         gstreamer1.0-plugins-bad,
+         gstreamer1.0-plugins-base,
+         gstreamer1.0-plugins-good,
+         gstreamer1.0-plugins-ugly,
+         gstreamer1.0-pulseaudio,
+         gstreamer1.0-crystalhd,
+         gstreamer1.0-libav,
+         phonon-backend-gstreamer,
+         libdvdcss2,
+         libbluray1
+Description: Collection of media codecs
+ This meta-package installs media codecs.
+ .
+ These are:
+ - gstreamer:
+   - alsa
+   - good, base, bad, ugly
+   - pulseaudio
+   - libav, crystalhd
+ - phonen-backend-gstreamer
+ - libdvdcss
+ - libbluray
+
+Package: nanolx-media-cli
+Architecture: all
+Depends: lame,
+         sox,
+         vorbis-tools,
+         flac,
+         normalize-audio,
+         streamripper,
+         ffmpeg,
+         transcode,
+         cdparanoia,
+         pulseaudio (>= 5.0),
+         imagemagick,
+         youtube-dl
+Description: Collection of cli media tools
+ This meta-package installs cli media tools.
+ .
+ These are:
+ - lame
+ - sox
+ - flac
+ - transcode
+ - vorbis-tools
+ - ffmpeg
+ - cdparanoia
+ - normalize-audio
+ - streamripper
+ - pulseaudio
+ - imagemagick
+ - youtube-dl
+
+Package: nanolx-media-x11
+Architecture: all
+Depends: audacity,
+         soundkonverter,
+         gmtp,
+         pavucontrol,
+         soundkonverter,
+         streamtuner2,
+         yarock,
+         mpv,
+         phototonic,
+         okular,
+         gimp,
+         qscanner,
+         avidemux,
+         k3b,
+         libk3b6-extracodecs,
+         mediathekview,
+         easytag,
+         gnome-twitch
+Description: Collection of graphical media applications
+ This meta-package installs x11 media applications
+ .
+ These are:
+ - audacity
+ - soundkonverter
+ - gmtp
+ - pavucontrol
+ - streamtuner2
+ - yarock
+ - mpv
+ - phototonic
+ - okular
+ - GIMP
+ - qscanner
+ - k3b
+ - avidemux
+ - mediathekview
+ - easyTAG
+ - GNOME Twitch
+
+Package: nanolx-devel-cli
+Architecture: all
+Depends: ccache,
+         colormake,
+         colorgcc,
+         colordiff,
+         dpkg-dev,
+         fakeroot,
+         ubuntu-dev-tools,
+         schroot,
+         sbuild,
+         gcc-5 | gcc-6,
+         g++-5 | g++-6,
+         gcc-5-multilib | gcc-6-multilib,
+         g++-5-multilib | g++-6-multilib,
+         git,
+         subversion,
+         bzr,
+         dh-make,
+         dh-autoreconf,
+         pkg-config,
+         make,
+         cmake,
+         autoconf,
+         automake,
+         devscripts,
+         autotools-dev,
+         libtool,
+         lintian,
+         transifex-client,
+         flawfinder,
+         gdb,
+         bsdiff,
+         codespell,
+         shellcheck,
+         licensecheck,
+         pycodestyle
+Description: Collection of cli development tools
+ This meta-package installs cli development tools
+ .
+ These are:
+ - ccache, gcc 5 or 6, g++ 5 or 6, gcc and g++ multilib
+ - colormake, colorgcc, colordiff
+ - dpkg-dev, dh-make, dh-autoreconf, devscripts, lintian
+ - gdb, flawfinder
+ - make, cmake, pkg-config
+ - autotools-dev, libtool, autoconf, automake
+ - git, subversion, bzr
+ - ubuntu-dev-tools, schroot, sbuild
+ - fakeroot
+ - transifex-client
+ - bsdiff
+ - codespell, shellcheck, licensecheck, pycodestyle
+
+Package: nanolx-devel-android
+Architecture: all
+Depends: adb | android-tools-adb,
+         fastboot | android-tools-fastboot,
+         gradle,
+         apktool,
+         gmtp,
+         zipalign
+Description: Collection of android development tools
+ This meta-package installs android development tools
+ .
+ These are:
+ - Android Debugging Bridge (adb)
+ - Fastboot
+ - Gradle
+ - Apk Tool
+ - Zip Align
+
+Package: nanolx-devel-x11
+Architecture: all
+Depends: glade,
+         manpageeditor,
+         bluefish,
+         cutemarked,
+         geany,
+         d-feet,
+         okteta,
+         nemiver,
+         sqlitebrowser,
+         poedit
+Description: Collection of x11 development tools
+ This meta-package installs x11 development tools.
+ .
+ These are:
+ - glade
+ - manpageeditor
+ - bluefish
+ - geany
+ - cutemarked
+ - poedit
+ - d-feet
+ - okteta
+ - nemiver
+ - sqlitebrowser
+
+Package: nanolx-games
+Architecture: all
+Depends: glob2,
+         freedroidrpg,
+         2048-qml,
+         enigma,
+         gnome-sudoku,
+         gnome-mahjongg,
+         lincity-ng,
+         neverball,
+         pingus,
+         supertuxkart,
+         xcowsay,
+         xdesktopwaves,
+         xpenguins,
+         zelda-solarus-dx,
+         zelda-solarus-xd,
+         zelda-solarus-return-of-the-hylian,
+         zelda-book-of-mudora,
+         zelda-time-to-triumph,
+         zelda-onilink-begins,
+         zelda-navis-quest,
+         zelda-tunics,
+         wesnoth-1.13 | wesnoth-1.12,
+         megaglest,
+         edgar,
+         manaplus
+Description: Collection of games
+ This meta-package installs games.
+ .
+ These are:
+ - Globulation 2
+ - FreeDroid RPG
+ - 2048 (in qml)
+ - Enigma
+ - Edgar
+ - GNOME Sudoku
+ - GNOME Mahjongg
+ - LinCity-NG
+ - Mana Plus
+ - MegaGlest
+ - Neverball
+ - Pingus
+ - Super Tux Kart
+ - Battle For Wesnoth
+ - Xcowsay
+ - Xdesktopwaves
+ - Xpenguins
+ - Zelda Solarus DX
+ - Zelda Solarus XD
+ - Zelda Time to Triumph
+ - Zelda Oni-Link Begins
+ - Zelda Return of the Hylian Solarus Edition
+ - Zelda Navi's Quest
+ - Zelda Book of Mudora
+ - Zelda Tunics
+
+Package: nanolx-games-emu
+Architecture: all
+Depends: dolphin-emu | bash,
+         dosbox,
+         lxdream,
+         mupen64plus,
+         mupen64plus-audio-all,
+         mupen64plus-video-arachnoid,
+         mupen64plus-video-glide64,
+         mupen64plus-video-rice,
+         mupen64plus-video-z64,
+         nestopia,
+         snes9x-gtk,
+         yabause-gtk,
+         gnuboy-sdl,
+         scummvm,
+         visualboyadvance-gtk,
+         desmume,
+         fceux
+Description: Collection of emulators
+ This meta-package installs a collection of emulators.
+ .
+ NOTE: only use self-made ROMs (using homebrew, hardware mods, or
+       tools like Retrode). Downloading ROMs is often illegal. Known
+       exceptions: ROMs where the copyright expired, ROMs distributed
+       by the copyright holder (or it's legal successor) and Homebrew
+       ROMs (completely self-made).
+ .
+ These are:
+ - gnuboy-sdl (Game Boy, Game Boy Color)
+ - visualboyadvance-gtk (Game Boy Advance)
+ - desmume (Nintendo DS)
+ - nestopia (Famicom / NES)
+ - snex9x-gtk (Super Famicom / SNES)
+ - mupen64plus (Nintendo 64)
+ - dolphin-emu (GameCube / Wii [only amd64])
+ - yabause-gtk (SEGA Saturn)
+ - lxdream (SEGA DreamCast)
+ - dosbox (DOS)
+ - scummvm (Lucas Arts Point'n'Click Adventures)
+
+Package: nanolx-games-hacking
+Architecture: all
+Depends: applyppf3,
+         makeppf3,
+         cmdpack-uips,
+         wit,
+         szs,
+         patchimage,
+         segher-wii-tools,
+         devkitppc | bash,
+         qwad,
+         libfat | bash,
+         libruntimeiospatch | bash,
+         libogc | bash,
+         libogc-7zip | bash,
+         libogc-dopmii | bash,
+         libogc-expat | bash,
+         libogc-ext2fs | bash,
+         libogc-freetype | bash,
+         libogc-gd | bash,
+         libogc-grrlib | bash,
+         libogc-jpeg | bash,
+         libogc-mupdf | bash,
+         libogc-mxml | bash,
+         libogc-nfs | bash,
+         libogc-ntfs | bash,
+         libogc-png | bash,
+         libogc-pngu | bash,
+         libogc-sdl | bash,
+         libogc-smpeg | bash,
+         libogc-tiff | bash,
+         libogc-tremor | bash,
+         libogc-unrar | bash,
+         libogc-zip | bash,
+         libogc-zlib | bash,
+         nand-bin-check,
+         nand-dump,
+         nand-extract,
+         savetoy,
+         ohne-schwarzenegger,
+         xdelta3
+Description: Collection of game hacking tools
+ This meta-package installs game hacking tools
+ .
+ NOTE: only use self-made ROMs (using homebrew, hardware mods, or
+       tools like Retrode). Downloading ROMs is often illegal. Known
+       exceptions: ROMs where the copyright expired, ROMs distributed
+       by the copyright holder (or it's legal successor) and Homebrew
+       ROMs (completely self-made).
+ .
+ These are:
+ - applyppf3 / makeppf3 (PlayStation Patch Format)
+ - cmdpack-uips (IPS Format)
+ - devkitppc / libogc*, libfat, libruntimeiospatch (GameCube / (v)Wii
+   homebrew development kit [only i386 and amd64])
+ - wit (manipulate GameCube / Wii ISOs)
+ - szs (manipulate Mario Kart Wii game data)
+ - qwad (download IOS' and channels from NUS (Nintendo Update Server)
+   as Wads or manipulate existing Wads)
+ - patchimage (download and apply game hacks to a ROM (mostly for
+   New Super Mario Bros. Wii and Mario Kart Wii))
+ - segher-wii-tools, nand-bin-check, nand-dump, nand-extract, savetoy,
+   ohne-schwarzenegger (misc. Wii homebrew utilities)
+ - xdelta3

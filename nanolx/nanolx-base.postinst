@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+sed 's,SKEL=.*,SKEL=/etc/skel_nano/,' -i /etc/default/useradd
+echo 'GOVERNOR="ondemand"' > /etc/default/cpufrequtils
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,512 @@
+nanolx (1:1.21.20161017-1nano) unstable; urgency=low
+
+  * new upstream release
+  * somewhat improved README
+  * updated scripts:
+    - apt-getkeys	[updated way to get i2p keyring]
+  * removed dependencies:
+    - mupen64plus-video-all			[nanolx-games-emu]
+  * new dependencies:
+    - mupen64plus-video-arachnoid		[nanolx-games-emu]
+    - mupen64plus-video-glide64			[nanolx-games-emu]
+    - mupen64plus-video-rice			[nanolx-games-emu]
+    - mupen64plus-video-z64			[nanolx-games-emu]
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 17 Oct 2016 19:52:27 +0200
+
+nanolx (1:1.20.20160814-2nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependencies:
+    - libcupt4-1-downloadmethod-wget [or]	[nanolx-apt-tools]
+      libcupt4-1-downloadmethod-curl
+  * removed dependencies:
+    - libcupt3-0-downloadmethod-wget		[nanolx-apt-tools]
+  * apt sources changes:
+    - removed testing distribution from debian-multimedia.list
+    - add winehq.list with official WineHQ Debian packages
+    - add main sources.list with sid / experimental
+  * updated scripts:
+    - update apt-getkeys to include key for WineHQ repository
+  * updated system configuration:
+    - updated apt pinning configuration
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 14 Aug 2016 20:36:46 +0200
+
+nanolx (1:1.19.20160813-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependencies:
+    - pycodestyle				[nanolx-devel-cli]
+  * removed dependencies:
+    - pulseaudio-module-x11			[nanolx-media-cli]
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 13 Aug 2016 20:14:12 +0200
+
+nanolx (1:1.18.20160810-1nano) unstable; urgency=low
+
+  * new upstream release
+  * apt sources changes:
+    - update debian-multimedia mirror		[nanolx-apt-sources]
+  * new dependencies:
+    - gnome-twitch				[nanolx-media-x11]
+    - gcc-5 [or] gcc-6				[nanolx-devel-cli]
+    - g++-5 [or] g++-6				[nanolx-devel-cli]
+    - gcc-5-multilib [or] g++-6-multilib	[nanolx-devel-cli]
+    - codespell					[nanolx-devel-cli]
+    - shellcheck				[nanolx-devel-cli]
+    - licensecheck				[nanolx-devel-cli]
+  * dropped dependencies:
+    - drop dependency on g++-4.9		[nanolx-devel-cli]
+    - drop dependency on gcc-4.9		[nanolx-devel-cli]
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 10 Aug 2016 09:16:12 +0200
+
+nanolx (1:1.17.20160717-1nano) unstable; urgency=low
+
+  * new upstream release
+  * fix version number
+  * hotfix for apt-getkeys
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 17 Jul 2016 14:33:00 +0200
+
+nanolx (1:1.17.20160716-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new versioning scheme
+  * added dependencies:
+    - xdelta3
+  * changed dependencies:
+    - audex > soundkonverter
+    - dolphin > spacefm-gtk3 | spacefm
+  * updated scripts:
+    - repokit 1.4.4
+      - minor improvements for 'put'
+    - apt-getkeys 20160716
+      - update location for i2p key
+      - minor coding style improvements
+  * updated repositories:
+    - update i2p repository
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 17 Jul 2016 10:40:09 +0200
+
+nanolx (20160602-1nano) unstable; urgency=low
+
+  * new upstream release
+  * updated scripts:
+    - repokit 1.4.3: pass ${@} to dpkg-buildpackage
+  * changed dependencies:
+    - zelda-roth-se > zelda-solarus-return-of-the-hylian
+    - zeldansq > zelda-navis-quest
+    - zelda3t > zelda-time-to-triumph
+    - zeldaolb > zelda-onilink-begins
+  * new dependencies:
+    - zelda-tunics
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 18:48:12 +0200
+
+nanolx (20160525-1nano) unstable; urgency=low
+
+  * new upstream release
+  * updated scripts:
+    - gfxrename 1.1.0: complete rewrite
+    - sufffix 1.3.0: add help message
+    - repokit 1.4.2: add -dr parameter
+    - mksbuild 1.2.0: code improvements
+    - wiiconvert 1.1.0: minor code improvements, add help message
+  * removed scripts:
+    - killws
+    - replwit
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 May 2016 20:24:08 +0200
+
+nanolx (20160511-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependencies:
+    - qt5-configuration-tool | bash
+  * new package:
+    - nanolx-devel-android
+  * new dependencies:
+    - adb | android-tools-adb
+    - fastboot | android-tools-fastboot
+    - gradle
+    - zipalign
+    - apktool
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 12 May 2016 18:27:55 +0200
+
+nanolx (20160407-1nano) unstable; urgency=low
+
+  * new upstream release
+  * updated scripts:
+    - repokit (1.4.1)
+  * removed dependencies:
+    - wesnoth-1.13
+  * new dependencies:
+    - wesnoth-1.13 | wesnoth-1.12
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 07 Apr 2016 18:16:23 +0200
+
+nanolx (20160405-1nano) unstable; urgency=low
+
+  * new upstream release
+  * updated scripts:
+    - repokit (1.4)
+      + improved --prepare
+      + improved --put
+  * removed scripts:
+    - steam-install
+  * new dependencies:
+    - grub2-theme-aurora-penguinis
+    - plymouth-theme-aurora-penguinis-2
+  * added cryptsetup auto-unlock using USB-Stick or SD-Card scripts from:
+    https://wiki.ubuntuusers.de/System_verschl%C3%BCsseln/Entschl%C3%BCsseln_mit_einem_USB-Schl%C3%BCssel/
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 05 Apr 2016 20:52:32 +0200
+
+nanolx (20160319-2nano) unstable; urgency=low
+
+  * new upstream hotfix release
+  * removed apt repositories:
+    - debian mozilla
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 19 Mar 2016 18:02:36 +0100
+
+nanolx (20160319-1nano) unstable; urgency=low
+
+  * new upstream release
+  * dropped dependencies:
+    - iceweasel
+    - xul-ext-disconnect
+    - xul-ext-duckduckgoplus
+    - xul-ext-flashgot
+    - xul-ext-outlookalike
+    - xul-ext-ui-eraser
+    - gpaco
+  * new dependencies:
+    - firefox | iceweasel
+    - easytag
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 19 Mar 2016 17:46:30 +0100
+
+nanolx (20160208-1nano) unstable; urgency=low
+
+  * new upstream release
+  * updated scripts:
+    - repokit (1.3)
+      + changed --push to --put
+      + auto-commit changes in --put
+  * new dependencies:
+    - youtube-dl
+    - keepassx
+    - palemoon-installer
+    - mediathekview
+    - android-tools-adb
+    - android-tools-fastboot
+    - bsdiff
+    - edgar
+    - manaplus
+  * dropped dependencies:
+    - rats
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 08 Feb 2016 20:44:04 +0100
+
+nanolx (20160108-1nano) unstable; urgency=low
+
+  * new upstream release
+  * updated scripts:
+    - repokit (20160102)
+  * new scripts:
+    - tapastic-dl
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 08 Jan 2016 18:13:08 +0100
+
+nanolx (20151125-1nano) unstable; urgency=low
+
+  * new upstream release
+  * updated scripts:
+    - repokit (20151125)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Nov 2015 19:14:59 +0100
+
+nanolx (20151123-1nano) unstable; urgency=low
+
+  * new upstream release
+  * removed dependency:
+    - zsdx
+    - zsxd
+    - xul-ext-the-fox-only-better
+  * new dependency:
+    - zelda-solarus-dx
+    - zelda-solarus-xd
+    - zelda-roth-se
+    - zelda-book-of-mudora
+    - xul-ext-beyond-australis
+    - xul-ext-dovesec
+    - xul-ext-all-menus-button
+  * optional dependency:
+    - hardening-wrappers
+    - hardening-includes
+  * new scripts:
+    - repokit
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 23 Nov 2015 17:28:51  +0100
+
+nanolx (20150909-1nano) unstable; urgency=low
+
+  * new upstream release
+  * removed dependency:
+    - texel
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 09 Sep 2015 19:15:35 +0200
+
+nanolx (20150820-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency:
+    - zeldansq
+    - sudo
+  * bumped dependency:
+    - require bashstyle-ng atleast at 9.0~rc1
+  * dropped dependency:
+    - emdebian-archive-keyring
+    - xmobar
+  * dropped apt sources:
+    - emdebian
+    - virtualbox
+  * dropped configuration files:
+    - xmobarrc
+  * updated configuration files:
+    - conkyrc: use enp4s0 instead of eth0
+    - bs-ng.ini: update bashstyle-ng configuration for new version, show
+      a fortune when user is logging in
+  * other changes:
+    - install mksbuild into /usr/bin intead of /usr/sbin (it uses sudo to
+      gain root rights and is not intended to be run as root)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 20 Aug 2015 20:15:15 +0200
+
+nanolx (20150808-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency:
+    - cryptsetup
+    - trayer
+    - xul-ext-ublock-origin
+  * dropped dependency:
+    - xul-ext-adblock-edge
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 08 Aug 2015 19:13:23 +0200
+
+nanolx (20150724-1nano) unstable; urgency=low
+
+  * new upstream release
+  * apt.conf: enable progress bar
+  * new dependency:
+    - xsensors
+    - lm-sensors
+    - fancontrol
+  * remove debian/nanolx-admin.postinst
+  * remove debian/nanolx-cli.postinst
+  * remove debian/nanolx-cli.prerm
+  * change default cpu-governor to ondemand
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 24 Jul 2015 22:03:42 +0200
+
+nanolx (20150706-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency:
+    - cruft-ng
+    - wesnoth-1.13
+  * dropped dependency:
+    - wesnoth-1.12
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jul 2015 18:05:05 +0200
+
+nanolx (20150502-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency:
+    - gprename
+  * dropped dependency:
+    - harden-* [not currently in Debian archive]
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 02 May 2015 19:18:06 +0200
+
+nanolx (20150305-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency:
+    - sqlite3
+    - sqlitebrowser
+    - openvpn
+    - openresolv
+  * dropped dependency:
+    - tmw
+    - networkmanager-openvpn
+    - networkmanager-openvpn-gnome
+  * new script:
+    - dump_bookmarks_nextbrowser
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 05 Mar 2015 20:04:35 +0100
+
+nanolx (20150210-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency:
+    - xul-ext-super-start
+    - fdupes
+    - unp
+  * dropped dependency:
+    - xul-ext-viewmarks
+    - xul-ext-pretty-install
+  * new script:
+    - gfxrename
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 10 Feb 2015 18:59:55 +0100
+
+nanolx (20150203-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency
+    - needrestart
+    - xul-ext-unote
+    - xul-ext-html5-video-everywhere
+    - cpufrequtils
+  * new sources list:
+    - debian-mozilla, iceweasel beta
+  * updated apt-getkeys:
+    - install debian-mozilla keyring
+  * set default cpu governor to performance
+  * updated skel_nano/.conkyrc
+  * updated skel_nano/.xmobarrc
+  * load /etc/profile.d/Z96-qt5ct.sh in every bash session
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 03 Feb 2015 16:37:17 +0100
+
+nanolx (20150121-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency
+    - gstreamer1.0-crystalhd
+    - byobu
+  * removed dependency
+    - gstreamer0.10-plugins-really-bad
+  * changed dependency
+    - gstreamer0.10-plugins-base >> gstreamer1.0-plugins-base
+    - gstreamer0.10-plugins-bad >> gstreamer1.0-plugins-bad
+    - gstreamer0.10-plugins-good >> gstreamer1.0-plugins-good
+    - gstreamer0.10-plugins-ugly >> gstreamer1.0-plugins-ugly
+    - gstreamer0.10-pulseaudio >> gstreamer1.0-pulseaudio
+    - gstreamer0.10-alsa >> gstreamer1.0-alsa
+    - gstreamer0.10-ffmpeg >> gstreamer1.0-libav
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 21 Jan 2015 18:11:49 +0100
+
+nanolx (20150117-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependency:
+    - qt5-configuration-tool
+  * changed dependency:
+    - wesnoth-1.11 >> wesnoth 1.12
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 17 Jan 2015 13:50:17 +0100
+
+nanolx (20141110-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependencies:
+    - xul-ext-*
+  * removed dependencies:
+    - liquorix-*
+    - harden-servers
+  * updated files:
+    - conky configuration
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 10 Nov 2014 19:37:55 +0100
+
+nanolx (20141026-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependencies:
+    - linux-image-liquorix-amd64
+    - linux-headers-liquorix-amd64
+    - gkdebconf
+    - gtkorphan
+    - galternatives
+    - harden-clients
+    - harden-nids
+    - harden-servers
+    - gpaco
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 26 Oct 2014 19:08:21 +0100
+
+nanolx (20140915-1nano) unstable; urgency=low
+
+  * new upstream release
+  * new dependencies:
+    - localepurge
+    - bleachbit
+  * added .conkyrc in skel_nano
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 15 Sep 2014 18:00:00 +0200
+
+nanolx (20140914-1nano) unstable; urgency=low
+
+  * new upstream release
+  * dropped dependencies:
+    - trayer
+    - pancake
+    - hsetroot
+    - ksnapshot
+  * new dependencies:
+    - lumina-desktop
+    - gfeedline
+    - conky
+    - galculator
+    - gucharmap
+    - mc
+    - unrar
+    - zip
+    - p7zip-full
+    - xz-utils
+  * changed dependencies:
+    - coreutils (no longer enforcing a specific version)
+  * new package:
+    - nanolx-admin
+    * dependencies:
+      - synaptic
+      - system-config-lvm
+      - hdparm
+      - gparted
+      - gsmartcontrol
+      - aptitude
+      - gadmin-samba
+      - gadmin-rsync
+      - kuser
+      - gksu | kdesudo
+      - lm-sensors
+      - ntfs-3g
+      - dosfstools
+      - btrfs-tools
+      - lsof
+      - localepurge
+      - bleachbit
+  * change source-format from quilt to git
+  * fixup nanolx-net.postinst (when doing an update)
+  * add nanolx-net.prerm (restore original privoxy state)
+  * add nanolx-base.prerm (restore default user-skeleton directory in
+    useradd configuration)
+  * remove skel_nano/.pancakerc
+  * add skel_nano/.conkyrc
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 14 Sep 2014 20:15:37 +0200
+
+nanolx (20140816-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 16 Aug 2014 08:35:10 +0200
