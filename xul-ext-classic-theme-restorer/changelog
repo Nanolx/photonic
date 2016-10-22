@@ -1,3 +1,38 @@
+xul-ext-classic-theme-restorer (1.5.8.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.8.1~beta2
+      [fix(es)]
+        - Win10 & 'Tabs (1) > Tabs not on top v2': caption buttons
+        - Fx50+ & 'Location bar (3) > Remove Search with... and Visit' items
+    1.5.8.1~beta3
+      [fix(es)]
+        - Firefox button menu & 'Web Developer' menuitem: timings
+    1.5.8.1~beta4
+      [fix(es)]
+        - Fx52 & Location bar (3) > Autocomplete popup > 'Alt. appearance':
+          not affecting all forms anymore
+      [add-on compatibility]
+        - TabMixPlus & Win 10 & multirow tabs & tabs not on top: active tab glitch 
+    1.5.8.1~beta5
+      [fix(es)]
+        - Fx52 & Location bar (3) > Autocomplete popup > 'Alt. appearance' &
+          'hide page title': not affecting all forms anymore
+    1.5.8.1~beta6
+      [fix(es)]
+        - minor glitch between full themes and some CTRs options
+        - Fx52: improved compatibility of 'old search'
+    1.5.8.1~beta7
+      [fix(es)]
+        - Fx52 & big icon mode: missing icons
+        - Fx52 & customization palette: missing icons
+      [new option(s)]
+        - Searchbar > Old search > open in new tab > 'exclude about:newtab'
+        - Searchbar > Old search > open in new tab > 'exclude about:blank'
+        - Searchbar > Old search > open in new tab > 'exclude about:home' 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 22 Oct 2016 10:52:52 +0200
+
 xul-ext-classic-theme-restorer (1.5.8.1~beta1-1nano) unstable; urgency=low
 
   * New upstream release
