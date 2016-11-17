@@ -1,3 +1,11 @@
+xul-ext-febe (8.9.3.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix for 'incompatibility' issue in v8.9.3
+  * Fix for restore browser history
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 17 Nov 2016 18:18:16 +0100
+
 xul-ext-febe (8.9.2-1nano) unstable; urgency=low
 
   * New upstream release
