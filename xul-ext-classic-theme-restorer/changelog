@@ -1,3 +1,97 @@
+xul-ext-classic-theme-restorer (1.5.9~beta11-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.9~beta1
+      [fix(es)]
+        - Fx51+ & customizing mode: missing icons and wrong icon colors
+        - Fx51+ & big icon mode: missing icons and wrong icon colors
+        - Fx51+ & Location bar (3) > Autocomplete popup > 'Alt. appearance': key event issues
+        - Win10 & tabs not on top v2: caption buttons glitch 
+    1.5.9~beta2
+      [fix(es)]
+        - Fx50+ & Location bar (3) > Autocomplete popup > 'Alt. appearance': 'enter key' event
+      [general change(s)]
+        - Fx51+: moved and renamed 'Advanced >> Autocomplete popup search' to
+        -- 'Location bar (3) > Autocomplete popup > show search engines'
+        -- Search engines are now present for 'Alt. appearance' too, but can be disabled.
+    1.5.9~beta3
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Japanese (ja) translation updated (thanks to mm_k)
+      [fix(es)]
+        - Fx51+ & custom tab colors: active tab failed to apply colors
+      [general change(s)]
+        - custom tab colors do not get disabled anymore once tab appearance changes 
+    1.5.9~beta4
+      [fix(es)]
+        - Fx51+ & Location bar (3) > Ac popup > Alt. appearance + Hide page title
+         + Show search engines: search engines were still hidden
+        - Windows/Linux & Tabs (1) > Tabs Toolbar > Reduce space above toolbar:
+         failed to work sometimes
+    1.5.9~beta5
+      [locale(s)]
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix(es)]
+        - e10s + curved tabs: issues with 'custom tab colors' and 'aero colors' options
+      [general change(s)]
+        - CTRs prefwindow: moved and reordered some options and categories 
+    1.5.9~beta6
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - Windows Classic theme & 'Tabs > P2 > Reduce space above toolbar': minor
+          glitch
+      [general change(s)]
+        - increased menu popup timings for Firefox buttons webdeveloper submenu 
+    1.5.9~beta7
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+      [new option(s)]
+        - Advanced > switch for 'about:config >> geo.enabled' preference
+      [general change(s)]
+        - CTRs prefwindow: moved and reordered some options and categories
+        - split location/search bars width/roundness settings
+        - moved location bars width/roundness settings to location bar category
+        - moved search bars width/roundness settings to search bar category 
+    1.5.9~beta8
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - Italian (it) translation updated (thanks to Styb)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [general change(s)]
+        - CTR prefwindow: moved some settings
+      [add-on compatibility]
+        - 'Tile Tabs' add-on & Windows: small button mode 
+    1.5.9~beta9
+      [locale(s)]
+        - French (fr) translation updated (thanks to BlackJack)
+        - Italian (it) translation updated (thanks to Styb)
+      [fix(es)]
+        - Fx50+ & small button view: identity box on popup windows
+        - Fx50+ & mov. back/forward buttons: identity box on popup windows 
+    1.5.9~beta10
+      [fix(es)]
+        - mov. back/forward buttons & small button mode: location bar glitch
+        - Windows Classic theme & 'General UI > P2 > Bookmarks... on toolbar:
+          old appearance' 
+    1.5.9~beta11
+      [locale(s)]
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix(es)]
+        - icon+text modes and some toggle/action buttons: wrong icon size
+      [add-on compatibility]
+        - 'Simple Add-on Manager' add-on & big icon / icon+text modes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 17 Nov 2016 18:13:30 +0100
+
 xul-ext-classic-theme-restorer (1.5.8.1-1nano) unstable; urgency=low
 
   * New upstream release
