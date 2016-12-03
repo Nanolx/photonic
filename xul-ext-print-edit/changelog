@@ -1,3 +1,15 @@
+xul-ext-print-edit (17.5-1nano) unstable; urgency=low
+
+  * New upstream release
+    17.4:
+      Fix: Changing PDF/scale/orientation/etc in print preview displayed source
+           browser instead of edit browser (FF49+). Fixed. 
+    17.5:
+      Chg: Updated to be compatible with Firefox 53.0.
+      Fix: A saved PDF file was sometimes locked until Firefox was exited. Fixed
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 03 Dec 2016 10:00:41 +0100
+
 xul-ext-print-edit (17.3-1nano) unstable; urgency=low
 
   * New upstream release
