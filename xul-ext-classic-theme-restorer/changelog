@@ -1,3 +1,36 @@
+xul-ext-classic-theme-restorer (1.6.0~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.5.9~beta12
+      [general change(s)]
+        - HiDPI modes: hires icons for some close icon variations 
+    1.6.0~beta1
+      [locale(s)]
+        - Chinese (zh-TW) translation updated (thanks to Shyayngs)
+      [fix(es)]
+        - Fx50+: 'Location bar > custom border roundness' + 'identity box colors': glitches
+      [general change(s)]
+        - expanded 'Options page > alt. appearance' options
+        - CTRs prefwindow: moved some options
+        - CTRs prefwindow: changed some labels 
+    1.6.0~beta2
+      [locale(s)]
+        - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+      [fix(es)]
+        - Fx50+ & WinXP & "Location bar > Autocomplete popup > Alt. appearance" option
+        - Fx52+ & "Location bar (3) > Remove 'Search with...' and 'Visit' items" option 
+    1.6.0~beta3
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Danish (da-DK) translation updated (thanks to scootergrisen)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option(s)]
+        - Tabs > P1 > Tab loading animation: orange (known from Linux)
+      [general change(s)]
+        - reduce size of some 'tab loading animation' images 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 03 Dec 2016 10:03:42 +0100
+
 xul-ext-classic-theme-restorer (1.5.9~beta11-1nano) unstable; urgency=low
 
   * New upstream release
