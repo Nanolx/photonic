@@ -1,3 +1,36 @@
+xul-ext-beyond-australis (1.4.7-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Changed: when the add-on is automatically updated, it now shows a less intrusive notification toaster message linking to the release notes; as before, this can still be disabled in the About page in the add-on's preferences
+    - Changed: (Firefox 51) if enabling the native one-off searches in the location bar, enabled by default in Nightly, the add-on just gets out of its way by not using its same feature "Show search engines in location bar"
+    - Updated: nl locale
+    - Removed: compatibility code for the Link Location Bar add-on, it seems to have been discontinued/deleted
+    - Bugfix: in small windows, the add-on's preferences page could overflow and lose its scrollbars, where some content would be inaccessible
+    - Bugfix: compatibility with Tab Mix Plus; setting a shortcut to one reserved (but unused) by Tab Mix Plus's session related features at startup wouldn't work
+    - Bugfix: small compatibility fixes for Firefox 51
+    - Bugfix: in a few cases (multi-window + e10s + sometimes) the add-on could fail to fully initialize
+    - Bugfix: many compatibility fixes for the latest and future versions of Firefox
+    - Bugfix: awesome bar results styles and color schemes were not working
+    - Bugfix: focusing the location bar shouldn't keep the toolbars visible if the navigation bar is always visible (not in the hidden toolbars)
+    - Bugfix: with the compact style, the back button would look very out of place
+    - Bugfix: tweak and fix many toolbar colors and appearance
+    - Bugfix: when the browser's titlebar is visible (e.g. with add-ons like Tree Style Tab, or always in Linux), try to more easily show the toolbars when moving the mouse over the titlebar
+    - Bugfix: compatibility with Tab Center, with Slim Chrome enabled, Tab Center couldn't be disabled/updated properly and would require a browser restart for things to get back to normal
+    - Bugfix: compatibility with Tab Center, the size of the toolbars wouldn't adapt properly to the size of the tabs on the side
+    - Bugfix: compatibility with Tree Style Tab, better adapt the toolbars to the width of the tabs on the side
+    - Bugfix: fix context menu appearing in the corner of the window when right-clicking the star button in the mini bar
+    - Bugfix: compatibility with Status-4-Evar, show mini bar when showing hovered links in the location bar
+    - Bugfix: don't show toolbars outline in windows where they are hidden
+    - Bugfix: switch between light and dark text and icon colors in the toolbars properly, according to used themes
+    - Bugfix: the adaptable search bar could not work right after startup with certain combinations of add-ons
+    - Bugfix: (Firefox 51) the Sky Lights would be too close to the edge of the window
+    - Bugfix: clicking the Site Identity Sky Light would open the mini bar to show the panel, instead of anchoring it to the light itself
+    - Bugfix: all toolbars hidden by Slim Chrome should be visible in fullscreen (if Slim Chrome is enabled, and not Firefox's native hide toolbars feature)
+    - General: added MPL license headers to source files
+    - Other minor fixes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 03 Dec 2016 10:02:15 +0100
+
 xul-ext-beyond-australis (1.4.6-1nano) unstable; urgency=low
 
   * New upstream release
