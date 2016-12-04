@@ -1,3 +1,11 @@
+zelda-tunics (0.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Requires Solarus 1.5.
+  * Some random tweaks to room layouts.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 04 Dec 2016 10:40:48 +0100
+
 zelda-tunics (0.2~git7e275f-1nano) unstable; urgency=low
 
   * New git snapshot
