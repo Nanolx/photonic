@@ -1,3 +1,20 @@
+xul-ext-classic-theme-restorer (1.6.0~beta5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.0~beta4
+      [locale(s)]
+        - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Japanese (ja) translation updated (thanks to mm_k)
+    1.6.0~beta5
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [fix(es)]
+        - Win10 & Fx50+ & 'movable back/forward buttons': identity icon glitch
+        - Win10 & Fx50+ & 'small button mode': identity icon glitch 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 12 Dec 2016 20:16:52 +0100
+
 xul-ext-classic-theme-restorer (1.6.0~beta3-1nano) unstable; urgency=low
 
   * New upstream release
