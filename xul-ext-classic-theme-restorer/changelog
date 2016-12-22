@@ -1,3 +1,44 @@
+xul-ext-classic-theme-restorer (1.6.0.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.0~beta6
+      [new option(s)]
+        - Fx53+: Tabs > P1 > Remove overflow effect from long tab titles 
+    1.6.0~beta7
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option(s)]
+        - Location bar > P1 > Dark background color
+    1.6.0~beta8
+      [locale(s)]
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Greek (el) translation updated (thanks to George M.)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - Russian (ru) translation updated (thanks to Alexei)
+      [general change(s)]
+        - CTR prefwindow: moved some options 
+    1.6.0~beta9
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [general change(s)]
+        - internal code tweaks 
+    1.6.0~beta10
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+      [general change(s)]
+        - internal code tweaks 
+    1.6.0.1
+      [locale(s)]
+        - French (fr) translation updated (thanks to BlackJack)
+      [fix(es)]
+        - Fx50/51 & "Location bar > AC popup > Remove 'Search with...' and 'Visit' items" option
+        - Tabs > Page 2 > New tab page url
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 22 Dec 2016 16:22:31 +0100
+
 xul-ext-classic-theme-restorer (1.6.0~beta5-1nano) unstable; urgency=low
 
   * New upstream release
