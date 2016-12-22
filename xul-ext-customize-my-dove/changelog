@@ -1,3 +1,18 @@
+xul-ext-customize-my-dove (1.0.7-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.0.6
+      [fix(es)]
+        - Default/normal/classic window layout and option "move Quick-filter-bar
+          below mail list":
+        - Quick-filter-bar will now appear below mail content to fix a glitch
+          with window/toolbar corruption once the separator between mail content
+          and mail list was moved.
+    1.0.7
+      - Added Spanish locale (thanks to strelnic) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 22 Dec 2016 16:25:53 +0100
+
 xul-ext-customize-my-dove (1.0.5-1nano) unstable; urgency=low
 
   * Initial release
