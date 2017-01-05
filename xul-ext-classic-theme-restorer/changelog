@@ -1,3 +1,21 @@
+xul-ext-classic-theme-restorer (1.6.1~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+    [fix(es)]
+      - Windows 10 & Personas & 'tabs not on top' options: semi-transparent toolbar glitch
+      - Developer Theme & movable back and forward buttons: identity box glitch
+      - Developer Theme & movable back and forward buttons: location bar glitch
+      - Developer Theme & some CTR options: restored visibility on prefwindow
+    [new option(s)]
+      - Tabs > Page 1 > Tab title position: left, centered, right
+    [general change(s)]
+      - CTRs prefwindow: added some labels
+      - CTRs prefwindow & macOS: changed some box sizes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 05 Jan 2017 17:10:11 +0100
+
 xul-ext-classic-theme-restorer (1.6.0.1-1nano) unstable; urgency=low
 
   * New upstream release
