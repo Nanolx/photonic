@@ -1,3 +1,25 @@
+xul-ext-classic-theme-restorer (1.6.1~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.1~beta2
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option(s)]
+        - Firefox button > button color > custom: button color on private windows
+      [general change(s)]
+        - CTRs prefwindow: changed some option descriptions
+        - CTRs prefwindow: moved some options
+    1.6.1~beta3
+      [locale(s)]
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - Firefox 53+ & Windows & squared tabs (v1): tab color glitches
+      [general change(s)]
+        - CTRs prefwindow: changed some option descriptions
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 08 Jan 2017 10:40:05 +0100
+
 xul-ext-classic-theme-restorer (1.6.1~beta1-1nano) unstable; urgency=low
 
   * New upstream release
