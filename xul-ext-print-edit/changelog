@@ -1,3 +1,11 @@
+xul-ext-print-edit (17.6-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Fix: Save as PDF feature ignored Page Setup page size and orientation settings (FF50+). Fixed.
+    • Fix: Firefox sometimes hung showing spinner on first entry into print edit mode (FF52+). Fixed. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 10:20:52 +0100
+
 xul-ext-print-edit (17.5-1nano) unstable; urgency=low
 
   * New upstream release
