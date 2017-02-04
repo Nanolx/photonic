@@ -1,3 +1,14 @@
+xul-ext-beyond-australis (1.4.8-1nano) unstable; urgency=low
+
+  * New upstream release
+    - This will be the last update, the add-on will stop working by next November
+      with Firefox 57. See http://fasezero.com/lastnotice.html for more info.
+    - New: support searx.me results pages in adaptable search bar
+    - Updated: de locale
+    - Other minor fixes 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 10:14:13 +0100
+
 xul-ext-beyond-australis (1.4.7-1nano) unstable; urgency=low
 
   * New upstream release
