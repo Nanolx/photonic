@@ -1,3 +1,71 @@
+xul-ext-classic-theme-restorer (1.6.2~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.1~beta4
+      [locale(s)]
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new option(s)]
+        - CTR > other settings > custom css (insert/apply own css code)
+    1.6.1~beta5
+      [locale(s)]
+        - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [new option(s)]
+        - Fx53+: Tabs > page 1 > long tab titles: 'default' overflow effect or no effect (v1/v2)
+        - General UI > Page 3 > Bookmarks menu button popup: only show 'bookmarks this page' and bookmarks
+      [general change(s)]
+        - Fx53+: replaced 'remove overflow effect from long tab titles' option with new option
+        - CTR prefwindow: moved 'custom css code' option to own category
+        - CTR prefwindow: 'Support' button > versions page links to latest CTR release and beta pages 
+    1.6.1~beta6
+      [locale(s)]
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [general change(s)]
+        - Fx53+: support for 'Compact Dark' and ' Compact Light' themes 
+    1.6.1~beta7
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - Russian (ru) translation updated (thanks to Alexei)
+      [fix(es)]
+        - 'Options page in window': font size in some menupopups
+        - 'Options page in window': size tweaks for 'Data choices' area
+      [general change(s)]
+        - CTRs prefwindow: minor tweaks 
+    1.6.1~beta8
+      [locale(s)]
+        - French (fr) translation updated (thanks to BlackJack)
+        - Greek (el) translation updated (thanks to George M.)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [add-on compatibility]
+        - 'Private tab' add-on & 'custom private new tab page' option
+    1.6.1.1~beta1
+      [locale(s)]
+        - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+      [add-on compatibility]
+        - 'Private tab' add-on & 'custom private new tab page' option
+    1.6.2~beta1
+      [new option(s)]
+        - General UI > page 3 > Bookmarks menu button > Popup: hide 'Bookmarks Toolbar' menu
+      [general change(s)]
+        - CTRs prefwindow: moved options, changed descriptions 
+    1.6.2~beta2
+      [fix(es)]
+        - Developer Theme & tabs not on top option: doubled line at tab toolbars bottom
+      [general change(s)]
+        - minor fixes
+      [add-on compatibility]
+        - 'SearchWP' add-on & Fx51 & CTRs 'old search' 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 10:09:14 +0100
+
 xul-ext-classic-theme-restorer (1.6.1~beta3-1nano) unstable; urgency=low
 
   * New upstream release
