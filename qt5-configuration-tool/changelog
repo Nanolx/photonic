@@ -1,3 +1,16 @@
+qt5-configuration-tool (0.30-1nano) unstable; urgency=low
+
+  * New upstream release
+  * add dependency on libmtdev-dev
+  * upstream:
+    * fixed crash on nonexistent style in qt5ct.conf
+    * fixed issue with KDE color themes
+    * updated documentation
+    * updated Bulgarian translation (Kiril Kirilov)
+    * updated French translation (Geiger David)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 19:44:31 +0100
+
 qt5-configuration-tool (0.29-1nano) unstable; urgency=low
 
   * New upstream release
