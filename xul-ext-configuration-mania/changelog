@@ -1,3 +1,18 @@
+xul-ext-configuration-mania (25.1.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * New option
+    - "UI"->"Others"->"DPI Scaling Factor" ( issue#245 )
+    -"Browser"->"Page control"->"Disable CSS visited-link styling to protect the
+      privacy of browsing history" ( issue#247 )
+    -"Browser"->"Web API"->"Enable custom elements" ( issue#248 )
+  * Bugfix
+    - issue#243 Allow context menu for security-tls-version
+    - "Browser"->"Page control"->"Enable CSS vertical text" has been replaced with
+      "Disable CSS vertical text" and marked as obsolete since Firefox 51. ( issue#244 )
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 10:18:24 +0100
+
 xul-ext-configuration-mania (25.0.0-1nano) unstable; urgency=low
 
   * New upstream release
