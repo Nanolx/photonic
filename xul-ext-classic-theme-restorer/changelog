@@ -1,3 +1,32 @@
+xul-ext-classic-theme-restorer (1.6.2.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.2~beta3
+      [locale(s)]
+        - Czech (cs) translation updated (thanks to poljos)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [new option(s)]
+        - Fx52+ & Windows: Advanced > Old font rendering
+      [general change(s)]
+        - minor prefwindow changes and fixes 
+    1.6.2~beta4
+      [locale(s)]
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [general change(s)]
+        - minor prefwindow changes and fixes 
+    1.6.2~beta5
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo) 
+    1.6.2.1~beta1
+      [fix(es)]
+        - Fx45-51 & Windows: "Advanced > Old font rendering" should not be applied automatically 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 18 Feb 2017 09:13:48 +0100
+
 xul-ext-classic-theme-restorer (1.6.2~beta2-1nano) unstable; urgency=low
 
   * New upstream release
