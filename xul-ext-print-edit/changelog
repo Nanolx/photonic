@@ -1,3 +1,17 @@
+xul-ext-print-edit (17.8-1nano) unstable; urgency=low
+
+  * New upstream release
+    17.7:
+      • New: Compact toolbar layout option now also compacts the print preview toolbar layout.
+      • Chg: Updated to be compatible with Firefox 54.0.
+      • Fix: Changes made in Firefox Bug 1324064 caused preview in PDF mode to ignore page setup settings (FF52+). Fixed.
+      • Fix: Clicking on Preview button in edit toolbar did not switch to print preview tab (FF52+). Fixed.
+      • Fix: Tabs on Bottom (Australis) add-on forced preview and edit toolbars to bottom of browser window. Fixed. 
+    17.8:
+      • Fix: Attempting to switch from Edit mode to Preview mode caused error code EXPE-2 (FF54). Fixed. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 26 Feb 2017 09:52:06 +0100
+
 xul-ext-print-edit (17.6-1nano) unstable; urgency=low
 
   * New upstream release
