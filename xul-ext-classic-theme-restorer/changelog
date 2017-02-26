@@ -1,3 +1,22 @@
+xul-ext-classic-theme-restorer (1.6.3~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.3~beta1
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+        - French (fr) translation updated (thanks to BlackJack)
+        - Italian (it) translation updated (thanks to Styb)
+      [general change(s)]
+        - code tweaks for 'Tabs > Page 2 > custom private new tab page' option (experimental)
+      [add-on compatibility]
+        - 'Private tab' add-on & CTRs 'custom private new tab page' option (experimental)
+    1.6.3~beta2
+      [fix(es)]
+        - Fx54+ & 'location bar > page 3 > hide i-icon' option
+        - Fx54+ & 'location bar > Autocomplete popup > alternative appearance' option
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 26 Feb 2017 09:54:01 +0100
+
 xul-ext-classic-theme-restorer (1.6.2.1-1nano) unstable; urgency=low
 
   * New upstream release
