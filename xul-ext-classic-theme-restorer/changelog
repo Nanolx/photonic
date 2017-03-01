@@ -1,3 +1,15 @@
+xul-ext-classic-theme-restorer (1.6.3~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+    [general change(s)]
+      - added movable mask indicator to palette (only visible on toolbars in private mode and customizing mode)
+      - duplicated 'Search bar > page 1 > middle clicks...' option to control middle clicks on search glass 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 01 Mar 2017 18:57:33 +0100
+
 xul-ext-classic-theme-restorer (1.6.3~beta2-1nano) unstable; urgency=low
 
   * New upstream release
