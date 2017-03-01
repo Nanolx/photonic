@@ -1,3 +1,10 @@
+xul-ext-print-edit (17.9-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Fix: First/Last page buttons in Print Preview appeared as invalid character codes in Windows 7. Fixed. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 01 Mar 2017 18:54:25 +0100
+
 xul-ext-print-edit (17.8-1nano) unstable; urgency=low
 
   * New upstream release
