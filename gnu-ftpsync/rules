@@ -7,9 +7,9 @@ export DH_VERBOSE=1
 
 override_dh_auto_install:
 	dh_auto_install
-	mkdir -p $(CURDIR)/debian/ftpsync/bin
-	install -m755 $(CURDIR)/src/ftpsync $(CURDIR)/debian/ftpsync/bin/
-	install -m755 $(CURDIR)/src/ftpsync-ssl $(CURDIR)/debian/ftpsync/bin/
+	mkdir -p $(CURDIR)/debian/gnu-ftpsync/bin
+	install -m755 $(CURDIR)/src/ftpsync $(CURDIR)/debian/gnu-ftpsync/bin/
+	install -m755 $(CURDIR)/src/ftpsync-ssl $(CURDIR)/debian/gnu-ftpsync/bin/
 
 override_dh_installman:
 	dh_installman $(CURDIR)/src/*.1

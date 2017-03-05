@@ -1,3 +1,9 @@
+gnu-ftpsync (1.3.07-3nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 05 Mar 2017 15:54:21 +0100
+
 gnu-ftpsync (1.3.07-2nano) unstable; urgency=low
 
   * New upstream release
