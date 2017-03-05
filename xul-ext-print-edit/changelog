@@ -1,3 +1,10 @@
+xul-ext-print-edit (17.10-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Fixes PDF print preview failures when not using e10s with Firefox 52.0+.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 05 Mar 2017 10:18:23 +0100
+
 xul-ext-print-edit (17.9-1nano) unstable; urgency=low
 
   * New upstream release
