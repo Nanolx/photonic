@@ -1,0 +1,22 @@
+Source: gnu-ftpsync
+Section: net
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0), make
+Standards-Version: 3.9.4
+Homepage: https://savannah.gnu.org/projects/gnu-ftpsync/
+
+Package: gnu-ftpsync
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         ${perl:Depends}, libwww-perl, libnet-ftpssl-perl,
+         libio-socket-ip-perl (>= 0.20) | libio-socket-inet6-perl
+Conflicts: ftpsync
+Description: rsync like tool for FTP
+ gnu-ftpsync is a tool similar to rsync, but
+ usable via FTP, which comes in hand, when
+ no SSH-Connection is available.
+ .
+ This package also contains gnu-ftpsync-ssl, an
+ experimental version of gnu-ftpsync wich supports
+ transfering files via FTP+SSL.
