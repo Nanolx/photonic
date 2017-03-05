@@ -1,3 +1,9 @@
+ftpsync (1.3.07-2nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 05 Mar 2017 15:34:08 +0100
+
 ftpsync (1.3.07-1nano) unstable; urgency=low
 
   * new upstream release
