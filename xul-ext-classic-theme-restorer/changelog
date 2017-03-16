@@ -1,3 +1,28 @@
+xul-ext-classic-theme-restorer (1.6.4~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.3~beta4
+      [locale(s)]
+        - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+        - Polish (pl-PL) translation updated (thanks to Mrere) 
+    1.6.4~beta1
+      [locale(s)]
+        - Czech (cs) translation updated (thanks to poljos)
+        - French (fr) translation updated (thanks to BlackJack)
+      [fix(es)]
+        - Fx53+ & ' Tabs > Appearance > Curved tabs (alt.) (Aero)' option:
+          tab text glitch
+    1.6.4~beta2
+      [fix(es)]
+        - Fx54+ & Windows Classic visual style: missing separators
+        - Fx52+ & old search & non-Aero themes: text color of item text above
+          suggestions
+        - other minor fixes
+      [add-on compatibility]
+        - Blackfox/Lavafox themes & CTRs 'tabs not on top' glitch 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 16 Mar 2017 18:26:28 +0100
+
 xul-ext-classic-theme-restorer (1.6.3~beta3-1nano) unstable; urgency=low
 
   * New upstream release
