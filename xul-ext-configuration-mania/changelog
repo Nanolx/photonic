@@ -1,3 +1,24 @@
+xul-ext-configuration-mania (25.2.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    25.2.0
+      -"Addons"->"Use the old prompt window for the addon installing approval"
+        has been added. (issue #246).
+      - "Browser"->"Web API"->"Enable Messaging (SMS) API" has been marked as
+        obsolete since Firefox 52 (issue #252)
+      - "Browser"->"Page control"->"Multiple Source Image"->"Enable srcset
+        attribute on img elements" and "Enable picture element" has been renamed
+        to "Disable ..." and marked as obsolete since Firefox 52 (issue #250).
+      - "UI"->"Bidi"->"Provider" has been removed because it is no longer used.
+        (issue #251).
+      - "Security"->"Referrer"->"Send the Referrer header when navigating from a
+        https site to another https site" has been renamed to "Do not send ..."
+        and marked as obsolete since Firefox 52 (issue #253).
+    25.2.1
+      - Locale text update (lt,pl,pt-BR) only. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 16 Mar 2017 18:24:34 +0100
+
 xul-ext-configuration-mania (25.2.0-1nano) unstable; urgency=low
 
   * New upstream release
