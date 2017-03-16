@@ -1,3 +1,26 @@
+xul-ext-save-images (1.2.4-1nano) unstable; urgency=low
+
+  * New upstream release
+    v1.2.1
+      - Added: Framescripts to access DOM content
+      - Changed: Files and folders are created using OS.File.jsm and FileUtils.jsm
+        functions
+      - Changed: moved checking for cache files into separate for loop because
+        continueImageSave was being called multiple times and also being called
+        even if cancelled prompt dialog
+      - Fixed: some tabs were being closed if a previous save had set the SI_canClose
+        attribute but the tab was not closed
+      - Removed: the option to select a language to use for "Save Images". With
+        signed add-ons, modifying the manifest file causes the add-on to stop working
+      - Fixed: Save Details window information is updated if window is open
+      - Added: an open folder button to the Save Details window 
+    v1.2.2
+      - Removed: removed unnecessary files
+    v1.2.4
+      - No ChangeLog provided
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 16 Mar 2017 18:18:44 +0100
+
 xul-ext-save-images (1.1.0.3-1nano) unstable; urgency=low
 
   * New upstream release
