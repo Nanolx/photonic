@@ -1,3 +1,13 @@
+xul-ext-save-images (1.2.5-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Fixed: saving from multiple tabs was sometimes causing errors with
+      the image array
+    - Fixed: tabs were not always being closed
+    - Added: code to get the add-on version 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 25 Mar 2017 10:15:15 +0100
+
 xul-ext-save-images (1.2.4-1nano) unstable; urgency=low
 
   * New upstream release
