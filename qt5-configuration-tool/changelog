@@ -1,3 +1,22 @@
+qt5-configuration-tool (0.31-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added option "Toolbar button style"
+  * added option "Mouse wheel scroll lines"
+  * added test for minimal Qt version
+  * added Arabic translation (abouzakaria kov)
+  * using c++11 for source code
+  * fixed Qt 5.4 support
+  * updated Russian translation
+  * updated Bulgarian translation (Kiril Kirilov)
+  * updated Dutch (Netherlands) translation (Heimen Stoffels)
+  * updated Chinese (Taiwan) translation (Jeff Huang)
+  * updated German translation (Ettore Atalan)
+  * updated Serbian translation (markosm)
+  * updated Czech translation (fri)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 28 Mar 2017 20:20:35 +0200
+
 qt5-configuration-tool (0.30-1nano) unstable; urgency=low
 
   * New upstream release
