@@ -1,3 +1,18 @@
+xul-ext-ui-eraser (0.2.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.2.3
+      - [ * ] Set multiprocessCompatible to true in install.rdf. Codes remain unchanged.
+    0.2.2
+      - [ * ] Fix uninstall/undo bugs.
+    0.2.1
+      - [ * ] Fix typeError: aId is undefined (resource://app/modules/CustomizableUI.jsm)
+        when new windows are created (https://bugzilla.mozilla.org/show_bug.cgi?id=1009897).
+    0.2.0
+      - [ * ] Fix codes due to location change of the scratchpad.dtd file in FF45. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 28 Mar 2017 20:05:57 +0200
+
 xul-ext-ui-eraser (0.1.9-2nano) unstable; urgency=low
 
   * rebuild to reflect iceweasel > firefox transistion
