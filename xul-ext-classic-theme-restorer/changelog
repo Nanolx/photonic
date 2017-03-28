@@ -1,3 +1,28 @@
+xul-ext-classic-theme-restorer (1.6.4~beta8-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.4~beta6
+      [general change(s)]
+        - unlocked more CTR settings for default "Compact Dark/Light" themes
+    1.6.4~beta7
+      [locale(s)]
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - Chinese (zh-TW) translation updated (thanks to Shyayngs)
+        - Russian (ru) translation updated (thanks to Alexei)
+        - French (fr) translation updated (thanks to BlackJack)
+        - Spanish (es) translation updated (thanks to strel)
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+      [general change(s)]
+        - improved tab indicators for 'container tabs' 
+    1.6.4~beta8
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [general change(s)]
+        - (Win8/10) improved tab indicators for 'container tabs' 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 28 Mar 2017 20:18:34 +0200
+
 xul-ext-classic-theme-restorer (1.6.4~beta5-1nano) unstable; urgency=low
 
   * New upstream release
