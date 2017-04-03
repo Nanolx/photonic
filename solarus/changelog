@@ -1,3 +1,13 @@
+solarus (1.5.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Speed up loading maps by keeping tilesets in a cache (#1019).
+  * Fix text_surface:set_horizontal/vertical_alignment() not working.
+  * Fix parallax dynamic tiles still displayed when disabled or invisible.
+  * Improve error message of non-square tile patterns with diagonal obstacles.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 03 Apr 2017 19:16:26 +0200
+
 solarus (1.5.1-1nano) unstable; urgency=low
 
   * New upstream release
