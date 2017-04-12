@@ -1,3 +1,11 @@
+xul-ext-print-edit (18.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Inspect and Format panels now working correctly again
+    • Fixes several incompatibilities with Firefox 55.0+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 12 Apr 2017 11:35:08 +0200
+
 xul-ext-print-edit (17.11-1nano) unstable; urgency=low
 
   * New upstream release
