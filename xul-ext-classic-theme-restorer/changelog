@@ -1,3 +1,45 @@
+xul-ext-classic-theme-restorer (1.6.5~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.4~beta9
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s) 
+    1.6.5~beta1
+      [fix(es)]
+        - location bar: always hide 'move to menu' and 'remove from toolbar'
+          items from button context menu
+      [new option(s)]
+        - Fx55+: Advanced > anti-fingerprinting protection (switch for
+          'privacy.resistFingerprinting')
+      [general change(s)]
+        - tweaks for 'General UI > Page 2 > Alternative appearance for download
+          progress bar' option
+        - moved 'findbar.modalHighlight' switch from 'Advanced' to 'General UI
+          > Page 4'
+        - removed 'findbar.HighlightAll' switch (not needed anymore) 
+    1.6.5~beta2
+      [locale(s)]
+        - Slovenian (sl-SI) translation updated (thanks to Klofutar)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+        - Japanese (ja) translation updated (thanks to mm_k) 
+    1.6.5~beta3
+      [general change(s)]
+        - 'Add-on manager > add-on lists: replace button labels with icons'
+          option: HiDPI support
+        - 'Add-on manager > add-on lists: replace button labels with icons'
+          option: different 'edit icon' for Stylish styles 
+    1.6.5~beta4
+      [new option(s)]
+        - Fx55+: Options page > Search bar (switch for 'browser.preferences.search')
+      [fix(es)]
+        - Fx55+: minor glitches on options page
+      [general change(s)]
+        - CTR prefwindow: info about default browser preferences not being
+          exported/imported by CTR 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 12 Apr 2017 11:39:43 +0200
+
 xul-ext-classic-theme-restorer (1.6.4~beta8-1nano) unstable; urgency=low
 
   * New upstream release
