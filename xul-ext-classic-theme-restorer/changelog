@@ -1,3 +1,27 @@
+xul-ext-classic-theme-restorer (1.6.5~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.5~beta5
+      [locale(s)]
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - minor glitches on options page with some options
+      [general change(s)]
+        - Fx55+: tweaks for options page and its content 
+    1.6.5~beta6
+      [locale(s)]
+        - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      [fix(es)]
+        - options page in window and options button: missing icon in palette
+        - Windows Classic visual styles: missing cui button indicators (normal, small, icon, text...)
+        - Fx54+: console errors with 'Location bar > Autocomplete popup > alt. appearance' option
+        - Fx55+: minor glitches on options page with some option groups
+      [general change(s)]
+        - internal changes for cui button indicators (normal, small, icon, text...)
+        - added label for private mask indicator
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 17 Apr 2017 12:46:21 +0200
+
 xul-ext-classic-theme-restorer (1.6.5~beta4-1nano) unstable; urgency=low
 
   * New upstream release
