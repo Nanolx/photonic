@@ -1,3 +1,11 @@
+xul-ext-print-edit (18.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Fix: Right-clicking in Edit window did not show properties in Inspect panel
+      (FF52-FF53). Fixed. 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 21 Apr 2017 20:32:32 +0200
+
 xul-ext-print-edit (18.0-1nano) unstable; urgency=low
 
   * New upstream release
