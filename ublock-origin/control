@@ -1,0 +1,51 @@
+Source: ublock-origin
+Section: web
+Priority: optional
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 10), mozilla-devscripts
+Standards-Version: 3.9.8
+Homepage: https://github.com/gorhill/uBlock
+
+Package: xul-ext-ublock-origin
+Architecture: all
+Depends: ${xpi:Depends}, ${misc:Depends}, fonts-font-awesome
+Recommends: ${xpi:Recommends}
+Breaks: ${xpi:Breaks}
+Provides: xul-ext-ublock, ${xpi:Provides}
+Enhances: ${xpi:Enhances}
+Description: general-purpose lightweight ads, malware, trackers blocker
+ uBlock is a small footprint blocker for against web ads, malware, trackers,
+ analytics and similar invasive items.
+ .
+ Compared to other blockers like AdBlock and Ghostery, µBlock is focused on
+ having a smaller memory and CPU footprint.
+ .
+ This package provides the Mozilla version of the addon.
+
+Package: chromium-ublock-origin
+Architecture: all
+Depends: ${misc:Depends}, fonts-font-awesome
+Recommends: chromium
+Description: general-purpose lightweight ads, malware, trackers blocker (Chromium)
+ uBlock is a small footprint blocker for against web ads, malware, trackers,
+ analytics and similar invasive items.
+ .
+ Compared to other blockers like AdBlock and Ghostery, µBlock is focused on
+ having a smaller memory and CPU footprint.
+ .
+ This package provides the Chromium version of the addon.
+
+Package: ublock-origin-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: xul-ext-ublock-origin (<< 1.11.4+dfsg)
+Replaces: xul-ext-ublock-origin (<< 1.11.4+dfsg)
+Description: general-purpose lightweight ads, malware, trackers blocker - documentation
+ uBlock is a small footprint blocker for against web ads, malware, trackers,
+ analytics and similar invasive items.
+ .
+ Compared to other blockers like AdBlock and Ghostery, µBlock is focused on
+ having a smaller memory and CPU footprint.
+ .
+ This package contains larger files that are part of µBlock's documentation.

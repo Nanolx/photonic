@@ -1,0 +1,2 @@
+dist/build/uBlock0.chromium/* usr/share/chromium/extensions/ublock-origin
+debian/chromium/ublock-origin etc/chromium.d

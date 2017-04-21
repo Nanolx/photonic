@@ -1,0 +1,55 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with xul-ext --buildsystem=xul_ext
+
+
+override_dh_auto_build:
+	./tools/make-firefox.sh
+	./tools/make-chromium.sh
+	xpi-pack dist/build/uBlock0.firefox xul-ext-ublock-origin.xpi
+
+
+override_dh_auto_install:
+	install-xpi xul-ext-ublock-origin.xpi -x LICENSE.txt
+	dh_install -p chromium-ublock-origin -X LICENSE.txt
+
+
+override_dh_install:
+	dh_install -p ublock-origin-doc
+
+
+override_dh_auto_clean:
+	./tools/make-clean.sh
+	rm -f *.xpi
+
+
+# We bypass dh_link so that the symlink to fontawesome-webfont.ttf is
+# absolute.  Although this violates a 'should' directive of Debian
+# Policy, it is necessary for ublock-origin to work correctly with
+# firefox-esr 45, which is likely to be the version of Firefox
+# included in stretch.  See #827517 & #819900 for details.
+
+# Once all versions of Firefox in testing and unstable are at least
+# version 48, this override should be removed, and the symlink
+# installed with debian/xul-ext-ublock-origin.links (revert 020a17e
+# and then revert c14b5b3)
+override_dh_link:
+	dh_link -p xul-ext-ublock-origin -Xfontawesome-webfont.ttf
+	ln -sf /usr/share/fonts/truetype/font-awesome/fontawesome-webfont.ttf \
+		debian/xul-ext-ublock-origin/usr/share/xul-ext/ublock-origin/css/fonts/fontawesome-webfont.ttf
+	dh_link -p chromium-ublock-origin usr/share/fonts/truetype/font-awesome/fontawesome-webfont.ttf \
+		usr/share/chromium/extensions/ublock-origin/css/fonts/fontawesome-webfont.ttf
+	dh_link -p ublock-origin-doc \
+		usr/share/doc/xul-ext-ublock-origin/benchmarks \
+		usr/share/doc/chromium-ublock-origin/benchmarks \
+		usr/share/doc/xul-ext-ublock-origin/media \
+		usr/share/doc/chromium-ublock-origin/media
+
+
+override_dh_installchangelogs:
+	dh_installchangelogs debian/upstream/changelog.html debian/upstream/changelog
+
+.PHONY: get-orig-changelog
+get-orig-changelog:
+	amo-changelog -p rst ublock-origin
