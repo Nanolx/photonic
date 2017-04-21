@@ -1,3 +1,32 @@
+xul-ext-classic-theme-restorer (1.6.5-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.5~beta7
+      [locale(s)]
+        - Spanish (es) translation updated (thanks to strel)
+        - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+        - Russian (ru) translation updated (thanks to Alexei)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Polish (pl-PL) translation updated (thanks to Mrere)
+      [fix(es)]
+        - Fx52+: 'Location bar > Autocomplete popup > Aero Colors for highlighted results' option
+        - Windows Classic visual styles: 'General ui > page 2 > alternative appearance for menu panel popups' option 
+    1.6.5~beta8
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+        - French (fr) translation updated (thanks to BlackJack)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix(es)]
+        - Fx52+: 'Location bar > Autocomplete popup > Aero Colors for highlighted results' option
+        - Windows Classic visual styles: 'General ui > page 2 > alternative appearance for menu panel popups' option
+        - minor other glitches
+      [general change(s)]
+        - tweaks for 'General ui > page 2 > alternative appearance for menu panel popups' option (thanks to maxoku) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 21 Apr 2017 20:28:23 +0200
+
 xul-ext-classic-theme-restorer (1.6.5~beta6-1nano) unstable; urgency=low
 
   * New upstream release
