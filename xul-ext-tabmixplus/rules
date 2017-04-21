@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with xul-ext --buildsystem=xul_ext
+
+override_dh_auto_install:
+	install-xpi --remove-license-files xul-ext-tabmixplus.xpi
+
+get-orig-source:
+	uscan --verbose --compression xz
