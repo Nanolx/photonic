@@ -1,3 +1,15 @@
+xul-ext-classic-theme-restorer (1.6.6~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.6~beta1
+      [fix(es)]
+        - Windows 10 & Compact themes: glitches with titlebar, tabs toolbar and min/max/close buttons 
+    1.6.6~beta2
+      [fix(es)]
+        - Fx53+ & curved pinned tabs: glitch caused by last beta 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 23 Apr 2017 11:27:39 +0200
+
 xul-ext-classic-theme-restorer (1.6.5-1nano) unstable; urgency=low
 
   * New upstream release
