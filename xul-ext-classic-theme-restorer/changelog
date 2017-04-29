@@ -1,9 +1,24 @@
+xul-ext-classic-theme-restorer (1.6.6~beta3-1nano) unstable; urgency=low
+
+  * New upstream release
+    [new option(s)]
+      - Fx55+: General ui > page 4 > general ui animations (switch for
+       'toolkit.cosmeticAnimations.enabled')
+    [general change(s)]
+      - Fx55+: removed 'browser.tabs.animate' and 'browser.fullscreen.animate'
+       switches
+    [add-on compatibility]
+      - Fx54+ & 'Classic Toolbar Buttons' add-on
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 29 Apr 2017 20:42:57 +0200
+
 xul-ext-classic-theme-restorer (1.6.6~beta2-1nano) unstable; urgency=low
 
   * New upstream release
     1.6.6~beta1
       [fix(es)]
-        - Windows 10 & Compact themes: glitches with titlebar, tabs toolbar and min/max/close buttons 
+        - Windows 10 & Compact themes: glitches with titlebar, tabs toolbar and
+          min/max/close buttons 
     1.6.6~beta2
       [fix(es)]
         - Fx53+ & curved pinned tabs: glitch caused by last beta 
