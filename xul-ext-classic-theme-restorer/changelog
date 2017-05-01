@@ -1,3 +1,16 @@
+xul-ext-classic-theme-restorer (1.6.6~beta4-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Polish (pl-PL) translation updated (thanks to Mrere)
+    [fix(es)]
+      - Fx53+: 'tabs > page 3 > mockup option: text shadow glitch
+      - Fx54+: 'General ui > mov. back-forward button': glitch in some cases
+    [add-on compatibility]
+      - Fx54+ & 'Classic Toolbar Buttons' add-on 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 01 May 2017 10:15:03 +0200
+
 xul-ext-classic-theme-restorer (1.6.6~beta3-1nano) unstable; urgency=low
 
   * New upstream release
