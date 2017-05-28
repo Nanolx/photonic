@@ -1,3 +1,18 @@
+xul-ext-configuration-mania (25.4.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    25.3.0
+      * The pipelining-related settings have been marked as obsolete since Firefox 54 (issue #255)
+      * Some locale texts have been updated.
+    25.4.0
+      * "Browser"->"TabBrowsing"->"Number of rows of newtab grid"/"Number of
+         columns of newtab grid" has been added. (issue #258)
+      * "Security"->"Referrer"->"Default Referrer-Policy" has been added. (issue #257)
+      * "Security"->"Privacy"->"Contextural Identity" has been added. (issue #256)
+      * "Security"->"Privacy"->"DOM Storage" has been added. (issue #249)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 28 May 2017 09:43:36 +0200
+
 xul-ext-configuration-mania (25.2.1-1nano) unstable; urgency=low
 
   * New upstream release
