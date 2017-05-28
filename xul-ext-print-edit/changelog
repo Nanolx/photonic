@@ -1,3 +1,19 @@
+xul-ext-print-edit (18.2-1nano) unstable; urgency=low
+
+  * New upstream release
+    • New: Button in Format Panel to quickly apply page breaks before selected elements
+    • New: Keyboard shortcut (#) to quickly apply page breaks before selected elements
+    • New: Option to 'Default to avoiding page breaks inside images'
+    • Chg: 'Background' property in Format Panel can now be set to 'transparent'
+    • Chg: 'Table Border' property in Format Panel can now be set to '0px'
+    • Chg: 'Page Break' property in Format Panel can now be set to 'auto'
+    • Chg: Updated language translations (will need further update)
+    • Fix: Switching from edit window to preview window was very slow with Firefox 55+
+    • Fix: User was not always asked whether to retain edits from previous session
+    • Fix: Shift+Right-click in edit window showed both Firefox and Print Edit context menus.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 28 May 2017 09:42:21 +0200
+
 xul-ext-print-edit (18.1-1nano) unstable; urgency=low
 
   * New upstream release
