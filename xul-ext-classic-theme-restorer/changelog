@@ -1,3 +1,65 @@
+xul-ext-classic-theme-restorer (1.6.7~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.6~beta5
+    [fix(es)]
+      - Fx55+: missing icons (Nightly 2017-05-04)
+    [new option(s)]
+      - Tabs > Page 3 > additional close icon (icon from Igors QTTabBar skin)
+      - General UI > Page 5 > additional close icon (icon from Igors QTTabBar skin) 
+    1.6.6~beta6
+    [locale(s)]
+      - (NEW) Dutch translation added (thanks to Tonnes)
+      - Slovenian (sl) translation updated (thanks to Klofutar) 
+    1.6.6~beta7
+    [locale(s)]
+      - Estonian (et) translation updated (thanks to Maidur)
+    [fix(es)]
+      - Fx55+ & 'show version number' option in 'add-ons manager': missing 'LEGACY' warning
+    1.6.6~beta8
+    [locale(s)]
+      - Japanese (ja) translation updated (thanks to mm_k)
+      - Spanish (es) translation updated (thanks to strel)
+      - Dutch (nl) translation updated (thanks to Tonnes) 
+    1.6.7~beta1
+    [locale(s)]
+      - Greek (el) translation updated (thanks to George M.)
+      - French (fr) translation updated (thanks to BlackJack)
+    [fix(es)]
+      - Fx55-56 & 'small button mode': missing back icon
+    [general change(s)]
+      - Fx55-56: 'hide location bars stop & reload buttons' option hides default stop and reload buttons
+      - Fx55+: 'hide location bars stop & reload buttons separator' option hides new action button area
+    1.6.7~beta2
+    [fix(es)]
+      - Fx55-56 & 'movable back-forward buttons': location bar gap
+    [general change(s)]
+      - Fx55-56: removed 'generic favicon' options (temporary)
+    1.6.7~beta3
+    [fix(es)]
+      - Toolbar 'text mode': broken panel popups
+      - macOS & HiDPI mode: missing bookmarks menu button icon
+      - Fx55-56: various code tweaks on fixes
+    [general change(s)]
+      - location bar: always hide button/toolbar context menu 
+    1.6.7~beta4
+    [fix(es)]
+      - Fx55-56: movable back-forward buttons glitch
+    [general change(s)]
+      - Fx55-56: unlocked 'General UI > Page 1 > Reduce location bars and search bars height' option for all OS 
+    1.6.7~beta5
+    [locale(s)]
+      - Chinese (zh-CN) translation updated (thanks to Cye3s)
+    [fix(es)]
+      - Fx55-56: bookmark button glitch with 'Reduce location bars and search bars height' option
+      - Fx55-56: glitch with 'reduce navigation toolbar height' option
+      - bookmark buttons menu glitch with 'alt. bg color for panel menus' option 
+    1.6.7~beta6
+    [fix(es)]
+      - Fx55-56: minor changes
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 28 May 2017 09:45:28 +0200
+
 xul-ext-classic-theme-restorer (1.6.6~beta4-1nano) unstable; urgency=low
 
   * New upstream release
