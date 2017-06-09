@@ -1,3 +1,10 @@
+xul-ext-configuration-mania (25.4.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Locale text update only
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 09 Jun 2017 19:51:54 +0200
+
 xul-ext-configuration-mania (25.4.0-1nano) unstable; urgency=low
 
   * New upstream release
