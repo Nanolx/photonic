@@ -1,3 +1,53 @@
+xul-ext-classic-theme-restorer (1.6.7~beta11-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.7~beta7
+    [fix(es)]
+      - 'custom new private tab' option: Firefox could freeze in some cases
+    [general change(s)]
+      - WinVista/7 & Fx55-56: adjusted blue/gray colors to match default colors
+      - moved "Blue Aero colors" option to 'general ui > page 1' (option can override new default gray colors) 
+    1.6.7~beta8
+    [fix(es)]
+      - WinVista/7: new tab icon issue caused by last beta
+      - various tweaks for 'Blue Aero colors' option
+    [new option(s)]
+      - Fx55+: Advanced > Photon (switch for 'browser.photon.structure.enabled') 
+    1.6.7~beta9
+    [locale(s)]
+      - Polish (pl) translation updated (thanks to Mrere)
+    [new option(s)]
+      - 'Tabs > Page 1 > Font size [8-20px]'
+      - 'Location Bar > Page 2 > Font size [8-20px]'
+      - 'Search Bar > Page 2 > Font size [8-20px]'
+    [general change(s)]
+      - WinVista/7 & Fx55-56 & tabs not on top: adjusted gray ui colors to match default colors
+      - CTRs prefwindow > Tabs category: moved some settings between pages 
+    1.6.7~beta10
+    [locale(s)]
+      - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+      - Polish (pl) translation updated (thanks to Mrere)
+      - Italian (it) translation updated (thanks to Styb)
+      - Spanish (es) translation updated (thanks to strel)
+    [new option(s)]
+      - Fx55-56: Advanced > Photon (selector for 'browser.uidensity')
+    [fix(es)]
+      - Fx55-56 & Win10: issues with tab text
+      - Fx55-56 & Win10: issues with tabs not on top mode
+      - Fx55-56 & Win10: glitches with tabs toolbar
+    1.6.7~beta11
+    [locale(s)]
+      - Greek (el) translation updated (thanks to George M.)
+      - French (fr) translation updated (thanks to BlackJack)
+      - Upper Sorbian (hsb) translation updated (thanks to milupo)
+      - Lower Sorbian (dsb) translation updated (thanks to milupo)
+      - Russian (ru) translation updated (thanks to Alexei)
+      - Japanese (ja) translation updated (thanks to mm_k)
+    [fix(es)]
+      - Fx55-56: missing menu button dropmarkers on navigation toolbar 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 09 Jun 2017 19:53:14 +0200
+
 xul-ext-classic-theme-restorer (1.6.7~beta6-1nano) unstable; urgency=low
 
   * New upstream release
