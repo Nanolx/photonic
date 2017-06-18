@@ -1,3 +1,27 @@
+xul-ext-classic-theme-restorer (1.6.8~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.7~beta12
+      [fix(es)]
+        - reverted some CTR beta changes for Firefox 55 beta, because many Firefox
+          55 Nightly changes did not make it into Firefox 55 beta. 
+    1.6.7~beta13
+      [general change(s)]
+        - Fx53-56: added warning about 'CTR & Fx57+'
+        - Fx56: removed old search and all of its suboptions (old search does
+          not work on Fx 56 Nightly [2017-06-14])
+    1.6.7~beta14
+      [fix(es)]
+        - Fx54-56 & large button mode: glitches with forward button and identity icons
+        - Fx56 & Win10: minor appbutton in titlebar tweaks 
+    1.6.8~beta1
+      [fix(es)]
+        - Fx55-56 & "Add-on manager > version number": localized 'Legacy' tag
+        - Fx55-56 & "Location bar > AC popup > Remove 'Search with...' and 'Visit'
+          items" option 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 18 Jun 2017 14:30:13 +0200
+
 xul-ext-classic-theme-restorer (1.6.7~beta11-1nano) unstable; urgency=low
 
   * New upstream release
