@@ -1,0 +1,19 @@
+Source: zelda-solarus-xd2-mercuris-chess
+Section: games
+Priority: extra
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends: debhelper (>= 8.0.0), cmake, zip
+Standards-Version: 3.9.4
+Homepage: http://solarus-games.org
+
+Package: zelda-solarus-xd2-mercuris-chess
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.5.0)
+Description: Zelda Fangame using Solarus engine
+ A "The Legend Of Zelda - A Link To The Past"-like Fangame
+ using the Solarus OpenSource game engine.
+ .
+ Zelda XD2: Mercuris Chess is the sequel of the first XD parodic game,
+ and was also released on April 1st, in 2017 this time. As a direct sequel,
+ the overworld is expanded, the story is extended and the funny tone is kept,
+ if not bettered! 
