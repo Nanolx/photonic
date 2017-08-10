@@ -1,3 +1,12 @@
+xul-ext-configuration-mania (25.5.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    * "Browser"->"Others"->"Disable UI animations" has been added. (issue #260)
+    * "Browser"->"TabBrowsing"->"Animation"->"Opening/Closing tab" has been marked
+      as obsolete since Firefox 55. (issue #260)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 10 Aug 2017 12:57:00 +0200
+
 xul-ext-configuration-mania (25.4.1-1nano) unstable; urgency=low
 
   * New upstream release
