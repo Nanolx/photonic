@@ -1,3 +1,84 @@
+xul-ext-classic-theme-restorer (1.6.9~beta6-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.8~beta2
+      [fix(es)]
+        - Fx56 & Win10: minor appbutton in titlebar tweaks 
+    1.6.8~beta3
+      [add-on compatibility]
+        - Fx54-56 & 'Classic Toolbar Buttons' add-on 
+    1.6.8~beta4
+      [fix(es)]
+        - Fx54-56 & 'mov. back-forward buttons': issue with navigation toolbar height in some cases 
+    1.6.8~beta5
+      [fix(es)]
+        - Fx55-56 & macOS: button issue in (2x) HiDPI mode 
+    1.6.8~beta6
+      [fix(es)]
+        - 'Add-ons manager > Alternative appearance': padding in detail view (thanks to maxoku)
+        - macOS & lw-theme & 'tabs not on top v1': gap in fullscreen mode
+        - Fx52 & preference page/window settings: glitches
+        - Fx55 & Win7 Aero & 'tabs not on top v1': wrong tab toolbar color 
+    1.6.8~beta7
+      [fix(es)]
+        - General UI > Page 1 > 'Page context menu: replace icons with labels': issues with doubled text
+        - Fx55-56 & 'Location bar > AC popup > Alternative appearance': issues in some cases 
+    1.6.8~beta8
+      [fix(es)]
+        - Fx54 & 'Location bar > AC popup > Alternative appearance': issues in some cases
+        - General UI > Page 1 > 'Page context menu: replace icons with labels': shortcut keys 
+    1.6.8~beta9
+      [locale(s)]
+        - Greek (el) translation updated (thanks to George M.)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - French (fr) translation updated (thanks to BlackJack)
+        - Japanese (ja) translation updated (thanks to mm_k)
+        - Estonian (et) translation updated (thanks to Maidur)
+        - Slovenian (sl) translation updated (thanks to Klofutar)
+      [fix(es)]
+        - Fx55-56 & sidebars close icon: compatibility
+        - a few internal tweaks 
+    1.6.8.1~beta1
+      [locale(s)]
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+      [fix(es)]
+        - Fx54 & 'Location bar > AC popup > Alternative appearance' + 'Hide page title' 
+    1.6.9~beta1
+      [fix(es)]
+        - Fx45-52 & WinXP: 'small buttons' options menu buttons got moved into 'more tools' menu
+        - Fx55-56 & Linux/macOS: 'legacy' tag glitch in add-on managers 'show version number' option
+        - Fx55-56: menu button dropmarkers glitch on navigation toolbar
+        - Fx55-56: 'inverted navigation toolbar icons' option glitch
+        - Fx56 & Win10: appbutton on titlebar glitches introduced by code changes in Fx56
+      [general change(s)]
+        - Toolbars > P4 > Menubar > Alt background color: always force default menu text colors 
+    1.6.9~beta2
+      [fix(es)]
+        - Fx56: 'small buttons' options location and search bar glitches
+      [new option(s)]
+        - 'CTR > Other settings > Show Find and Find Again in toolbars context menu'
+        - 'Tabs > Page 3 > Tab Close > Position: on hovered tab only' 
+    1.6.9~beta3
+      [locale(s)]
+        - Slovenian (sl) translation updated (thanks to Klofutar)
+        - Polish (pl) translation updated (thanks to Mrere)
+      [fix(es)]
+        - Nightly and add-on managers version number option
+        - minor tweaks
+    1.6.9~beta4
+      [fix(es)]
+        - issues with "add-on managers version number option" caused by last beta 
+    1.6.9~beta5
+      [fix(es)]
+        - Fx56: adjustments for recently released Fx56 beta 
+    1.6.9~beta6
+      [fix(es)]
+        - Fx55: AdblockPlus icon glitch
+        - Fx56: more adjustments for recently released Fx56 beta 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 10 Aug 2017 12:52:21 +0200
+
 xul-ext-classic-theme-restorer (1.6.8~beta1-1nano) unstable; urgency=low
 
   * New upstream release
