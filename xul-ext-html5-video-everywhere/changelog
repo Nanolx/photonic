@@ -1,3 +1,10 @@
+xul-ext-html5-video-everywhere (0.3.8-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix Youtube background playback 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 10 Aug 2017 12:59:25 +0200
+
 xul-ext-html5-video-everywhere (0.3.4-1nano) unstable; urgency=low
 
   * New upstream release
