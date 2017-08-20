@@ -1,3 +1,25 @@
+xul-ext-classic-theme-restorer (1.7.0~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.6.9~beta7
+      [locale(s)]
+        - Italian (it) translation updated (thanks to Styb)
+        - Spanish (es) translation updated (thanks to strel)
+      [fix(es)]
+        - Fx56: more adjustments for recently released Fx56 beta
+    1.6.9~beta8
+      [locale(s)]
+        - Chinese (zh-CN) translation updated (thanks to Cye3s)
+        - Greek (el) translation updated (thanks to George M.)
+        - Upper Sorbian (hsb) translation updated (thanks to milupo)
+        - Lower Sorbian (dsb) translation updated (thanks to milupo)
+        - French (fr) translation updated (thanks to BlackJack)
+    1.7.0~beta1
+      [fix(es)]
+        - Fx55-56: menu button dropmarkers
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 20 Aug 2017 18:11:23 +0200
+
 xul-ext-classic-theme-restorer (1.6.9~beta6-1nano) unstable; urgency=low
 
   * New upstream release
