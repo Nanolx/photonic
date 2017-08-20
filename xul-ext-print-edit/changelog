@@ -1,3 +1,12 @@
+xul-ext-print-edit (18.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    • Fixes problem preventing entry into print preview window (FF56)
+    • Fixes problem preventing highlight and select boxes being displayed
+      for some elements
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 20 Aug 2017 18:07:50 +0200
+
 xul-ext-print-edit (18.2-1nano) unstable; urgency=low
 
   * New upstream release
