@@ -1,3 +1,23 @@
+palemoon-installer (0.2.3-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.2.2:
+      * The installer no longer gets stuck if the user clicks "Cancel" before
+        any part of the Pale Moon archive has been downloaded.
+      * When choosing the version of Pale Moon to install, "Latest version" is
+        now automatically selected.
+      * Updated the bashobfus script used by the installer.
+      * Fixed some typos and updated the oxygen-gtk2 warning message and Readme.
+    0.2.3:
+      * Updates used URL's to account for changes in the Pale Moon for Linux
+        site backend.
+      * Only the latest version of Pale Moon can be downloaded and installed
+        (installing previous versions is no longer supported). If you want a
+        previous version of the browser, you'll have to download and extract it
+        manually.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 20 Aug 2017 17:58:31 +0200
+
 palemoon-installer (0.2.1-1nano) unstable; urgency=low
 
   * initial release
