@@ -1,0 +1,8 @@
+73110f44141a9b7f3d5ff6a0cb2132e8  usr/bin/qt5ct
+31256cd7e1fa49e721ac9fab4bafa821  usr/lib/x86_64-linux-gnu/qt5/plugins/platformthemes/libqt5ct.so
+21d747cae116da49cb29ae29fade1350  usr/lib/x86_64-linux-gnu/qt5/plugins/styles/libqt5ct-style.so
+899e31a4dade3b6cd48faf7cf0827ab1  usr/share/applications/qt5ct.desktop
+c7167f78dd1ae0f387df99f10e234171  usr/share/doc/qt5-configuration-tool/README
+a7fab9194b6dc632ede9005052b1d2ba  usr/share/doc/qt5-configuration-tool/changelog.Debian.gz
+079769451141f004430b802f0988cabb  usr/share/doc/qt5-configuration-tool/changelog.gz
+48e7c26366177eeeec3effa2e8304e43  usr/share/doc/qt5-configuration-tool/copyright

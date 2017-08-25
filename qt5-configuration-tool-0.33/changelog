@@ -1,0 +1,309 @@
+qt5-configuration-tool (0.33-2nano) unstable; urgency=low
+
+  * rebuild against Qt 5.9.1
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 25 Aug 2017 19:54:20 +0200
+
+qt5-configuration-tool (0.33-1nano) unstable; urgency=low
+
+  * New upstream release
+  * fixed build without dbus support (coacher)
+  * fixed Qt 5.6 support (coacher)
+  * updated Hebrew translation (Elkana Birdugo)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 18 Jun 2017 14:52:01 +0200
+
+qt5-configuration-tool (0.32-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added global menu support
+  * updated Czech translation (fri)
+  * updated Greek translation (Dimitrios Glentadakis)
+  * updated Russian translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 28 May 2017 09:49:19 +0200
+
+qt5-configuration-tool (0.31-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added option "Toolbar button style"
+  * added option "Mouse wheel scroll lines"
+  * added test for minimal Qt version
+  * added Arabic translation (abouzakaria kov)
+  * using c++11 for source code
+  * fixed Qt 5.4 support
+  * updated Russian translation
+  * updated Bulgarian translation (Kiril Kirilov)
+  * updated Dutch (Netherlands) translation (Heimen Stoffels)
+  * updated Chinese (Taiwan) translation (Jeff Huang)
+  * updated German translation (Ettore Atalan)
+  * updated Serbian translation (markosm)
+  * updated Czech translation (fri)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 28 Mar 2017 20:20:35 +0200
+
+qt5-configuration-tool (0.30-1nano) unstable; urgency=low
+
+  * New upstream release
+  * add dependency on libmtdev-dev
+  * upstream:
+    * fixed crash on nonexistent style in qt5ct.conf
+    * fixed issue with KDE color themes
+    * updated documentation
+    * updated Bulgarian translation (Kiril Kirilov)
+    * updated French translation (Geiger David)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 19:44:31 +0100
+
+qt5-configuration-tool (0.29-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.28:
+      * added Qt 5.8 support
+      * added qt5ct proxy-style plugin
+      * added Serbian translation (markosm)
+      * updated Bulgarian translation (Kiril Kirilov)
+      * updated Italian translation (Luigi Baldoni)
+      * updated Russian translation
+      * updated Dutch (Netherlands) translation (Heimen Stoffels)
+      * updated Czech translation (fri)
+      * updated German translation (Atalanttore)
+      * updated Chinese (Taiwan) translation (Jeff Huang)
+    0.29:
+      * fixed libqt5ct-style.so installation path (Philip Müller)
+      * updated Greek translation (Dimitrios Glentadakis)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 10:22:21 +0100
+
+qt5-configuration-tool (0.27-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.26:
+      * fixed stellarium compatibility
+      * updated French translation (Geiger David)
+      * updated Greek translation (Dimitrios Glentadakis)
+    0.27:
+      * added D-Bus tray support
+      * added feature to disable debug output
+      * updated documentation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 01 Oct 2016 10:12:16 +0200
+
+qt5-configuration-tool (0.25-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added environment variables verification
+  * added Frensh translation (Geiger David)
+  * updated Slovak translation (Ján Ďanovský)
+  * updated Russian translation
+  * updated Czech translation (fri)
+  * updated German translation (Ettore Atalan)
+  * updated Dutch (Netherlands) translation (Heimen Stoffels)
+  * updated Polish translation (Tomasz Przybył)
+  * updated Chinese (Taiwan) translation (Jeff Huang)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 10 Aug 2016 21:11:25 +0200
+
+qt5-configuration-tool (0.24-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added feature to preview color scheme on edit
+  * added icons for some actions
+  * fixed palette editor
+  * fixed documentation
+  * fixed infinite recursion in the icon theme parser (patch by Sergey A. Sukiyazov)
+  * updated Greek translation (Dimitrios Glentadakis)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 02 Jun 2016 17:09:22 +0200
+
+qt5-configuration-tool (0.23-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added support for single line comments in the style sheets
+  * fixed issue with overriding application palette
+  * updated Bulgarian translation (Kiril Kirilov)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 12 May 2016 18:55:54 +0200
+
+qt5-configuration-tool (0.22-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.21
+      * added option "Activate item on signle-click"
+      * added Spanish translation (jcn363)
+      * added Slovak translation (Ján Ďanovský)
+      * updated Polish translation (FadeMind)
+      * updated Dutch (Netherlands) translation (Heimen Stoffels)
+      * updated Czech translation (fri)
+      * updated Chinese (Taiwan) translation (Jeff Huang)
+    0.22
+      * disabled html mode in the qss editor
+      * fixed issue with overriding stylesheets
+      * added Hebrew translation (Genghis Khan)
+      * updated Italian translation (Luigi Baldoni)
+      * updated documentation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 18 Mar 2016 11:38:26 +0100
+
+qt5-configuration-tool (0.20-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fixed widget spacing
+    - fixed typo
+    - updated Bulgarian translation
+    - updated Italian translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Oct 2015 19:44:30 +0100
+
+qt5-configuration-tool (0.19-1nano) unstable; urgency=low
+
+  * New upstream release
+    Version 0.18
+    - added color schemes support
+    - updated Dutch (Netherlands) translation (Heimen Stoffels)
+    - updated German translation (Ettore Atalan)
+    - updated Polish translation (FadeMind)
+    - updated Chinese (Taiwan) translation (Jeff Huang)
+    - updated Russian translation
+    Version 0.19
+    - added feature to save geometry of the style sheet editor
+    - fixed qt5ct.desktop
+    - updated Greek translation (Dimitrios Glentadakis)
+    - updated Czech translation (fri)
+    - updated Chinese Simplified translation (Cary Tian)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 26 Sep 2015 10:32:29 +0200
+
+qt5-configuration-tool (0.17-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fixed crash in qupzilla
+    - updated Greek translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 15 Sep 2015 20:50:21 +0200
+
+qt5-configuration-tool (0.16-1nano) unstable; urgency=low
+
+  * New upstream release
+    - added feature to save palette editor geometry
+    - changed palette editor layout
+    - updated Chinese Simplified translation (Cary Tian)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 14 Sep 2015 18:46:18 +0200
+
+qt5-configuration-tool (0.15-1nano) unstable; urgency=low
+
+  * New upstream release
+    - fixed problem with qtcurve style
+    - updated Czech translation (fri)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Sep 2015 18:24:54 +0200
+
+qt5-configuration-tool (0.14-1nano) unstable; urgency=low
+
+  * New upstream release
+    - added option "Dialog buttons have icons"
+    - added option "Menus have icons"
+    - fixed style and palette initialization
+    - updated Russian translation
+    - updated German translation (Ettore Atalan)
+    - updated Dutch (Netherlands) translation (Heimen Stoffels)
+    - updated Chinese (Taiwan) translation (Jeff Huang)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 04 Sep 2015 18:48:07 +0200
+
+qt5-configuration-tool (0.13-1nano) unstable; urgency=low
+
+  * New upstream release
+  - added $XDG_DATA_HOME support
+  - added Italian translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 24 Aug 2015 16:41:08 +0200
+
+qt5-configuration-tool (0.12-2nano) unstable; urgency=low
+
+  * New upstream release
+  - rebuild against Qt 5.5
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 06 Jul 2015 17:57:33 +0200
+
+qt5-configuration-tool (0.12-1nano) unstable; urgency=low
+
+  * New upstream release
+    - added Chinese Simplified translation
+    - fixed infinite loop in the icon theme parser
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 21 May 2015 17:36:59 +0200
+
+qt5-configuration-tool (0.11-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    Version 0.10
+      - added more debug messages
+      - added Greek translation (Dimitrios Glentadakis)
+      - moved home page to sf.net
+      - fixed qss path
+    Version 0.11
+      - added Polish translation (FadeMind)
+      - removed private headers usage
+      - improved build scripts
+      - fixed settings updating issue
+      - fixed font setting
+      - fixed fonts.conf generation
+      - fixed segmentation fault on "widget-less" applications
+      - updated German translation (Ettore Atalan)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 15 May 2015 17:55:37 +0200
+
+qt5-configuration-tool (0.9-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - added more user friendly color roles
+    - added feature to disable qss support
+    - added Dutch (Netherlands) translation
+    - updated Chinese (Taiwan) translation
+    - updated Czech translation
+    - updated Bulgarian translation
+    - updated German translation
+    - updated Russian translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 11 Mar 2015 18:55:11 +0100
+
+qt5-configuration-tool (0.8-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - improved icon theme parsing
+    - added Bulgarian translation
+    - fixed plugin metadata
+    - fixed font updating issue
+    - fixed Russian translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 09 Feb 2015 16:29:29 +0100
+
+qt5-configuration-tool (0.7-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - added feature to rename style sheet
+    - added context menu to the style sheet list
+    - added feature to apply theme for running applications
+    - added Chinese (Taiwan) translation
+    - added Czech translation
+    - added German translation
+    - updated Russian translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 07 Feb 2015 18:57:29 +0100
+
+qt5-configuration-tool (0.6-1nano) unstable; urgency=low
+
+  * New upstream stable release
+    - added style sheet settings
+    - added transifex integration
+    - updated Russian translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 17 Jan 2015 13:27:51 +0100
+
+qt5-configuration-tool (0.5-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 08 Jan 2015 20:10:00 +0100
