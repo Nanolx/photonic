@@ -1,3 +1,19 @@
+xul-ext-classic-theme-restorer (1.7.0~beta2-1nano) unstable; urgency=low
+
+  * New upstream release
+    [locale(s)]
+      - Russian (ru) translation updated (thanks to Alexei)
+      - Ukrainian (uk) translation updated (thanks to Sacredwheels)
+      - Portuguese (pt-BR) translation updated (thanks to igorruckert)
+      - Estonian (et) translation updated (thanks to Maidur)
+    [fix(es)]
+      - Fx56 & 'alt. autocomple popup': missing scrollbars (Fx bug, occurs with
+        default appearance too)
+      - Fx56 & 'alt. about:addons' page: gray text for installed disabled
+        add-ons in search results
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 06 Sep 2017 17:37:21 +0200
+
 xul-ext-classic-theme-restorer (1.7.0~beta1-1nano) unstable; urgency=low
 
   * New upstream release
