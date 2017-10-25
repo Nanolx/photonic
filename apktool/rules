@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+export JAVA_HOME=/usr/lib/jvm/default-java
+
+%:
+	dh $@ --buildsystem=gradle
+
+override_dh_auto_build:
+	dh_auto_build -- -Dfile.encoding=UTF-8 assemble
+
+override_dh_install:
+	dh_install --fail-missing
+
+get-orig-source:
+	uscan --force-download --download-current-version --compression xz
