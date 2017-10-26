@@ -1,3 +1,13 @@
+xul-ext-ui-eraser (0.2.7-1nano) unstable; urgency=low
+
+  * New upstream release
+    0.2.7
+      - [ * ] Fix bug that didn't refresh the CSS when last id is deleted.
+    0.2.6
+      - [ * ] Port addon to hybrid WebExtension.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 26 Oct 2017 18:20:34 +0200
+
 xul-ext-ui-eraser (0.2.3-1nano) unstable; urgency=low
 
   * New upstream release
