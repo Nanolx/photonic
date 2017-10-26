@@ -1,3 +1,10 @@
+xul-ext-configuration-mania (25.5.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Windows UA string has been fixed (issue #261)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 26 Oct 2017 18:13:35 +0200
+
 xul-ext-configuration-mania (25.5.0-1nano) unstable; urgency=low
 
   * New upstream release
