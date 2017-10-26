@@ -1,3 +1,23 @@
+manpageeditor (0.1.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 0.1.1:
+    - Fixed makefiles when using DESTDIR= ...
+  * 0.1.2
+    - Fixed wrongly labeled 'Save' menu
+    - Added recent menu
+    - Added key shortcuts to formating menu items ( finally )
+    - Added 'Documentation' sub catagory to desktop file
+    - Application icons now symlinked instead of installed
+    - Tweaked .desktop files for compatability
+  * 0.1.3
+    - Added --import MANPAGE option to command line
+    - Added --section SECTION option to command line
+    - Added -v/-? options to command line
+    - Updated manpage
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 26 Oct 2017 18:25:49 +0200
+
 manpageeditor (0.1.0-1nano) unstable; urgency=low
 
   * New upstream release
