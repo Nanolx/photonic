@@ -1,3 +1,15 @@
+qt5-configuration-tool (0.33-3nano) unstable; urgency=low
+
+  * rebuild against Qt 5.9.2
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 31 Oct 2017 08:38:12 +0100
+
+qt5-configuration-tool (0.33-2nano) unstable; urgency=low
+
+  * rebuild against Qt 5.9.1
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 25 Aug 2017 19:54:20 +0200
+
 qt5-configuration-tool (0.33-1nano) unstable; urgency=low
 
   * New upstream release
