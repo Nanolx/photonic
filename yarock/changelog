@@ -1,3 +1,16 @@
+yarock (1.2.0-1nano) unstable; urgency=low
+
+  * New upstream release
+    - New    : Configurable custom cover size [#1627841]
+    - New    : Redesign player tool bar with expanded tool bar mode
+    - New    : Remove Echonest web service no longer available
+    - New    : Add Spotify web service for artist image
+    - Changes: Internet connection; prevent downloading artist image if no used [#1624536]
+    - Changes: Change & fix many lyrics provider services
+    - Changes: Many minors ui changes and improvments
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 03 Nov 2017 20:03:52 +0100
+
 yarock (1.1.6-1nano) unstable; urgency=low
 
   * New upstream release
