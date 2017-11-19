@@ -1,3 +1,23 @@
+qt5-configuration-tool (0.34-1nano) unstable; urgency=low
+
+  * New upstream release
+  * added feature to disable shortcut underlines
+  * added Danish translation (scootergrisen)
+  * improved global menu checking
+  * improved XDG support
+  * fixed font settings
+  * fixed Qt 5.5 support
+  * updated Russian translation
+  * updated Czech translation (fri)
+  * updated Dutch (Netherlands) translation (Heimen Stoffels)
+  * updated Chinese (Taiwan) translation (Jeff Huang)
+  * updated German translation (Ettore Atalan)
+  * updated Italian translation (Luigi Baldoni)
+  * updated Bulgarian translation (Kiril Kirilov)
+  * updated Greek translation (Dimitrios Glentadakis)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 19 Nov 2017 10:54:20 +0100
+
 qt5-configuration-tool (0.33-3nano) unstable; urgency=low
 
   * rebuild against Qt 5.9.2
