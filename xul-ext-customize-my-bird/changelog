@@ -1,0 +1,43 @@
+xul-ext-customize-my-bird (1.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 1.1.0: Thunderbird 57+ compatibility
+  * 1.1.1: Windows 7 + Thunderbird 57+: compose window toolbar colors
+  * 1.2.0: [new option(s)]
+    - hide scrollbars / scrollbar buttons
+    - custom size
+    - custom opacity
+    - background color/gradient
+    - thumb color/gradient/roundness/border
+    - button color/gradient/roundness
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 20 Jan 2018 19:42:18 +0100
+
+xul-ext-customize-my-dove (1.0.8-1nano) unstable; urgency=low
+
+  * New upstream release
+    [fix(es)]
+      - tab glitches (thanks to Faux) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 04 Feb 2017 10:15:44 +0100
+
+xul-ext-customize-my-dove (1.0.7-1nano) unstable; urgency=low
+
+  * New upstream release
+    1.0.6
+      [fix(es)]
+        - Default/normal/classic window layout and option "move Quick-filter-bar
+          below mail list":
+        - Quick-filter-bar will now appear below mail content to fix a glitch
+          with window/toolbar corruption once the separator between mail content
+          and mail list was moved.
+    1.0.7
+      - Added Spanish locale (thanks to strelnic) 
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 22 Dec 2016 16:25:53 +0100
+
+xul-ext-customize-my-dove (1.0.5-1nano) unstable; urgency=low
+
+  * Initial release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 12 Dec 2016 20:23:18 +0100
