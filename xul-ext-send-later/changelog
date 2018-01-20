@@ -1,3 +1,11 @@
+xul-ext-send-later (6.3.3-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 6.3.2: Changes for compatibility with newest Thunderbird and SeaMonkey versions
+  * 6.3.3: Fix preferences button in add-ons manager in Thunderbird 59+
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 20 Jan 2018 19:37:44 +0100
+
 xul-ext-send-later (6.3.1-1nano) unstable; urgency=low
 
   * New upstream release
