@@ -1,3 +1,12 @@
+yarock (1.3.1-1nano) unstable; urgency=low
+
+  * New upstream release
+    - BugFix : Fix Qt4 build
+    - BugFix : Fix player tool bar save/restore
+    - BugFix : Fix playqueue track rating minor issue
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 03 Mar 2018 17:23:09 +0100
+
 yarock (1.3.0-1nano) unstable; urgency=low
 
   * New upstream release
