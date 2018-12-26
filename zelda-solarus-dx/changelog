@@ -1,3 +1,13 @@
+zelda-solarus-dx (1.12.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Upgrade to Solarus 1.6.
+  * Add the Solarus team logo.
+  * Change the sound of the Solarus logo.
+  * Fix typos in French dialogs (thanks Renkineko).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 26 Dec 2018 20:21:48 +0100
+
 zelda-solarus-dx (1.11.0-1nano) unstable; urgency=low
 
   * New upstream release
