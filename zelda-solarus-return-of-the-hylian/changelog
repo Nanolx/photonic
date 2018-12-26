@@ -1,3 +1,18 @@
+zelda-solarus-return-of-the-hylian (1.2.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Upgrade to Solarus 1.6.
+  * Add Solarus Team logo.
+  * Change the sound of the Solarus logo.
+  * Dungeon 6: make medusa puzzle easier (#97).
+  * Fix using joypad hat in menus.
+  * Fix accents displaying in Spanish (#100).
+  * Fix fire traversing torches after they get lit (#104).
+  * Fix minor torch alignment errors (#103).
+  * Fix minor tile issues.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 26 Dec 2018 20:16:59 +0100
+
 zelda-solarus-return-of-the-hylian (1.1.0-1nano) unstable; urgency=low
 
   * New upstream release
