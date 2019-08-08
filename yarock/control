@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
 Build-Depends: debhelper (>= 8.0.0), qtbase5-dev, libtag1-dev, libboost-all-dev,
                libqjson-dev, libvlc-dev, libphonon4qt5-dev, libphonon-dev,
-               libmpv-dev, libqt5x11extras5-dev, libhtmlcxx-dev
+               libmpv-dev, libqt5x11extras5-dev, libhtmlcxx-dev, qtbase5-private-dev
 Standards-Version: 3.9.4
 Homepage: https://launchpad.net/yarock
 
@@ -34,4 +34,4 @@ Description: Qt-based Audio-Player
   - Command line interface, MPRIS interface
   - Clean and simple user interface
  .
- This version is built using Qt5 and support for VLC, MPV and Phonon (GST) backends.
+ This version is built with support for VLC, MPV and Phonon (GST) backends.
