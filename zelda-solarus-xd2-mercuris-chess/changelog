@@ -1,3 +1,12 @@
+zelda-solarus-xd2-mercuris-chess (1.1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix Solarus format to 1.6.
+  * Fix getting stuck on a stone in water near Rupee Island (#141).
+  * Fix ghostly proprietor sprite displaying issue (#142).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 14 Aug 2019 20:56:24 +0200
+
 zelda-solarus-xd2-mercuris-chess (1.1.0-1nano) unstable; urgency=low
 
   * New upstream release
