@@ -1,3 +1,10 @@
+zelda-solarus-xd (1.12.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix torch displayed above the hero in dungeon 1 (#55).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 14 Aug 2019 20:48:34 +0200
+
 zelda-solarus-xd (1.12.0-1nano) unstable; urgency=low
 
   * New upstream release
