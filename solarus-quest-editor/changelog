@@ -1,3 +1,19 @@
+solarus-quest-editor (1.6.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Allow to build a quest package (#431).
+  * Map editor: allow teletransporters to have any size multiple of 8 pixels.
+  * Map editor: improve performance of deleting multiple entities.
+  * Map editor: fix performance of changing entities layer (#454).
+  * Map editor: fix wrong selections after undoing changing layers.
+  * Tileset editor: fix performance of removing multiple patterns (#456).
+  * Sprite editor: fix persisting error message about missing source image (#451).
+  * Dialogs editor: fix line wrapping.
+  * Initial quest: remove proprietary file added by mistake.
+  * Add Force Software Rendering option to 'Running' section (stdgregwar).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 14 Aug 2019 20:37:42 +0200
+
 solarus-quest-editor (1.6.0-1nano) unstable; urgency=low
 
   * New upstream release
