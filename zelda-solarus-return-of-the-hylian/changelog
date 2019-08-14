@@ -1,3 +1,10 @@
+zelda-solarus-return-of-the-hylian (1.2.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix ghostly proprietor sprite displaying issue (#114).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 14 Aug 2019 20:50:20 +0200
+
 zelda-solarus-return-of-the-hylian (1.2.0-1nano) unstable; urgency=low
 
   * New upstream release
