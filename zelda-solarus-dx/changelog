@@ -1,3 +1,12 @@
+zelda-solarus-dx (1.12.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix typo in English texts (#128).
+  * Fix mistakes in German texts (#137).
+  * Fix deprecated function calls since Solarus 1.6 (#131).
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 14 Aug 2019 20:45:53 +0200
+
 zelda-solarus-dx (1.12.0-1nano) unstable; urgency=low
 
   * New upstream release
