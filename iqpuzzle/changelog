@@ -1,3 +1,23 @@
+iqpuzzle (1.1.1+20190804.git-53fc72-1nano) unstable; urgency=low
+
+  * New upstream release
+  * 1.1.1
+    * Updated Dutch translation (thanks to Vistaus).
+    * Added freestyle board.
+    * Fix: Keep zoom level while board restart.
+    * Some code improvements.
+  * 1.1.0
+    * Start random un-/solved easy/medium/hard game.
+    * Added freestyle mode.
+    * Added statistics.
+    * Improved window resize.
+    * Added many new boards.
+    * Start game through cmd.
+    * Updated French translation (thanks to kiarn).
+    * Embedded translations into game resource.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 15 Aug 2019 15:35:14 +0200
+
 iqpuzzle (1.0.7-1nano) unstable; urgency=low
 
   * New upstream release
