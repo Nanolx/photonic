@@ -1,3 +1,13 @@
+solarus-quest-editor (1.6.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix crash when closing tileset views (#467).
+  * Fix broken enemies in the initial quest (#466).
+  * Automatically install translation files.
+  * Update French translation.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Oct 2019 20:56:24 +0200
+
 solarus-quest-editor (1.6.1-1nano) unstable; urgency=low
 
   * New upstream release
