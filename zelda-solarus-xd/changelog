@@ -1,3 +1,10 @@
+zelda-solarus-xd (1.12.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  * Fix freaking cave teletransporters broken in 1.6.1.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Oct 2019 21:32:32 +0200
+
 zelda-solarus-xd (1.12.1-1nano) unstable; urgency=low
 
   * New upstream release
