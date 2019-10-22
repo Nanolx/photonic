@@ -1,3 +1,11 @@
+solarus (1.6.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  * Fix scrolling teletransporters with a square size (#1412).
+  * Fix hero displayed above stairs walls.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Oct 2019 20:26:40 +0200
+
 solarus (1.6.1-1nano) unstable; urgency=low
 
   * New upstream release
