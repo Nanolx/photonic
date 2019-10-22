@@ -1,3 +1,10 @@
+zelda-solarus-dx (1.12.2-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  * Fix some scrolling teletransporters broken in Solarus 1.6.1.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 22 Oct 2019 21:29:36 +0200
+
 zelda-solarus-dx (1.12.1-1nano) unstable; urgency=low
 
   * New upstream release
