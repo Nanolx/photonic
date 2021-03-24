@@ -1,3 +1,19 @@
+solarus-quest-editor (1.6.4-1nano) unstable; urgency=low
+
+  * New upstream release
+  * Fix spin boxes breaking the UI on Windows (#486).
+  * Add Ocean Set tilesets to the initial quest (#478).
+  * Map editor: fix contours generated tileset specific (#485).
+  * Map editor: fix a crash when undoing changing the layer of entities (#471).
+  * Tileset editor: save the update maps option when renaming patterns (#483).
+  * Tileset editor: fix moving patterns to an overlapping position (#477).
+  * Tileset editor: fix crash when a tileset file changes while dragging (#476).
+  * Fix possible crash when closing the window.
+  * Fix opening local documentation in Windows.
+  * Fix tiles getting unwanted enabled_at_start field in map data files.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 24 Mar 2021 20:02:58 +0100
+
 solarus-quest-editor (1.6.2-1nano) unstable; urgency=low
 
   * New upstream release
