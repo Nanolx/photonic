@@ -1,3 +1,9 @@
+iqpuzzle (1.2.3-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 24 Mar 2021 19:00:58 +0100
+
 iqpuzzle (1.1.1+20190804.git-53fc72-1nano) unstable; urgency=low
 
   * New upstream release
