@@ -1,0 +1,29 @@
+Source: openrgb-plugin-hardware-sync
+Section: misc
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ pkg-config,
+ qt6-base-dev,
+ qt6-base-dev-tools,
+ qt6-tools-dev-tools,
+ qt6-5compat-dev,
+ qmake6,
+ libusb-1.0-0-dev,
+ libhidapi-dev,
+ libmbedtls-dev,
+ libsensors-dev,
+ libgtop2-dev,
+ libglib2.0-dev
+Standards-Version: 4.7.4
+Homepage: https://codeberg.org/OpenRGB/OpenRGBHardwareSyncPlugin
+
+Package: openrgb-plugin-hardware-sync
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ openrgb
+Description: Hardware Sync plugin for OpenRGB
+ This is a plugin for OpenRGB that allows you sync your ARGB devices with
+ hardware measures (CPU temperature, RAM usage, fans speed, etc...)
