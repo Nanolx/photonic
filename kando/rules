@@ -5,5 +5,37 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
+PACKAGE_NAME = kando
+
 %:
 	dh $@
+
+override_dh_auto_configure:
+	npm install
+
+override_dh_auto_build:
+	npm run package
+
+override_dh_auto_test:
+	true
+
+override_dh_auto_clean:
+	rm -rf node_modules
+	rm -rf build
+	rm -rf .npm
+	rm -rf out
+	rm -rf .webpack
+	dh_auto_clean
+
+override_dh_dwz:
+	true
+
+override_dh_auto_install:
+	mkdir -p debian/$(PACKAGE_NAME)/usr/bin
+	mkdir -p debian/$(PACKAGE_NAME)/usr/lib/kando
+	mkdir -p debian/$(PACKAGE_NAME)/usr/share/applications
+	mkdir -p debian/$(PACKAGE_NAME)/usr/share/pixmaps
+	ln out/Kando-linux-x64/kando debian/$(PACKAGE_NAME)/usr/bin
+	cp -r out/Kando-linux-x64/* debian/$(PACKAGE_NAME)/usr/lib/kando/
+	cp appstream/menu.kando.Kando.desktop debian/$(PACKAGE_NAME)/usr/share/applications
+	cp assets/icons/icon.png debian/$(PACKAGE_NAME)/usr/share/pixmaps/kando.png

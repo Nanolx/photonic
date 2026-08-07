@@ -3,11 +3,12 @@ Section: utils
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
 Build-Depends:
  debhelper-compat (= 13),
- cmake,
  libx11-dev,
  libxtst-dev,
  libwayland-dev,
- libxkbcommon-dev
+ libxkbcommon-dev,
+ npm,
+ node-addon-api
 Standards-Version: 4.7.4
 Homepage: https://kando.menu/
 
