@@ -1,0 +1,26 @@
+Source: openrgb-plugin-fan-sync
+Section: misc
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ pkg-config,
+ qtbase5-dev,
+ qtbase5-dev-tools,
+ qttools5-dev-tools,
+ qt5-qmake,
+ libusb-1.0-0-dev,
+ libhidapi-dev,
+ libmbedtls-dev
+Standards-Version: 4.7.4
+Homepage: https://gitlab.com/OpenRGBDevelopers/OpenRGBFanSyncPlugin
+
+Package: openrgb-plugin-fan-sync
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ openrgb
+Description: Fan sync plugin for OpenRGB
+ Fan sync control is an OpenRGB plugin that allows you to set fan speed curves
+ for onboard fans using custom functions and hardware sensor input (cpu temp,
+ gpu clock, etc.)
