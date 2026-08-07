@@ -1,0 +1,31 @@
+Source: kando-kwin-integration
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ ninja-build,
+ pkg-config,
+ extra-cmake-modules,
+ kwin-dev,
+ libdrm-dev,
+ libwayland-dev,
+ libxkbcommon-dev,
+ libxcb1-dev,
+ libxcb-util-dev,
+ libgl1-mesa-dev,
+ libinput-dev,
+ qt6-base-dev
+Standards-Version: 4.7.4
+Homepage: https://kando.menu/
+
+Package: kando-kwin-integration
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: KWin Integration for Kando
+ This KWin plugin is required for Kando 3.0.0 and beyond on KDE Plasma under
+ Wayland. Via a D-Bus interface, it provides the name of the currently focused
+ window, the current mouse pointer position, and a few more pieces of information
+ required by Kando.
