@@ -1,0 +1,39 @@
+Source: appimagelauncher
+Section: misc
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ libglib2.0-dev,
+ libcairo2-dev,
+ librsvg2-dev,
+ libfuse-dev,
+ libarchive-dev,
+ libxpm-dev,
+ libcurl4-openssl-dev,
+ libboost-all-dev,
+ patchelf,
+ libc6-dev,
+ qt6-base-dev,
+ qt6-declarative-dev,
+ qt6-tools-dev,
+ libgtest-dev
+Standards-Version: 4.7.4
+Homepage: https://assassinate-you.net/tags/appimagelauncher/
+
+Package: appimagelauncher
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Makes your Linux desktop AppImage ready
+ Integrate AppImages to your application launcher with one click, and manage,
+ update and remove them from there. Double-click AppImages to open them, without
+ having to make them executable first.
+ .
+ AppImageLauncher plays well with other applications managing AppImages, for
+ example app stores. However, it doesn't depend on any of those, and can run
+ completely standalone.
+ .
+ This version is build on the latest official commit, including merges of four
+ forks proposed to the master repository.

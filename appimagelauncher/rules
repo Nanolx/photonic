@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE = 1
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+export QT_SELECT=qt6
+
+BUILD_DIR=$(CURDIR)/obj-x86_64-linux-gnu
+EXTRA_CMAKE_FLAGS = -DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_PREFIX_PATH=/usr/lib/cmake/Qt6 \
+		-DCMAKE_C_FLAGS="-Wno-error=incompatible-pointer-types" \
+		-DCMAKE_CXX_FLAGS="-Wno-error=incompatible-pointer-types -fpermissive -include cstdint"
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	mkdir -p $(BUILD_DIR)
+	cd $(BUILD_DIR) && cmake -Wno-dev -S .. $(EXTRA_CMAKE_FLAGS)
+
+override_dh_auto_build:
+	cd $(BUILD_DIR) && make libappimage libappimageupdate
+	cd $(BUILD_DIR) && cmake -Wno-dev . $(EXTRA_CMAKE_FLAGS)
+	dh_auto_build
