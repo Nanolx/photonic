@@ -1,0 +1,25 @@
+Source: webapps
+Section: web
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ meson
+Standards-Version: 4.7.4
+Homepage: https://codelogistics.net/#projects
+
+Package: webapps
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+ python3-gi,
+ libadwaita-1-0,
+ libwebkitgtk-6.0-4
+Description: Install websites as desktop applications
+ Install websites as desktop apps, so that they appear in their own windows
+ separate from any browsers installed. This is similar to the "Install as App"
+ feature found in popular web browsers.
+ .
+ It uses an internal browser isolated from the system browser, which can
+ optionally be used in incognito mode. Links to websites other than the one
+ installed open in a new browser window.
