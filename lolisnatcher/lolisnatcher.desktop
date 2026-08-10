@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Loli Snatcher
+GenericName=Loli Snatcher
+Comment=Unofficial *booru application
+Terminal=false
+Type=Application
+Categories=Utility
+Keywords=Flutter;share;images;
+Icon=lolisnatcher
+Exec=lolisnatcher

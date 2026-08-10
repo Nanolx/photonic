@@ -1,0 +1,22 @@
+Source: lolisnatcher
+Section: misc
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ libmpv-dev,
+ libsecret-1-dev,
+ libwpebackend-fdo-1.0-dev,
+ libwpewebkit-2.0-dev,
+ libwpe-1.0-dev,
+ libgtk-3-dev
+Standards-Version: 4.7.4
+Homepage: https://github.com/NO-ob/LoliSnatcher_Droid
+
+Package: lolisnatcher
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Unofficial booru app
+ Client for booru imageboards. View images and videos, do batch downloads from
+ many booru sites with extensive customization

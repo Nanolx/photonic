@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE = 1
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	flutter clean
+	rm -f android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+	rm -f android/local.properties
+	dh_auto_clean
+
+override_dh_auto_build:
+	flutter build linux --release
+
+override_dh_auto_install:
+	mkdir -p debian/$(PACKAGE)/usr/lib/$(PACKAGE)
+	mkdir -p debian/$(PACKAGE)/usr/bin
+	cp -r build/linux/x64/release/bundle/* debian/$(PACKAGE)/usr/lib/$(PACKAGE)/
+	ln -s /usr/lib/$(PACKAGE)/loliSnatcher debian/$(PACKAGE)/usr/bin/$(PACKAGE)
+
+override_dh_dwz:
+	true
