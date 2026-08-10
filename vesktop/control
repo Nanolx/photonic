@@ -1,0 +1,20 @@
+Source: vesktop
+Section: misc
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://vesktop.dev/
+
+Package: vesktop
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Vesktop is a custom Discord desktop app
+ Main features:
+  - Vencord preinstalled
+  - Much more lightweight and faster than the official Discord app
+  - Linux Screenshare with sound & wayland
+  - Much better privacy, since Discord has no access to your system
+

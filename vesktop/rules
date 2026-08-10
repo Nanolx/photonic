@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE = 1
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	rm -rf node_modules
+	rm -rf dist
+	rm -rf packages/libvesktop/node_modules
+	rm -rf packages/libvesktop/build/
+	dh_auto_clean
+
+override_dh_auto_build:
+	pnpm buildLibVesktop
+	pnpm package:dir
+
+override_dh_auto_install:
+	mkdir -p debian/$(PACKAGE)/usr/lib/$(PACKAGE)
+	mkdir -p debian/$(PACKAGE)/usr/bin
+	cp -r dist/linux-unpacked/* debian/$(PACKAGE)/usr/lib/$(PACKAGE)/
+	ln -s /usr/lib/$(PACKAGE)/$(PACKAGE) debian/$(PACKAGE)/usr/bin/$(PACKAGE)
+
+override_dh_dwz:
+	true
