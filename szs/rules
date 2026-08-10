@@ -4,7 +4,11 @@
 export DH_VERBOSE=1
 
 %:
-	dh $@ 
+	dh $@
 
-override_dh_auto_test:
-	#
+override_dh_auto_clean:
+	rm -rf bin/*
+	make clean++
+
+override_dh_auto_install:
+	$(CURDIR)/install.sh --no-sudo
