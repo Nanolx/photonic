@@ -1,3 +1,9 @@
+applyppf3 (3.0-2nano) unstable; urgency=low
+
+  * New build
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 12 Aug 2026 20:43:21 +0200
+
 applyppf3 (3.0-1nano) unstable; urgency=low
 
   * New upstream release
