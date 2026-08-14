@@ -1,14 +1,14 @@
 This are the packaging scripts maintained by:
 
-    Christopher Roy Bratusek
+    Christopher Roy Bratušek
 
 Those are used in the photonic apt-repository over at:
 
-    https://apt.nanolx.org
+    [https://apt.nanolx.org](https://apt.nanolx.org)
 
 For further information about photonic refer to:
 
-    https://nanolx.org/posts/photonic
+    [https://nanolx.org/posts/photonic/](https://nanolx.org/posts/photonic/)
 
 While I'm not actively asking for donations, a tip is always welcome.
 
