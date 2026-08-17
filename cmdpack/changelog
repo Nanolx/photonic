@@ -1,3 +1,12 @@
+cmdpack (1.03-2nano) unstable; urgency=low
+
+  * rebuild
+  * update web links
+  * udpate my mail adress
+  * remove gcc/libc6-dev to allow crossbuild using sbuild
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 17 Aug 2026 18:03:38 +0200
+
 cmdpack (1.03-1nano) unstable; urgency=low
 
   * initial release

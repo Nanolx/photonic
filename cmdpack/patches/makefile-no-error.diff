@@ -1,0 +1,69 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Christopher Roy Bratusek <nano@jpberlin.de>
+Date: Aug, 17 2026 16:09:30 +0200
+Subject: [PATCH] <short summary of the patch>
+
+TODO: Put a short summary on the line above and replace this paragraph
+with a longer explanation of this change. Complete the meta-information
+with other relevant fields (see below for details). To make it easier, the
+information below has been extracted from the changelog. Adjust it or drop
+it.
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout https://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: (upstream|backport|vendor|other), (<patch-url>|commit:<commit-id>)
+Bug: <upstream-bugtracker-url>
+Bug-<Vendor>: <vendor-bugtracker-url>
+Forwarded: (no|not-needed|<patch-forwarded-url>)
+Applied-Upstream: <version>, (<commit-url>|commit:<commid-id>)
+Reviewed-By: <name and email of someone who approved/reviewed the patch>
+
+--- cmdpack-1.03.orig/Makefile
++++ cmdpack-1.03/Makefile
+@@ -1,24 +1,24 @@
+ all:
+ 	mkdir -p bin/
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/bin2iso.c -s -o bin/bin2iso
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/bincomp.c -s -o bin/bincomp
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/brrrip.c -s -o bin/brrrip
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/byteshuf.c -s -o bin/byteshuf
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/byteswap.c -s -o bin/byteswap
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/cdpatch.c -s -o bin/cdpatch
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/ecm.c -s -o bin/ecm
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/fakecrc.c -s -o bin/fakecrc
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/hax65816.c -s -o bin/hax65816
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/id3point.c -s -o bin/id3point
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/pecompat.c -s -o bin/pecompat
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/rels.c -s -o bin/rels
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/screamf.c -s -o bin/screamf
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/subfile.c -s -o bin/subfile
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/uips.c -s -o bin/uips
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/usfv.c -s -o bin/usfv
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/vb2rip.c -s -o bin/vb2rip
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/wordadd.c -s -o bin/wordadd
+-	gcc -O2 -Wall -Wextra -Werror -fomit-frame-pointer src/zerofill.c -s -o bin/zerofill
++	gcc -O2 -fomit-frame-pointer src/bin2iso.c -s -o bin/bin2iso
++	gcc -O2 -fomit-frame-pointer src/bincomp.c -s -o bin/bincomp
++	gcc -O2 -fomit-frame-pointer src/brrrip.c -s -o bin/brrrip
++	gcc -O2 -fomit-frame-pointer src/byteshuf.c -s -o bin/byteshuf
++	gcc -O2 -fomit-frame-pointer src/byteswap.c -s -o bin/byteswap
++	gcc -O2 -fomit-frame-pointer src/cdpatch.c -s -o bin/cdpatch
++	gcc -O2 -fomit-frame-pointer src/ecm.c -s -o bin/ecm
++	gcc -O2 -fomit-frame-pointer src/fakecrc.c -s -o bin/fakecrc
++	gcc -O2 -fomit-frame-pointer src/hax65816.c -s -o bin/hax65816
++	gcc -O2 -fomit-frame-pointer src/id3point.c -s -o bin/id3point
++	gcc -O2 -fomit-frame-pointer src/pecompat.c -s -o bin/pecompat
++	gcc -O2 -fomit-frame-pointer src/rels.c -s -o bin/rels
++	gcc -O2 -fomit-frame-pointer src/screamf.c -s -o bin/screamf
++	gcc -O2 -fomit-frame-pointer src/subfile.c -s -o bin/subfile
++	gcc -O2 -fomit-frame-pointer src/uips.c -s -o bin/uips
++	gcc -O2 -fomit-frame-pointer src/usfv.c -s -o bin/usfv
++	gcc -O2 -fomit-frame-pointer src/vb2rip.c -s -o bin/vb2rip
++	gcc -O2 -fomit-frame-pointer src/wordadd.c -s -o bin/wordadd
++	gcc -O2 -fomit-frame-pointer src/zerofill.c -s -o bin/zerofill
+ 
+ clean:
+ 	rm -rf bin/

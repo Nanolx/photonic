@@ -1,10 +1,9 @@
 Source: cmdpack
 Section: devel
-Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
-Build-Depends: debhelper (>= 8), gcc, libc6-dev
+Build-Depends: debhelper-compat (= 13)
 Standards-Version: 3.9.4
-Homepage: http://www.neillcorlett.com/cmdpack/
+Homepage: https://github.com/cmdpack/cmdpack
 
 Package: cmdpack
 Architecture: any

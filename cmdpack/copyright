@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: wit
 Upstream-Contact: Neill Corlett <neill@neillcorlett.com>
-Source: http://www.neillcorlett.com/cmdpack/
+Source: https://github.com/cmdpack/cmdpack
 
 Files: *
 Copyright: 2012 Neill Corlett <neill@neillcorlett.com>
