@@ -1,0 +1,47 @@
+Source: solarus
+Section: games
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ libopenal-dev,
+ libmodplug-dev,
+ libphysfs-dev,
+ libsdl2-dev,
+ libsdl2-gfx-dev,
+ libsdl2-image-dev,
+ libsdl2-ttf-dev,
+ vorbis-tools,
+ libvorbis-dev,
+ libluajit-5.1-dev,
+ libglm-dev,
+ qt6-base-dev,
+ qt6-base-dev-tools,
+ qt6-tools-dev,
+ qt6-tools-dev-tools,
+ qt6-l10n-tools,
+ libqt6opengl6-dev,
+ libqt6svg6-dev,
+ qlementine
+Standards-Version: 4.7.4
+Homepage: https://www.solarus-games.org/
+
+Package: solarus
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: A lightweight, multiplatform, free and open-source 2D game engine
+ Solarus is a free and open-source game engine.
+ .
+ The goal of the engine is to allow people to create their own Action-RPG games
+ (also called Zelda-like games). It is totally independent from Nintendo.
+
+Package: solarus-quest-editor
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ solarus
+Description: A lightweight, multiplatform, free and open-source 2D game engine
+ Solarus Quest Editor is a free and open-source game editor for Solarus.

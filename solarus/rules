@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+include /usr/share/dpkg/architecture.mk
+BUILD_STAGE_DIR = $(CURDIR)/debian/build-stage
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure --builddirectory=obj-solarus
+
+override_dh_auto_build:
+	dh_auto_build --builddirectory=obj-solarus
+	dh_auto_install --builddirectory=obj-solarus --destdir=$(BUILD_STAGE_DIR)
+	dh_auto_configure --builddirectory=obj-editor --sourcedirectory=editor -- \
+		-DCMAKE_PREFIX_PATH=$(BUILD_STAGE_DIR)/usr \
+		-DSOLARUS_INCLUDE_DIR=$(BUILD_STAGE_DIR)/usr/include \
+		-DSOLARUS_LIBRARY=$(BUILD_STAGE_DIR)/usr/lib/$(DEB_HOST_MULTIARCH)/libsolarus.so \
+		-DSOLARUS_GUI_LIBRARY=$(BUILD_STAGE_DIR)/usr/lib/$(DEB_HOST_MULTIARCH)/libsolarus-gui.so
+	dh_auto_build --builddirectory=obj-editor
+
+override_dh_auto_install:
+	dh_auto_install --builddirectory=obj-solarus --destdir=$(CURDIR)/debian/solarus
+	dh_auto_install --builddirectory=obj-editor --destdir=$(CURDIR)/debian/solarus-quest-editor
+
+override_dh_auto_clean:
+	dh_auto_clean --builddirectory=obj-solarus
+	dh_auto_clean --builddirectory=obj-editor
+	rm -rf $(BUILD_STAGE_DIR)
+	dh_auto_clean
+
+override_dh_auto_test:
+	true
