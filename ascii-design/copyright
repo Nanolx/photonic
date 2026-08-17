@@ -1,14 +1,14 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ascii-design
 Upstream-Contact: Francesco Mondello <faster3ck@gmail.com>
-Source: http://ascii-design.sourceforge.net/
+Source: https://github.com/Faster3ck/Ascii-Design
 
 Files: *
-Copyright: Francesco Mondello <faster3ck@gmail.com>
+Copyright: 2009 Francesco Mondello <faster3ck@gmail.com>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2014 Christopher Roy Bratusek <nano@tuxfamily.org>
+Copyright: 2014 Christopher Roy Bratusek <nano@jpberlin.de>
 License: GPL-3.0+
 
 License: GPL-3.0+
