@@ -1,9 +1,15 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: 2048-qml
-Source: http://qt-apps.org/content/show.php/Simsu?content=97865
+Upstream-Name: simsu
+Source: https://codeberg.org/gottcode/simsu
 
 Files: *
-Copyright: 2009, 2013, 2014 Graeme Gott <graeme@gottcode.org>
+Copyright:
+ 2009-2026 Graeme Gott <graeme@gottcode.org>
+License: GPL-3
+
+Files: debian/*
+Copyright:
+ 2015-2026 Christopher Roy
 License: GPL-3
 
 License: GPL-3
