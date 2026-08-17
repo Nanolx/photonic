@@ -1,3 +1,9 @@
+zapzap (7.4.2-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 17 Aug 2026 18:49:41 +0200
+
 zapzap (7.4.1-1nano) unstable; urgency=low
 
   * initial release
