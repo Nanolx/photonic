@@ -1,14 +1,17 @@
 Source: segher-wii-tools
 Section: utils
-Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
-Build-Depends: debhelper (>= 7.0.50~), make, libssl-dev, gcc
-Standards-Version: 3.9.1
-Homepage:
+Build-Depends:
+ debhelper-compat (= 13),
+ libssl-dev
+Standards-Version: 3.7.4
+Homepage: https://github.com/galaxymaster2007/wii
 
 Package: segher-wii-tools
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
 Description: Segher's Wii Tools
  A collections of tools to aid in effort of Wii Homebrew
  .
