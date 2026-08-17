@@ -1,10 +1,13 @@
 Source: iqpuzzle
 Section: games
-Priority: optional
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
-Build-Depends: debhelper (>= 9), qtbase5-dev, qt5-qmake, pkg-config
-Standards-Version: 3.9.5
-Homepage: https://launchpad.net/iqpuzzle
+Build-Depends:
+ debhelper-compat (= 13),
+ qt6-base-dev,
+ qmake6,
+ pkg-config
+Standards-Version: 4.7.4
+Homepage: https://elth0r0.codeberg.page/iqpuzzle/
 
 Package: iqpuzzle
 Architecture: any
