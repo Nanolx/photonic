@@ -1,9 +1,10 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: zsdx
-Source: http://solarus-games.org
+Upstream-Contact: Solarus Labs <solarus-labs@solarus-games.org>
+Source: https://www.solarus-games.org/
 
 Files: *
-Copyright: 2012 Solarus Team
+Copyright: 2012-2026 Solarus Labs <solarus-labs@solarus-games.org>
 License: GPL-3.0+
 
 Files: debian/*

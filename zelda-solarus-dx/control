@@ -1,16 +1,13 @@
 Source: zelda-solarus-dx
 Section: games
-Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
-Build-Depends: debhelper (>= 8.0.0), cmake, zip
+Build-Depends: debhelper-compat (= 13), zip
 Standards-Version: 3.9.4
-Homepage: http://solarus-games.org
+Homepage: https://www.solarus-games.org/
 
 Package: zelda-solarus-dx
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.5.0)
-Provides: zsdx
-Replaces: zsdx
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.6.1)
 Description: Zelda Fangame using Solarus engine
  A "The Legend Of Zelda - A Link To The Past"-like Fangame
  using the Solarus OpenSource game engine.
