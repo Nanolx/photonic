@@ -1,0 +1,18 @@
+Source: zelda-picross
+Section: games
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ libsdl2-dev,
+ libsdl2-mixer-dev,
+ libsdl2-image-dev,
+ libsdl2-gfx-dev
+Standards-Version: 4.7.4
+Homepage: https://www.zeldaroth.fr/us/dlpicross.php
+
+Package: zelda-picross
+Replaces: zeldansq
+Provides: zeldansq
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zelda - Picross (fangame)

@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	rm -f ZeldaPicross
+	dh_auto_clean
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/zelda-picross/usr/bin/
+	mkdir -p $(CURDIR)/debian/zelda-picross/usr/share/zelda-picross/
+	install -m755 $(CURDIR)/debian/zeldapicross $(CURDIR)/debian/zelda-picross/usr/bin/
+	install -m755 ZeldaPicross $(CURDIR)/debian/zelda-picross/usr/share/zelda-picross/
+	cp -rv data/ $(CURDIR)/debian/zelda-picross/usr/share/zelda-picross/
