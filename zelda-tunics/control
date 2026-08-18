@@ -1,13 +1,12 @@
 Source: zelda-tunics
 Section: games
-Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
-Build-Depends: debhelper (>= 8.0.0), cmake, zip
+Build-Depends: debhelper-compat (= 13), zip
 Standards-Version: 3.9.4
-Homepage: http://solarus-games.org
+Homepage: https://gitlab.com/syllan-games/patched-tunics
 
 Package: zelda-tunics
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.4.5)
+Depends: ${shlibs:Depends}, ${misc:Depends}, solarus (>= 1.6.0)
 Description: The Legend of Zelda fan game
  Tunics is a roguelike-like Zelda game for the Solarus game engine.

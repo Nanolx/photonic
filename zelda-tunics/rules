@@ -1,7 +1,12 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-export DH_VERBOSE=1
-
 %:
-	dh $@  --with-python2
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
+override_dh_auto_install:
+	dh_auto_install
+	install -m755 $(CURDIR)/debian/tunics $(CURDIR)/debian/zelda-tunics/usr/bin/tunics
