@@ -1,13 +1,14 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: zeldaolb
-Source: http://www.zeldaroth.fr/us/zolb.php
+Upstream-Contact: Vincent Jouillat <webmaster@zeldaroth.fr>
+Source: https://www.zeldaroth.fr/us/dlolb.php
 
 Files: *
-Copyright: 2007 Vincent Jouillat
+Copyright: 2007-2024 Vincent Jouillat <webmaster@zeldaroth.fr>
 License: GPL-2.0+
 
 Files: debian/*
-Copyright: 2012 Christopher Roy Bratusek <nano@jpberlin.de>
+Copyright: 2012-2026 Christopher Roy Bratusek <nano@jpberlin.de>
 License: GPL-2.0+
 
 License: GPL-2.0+
