@@ -1,16 +1,19 @@
 Source: zelda-time-to-triumph
 Section: games
-Priority: extra
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
-Build-Depends: debhelper (>= 8.0.0), libsdl1.2-dev, libsdl-mixer1.2-dev, libsdl-image1.2-dev,libsdl-gfx1.2-dev
-Standards-Version: 3.9.4
-Homepage: http://www.zeldaroth.fr/us/z3t.php
+Build-Depends:
+ debhelper-compat (= 13),
+ libsdl2-dev,
+ libsdl2-mixer-dev,
+ libsdl2-image-dev
+Standards-Version: 4.7.4
+Homepage: https://www.zeldaroth.fr/us/z3t.php
 
 Package: zelda-time-to-triumph
-Provides: zelda3t
-Replaces: zelda3t
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
 Description: Zelda - Time To Triumph (fangame)
  After the events that occured in Termina and the victory
  of the hero on his evil alter-ego, Zelda and Link knew that,
@@ -18,5 +21,5 @@ Description: Zelda - Time To Triumph (fangame)
  from his wish to the Triforce, and rounded up his army with
  a view to invade Hyrule. Until the day when, after months
  spent watching out for an attack, an event came up and put
- an end to this endless waiting. 
- 
+ an end to this endless waiting.
+
