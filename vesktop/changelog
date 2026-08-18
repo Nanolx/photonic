@@ -1,3 +1,9 @@
+vesktop (1.6.7-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 18 Aug 2026 21:15:59 +0200
+
 vesktop (1.6.5+git20260723-1nano) unstable; urgency=medium
 
   * Initial release.
