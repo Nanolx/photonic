@@ -1,13 +1,14 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: zbom
-Source: https://sites.google.com/site/zeldabom/
+Upstream-Contact: Matt Wright <wright.matt.a@gmail.com>
+Source: https://wrightmatta.wixsite.com/zeldabom/
 
 Files: *
-Copyright: 2015 Matt Wright <wright.matt.a@gmail.com>
+Copyright: 2015-2026 Matt Wright <wright.matt.a@gmail.com>
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2015 Christopher Roy Bratusek <nano@jpberlin.de>
+Copyright: 2015-2026 Christopher Roy Bratusek <nano@jpberlin.de>
 License: GPL-3.0+
 
 License: GPL-3.0+
