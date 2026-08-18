@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	rm -f ZeldaROTH
+	dh_auto_clean
+
+override_dh_auto_install:
+	mkdir -p $(CURDIR)/debian/zelda-return-of-the-hylian/usr/bin/
+	mkdir -p $(CURDIR)/debian/zelda-return-of-the-hylian/usr/share/zelda-return-of-the-hylian/
+	install -m755 $(CURDIR)/debian/zeldaroth $(CURDIR)/debian/zelda-return-of-the-hylian/usr/bin/
+	install -m755 ZeldaROTH $(CURDIR)/debian/zelda-return-of-the-hylian/usr/share/zelda-return-of-the-hylian/
+	cp -rv data/ $(CURDIR)/debian/zelda-return-of-the-hylian/usr/share/zelda-return-of-the-hylian/

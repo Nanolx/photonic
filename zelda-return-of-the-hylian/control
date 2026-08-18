@@ -1,0 +1,25 @@
+Source: zelda-return-of-the-hylian
+Section: games
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ libsdl2-dev,
+ libsdl2-mixer-dev,
+ libsdl2-image-dev,
+ libsdl2-gfx-dev
+Standards-Version: 4.7.4
+Homepage: https://www.zeldaroth.fr/us/zroth.php
+
+Package: zelda-return-of-the-hylian
+Replaces: zeldansq
+Provides: zeldansq
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Zelda - Return of the Hylian (fangame)
+ Story: After Link's victory over Ganon (in "A Link to the Past"), no one knows
+ what Link’s wish to the Triforce was. But this wish reunified the Light World
+ and the Dark World and brought the 7 wise men’s descendants back to life.
+ .
+ Peace was back in Hyrule. But unfortunately, this wish also ressurected Ganon
+ and his henchmen. He was preparing his revenge, but he couldn’t do anything
+ without the Triforce. One night, a familiar voice speaks to Link in his sleep…

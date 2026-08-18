@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /usr/share/zelda-return-of-the-hylian/
+./ZeldaROTH "${@}"
