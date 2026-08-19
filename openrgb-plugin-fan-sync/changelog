@@ -1,3 +1,9 @@
+openrgb-plugin-fan-sync (1.0~rc2+git20251015-2nano) unstable; urgency=low
+
+  * rebuild
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 19 Aug 2026 19:36:34 +0200
+
 openrgb-plugin-fan-sync (1.0~rc2+git20251015-1nano) unstable; urgency=medium
 
   * Initial release.
