@@ -1,0 +1,81 @@
+Source: ayugram-desktop
+Section: net
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ libboost-all-dev,
+ libglib2.0-dev,
+ libglibmm-2.68-dev,
+ libgio-2.0-dev,
+ libgirepository-2.0-dev,
+ qt6-base-dev,
+ qt6-shadertools-dev,
+ qt6-5compat-dev,
+ qt6-svg-dev,
+ qt6-wayland-dev,
+ qt6-base-private-dev,
+ qt6-image-formats-plugins,
+ libqt6concurrent6,
+ libqt6dbus6,
+ libqt6opengl6,
+ libvulkan-dev,
+ libgeoclue-2-dev,
+ libtgowt-dev,
+ librange-v3-dev,
+ gperf,
+ libwebkitgtk-6.0-dev,
+ libminizip-dev,
+ libqrcodegencpp-dev,
+ libxxhash-dev,
+ libopus-dev,
+ libswscale-dev,
+ libswresample-dev,
+ libavcodec-dev,
+ libavfilter-dev,
+ libavformat-dev,
+ libavutil-dev,
+ libvpx-dev,
+ liblzma-dev,
+ liblz4-dev,
+ libjemalloc-dev,
+ libhunspell-dev,
+ libopenal-dev,
+ libfmt-dev,
+ libmsgsl-dev,
+ xdg-desktop-portal-dev,
+ libxcb-record0-dev,
+ libxcb-screensaver0-dev,
+ libxcb-keysyms1-dev,
+ librlottie-dev,
+ libada-url-dev,
+ cppgir,
+ libprotobuf-dev,
+ protobuf-compiler,
+ librnnoise-dev,
+ libfido2-dev,
+ libjpeg62-turbo-dev,
+ ronn,
+ libyuv-dev,
+ tdlib-e2e
+Standards-Version: 4.7.4
+Homepage: https://github.com/AyuGram/AyuGramDesktop
+
+Package: ayugram-desktop
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Desktop Telegram client with good customization and Ghost mode
+ Features
+ .
+  - Full ghost mode (flexible)
+  - Messages history
+  - Anti-recall
+  - Font customization
+  - Streamer mode
+  - Local Telegram Premium
+  - Translator
+  - Media preview & quick reaction on force click (macOS)
+  - Enhanced appearance
+

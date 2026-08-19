@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@ -buildsystem=cmake
+
+override_dh_auto_configure:
+	mkdir -p Telegram/ThirdParty/tgcalls/third_party/libyuv/include
+	ln -sf /usr/include/libyuv.h Telegram/ThirdParty/tgcalls/third_party/libyuv/include/libyuv.h
+	ln -sf /usr/include/libyuv Telegram/ThirdParty/tgcalls/third_party/libyuv/include/libyuv
+
+	dh_auto_configure -- -G Ninja \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DTDESKTOP_API_ID=2040 \
+		-DTDESKTOP_API_HASH=b18441a1ff607e10a989891a5462e627 \
+		-DDESKTOP_APP_USE_PACKAGED=ON \
+		-DDESKTOP_APP_USE_PACKAGED_FONTS=OFF \
+		-DDESKTOP_APP_DISABLE_CRASH_REPORTS=ON \
+		-DDESKTOP_APP_DISABLE_QT_PLUGINS=OFF \
+		-DDESKTOP_APP_DISABLE_AUTOUPDATE=True \
+		-DQSB_EXECUTABLE=/usr/lib/qt6/bin/qsb
+
+override_dh_auto_clean:
+	rm -f Telegram/ThirdParty/tgcalls/third_party/libyuv/include/libyuv.h
+	rm -f Telegram/ThirdParty/tgcalls/third_party/libyuv/include/libyuv
+
+override_dh_auto_test:
+	true
+
+override_dh_dwz:
+	true
