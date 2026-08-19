@@ -1,3 +1,9 @@
+openrgb-plugin-hardware-sync (1.0~rc2+git20260811-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 19 Aug 2026 19:31:10 +0200
+
 openrgb-plugin-hardware-sync (1.0~rc2+git20260804-1nano) unstable; urgency=medium
 
   * Initial release.
