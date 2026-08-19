@@ -1,0 +1,24 @@
+Source: td
+Section: devel
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ gperf,
+ php-dev,
+ zlib1g-dev,
+ libssl-dev
+Standards-Version: 4.7.4
+Homepage: https://github.com/tdlib/td/
+
+Package: tdlib-e2e
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: TDLib (Telegram Database library)
+ TDLib is a cross-platform library for building Telegram clients.
+ .
+ It can be easily used from almost any programming language.
+ .
+ This build is E2E only
