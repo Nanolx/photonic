@@ -1,0 +1,19 @@
+Source: konsave
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ python3-wheel,
+ python3-setuptools-scm
+Standards-Version: 4.7.4
+Homepage: https://github.com/Prayag2/konsave
+
+Package: konsave
+Architecture: any
+Depends:
+ ${python:Depends}
+Description: Konsave (Save Linux Customization)
+ A CLI program that will let you save and apply your Linux customizations with
+ just one command! Konsave also lets you share your dot files to your friends in
+ an instant! It officially supports KDE Plasma but it can be used on all other
+ desktop environments too!

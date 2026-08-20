@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+export SETUPTOOLS_SCM_PRETEND_VERSION=$(DEB_VERSION_UPSTREAM)
+export DEB_PYTHON_DIR := /usr/lib/python3/dist-packages
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	:
+
+override_dh_auto_build:
+	python -m build --wheel --no-isolation
+
+override_dh_auto_install:
+	python -m installer  --destdir $(CURDIR)/debian/konsave --prefix /usr dist/*.whl
+	mkdir -p $(CURDIR)/debian/konsave$(DEB_PYTHON_DIR)
+	mv $(CURDIR)/debian/konsave/usr/local/lib/python*/dist-packages/* \
+		$(CURDIR)/debian/konsave$(DEB_PYTHON_DIR)/
+	mkdir -p $(CURDIR)/debian/konsave/usr/bin
+	mv $(CURDIR)/debian/konsave/usr/local/bin/* \
+		$(CURDIR)/debian/konsave/usr/bin/
+	rm -rf $(CURDIR)/debian/konsave/usr/local
+	install -Dm644 -t $(CURDIR)/debian/konsave$(DEB_PYTHON_DIR)/$(DEB_SOURCE) $(CURDIR)/konsave/conf_kde.yaml
+	install -Dm644 -t $(CURDIR)/debian/konsave$(DEB_PYTHON_DIR)/$(DEB_SOURCE) $(CURDIR)/konsave/conf_other.yaml
