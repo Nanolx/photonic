@@ -1,0 +1,58 @@
+Description: Debian does not ship protobuf cmake files, so make the
+ external dependency cl3 for ayugram-desktop use pkg-config instead.
+Author: Christopher Roy Bratusek <nano@jpberlin.de>
+Forwarded: not-needed
+Last-Update: 2026-08-20
+
+--- ayugram-desktop-7.0.9.orig/cmake/external/cld3/CMakeLists.txt
++++ ayugram-desktop-7.0.9/cmake/external/cld3/CMakeLists.txt
+@@ -8,7 +8,23 @@
+ add_library(desktop-app::external_cld3 ALIAS external_cld3)
+ 
+ if (DESKTOP_APP_USE_PACKAGED)
+-    find_package(protobuf CONFIG)
++    find_package(PkgConfig REQUIRED)
++    pkg_check_modules(protobuf REQUIRED protobuf)
++
++    if(NOT TARGET protobuf::libprotobuf-lite)
++        add_library(protobuf::libprotobuf-lite INTERFACE IMPORTED)
++        target_link_libraries(protobuf::libprotobuf-lite INTERFACE ${protobuf_LIBRARIES})
++        target_include_directories(protobuf::libprotobuf-lite INTERFACE ${protobuf_INCLUDE_DIRS})
++    endif()
++
++    if(NOT TARGET protobuf::protoc)
++        find_program(PROTOBUF_PROTOC_EXECUTABLE NAMES protoc)
++        add_executable(protobuf::protoc IMPORTED GLOBAL)
++        set_target_properties(protobuf::protoc PROPERTIES
++            IMPORTED_LOCATION "${PROTOBUF_PROTOC_EXECUTABLE}"
++        )
++    endif()
++
+     find_library(DESKTOP_APP_CLD3_LIBRARIES NAMES cld3)
+     find_path(DESKTOP_APP_CLD3_INCLUDE_DIRS NAMES nnet_language_identifier.h PATH_SUFFIXES cld3)
+     if (protobuf_FOUND AND DESKTOP_APP_CLD3_LIBRARIES AND DESKTOP_APP_CLD3_INCLUDE_DIRS)
+@@ -29,7 +45,23 @@
+ set(gen_dst ${gen_loc}/cld_3/protos)
+ 
+ if (DESKTOP_APP_USE_PACKAGED OR LINUX)
+-    find_package(protobuf REQUIRED CONFIG)
++    find_package(PkgConfig REQUIRED)
++    pkg_check_modules(protobuf REQUIRED protobuf)
++
++    if(NOT TARGET protobuf::libprotobuf-lite)
++        add_library(protobuf::libprotobuf-lite INTERFACE IMPORTED)
++        target_link_libraries(protobuf::libprotobuf-lite INTERFACE ${protobuf_LIBRARIES})
++        target_include_directories(protobuf::libprotobuf-lite INTERFACE ${protobuf_INCLUDE_DIRS})
++    endif()
++
++    if(NOT TARGET protobuf::protoc)
++        find_program(PROTOBUF_PROTOC_EXECUTABLE NAMES protoc)
++        add_executable(protobuf::protoc IMPORTED GLOBAL)
++        set_target_properties(protobuf::protoc PROPERTIES
++            IMPORTED_LOCATION "${PROTOBUF_PROTOC_EXECUTABLE}"
++        )
++    endif()
++
+     set(protoc_executable protobuf::protoc)
+     set(protobuf_lib protobuf::libprotobuf-lite)
+ elseif (WIN32)

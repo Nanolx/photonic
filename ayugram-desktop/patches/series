@@ -1,4 +1,2 @@
-cld3-cmake-fix-protobuf.diff
-cld3-cmake-protobuf-lite.diff
-cld3-cmake-protobufc.diff
+cld3-cmake-detect-protobuf.diff
 qt6-qaccessible-dirty-quickfix.diff
