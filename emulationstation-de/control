@@ -1,0 +1,36 @@
+Source: emulationstation-de
+Section: games
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ clang-format,
+ git,
+ gettext,
+ libharfbuzz-dev,
+ libicu-dev,
+ libsdl2-dev,
+ libavcodec-dev,
+ libavfilter-dev,
+ libavformat-dev,
+ libavutil-dev,
+ libfreeimage-dev,
+ libfreetype6-dev,
+ libgit2-dev,
+ libcurl4-openssl-dev,
+ libpugixml-dev,
+ libasound2-dev,
+ libbluetooth-dev,
+ libgl1-mesa-dev,
+ libpoppler-cpp-dev
+Standards-Version: 4.7.4
+Homepage: https://gitlab.com/es-de/emulationstation-de/
+
+Package: emulationstation-de
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: ES-DE (EmulationStation Desktop Edition)
+ ES-DE is a frontend for browsing and launching games from your multi-platform
+ collection.
