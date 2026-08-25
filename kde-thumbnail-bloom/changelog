@@ -1,3 +1,11 @@
+kde-thumbnail-bloom (0.1.0~git20260825-1nano) unstable; urgency=low
+
+  * New snapshot build
+  * rename binary package to upstream kde-thumbnail-bloom
+  * replace: kwin-effect-thumbnail-bloom (old package name)
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 25 Aug 2026 18:53:49 +0200
+
 kde-thumbnail-bloom (0.1.0~git20260823-1nano) unstable; urgency=low
 
   * Initial release.
