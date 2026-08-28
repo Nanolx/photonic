@@ -1,0 +1,26 @@
+Source: kwin-effect-cursortrails
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ kwin-dev,
+ qt6-base-dev,
+ libkf6kcmutils-dev,
+ libkf6coreaddons-dev,
+ libkf6i18n-dev,
+ libkf6windowsystem-dev,
+ libkdecorations3-dev
+Standards-Version: 4.7.4
+Homepage: https://github.com/WackyIdeas/kwin-effects-cursortrails
+Rules-Requires-Root: no
+
+Package: kwin-effect-cursortrails
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Cursor trail effect for KDE Plasma
+ This effect introduces the cursor trail effect from Windows, with the addition
+ of the trails fading out of view. They can be configured in both duration and
+ frequency.
