@@ -1,0 +1,23 @@
+Source: kwin-effect-ba-click-fx
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ kwin-dev,
+ qt6-base-dev,
+ libkf6kcmutils-dev,
+ libkf6coreaddons-dev,
+ libkf6i18n-dev,
+ libkf6windowsystem-dev
+Standards-Version: 4.7.4
+Homepage: https://github.com/floating142/kwin-effects-ba-click-fx
+
+Package: kwin-effect-ba-click-fx
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Blue Archive Unity FX_Touch for KWin
+ A KDE Plasma KWin click effect and cursor trail ported parameter by parameter
+ from the Blue Archive Unity FX_Touch effect.
