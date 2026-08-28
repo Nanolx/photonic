@@ -1,0 +1,25 @@
+Source: kwin-effect-particles
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ kwin-dev,
+ qt6-base-dev,
+ libkf6kcmutils-dev,
+ libkf6coreaddons-dev,
+ libkf6i18n-dev,
+ libkf6windowsystem-dev,
+ libkdecorations3-dev
+Standards-Version: 4.7.4
+Homepage: https://github.com/WackyIdeas/kwin-effects-particles
+Rules-Requires-Root: no
+
+Package: kwin-effect-particles
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Cursor particle effect for KWin
+ This effect for KDE Plasma 6 implements a configurable particle system that
+ emits particles as the mouse cursor is moved across the screen.
