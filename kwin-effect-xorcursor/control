@@ -1,4 +1,4 @@
-Source: kwin-effect-xourcursor
+Source: kwin-effect-xorcursor
 Section: kde
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
 Build-Depends:
@@ -12,10 +12,11 @@ Standards-Version: 4.7.4
 Homepage: https://github.com/jinliu/kwin-effect-xorcursor
 Rules-Requires-Root: no
 
-Package: kwin-effect-xourcursor
+Package: kwin-effect-xorcursor
 Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
+Replaces: kwin-effect-xourcursor
 Description: XOR cursor effect for KDE Plasma
  XOR cursor effect for KDE Plasma
