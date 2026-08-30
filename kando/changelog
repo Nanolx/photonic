@@ -1,3 +1,9 @@
+kando (3.0.0~beta1-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 30 Aug 2026 09:48:09 +0200
+
 kando (3.0.0~alpha1-1nano) unstable; urgency=medium
 
   * Initial release.
