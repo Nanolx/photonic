@@ -1,0 +1,14 @@
+Source: plasma-andromeda-launcher
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/EliverLara/AndromedaLauncher
+
+Package: plasma-andromeda-launcher
+Architecture: all
+Depends: kde-plasma-desktop
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Andromeda Launcher for Plasma
+ A simple Launcher for KDE Plasma based on the awesome mmcklauncher
