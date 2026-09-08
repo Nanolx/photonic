@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/plasmoids/
+	cp -r $(CURDIR)/luisbocanegra.panel.colorizer $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/plasmoids/

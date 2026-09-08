@@ -1,0 +1,6 @@
+plasma-panel-colorizer (8.0.0-1nano) unstable; urgency=low
+
+  * Initial release.
+  * Split off from Nanolx source package
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 08 Sep 2026 20:42:17 +0200
