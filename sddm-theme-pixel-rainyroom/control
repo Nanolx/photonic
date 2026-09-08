@@ -1,0 +1,15 @@
+Source: sddm-theme-pixel-rainyroom
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13)
+Standards-Version: 4.7.4
+Homepage: ttps://github.com/darkkal44/qylock
+Rules-Requires-Root: no
+
+Package: sddm-theme-pixel-rainyroom
+Architecture: all
+Depends: sddm
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Pixel Rainy Room sddm theme
+ bundled as part of nanolx
