@@ -1,0 +1,15 @@
+Source: plasma-kde-control-station
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/EliverLara/kde-control-station
+
+Package: plasma-kde-control-station
+Architecture: all
+Depends: kde-plasma-desktop
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: KDE Control Station plasmoid
+ A beautiful and modern configuration center for KDE plasma based on the awesome
+ kde_controlcentre by Prayag2
