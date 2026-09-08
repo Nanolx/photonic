@@ -1,4 +1,4 @@
-plasma-panel-colorizer (8.0.0-1nano) unstable; urgency=low
+plasma-panel-colorizer (2:8.0.0-1nano) unstable; urgency=low
 
   * Initial release.
   * Split off from Nanolx source package
