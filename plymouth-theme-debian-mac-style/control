@@ -1,0 +1,14 @@
+Source: plymouth-theme-debian-mac-style
+Section: misc
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://store.kde.org/p/2106821
+
+Package: plymouth-theme-debian-mac-style
+Architecture: all
+Depends: plymouth, dracut
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Debian Mac style Plymouth theme
+ bundled as part of nanolx
