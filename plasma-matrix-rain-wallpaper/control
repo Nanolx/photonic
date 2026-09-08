@@ -1,0 +1,15 @@
+Source: plasma-matrix-rain-wallpaper
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/obsidianreq/matrixrain-plasma6
+
+Package: plasma-matrix-rain-wallpaper
+Architecture: any
+Depends: kde-plasma-desktop
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Matrix Rain wallpaper for Plasma
+ Provides a Matrix-esque "code rainfall" background wallpaper for Plasma 6,
+ with some fun custommizations.

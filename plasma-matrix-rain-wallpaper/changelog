@@ -1,0 +1,6 @@
+plasma-matrix-rain-wallpaper (2:20260508-1nano) unstable; urgency=low
+
+  * Initial release.
+  * Splitt off from Nanolx source package
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 08 Sep 2026 20:09:53 +0200

@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/wallpapers/
+	cp -r $(CURDIR)/obsidianreq.plasma.wallpaper.matrixrain \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/wallpapers/
