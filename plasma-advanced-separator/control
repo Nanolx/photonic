@@ -1,0 +1,14 @@
+Source: plasma-advanced-separator
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/luisbocanegra/plasma-advanced-separator
+
+Package: plasma-advanced-separator
+Architecture: all
+Depends: kde-plasma-desktop
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Advanced Separator plasmoid
+ Customizable separator widget for the KDE Plasma Desktop
