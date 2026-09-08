@@ -1,0 +1,6 @@
+plasma-splash-infinity (2:20240411-1nano) unstable; urgency=low
+
+  * Initial release.
+  * Splitt off from Nanolx source package
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 08 Sep 2026 20:18:09 +0200

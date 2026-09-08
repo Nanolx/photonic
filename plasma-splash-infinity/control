@@ -1,0 +1,13 @@
+Source: plasma-splash-infinity
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/L4ki/Infinity-Plasma-Themes
+
+Package: plasma-splash-infinity
+Architecture: all
+Depends: kde-plasma-desktop
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Infinity splash screen for plasma

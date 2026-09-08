@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/look-and-feel/
+	cp -r $(CURDIR)/Infinity-Plasma-Splash-6\
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/look-and-feel/
