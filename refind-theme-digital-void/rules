@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/boot/efi/EFI/refind/themes/
+	cp -r $(CURDIR)/rEFInd-digital-void \
+		$(CURDIR)/debian/$(PACKAGE)/boot/efi/EFI/refind/themes/

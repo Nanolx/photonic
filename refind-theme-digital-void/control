@@ -1,0 +1,14 @@
+Source: refind-theme-digital-void
+Section: misc
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/Wi-Fight-IT/rEFInd-digital-void
+
+Package: refind-theme-digital-void
+Architecture: all
+Depends: refind
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Digital Void theme for rEFInd
+ Futuristic red theme for rEFInd

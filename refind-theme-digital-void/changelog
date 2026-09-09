@@ -1,0 +1,6 @@
+refind-theme-digital-void (2:20260406-1nano) unstable; urgency=low
+
+  * Initial release.
+  * Splitt off from Nanolx source package
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 09 Sep 2026 19:54:32 +0200
