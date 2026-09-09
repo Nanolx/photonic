@@ -1,0 +1,6 @@
+kde-syntax-theme-revolunti (2:20260509-1nano) unstable; urgency=low
+
+  * Initial release.
+  * Splitt off from Nanolx source package
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 09 Sep 2026 19:48:17 +0200

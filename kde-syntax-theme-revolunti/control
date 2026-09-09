@@ -1,0 +1,14 @@
+Source: kde-syntax-theme-revolunti
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://codeberg.org/akselmo/Revontuli/src/branch/main/Kate
+
+Package: kde-syntax-theme-revolunti
+Architecture: all
+Depends: kate | kdevelop
+Replaces: nanolx-devel-x11 (<< 4.14.0.20260828)
+Description: Revolunti syntax highlighting theme for Kate/KDevelop
+ Including Revolunti-Night

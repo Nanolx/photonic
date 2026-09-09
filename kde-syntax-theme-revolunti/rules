@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/org.kde.syntax-highlighting/themes/
+	cp -r $(CURDIR)/*.theme \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/org.kde.syntax-highlighting/themes/
