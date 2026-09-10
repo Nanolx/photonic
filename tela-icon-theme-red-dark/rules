@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/icons/
+	cp -r $(CURDIR)/Tela-red-dark $(CURDIR)/debian/$(PACKAGE)/usr/share/icons/
