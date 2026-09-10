@@ -1,0 +1,14 @@
+Source: kwin-effect-geometry-change
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/peterfajdiga/kwin4_effect_geometry_change
+
+Package: kwin-effect-geometry-change
+Architecture: all
+Depends: kwin
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: KWin animation for windows moved/resized by programs/scripts
+ bundled as part of nanolx
