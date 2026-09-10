@@ -1,0 +1,14 @@
+Source: empty-butterfly-cursors
+Section: x11
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://store.kde.org/p/2002505
+
+Package: empty-butterfly-cursors
+Architecture: all
+Depends: wayland-protocols | xserver-xorg
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Empty Butterfly cursors
+ Come in blue, butter, cyan, green, magenta, orange, purple, red, white and yellow.
