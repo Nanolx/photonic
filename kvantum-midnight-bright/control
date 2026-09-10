@@ -1,0 +1,14 @@
+Source: kvantum-midnight-bright
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/SaeedBaig/midnight-bright-kde
+
+Package: kvantum-midnight-bright
+Architecture: all
+Depends: qt-style-kvantum
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Midnight Bright Kvantum theme
+ comes in blue, green, purple, red and yellow
