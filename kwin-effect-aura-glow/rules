@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/effects/
+	cp -r $(CURDIR)/kwin6_effect_aura_glow \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/effects/

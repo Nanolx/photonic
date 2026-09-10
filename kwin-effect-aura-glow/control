@@ -1,0 +1,14 @@
+Source: kwin-effect-aura-glow
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/Schneegans/Burn-My-Windows
+
+Package: kwin-effect-aura-glow
+Architecture: all
+Depends: kwin
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: KWin aura glow animation for created/deleted windows
+ bundled as part of nanolx
