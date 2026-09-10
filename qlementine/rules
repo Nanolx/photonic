@@ -8,4 +8,4 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DBUILD_SHARED_LIBS=ON
+	dh_auto_configure -- -DBUILD_SHARED_LIBS=ON -DQLEMENTINE_BUILD_STATIC=OFF
