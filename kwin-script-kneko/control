@@ -1,0 +1,15 @@
+Source: kwin-script-kneko
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/rileyaft/KNeko
+
+Package: kwin-script-kneko
+Architecture: all
+Depends: kwin, kwin-effect-geometry-change
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Desktop pet that follows your mouse
+ An Oneko-style script implemented in kwinscript, because i got fed up with
+ the lack of customization the X11 Oneko carries.
