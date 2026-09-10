@@ -1,0 +1,5 @@
+kwin-script-remember-window-positions (2:6.1.0-1nano) unstable; urgency=low
+
+  * Initial release.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 10 Sep 2026 17:17:15 +0200

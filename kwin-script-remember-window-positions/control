@@ -1,0 +1,15 @@
+Source: kwin-script-remember-window-positions
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/rxappdev/RememberWindowPositions
+
+Package: kwin-script-remember-window-positions
+Architecture: all
+Depends: kwin
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: KWin Script for remembering application window properties.
+ Especially useful for multi-window applications such as browsers. Remembers and
+ restores the windows position, size, screen and virtual desktop.
