@@ -1,0 +1,16 @@
+Source: plasma-global-theme-nothing
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://gitlab.com/jomada/nothing
+
+Package: plasma-global-theme-nothing
+Architecture: all
+Depends: kde-plasma-desktop,
+ kwin-style-aurorae,
+ konsole
+Replaces: nanolx-themes (<< 4.14.0.20260828)
+Description: Nothing plasma theme
+ Plasma theme inspired by Nothing design language

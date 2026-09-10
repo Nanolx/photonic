@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_install:
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/aurorae/themes/
+	cp -r $(CURDIR)/aurorae/Nothing \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/aurorae/themes/
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/color-schemes/
+	cp -r $(CURDIR)/color-schemes/* \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/color-schemes/
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/konsole/color-schemes/
+	cp -r $(CURDIR)/konsole/color-schemes/* \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/konsole/color-schemes/
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/desktoptheme/
+	cp -r $(CURDIR)/plasma/desktoptheme/Nothing \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/desktoptheme/
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/look-and-feel/
+	cp -r $(CURDIR)/plasma/look-and-feel/Nothing \
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/look-and-feel/
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/wallpapers/
+	cp -r $(CURDIR)/wallpapers/* $(CURDIR)/debian/$(PACKAGE)/usr/share/wallpapers/
