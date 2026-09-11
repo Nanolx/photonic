@@ -1,3 +1,9 @@
+kwin-effect-ba-click-fx (1.0.4-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 11 Sep 2026 21:19:51 +0200
+
 kwin-effect-ba-click-fx (1.0.3-1nano) unstable; urgency=low
 
   * Initial release.
