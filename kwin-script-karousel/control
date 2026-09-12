@@ -1,0 +1,17 @@
+Source: kwin-script-karousel
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/peterfajdiga/karousel
+
+Package: kwin-script-karousel
+Architecture: all
+Depends: kwin, kwin-effect-geometry-change
+Description: Scrollable tiling Kwin script.
+ A scrollable tiling window manager tiles windows, but it does not maximize
+ their widths. Instead, it leaves the width of windows to the user's control.
+ .
+ Windows are automatically centered when possible. And when running out of width,
+ windows can be scrolled through horizontally.
