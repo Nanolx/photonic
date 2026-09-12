@@ -1,3 +1,9 @@
+openrgb (1.0-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 12 Sep 2026 19:14:27 +0200
+
 openrgb (1.0~rc3+git20260830-1nano) unstable; urgency=low
 
   * New upstream release
