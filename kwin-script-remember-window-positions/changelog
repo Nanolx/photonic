@@ -1,3 +1,9 @@
+kwin-script-remember-window-positions (2:7.0.0-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 17 Sep 2026 18:56:33 +0200
+
 kwin-script-remember-window-positions (2:6.1.0-1nano) unstable; urgency=low
 
   * Initial release.
