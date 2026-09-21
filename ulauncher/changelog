@@ -1,3 +1,9 @@
+ulauncher (6.0.0~beta35-1nano) unstable; urgency=low
+
+  * New upstream beta release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 21 Sep 2026 12:36:47 +0200
+
 ulauncher (6.0.0~beta34-1nano) unstable; urgency=medium
 
   * Initial release.
