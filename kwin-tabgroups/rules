@@ -6,6 +6,6 @@ PACKAGE=$(shell dh_listpackages)
 	dh $@
 
 override_dh_install:
-	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/scripts/
+	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/scripts/$(PACKAGE)
 	cp -r $(CURDIR)/contents $(CURDIR)/metadata.json \
-		$(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/scripts/
+		$(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/scripts/$(PACKAGE)
