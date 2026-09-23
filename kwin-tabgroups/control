@@ -1,0 +1,17 @@
+Source: kwin-tabgroups
+Section: kde
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.7.4
+Homepage: https://github.com/fpfcmsr/kwin-tabgroups
+
+Package: kwin-tabgroups
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ kwin
+Description: Hacky tab groups for KWin
+ Real tab groups (stacked windows): drop one window onto another to group them,
+ switch with a titlebar tab strip.
