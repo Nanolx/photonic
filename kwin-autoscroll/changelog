@@ -1,3 +1,9 @@
+kwin-autoscroll (0.1.7-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 24 Sep 2026 20:05:07 +0200
+
 kwin-autoscroll (0.1.6-1nano) unstable; urgency=medium
 
   * Initial release for photonic
