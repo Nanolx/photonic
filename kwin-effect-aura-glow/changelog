@@ -1,3 +1,9 @@
+kwin-effect-aura-glow (2:20260925-1nano) unstable; urgency=low
+
+  * New git snapshot
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 25 Sep 2026 16:06:18 +0200
+
 kwin-effect-aura-glow (2:48-1nano) unstable; urgency=low
 
   * Initial release.
