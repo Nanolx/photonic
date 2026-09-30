@@ -26,6 +26,7 @@ override_dh_auto_configure:
 override_dh_auto_clean:
 	rm -f Telegram/ThirdParty/tgcalls/third_party/libyuv/include/libyuv.h
 	rm -f Telegram/ThirdParty/tgcalls/third_party/libyuv/include/libyuv
+	dh_auto_clean
 
 override_dh_auto_test:
 	true

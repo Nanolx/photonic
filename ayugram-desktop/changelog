@@ -1,5 +1,11 @@
+ayugram-desktop (7.0.9-2nano) unstable; urgency=low
+
+  * rebuild against latest qt
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 30 Sep 2026 20:01:14 +0200
+
 ayugram-desktop (7.0.9-1nano) unstable; urgency=low
 
   * Initial release.
 
- -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 19 Aug 2026 19:52:07 +0200
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 20 Aug 2026 15:43:43 +0200
