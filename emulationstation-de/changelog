@@ -1,3 +1,9 @@
+emulationstation-de (3.5.0-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 30 Sep 2026 20:26:48 +0200
+
 emulationstation-de (3.5.0~git20260821-1nano) unstable; urgency=low
 
   * Initial release.
