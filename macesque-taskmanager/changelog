@@ -1,3 +1,9 @@
+macesque-taskmanager (0.9.0-2nano) unstable; urgency=low
+
+  * rebuild against latest plasma/qt
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 30 Sep 2026 19:56:08 +0200
+
 macesque-taskmanager (0.9.0-1nano) unstable; urgency=low
 
   * Initial release.
