@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+PACKAGE := bluefish
+
+DEB_VENDOR := $(shell dpkg-vendor --query vendor)
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+CPPFLAGS ?= $(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS   ?= $(shell dpkg-buildflags --get CFLAGS)
+LDFLAGS  ?= $(shell dpkg-buildflags --get LDFLAGS)
+CFLAGS += -Wall -g
+
+%:
+	dh $@ --with python3
+
+override_dh_auto_configure: configure
+	dh_auto_configure -- \
+	    --with-icon-path=\$${prefix}/share/pixmaps \
+	    --with-theme-path=\$${prefix}/share/icons/hicolor \
+	    --with-freedesktop_org-menu=\$${prefix}/share/applications \
+	    --with-freedesktop_org-mime=\$${prefix}/share/mime \
+	    --with-xml-catalog=\$${sysconfdir}/xml/catalog \
+	    --disable-development \
+	    --disable-static \
+	    --disable-xml-catalog-update \
+	    --disable-update-databases \
+	    CPPFLAGS="$(CPPFLAGS)" \
+	    CFLAGS="$(CFLAGS)" \
+	    LDFLAGS="$(LDFLAGS)"
+
+override_dh_install:
+	dh_install
+	# remove python2 only scripts
+	rm -f debian/bluefish/usr/share/bluefish/css_decompressor \
+	   debian/bluefish/usr/share/bluefish/cssmin.py \
+	   debian/bluefish/usr/share/bluefish/jsbeautify \
+	   debian/bluefish/usr/share/bluefish/jsmin.py \
+	   debian/bluefish/usr/share/bluefish/lorem-ipsum-generator

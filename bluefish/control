@@ -1,0 +1,117 @@
+Source: bluefish
+Maintainer: Jonathan Carter <jcc@debian.org>
+Section: web
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               gettext,
+               intltool,
+               libenchant-2-dev,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libgucharmap-2-90-dev,
+               libpango1.0-dev,
+               libtool,
+               libxml2-dev,
+               libxml2-utils,
+               python3,
+               python3-dev,
+               zlib1g-dev
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Homepage: https://bluefish.openoffice.nl
+Vcs-Browser: https://salsa.debian.org/debian/bluefish
+Vcs-Git: https://salsa.debian.org/debian/bluefish.git
+
+Package: bluefish
+Architecture: any
+Depends: bluefish-data (= ${source:Version}),
+         bluefish-plugins (= ${binary:Version}),
+         gvfs-backends,
+         ${misc:Depends},
+         ${shlibs:Depends},
+	 ${python3:Depends}
+Suggests: csstidy,
+          dos2unix,
+          libxml2-utils,
+	  jsbeautifier,
+          php-codesniffer,
+          pylint,
+          tidy,
+          weblint-perl | weblint,
+          www-browser
+Breaks: bluefish-data (<< 2.2.12-1.1~)
+Replaces: bluefish-data (<< 2.2.12-1.1~)
+Description: advanced Gtk+ text editor for web and software development
+ Bluefish is a powerful editor targeted towards programmers and web
+ developers, with many options to write websites, scripts and programming
+ code. Bluefish supports a wide variety of programming and markup languages
+ and has many features, e.g.
+ .
+  - Customizable code folding, auto indenting and completion
+  - Support for remote files operation over FTP, SFTP, HTTPS, WebDAV, etc.
+  - Site upload and download
+  - Powerful search and replace engine
+  - Customizable integration of external programs such as lint, make, etc
+  - Snippets plugin to automate often used code
+  - Code-aware in-line spell checking
+  - Zencoding or Emmet support
+  - Bookmarks panel
+ .
+ but is still lightweight and fast.
+ .
+ For validation of CSS/HTML/XML documents you need csstidy, tidy, weblint
+ and/or xmllint. For preview to work, you need a web browser that can view
+ local files given to it on the command line. For PHP or Python bluefish
+ supports php-codesniffer and pylint. Tools not suggested but supported
+ are make, perl, php5-cli and java-compiler.
+
+Package: bluefish-plugins
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: advanced Gtk+ text editor (plugins)
+ Bluefish is a powerful editor targeted towards programmers and web
+ developers, with many options to write websites, scripts and programming
+ code. Bluefish supports a wide variety of programming and markup languages
+ and has many features, e.g.
+ .
+  - Customizable code folding, auto indenting and completion
+  - Support for remote files operation over FTP, SFTP, HTTPS, WebDAV, etc.
+  - Site upload and download
+  - Powerful search and replace engine
+  - Customizable integration of external programs such as lint, make, etc
+  - Snippets plugin to automate often used code
+  - Code-aware in-line spell checking
+  - Zencoding or Emmet support
+  - Bookmarks panel
+ .
+ but is still lightweight and fast.
+ .
+ This package contains the plugins. You will need it for the HTML dialogs,
+ snippets, charmaps etc. So it's basically necessary.
+
+Package: bluefish-data
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Multi-Arch: foreign
+Description: advanced Gtk+ text editor (data)
+ Bluefish is a powerful editor targeted towards programmers and web
+ developers, with many options to write websites, scripts and programming
+ code. Bluefish supports a wide variety of programming and markup languages
+ and has many features, e.g.
+ .
+  - Customizable code folding, auto indenting and completion
+  - Support for remote files operation over FTP, SFTP, HTTPS, WebDAV, etc.
+  - Site upload and download
+  - Powerful search and replace engine
+  - Customizable integration of external programs such as lint, make, etc
+  - Snippets plugin to automate often used code
+  - Code-aware in-line spell checking
+  - Zencoding or Emmet support
+  - Bookmarks panel
+ .
+ but is still lightweight and fast.
+ .
+ This package contains the architecture independent data for the application
+ and its plugins.

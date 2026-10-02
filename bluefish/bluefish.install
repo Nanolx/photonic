@@ -1,0 +1,7 @@
+usr/bin
+usr/share/metainfo
+usr/share/applications
+usr/share/man
+usr/share/bluefish/lorem-ipsum-generator
+usr/share/bluefish/css_decompressor
+usr/share/bluefish/*py
