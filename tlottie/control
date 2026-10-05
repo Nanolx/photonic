@@ -1,0 +1,22 @@
+Source: tlottie
+Section: devel
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cargo,
+ rustc
+Standards-Version: 4.7.4
+Homepage: https://github.com/dkaraush/tlottie
+
+Package: librust-tlottie-dev
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Library for drawing lottie animations, written in Rust.
+ - Micro-optimized and benchmarked across 17k+ animations from Telegram, against rlottie and thorvg.
+  -SIMD on ARM NEON, x86_64 SSE2 AVX2 AVX512, and WASM: web demo.
+ - Support of fitz modifier and color replacements.
+ - Support of rendering into only alpha channel bitmap.
+ - Safe. Lottie JSON is treated as untrusted input.
+ - Zero dependencies.
