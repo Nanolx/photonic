@@ -1,3 +1,9 @@
+kwin-effect-particles (0.0.20261004-1nano) unstable; urgency=low
+
+  * New upstream release
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 05 Oct 2026 18:45:58 +0200
+
 kwin-effect-particles (0.0.20260822-1nano) unstable; urgency=low
 
   * Initial release.
