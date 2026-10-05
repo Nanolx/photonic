@@ -1,3 +1,13 @@
+ayugram-desktop (7.2.9-1nano) unstable; urgency=low
+
+  * New upstream release
+  * add build-dep on libavif-dev
+  * add build-dep on libtlottie-dev
+  * refresh cld3-cmake-detect-protobuff.diff
+  * use ccache for build, non-reproducible, but ayugram takes long to build
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Mon, 05 Oct 2026 18:50:08 +0200
+
 ayugram-desktop (7.0.9-2nano) unstable; urgency=low
 
   * rebuild against latest qt

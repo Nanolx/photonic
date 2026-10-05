@@ -1,7 +1,8 @@
 #!/usr/bin/make -f
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic -g1
+export DEB_CXXFLAGS_MAINT_APPEND = -g1
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
@@ -13,6 +14,8 @@ override_dh_auto_configure:
 	ln -sf /usr/include/libyuv Telegram/ThirdParty/tgcalls/third_party/libyuv/include/libyuv
 
 	dh_auto_configure -- -G Ninja \
+		-DCMAKE_C_COMPILER_LAUNCHER=ccache \
+		-DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DTDESKTOP_API_ID=2040 \
 		-DTDESKTOP_API_HASH=b18441a1ff607e10a989891a5462e627 \

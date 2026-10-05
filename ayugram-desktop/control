@@ -57,6 +57,8 @@ Build-Depends:
  libjpeg62-turbo-dev,
  ronn,
  libyuv-dev,
+ libavif-dev,
+ libtlottie-dev,
  tdlib-e2e
 Standards-Version: 4.7.4
 Homepage: https://github.com/AyuGram/AyuGramDesktop
