@@ -20,3 +20,19 @@ Description: Library for drawing lottie animations, written in Rust.
  - Support of rendering into only alpha channel bitmap.
  - Safe. Lottie JSON is treated as untrusted input.
  - Zero dependencies.
+
+Package: libtlottie-dev
+Architecture: any
+Replaces: librust-tlottie-dev
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Library for drawing lottie animations, written in Rust.
+ - Micro-optimized and benchmarked across 17k+ animations from Telegram, against rlottie and thorvg.
+  -SIMD on ARM NEON, x86_64 SSE2 AVX2 AVX512, and WASM: web demo.
+ - Support of fitz modifier and color replacements.
+ - Support of rendering into only alpha channel bitmap.
+ - Safe. Lottie JSON is treated as untrusted input.
+ - Zero dependencies.
+ .
+ This package contains the shared library and header for libtlottie

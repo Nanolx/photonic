@@ -4,11 +4,6 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
 export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
-export DEB_CARGOFLAGS=--features c-api
-export RUSTFLAGS=--crate-type staticlib --crate-type cdylib
-
-PACKAGE=$(shell dh_listpackages)
-
 %:
 	dh $@ --buildsystem=cargo
 
@@ -16,14 +11,21 @@ execute_before_dh_auto_configure:
 	touch Cargo.lock
 	touch debian/cargo-checksum.json
 
+override_dh_auto_build:
+	dh_auto_build
+	cargo rustc --release --features c-api --lib
 
 override_dh_auto_install:
 	dh_auto_install
-	mkdir -p debian/$(PACKAGE)/usr/lib/$(DEB_HOST_MULTIARCH)
-	mkdir -p debian/$(PACKAGE)/usr/include/tlottie
-	if [ -f $(CURDIR)/target/*/debug/libtlottie.so ]; then \
-		cp $(CURDIR)/target/*/debug/libtlottie.so debian/$(PACKAGE)/usr/lib/$(DEB_HOST_MULTIARCH)/; \
-	elif [ -f $(CURDIR)/target/*/debug/libtlottie.a ]; then \
-		cp $(CURDIR)/target/*/debug/libtlottie.a debian/$(PACKAGE)/usr/lib/$(DEB_HOST_MULTIARCH)/; \
+	mkdir -p debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)
+	mkdir -p debian/tmp/usr/include/
+	if [ -f $(CURDIR)/target/release/libtlottie.so ]; then \
+		cp $(CURDIR)/target/release/libtlottie.so debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/; \
+	elif [ -f $(CURDIR)/target/release/libtlottie.a ]; then \
+		cp $(CURDIR)/target/release/libtlottie.a debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/; \
 	fi
-	cp $(CURDIR)/include/tlottie.h debian/$(PACKAGE)/usr/include/tlottie/
+	cp $(CURDIR)/include/tlottie.h debian/tmp/usr/include/
+
+override_dh_auto_clean:
+	rm Cargo.lock
+	dh_auto_clean
