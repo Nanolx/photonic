@@ -1,3 +1,17 @@
+vesktop (1.6.8-1nano) unstable; urgency=low
+
+  * New upstream release
+    - Updated Electron to address the recent eMudhra certificate authority
+      security issue which undermines trust in affected certificates.
+      This does not mean Vesktop was compromised, but updating is strongly
+      recommended.
+    - Fixed various issues related to screenshare with system audio on Linux
+    - Improved the Native titlebar setting
+    - Fixed not being able to zoom with Numpad +/-
+    - Fixed various titlebar issues
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Thu, 22 Oct 2026 18:57:57 +0200
+
 vesktop (1.6.7-1nano) unstable; urgency=low
 
   * New upstream release
