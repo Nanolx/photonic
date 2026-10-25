@@ -1,3 +1,14 @@
+kwin-script-karousel (0.18-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Pin TypeScript to 5.x by @sanpohi
+    - Fixed issue #186 Cursor Follows Focus refocuses the window while pointing
+      in plasma-shell panel tooltips
+    - Fixed issue #187 Cursor Follows Focus: Cannot increase the size of windows
+      by edge resize
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 25 Oct 2026 09:09:24 +0100
+
 kwin-script-karousel (0.17+git20260823-1nano) unstable; urgency=low
 
   * Initial release.

@@ -2,9 +2,17 @@
 
 PACKAGE=$(shell dh_listpackages)
 
+
 %:
 	dh $@
 
+override_dh_auto_clean:
+	rm -rf $(CURDIR)/node_modules
+	rm -f $(CURDIR)/package/contents/code/main.js
+	rm -f $(CURDIR)/package/contents/config/main.xml
+	rm -f $(CURDIR)/run-ts-tmp.js
+	dh_auto_clean
+
 override_dh_install:
 	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/scripts/
-	cp -r $(CURDIR)/karousel $(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/scripts/
+	cp -r $(CURDIR)/package $(CURDIR)/debian/$(PACKAGE)/usr/share/kwin/scripts/karousel
