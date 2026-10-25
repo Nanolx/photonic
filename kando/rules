@@ -37,5 +37,5 @@ override_dh_auto_install:
 	mkdir -p debian/$(PACKAGE_NAME)/usr/share/pixmaps
 	ln out/Kando-linux-x64/kando debian/$(PACKAGE_NAME)/usr/bin
 	cp -r out/Kando-linux-x64/* debian/$(PACKAGE_NAME)/usr/lib/kando/
-	cp appstream/menu.kando.Kando.desktop debian/$(PACKAGE_NAME)/usr/share/applications
+	cp packaging/appstream/menu.kando.Kando.desktop debian/$(PACKAGE_NAME)/usr/share/applications
 	cp assets/icons/icon.png debian/$(PACKAGE_NAME)/usr/share/pixmaps/kando.png
