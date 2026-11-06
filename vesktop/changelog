@@ -1,3 +1,19 @@
+vesktop (1.6.9-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Considerably improved Rich Presence. Now much faster and should detect way more
+    games. Also supports full Discord RPC now, which means apps like Discord Streamkit
+    Overlay should now work with Vesktop
+  - fixed the Discord titlebar having no close/maximise/minimise buttons
+  - fixed various Linux screenshare audio issues
+  - KDE: fixed tray icon not working when using autostart
+  - modernised the screenshare implementation
+  - fixed popout windows having no titlebar
+  - fixed an issue where portable Windows installs may be updated to the Setup version
+  - now better handles errors when Vencord fails to load & offers to Repair
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 06 Nov 2026 09:26:41 +0100
+
 vesktop (1.6.8-1nano) unstable; urgency=low
 
   * New upstream release
