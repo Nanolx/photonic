@@ -3,11 +3,15 @@ Section: kde
 Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
 Build-Depends:
  debhelper-compat (= 13),
+ cmake,
+ libplasma-dev,
+ qt6-base-dev,
+ liblayershellqtinterface-dev
 Standards-Version: 4.7.4
 Homepage: https://github.com/luisbocanegra/plasma-panel-colorizer
 
 Package: plasma-panel-colorizer
-Architecture: all
+Architecture: any
 Depends: kde-plasma-desktop
 Replaces: nanolx-themes (<< 4.14.0.20260828)
 Description: Panel Colorizer plasmoid

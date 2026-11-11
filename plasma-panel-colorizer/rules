@@ -1,10 +1,28 @@
 #!/usr/bin/make -f
 
-PACKAGE=$(shell dh_listpackages)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 %:
 	dh $@
 
+override_dh_auto_clean:
+	rm -rf $(CURDIR)/build
+	rm -rf $(CURDIR)/package/contents/locale/
+	dh_auto_clean
+
+override_dh_auto_configure:
+	cmake -B $(CURDIR)/build/plasmoid -S $(CURDIR) \
+		-DINSTALL_PLASMOID=ON -DCMAKE_INSTALL_PREFIX="$(CURDIR)/debian/plasma-panel-colorizer/usr"
+	cmake -B $(CURDIR)/build/plugin -S $(CURDIR) \
+		-DBUILD_PLUGIN=ON -DCMAKE_INSTALL_PREFIX="$(CURDIR)/debian/plasma-panel-colorizer/usr"
+
+override_dh_auto_build:
+	python $(CURDIR)/kpac i18n --no-merge
+	cmake --build $(CURDIR)/build/plasmoid
+	cmake --build $(CURDIR)/build/plugin
+
 override_dh_install:
-	install -d $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/plasmoids/
-	cp -r $(CURDIR)/luisbocanegra.panel.colorizer $(CURDIR)/debian/$(PACKAGE)/usr/share/plasma/plasmoids/
+	cmake --install $(CURDIR)/build/plasmoid
+	cmake --install $(CURDIR)/build/plugin

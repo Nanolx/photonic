@@ -1,3 +1,30 @@
+plasma-panel-colorizer (2:8.1.0-1nano) unstable; urgency=low
+
+  * New upstream release
+
+  [Nanolx]
+  * change arch from all to any, as the qml-plugin is now bundled
+  * update build-deps for c++ plugin
+  * update debian/rules for c++ plugin
+
+  [Upstream]
+  * Features
+    * option to change distance between panel and screen edge
+    * add option to keep original text/icon colors per widget
+  * Bug Fixes
+    * don't inherit the background colorSet to the foreground color
+    * less chance of hang when spacing is 0 on Plasma 6.8.2 and older
+    * preset management regressions after #585
+    * preset not saving when it gets too big
+    * remove problematic workaround for panel length bug 489086
+  * Translations
+    * add Vietnamese (vi) translation
+    * update Russian translation
+    * update Simplified Chinese (zh)
+    * update Spanish translation
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 11 Nov 2026 17:19:08 +0100
+
 plasma-panel-colorizer (2:8.0.0-1nano) unstable; urgency=low
 
   * Initial release.
