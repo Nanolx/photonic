@@ -1,3 +1,12 @@
+plasma-panel-colorizer (2:8.1.0-2nano) unstable; urgency=low
+
+  * New build
+
+  [Nanolx]
+  * add ${shlibs:Depends}
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 11 Nov 2026 18:53:08 +0100
+
 plasma-panel-colorizer (2:8.1.0-1nano) unstable; urgency=low
 
   * New upstream release

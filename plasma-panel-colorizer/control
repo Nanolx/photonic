@@ -12,7 +12,9 @@ Homepage: https://github.com/luisbocanegra/plasma-panel-colorizer
 
 Package: plasma-panel-colorizer
 Architecture: any
-Depends: kde-plasma-desktop
+Depends:
+ kde-plasma-desktop,
+ ${shlibs:Depends}
 Replaces: nanolx-themes (<< 4.14.0.20260828)
 Description: Panel Colorizer plasmoid
  Fully-featured widget to bring Latte-Dock and WM status bar customization

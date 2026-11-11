@@ -9,7 +9,7 @@ export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 override_dh_auto_clean:
 	rm -rf $(CURDIR)/build
-	rm -rf $(CURDIR)/package/contents/locale/
+	rm -rf $(CURDIR)/package/contents/locale
 	dh_auto_clean
 
 override_dh_auto_configure:
