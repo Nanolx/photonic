@@ -1,0 +1,24 @@
+Source: headlines
+Section: net
+Maintainer: Christopher Roy Bratusek <nano@jpberlin.de>
+Build-Depends:
+ debhelper-compat (= 13),
+ cmake,
+ libssl-dev,
+ libjsoncpp-dev,
+ libxml2-dev,
+ libwebkitgtk-6.0-dev,
+ libsoup-3.0-dev,
+ libsecret-1-dev,
+ libadwaita-1-dev,
+ libgtkmm-4.0-dev
+Standards-Version: 4.7.4
+Homepage: https://gitlab.com/caveman250/Headlines
+
+Package: headlines
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Reddit client for Gtk4
+ A GTK4/libAdwaita Reddit client written in C++
