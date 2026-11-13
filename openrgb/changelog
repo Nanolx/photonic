@@ -1,3 +1,14 @@
+openrgb (1.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+    - Fix an issue with the "Do not show again" checkbox not saving
+    - Fix an issue with the OpenRGB SDK server not replying to the plugin list request in headless mode
+    - Fix an issue with the OpenRGB SDK server device indices on protocol versions < 6
+    - Fix several issues with the command line interface regarding resizing, profile loading, and applying settings to devices
+    - Device-specific improvements on several device controllers to improve hotplug behavior and fix potential deadlocks
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 13 Nov 2026 21:06:41 +0100
+
 openrgb (1.0-1nano) unstable; urgency=low
 
   * New upstream release
