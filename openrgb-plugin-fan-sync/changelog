@@ -1,0 +1,24 @@
+openrgb-plugin-fan-sync (1.1-1nano) unstable; urgency=low
+
+  * New upstream release
+  [Nanolx]
+    - update build dependencies
+    - use qmake6 as build system
+
+  [Upstream]
+    - updated to Qt6
+    - updated to OpenRGB Plugin API 5
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 13 Nov 2026 21:24:37 +0100
+
+openrgb-plugin-fan-sync (1.0~rc2+git20251015-2nano) unstable; urgency=low
+
+  * rebuild
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 19 Aug 2026 19:36:34 +0200
+
+openrgb-plugin-fan-sync (1.0~rc2+git20251015-1nano) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 07 Aug 2026 16:43:54 +0200
