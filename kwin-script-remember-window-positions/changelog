@@ -1,3 +1,11 @@
+kwin-script-remember-window-positions (2:7.0.1-1nano) unstable; urgency=low
+
+  * New upstream bugfix release
+  - Fixed a possible crash while running World of Warcraft Forever
+  - Fixed a bug when calculating caption score with certain setting configuration
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Tue, 17 Nov 2026 18:40:58 +0100
+
 kwin-script-remember-window-positions (2:7.0.0-1nano) unstable; urgency=low
 
   * New upstream release
