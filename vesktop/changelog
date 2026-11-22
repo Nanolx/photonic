@@ -1,3 +1,12 @@
+vesktop (1.7.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  - Added global shortcuts/keybinds
+  - Fixed spellcheck
+  - Now starts on friends page again instead of quests
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sun, 22 Nov 2026 09:18:35 +0100
+
 vesktop (1.6.9-1nano) unstable; urgency=low
 
   * New upstream release
