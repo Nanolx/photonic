@@ -1,3 +1,23 @@
+plasma-panel-colorizer (2:8.2.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  [Upstream]
+  - Features
+    - improved Appearance settings page (2fd7863)
+      - Select target element using tabs
+      - Don't hide base element settings when customizing state
+      - Enable font tab only for widgets
+    - search prests by name
+    - stock panel settings > opacity requires plasma 6.6 or newer
+  - Bug Fixes
+    - binding loop on cfg whenever stored settings need migrating
+    - hidden panel does not hide on startup
+    - plasmashell crash when parent window changes
+    - restore screen edge spacing and visibility when outputs change
+    - signal handler warnings
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Wed, 25 Nov 2026 19:24:27 +0100
+
 plasma-panel-colorizer (2:8.1.0-2nano) unstable; urgency=low
 
   * New build
