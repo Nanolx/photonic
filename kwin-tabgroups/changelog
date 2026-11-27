@@ -1,3 +1,20 @@
+kwin-tabgroups (0.3.0-1nano) unstable; urgency=low
+
+  * New upstream release
+  [Upstream]
+  - simplify where the tab strip is placed
+    - share the code for a tab leaving its group
+    - remove data and checks nothing uses
+    - don't drop a group when the system cancels a strip drag
+    - never group with a window without a title from the keyboard either
+    - apply changed settings to every group
+    - don't leave the grouping prompt behind
+    - never rebuild a saved group from a window that is already a tab
+    - stop un-hiding windows the application hid itself
+    - keep working after the script is turned off and on again
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Fri, 27 Nov 2026 10:40:53 +0100
+
 kwin-tabgroups (0.1.0~git20260922-1nano) unstable; urgency=low
 
   * Initial release.
