@@ -1,3 +1,20 @@
+vesktop (1.7.2-1nano) unstable; urgency=low
+
+  * New upstream release
+  [Upstream]
+    * 1.7.2
+      - Fixed missing metainfo
+    * 1.7.1
+      - Fixed Keybinds causing a freeze on Flatpak X11
+      - Fixed the Keybinds page crashing
+      - Fixed hardware encoded Streams not loading for some viewers. Try turning on Video
+        Hardware Encoding in settings and see if it works. It will considerably increase
+        stream quality and reduce CPU usage
+      - Fixed relaunch not working properly
+      - Now better handles Vencord startup errors & offers to update Vencord
+
+ -- Christopher Roy Bratusek <nano@jpberlin.de>  Sat, 28 Nov 2026 10:15:57 +0100
+
 vesktop (1.7.0-1nano) unstable; urgency=low
 
   * New upstream release
